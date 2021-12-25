@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Feed from "./common/Feed";
+import FeedContainer from "./pages/FeedContainer";
 import Navbar from "./common/Navbar";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
         <div className=" flex flex-col">
             <Navbar />
 
-            <Feed />
+            <FeedContainer />
         </div>
     );
 }
