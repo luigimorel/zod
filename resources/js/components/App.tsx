@@ -1,15 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Feed from "./common/Feed";
-import Navbar from "./common/Navbar";
+
+// Components
+import Home from "./pages/Home";
+import Demo from "./pages/Demo";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
     return (
-        <div className=" flex flex-col">
-            <Navbar />
-
-            <Feed />
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/demo" element={<Demo />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+            </Routes>
+        </Router>
     );
 }
 

@@ -1,53 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Assets
-import Logo from "./../../../assets/Stacks.svg";
-import Home from "./../../../assets/Home.svg";
-import Write from "./../../../assets/Write.svg";
-import User from "./../../../assets/User.svg";
-import Bell from "./../../../assets/Bell.svg";
+import MobileNavbar from "./MobileNavbar";
 import Search from "./../../../assets/Search.svg";
-import Luigi from "./../../../assets/Luigi.svg";
+
+import Logo from "./../../../assets/images/logo.png";
+
+// Components
+import Button from "./Button";
 
 const Navbar = () => {
+    const [open, setOpen] = useState(false);
+
+    const menuLinks = [
+        {
+            id: 1,
+            linkText: "Home",
+            route: "/",
+        },
+        {
+            id: 2,
+            linkText: "Solutions",
+            route: "/businesses",
+        },
+        {
+            id: 3,
+            linkText: "Demo",
+            route: "/contact-us",
+        },
+        {
+            id: 4,
+            linkText: "Contact Us ",
+            route: "/contact-us",
+        },
+    ];
+
     return (
-        <div className=" flex px-40 flex-row items-center py-3 justify-between shadow-md max-w-full ">
-            <div className="  ">
-                <img src={Logo} alt="" />
+        <>
+            <div className="flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar ">
+                <a href="/">
+                    <img src={Logo} alt="" className=" h-10" />
+                </a>
+
+                <div className="sm:flex hidden flex-row">
+                    <ul className="sm:flex flex-row justify-between items-center">
+                        {menuLinks.map((x) => (
+                            <>
+                                {" "}
+                                <a key={x.id} href={x.route}>
+                                    <li className="mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base">
+                                        {x.linkText}
+                                    </li>
+                                </a>
+                            </>
+                        ))}
+
+                        <Button text="Sign In" className="  " />
+                    </ul>
+                </div>
             </div>
-
-            <div className=" flex flex-row items-center">
-                <img src={Home} className=" sm:mr-16" alt="" />
-                <img src={Write} className=" sm:mr-16" alt="" />
-                <img src={User} className=" sm:mr-16" alt="" />
-                <img src={Bell} className=" sm:mr-16" alt="" />
-            </div>
-
-            <form action="">
-                <label htmlFor="search" className=" flex flex-row">
-                    <img
-                        src={Search}
-                        alt=""
-                        className=" absolute pointer-events-none mt-3 ml-3"
-                    />
-                    <input
-                        type="search"
-                        name="search"
-                        id="search"
-                        className=" pl-10 border border-gray-400"
-                        placeholder="Search Stacks"
-                    />
-                </label>
-            </form>
-
-            <div className=" flex flex-row  ">
-                <img src={Luigi} alt="" className=" h-12 mr-8" />
-
-                <button className=" bg-main text-white font-semibold px-4 py-2 rounded">
-                    Add a post
-                </button>
-            </div>
-        </div>
+            {open && <MobileNavbar />}
+        </>
     );
 };
 
