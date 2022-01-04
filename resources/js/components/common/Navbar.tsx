@@ -1,67 +1,69 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 // Assets
-import MobileNavbar from "./MobileNavbar";
-import Search from "./../../../assets/Search.svg";
+import MobileNavbar from './MobileNavbar'
 
-import Logo from "./../../../assets/images/logo.png";
+import Logo from './../../../assets/images/logo.png'
 
 // Components
-import Button from "./Button";
+import Button from './Button'
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false);
+ const [open, setOpen] = useState(false)
 
-    const menuLinks = [
-        {
-            id: 1,
-            linkText: "Home",
-            route: "/",
-        },
-        {
-            id: 2,
-            linkText: "Solutions",
-            route: "/businesses",
-        },
-        {
-            id: 3,
-            linkText: "Demo",
-            route: "/contact-us",
-        },
-        {
-            id: 4,
-            linkText: "Contact Us ",
-            route: "/contact-us",
-        },
-    ];
+ const menuLinks = [
+  {
+   id: 1,
+   linkText: 'Home',
+   route: '/',
+  },
+  {
+   id: 2,
+   linkText: 'Solutions',
+   route: '/solutions',
+  },
 
-    return (
-        <>
-            <div className="flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar ">
-                <a href="/">
-                    <img src={Logo} alt="" className=" h-10" />
-                </a>
+  {
+   id: 3,
+   linkText: 'Contact Us ',
+   route: '/contact-us',
+  },
+  {
+   id: 4,
+   linkText: 'Log In ',
+   route: '/accounts/sign-in',
+  },
+ ]
 
-                <div className="sm:flex hidden flex-row">
-                    <ul className="sm:flex flex-row justify-between items-center">
-                        {menuLinks.map((x) => (
-                            <>
-                                {" "}
-                                <a key={x.id} href={x.route}>
-                                    <li className="mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base">
-                                        {x.linkText}
-                                    </li>
-                                </a>
-                            </>
-                        ))}
+ return (
+  <>
+   <div className="flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar ">
+    <a href="/">
+     <img src={Logo} alt="" className=" h-10" />
+    </a>
 
-                        <Button text="Sign In" className="  " />
-                    </ul>
-                </div>
-            </div>
-            {open && <MobileNavbar />}
-        </>
-    );
-};
+    <div className="sm:flex hidden flex-row">
+     <ul className="sm:flex flex-row justify-between items-center">
+      {menuLinks.map((x) => (
+       <>
+        <a key={x.id} href={x.route}>
+         <li className="mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base">
+          {x.linkText}
+         </li>
+        </a>z
+       </>
+      ))}
 
-export default Navbar;
+      <Link to="/accounts/sign-up">
+       <Button text="Sign Up" className="  " />
+      </Link>
+     </ul>
+    </div>
+   </div>
+   {open && <MobileNavbar />}
+  </>
+ )
+}
+
+export default Navbar
