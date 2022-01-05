@@ -8,12 +8,12 @@ import DashNav from '../dashboard/clients/dashNav'
 const AdminDashboard = () => {
  return (
   <div>
-   <div className=" mb-8 ">
+   <div className=" mb-4 hidden sm:block ">
     <DashNav />
    </div>
 
-   <div className="flex flex-row">
-    <div className=" w-64 ">
+   <div className="flex flex-row w-full pt-20">
+    <div className=" w-64 hidden sm:flex ">
      <SidebarDashboard />
     </div>
     <AdminDashboardContainer />

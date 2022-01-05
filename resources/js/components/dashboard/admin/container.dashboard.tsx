@@ -28,11 +28,11 @@ const AdminDashboardContainer = () => {
  }
 
  const lineData = {
-  labels: ['Registered', 'New Registered'],
+  labels: ['Registered', 'New Registered', 'deleted', 'upcoming', 'zero'],
   datasets: [
    {
-    data: [300, 100],
-    backgroundColor: ['#855CF8', '#CFD8DC'],
+    data: [300, 100, 200, 20, 32],
+    backgroundColor: ['#855CF8', '#CFD8DC', '#C238DC', '#CacdeC', '#CFD8DC'],
     hoverOffset: 4,
    },
   ],
@@ -50,16 +50,19 @@ const AdminDashboardContainer = () => {
  }
 
  return (
-  <div className=" sm:ml-24">
-   <div className=" flex flex-row justify-between">
-    <div className=" mr-40 ">
+  <div className=" sm:mx-24 mx-4 w-full">
+   <div className=" flex sm:flex-row flex-col justify-between">
+    <div className=" sm:mb-10 mb-5">
      <h5 className=" text-xl font-bold text-gray-700 mb-3">
-      Users per payment plan
+      💰 Users per payment plan
      </h5>
+
+     <p className=" mb-4 font-semibold">Plans that users are paying for. </p>
+
      <Pie
       data={data}
-      height={600}
-      options={{
+      height={300}
+           options={{
        plugins: {
         legend: {
          display: true,
@@ -71,14 +74,14 @@ const AdminDashboardContainer = () => {
     </div>
 
     {/* Start of the doughnut chart  */}
-    <div className="  ">
+    <div className=" sm:mb-10 mb-5">
      <h5 className=" text-xl font-bold text-gray-700 mb-3">
-      User registration
+      📊 User registration
      </h5>
-     <p>Registration sub-information</p>
+     <p className=" mb-4 font-semibold">Registration sub-information</p>
      <Doughnut
       data={doughnutData}
-      height={600}
+      height={300}
       options={{
        plugins: {
         legend: {
@@ -91,16 +94,16 @@ const AdminDashboardContainer = () => {
     </div>
    </div>
 
-   <div className=" flex flex-row justify-between">
-    <div className=" mr-12 ">
+   <div className=" flex sm:flex-row flex-col justify-between">
+    <div className=" sm:mb-10 mb-5">
      <h5 className=" text-xl font-bold text-gray-700 mb-3">
-      User accounts growth
+      📈 User accounts growth
      </h5>
-     <p>Increase in user accounts</p>
+     <p className=" mb-4 font-semibold">Increase in user accounts</p>
 
      <Line
       data={barData}
-      height={600}
+      height={300}
       options={{
        plugins: {
         legend: {
@@ -113,15 +116,15 @@ const AdminDashboardContainer = () => {
     </div>
 
     {/* Start of the doughnut chart  */}
-    <div className="  ">
+    <div className=" sm:mb-10 mb-5">
      <h5 className=" text-xl font-bold text-gray-700 mb-3">
-      📊 Month’s difference
+      ⏰ Month’s difference
      </h5>
-     <p>Differene between Nov & Dec</p>
+     <p className=" mb-4 font-semibold">Differene between Nov & Dec</p>
 
      <Line
       data={lineData}
-      height={600}
+      height={300}
       options={{
        plugins: {
         legend: {

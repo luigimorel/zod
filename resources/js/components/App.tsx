@@ -17,11 +17,11 @@ function App() {
    <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/solutions" element={<Solutions />} />
-    <Route path="/dashboard" element={<AdminDashboard />} />
+    <Route path="/admin-dashboard" element={<AdminDashboard />} />
     <Route path="/contact-us" element={<Contact />} />
     <Route path="/accounts/login" element={<SignIn />} />
     <Route path="/accounts/sign-up" element={<SignUp />} />
-    <Route path="dashboard-client" element={<ClientDashboard />} />
+    <Route path="client-dashboard" element={<ClientDashboard />} />
    </Routes>
   </Router>
  )

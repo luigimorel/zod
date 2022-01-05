@@ -762,6 +762,9 @@ select {
 .h-96 {
   height: 24rem;
 }
+.h-8 {
+  height: 2rem;
+}
 .w-full {
   width: 100%;
 }
@@ -954,6 +957,10 @@ select {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -974,6 +981,9 @@ select {
 }
 .pb-4 {
   padding-bottom: 1rem;
+}
+.pt-20 {
+  padding-top: 5rem;
 }
 .text-center {
   text-align: center;
@@ -1065,6 +1075,15 @@ select {
 }
 @media (min-width: 640px) {
 
+  .sm\:visible {
+    visibility: visible;
+  }
+
+  .sm\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .sm\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -1105,8 +1124,20 @@ select {
     margin-bottom: 0px;
   }
 
+  .sm\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .sm\:block {
     display: block;
+  }
+
+  .sm\:inline-block {
+    display: inline-block;
   }
 
   .sm\:flex {

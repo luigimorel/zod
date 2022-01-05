@@ -5280,7 +5280,7 @@ function App() {
     path: "/solutions",
     element: react_1["default"].createElement(Solutions_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
-    path: "/dashboard",
+    path: "/admin-dashboard",
     element: react_1["default"].createElement(AdminDashboard_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/contact-us",
@@ -5292,7 +5292,7 @@ function App() {
     path: "/accounts/sign-up",
     element: react_1["default"].createElement(SignUp_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
-    path: "dashboard-client",
+    path: "client-dashboard",
     element: react_1["default"].createElement(ClientDashboard_1["default"], null)
   })));
 }
@@ -5715,7 +5715,7 @@ var Footer = function Footer() {
     className: " h-5"
   }))), react_1["default"].createElement("p", {
     className: " flex sm:justify-end justify-center text-center"
-  }, "Built Bye", react_1["default"].createElement("a", {
+  }, "Built By", react_1["default"].createElement("a", {
     href: "https://luigimorel.me",
     className: " font-bold ml-4"
   }, "Luigi Morel"))));
@@ -6364,10 +6364,10 @@ var AdminDashboardContainer = function AdminDashboardContainer() {
     }]
   };
   var lineData = {
-    labels: ['Registered', 'New Registered'],
+    labels: ['Registered', 'New Registered', 'deleted', 'upcoming', 'zero'],
     datasets: [{
-      data: [300, 100],
-      backgroundColor: ['#855CF8', '#CFD8DC'],
+      data: [300, 100, 200, 20, 32],
+      backgroundColor: ['#855CF8', '#CFD8DC', '#C238DC', '#CacdeC', '#CFD8DC'],
       hoverOffset: 4
     }]
   };
@@ -6380,16 +6380,18 @@ var AdminDashboardContainer = function AdminDashboardContainer() {
     }]
   };
   return react_1["default"].createElement("div", {
-    className: " sm:ml-24"
+    className: " sm:mx-24 mx-4 w-full"
   }, react_1["default"].createElement("div", {
-    className: " flex flex-row justify-between"
+    className: " flex sm:flex-row flex-col justify-between"
   }, react_1["default"].createElement("div", {
-    className: " mr-40 "
+    className: " sm:mb-10 mb-5"
   }, react_1["default"].createElement("h5", {
     className: " text-xl font-bold text-gray-700 mb-3"
-  }, "Users per payment plan"), react_1["default"].createElement(react_chartjs_2_1.Pie, {
+  }, "\uD83D\uDCB0 Users per payment plan"), react_1["default"].createElement("p", {
+    className: " mb-4 font-semibold"
+  }, "Plans that users are paying for. "), react_1["default"].createElement(react_chartjs_2_1.Pie, {
     data: data,
-    height: 600,
+    height: 300,
     options: {
       plugins: {
         legend: {
@@ -6399,12 +6401,14 @@ var AdminDashboardContainer = function AdminDashboardContainer() {
       }
     }
   })), react_1["default"].createElement("div", {
-    className: "  "
+    className: " sm:mb-10 mb-5"
   }, react_1["default"].createElement("h5", {
     className: " text-xl font-bold text-gray-700 mb-3"
-  }, "User registration"), react_1["default"].createElement("p", null, "Registration sub-information"), react_1["default"].createElement(react_chartjs_2_1.Doughnut, {
+  }, "\uD83D\uDCCA User registration"), react_1["default"].createElement("p", {
+    className: " mb-4 font-semibold"
+  }, "Registration sub-information"), react_1["default"].createElement(react_chartjs_2_1.Doughnut, {
     data: doughnutData,
-    height: 600,
+    height: 300,
     options: {
       plugins: {
         legend: {
@@ -6414,14 +6418,16 @@ var AdminDashboardContainer = function AdminDashboardContainer() {
       }
     }
   }))), react_1["default"].createElement("div", {
-    className: " flex flex-row justify-between"
+    className: " flex sm:flex-row flex-col justify-between"
   }, react_1["default"].createElement("div", {
-    className: " mr-12 "
+    className: " sm:mb-10 mb-5"
   }, react_1["default"].createElement("h5", {
     className: " text-xl font-bold text-gray-700 mb-3"
-  }, "User accounts growth"), react_1["default"].createElement("p", null, "Increase in user accounts"), react_1["default"].createElement(react_chartjs_2_1.Line, {
+  }, "\uD83D\uDCC8 User accounts growth"), react_1["default"].createElement("p", {
+    className: " mb-4 font-semibold"
+  }, "Increase in user accounts"), react_1["default"].createElement(react_chartjs_2_1.Line, {
     data: barData,
-    height: 600,
+    height: 300,
     options: {
       plugins: {
         legend: {
@@ -6431,12 +6437,14 @@ var AdminDashboardContainer = function AdminDashboardContainer() {
       }
     }
   })), react_1["default"].createElement("div", {
-    className: "  "
+    className: " sm:mb-10 mb-5"
   }, react_1["default"].createElement("h5", {
     className: " text-xl font-bold text-gray-700 mb-3"
-  }, "\uD83D\uDCCA Month\u2019s difference"), react_1["default"].createElement("p", null, "Differene between Nov & Dec"), react_1["default"].createElement(react_chartjs_2_1.Line, {
+  }, "\u23F0 Month\u2019s difference"), react_1["default"].createElement("p", {
+    className: " mb-4 font-semibold"
+  }, "Differene between Nov & Dec"), react_1["default"].createElement(react_chartjs_2_1.Line, {
     data: lineData,
-    height: 600,
+    height: 300,
     options: {
       plugins: {
         legend: {
@@ -6646,7 +6654,7 @@ var Notify_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/
 
 var DashNav = function DashNav() {
   return react_1["default"].createElement("div", {
-    className: " sm:px-12 mt-8  "
+    className: " sm:px-12  h-8 fixed w-full  "
   }, react_1["default"].createElement("div", {
     className: " flex flex-row items-center shadow-sm justify-between "
   }, react_1["default"].createElement("img", {
@@ -6794,11 +6802,11 @@ var dashNav_1 = __importDefault(__webpack_require__(/*! ../dashboard/clients/das
 
 var AdminDashboard = function AdminDashboard() {
   return react_1["default"].createElement("div", null, react_1["default"].createElement("div", {
-    className: " mb-8 "
+    className: " mb-4 hidden sm:block "
   }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
-    className: "flex flex-row"
+    className: "flex flex-row w-full pt-20"
   }, react_1["default"].createElement("div", {
-    className: " w-64 "
+    className: " w-64 hidden sm:flex "
   }, react_1["default"].createElement(sidebar_dashboard_1["default"], null)), react_1["default"].createElement(container_dashboard_1["default"], null)));
 };
 

@@ -81,7 +81,7 @@ const Footer = () => {
     </div>
 
     <p className=" flex sm:justify-end justify-center text-center">
-     Built Bye
+     Built By
      <a href="https://luigimorel.me" className=" font-bold ml-4">
       Luigi Morel
      </a>

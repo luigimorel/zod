@@ -7,7 +7,7 @@ import Notify from './../../../../assets/icons/Notify.svg'
 
 const DashNav = () => {
  return (
-  <div className=" sm:px-12 mt-8  ">
+  <div className=" sm:px-12  h-8 fixed w-full  ">
    <div className=" flex flex-row items-center shadow-sm justify-between ">
     <img src={Logo} className=" h-10" alt="" />
     <form action="" className="">
