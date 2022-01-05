@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 // Components
 import Home from './pages/Home'
-import Demo from './pages/Solutions'
+import Solutions from './pages/Solutions'
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom'
 import AdminDashboard from './pages/AdminDashboard'
 import Contact from './pages/Contact'
@@ -16,7 +16,7 @@ function App() {
   <Router>
    <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/solutions" element={<Demo />} />
+    <Route path="/solutions" element={<Solutions />} />
     <Route path="/dashboard" element={<AdminDashboard />} />
     <Route path="/contact-us" element={<Contact />} />
     <Route path="/accounts/login" element={<SignIn />} />

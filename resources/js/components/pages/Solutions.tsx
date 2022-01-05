@@ -26,10 +26,10 @@ const Solutions = () => {
 
     <div className=" mb-20 sm:px-20">
      <div className="flex flex-col">
-      <div className=" flex sm:flex-row flex-col   items-center mb-12 sm:px-32 px-4">
+      <div className=" flex sm:flex-row flex-col   items-center mb-16  px-4">
        <img src={Service} alt="" />
        <div className="flex flex-col sm:ml-20">
-        <h2 className=" text-4xl text-blue-700 mb-8">Lorem, ipsum.</h2>
+        <h2 className=" text-4xl text-blue-700 mb-8">Works monitoring </h2>
         <ul className=" list-disc">
          <li className=" mb-2.5 text-gray-800">
           Lorem ipsum dolor sit amet, consectetur adipisicing.
@@ -52,9 +52,9 @@ const Solutions = () => {
 
       {/* this is the second image with the bullet points and the image */}
 
-      <div className=" flex sm:flex-row flex-col-reverse   items-center mb-12 sm:px-32 px-4">
+      <div className=" flex sm:flex-row flex-col-reverse   items-center mb-16 sm:px-32 px-4">
        <div className="flex flex-col sm:mr-20">
-        <h2 className=" text-4xl text-blue-700 mb-8">Lorem, ipsum.</h2>
+        <h2 className=" text-4xl text-blue-700 mb-8">Drone Services</h2>
         <ul className=" list-disc">
          <li className=" mb-2.5 text-gray-800">
           Lorem ipsum dolor sit amet, consectetur adipisicing.
@@ -75,6 +75,32 @@ const Solutions = () => {
        </div>
 
        <img src={Service} alt="" />
+      </div>
+
+      {/* this is the third section for the image section and bullet points  */}
+
+      <div className=" flex sm:flex-row flex-col   items-center mb-16  px-4">
+       <img src={Service} alt="" />
+       <div className="flex flex-col sm:ml-20">
+        <h2 className=" text-4xl text-blue-700 mb-8">Image data analysis </h2>
+        <ul className=" list-disc">
+         <li className=" mb-2.5 text-gray-800">
+          Lorem ipsum dolor sit amet, consectetur adipisicing.
+         </li>
+
+         <li className=" mb-2.5 text-gray-800">
+          Lorem ipsum dolor sit amet, consectetur adipisicing.
+         </li>
+
+         <li className=" mb-2.5 text-gray-800">
+          Lorem ipsum dolor sit amet, consectetur adipisicing.
+         </li>
+
+         <li className=" mb-2.5 text-gray-800">
+          Lorem ipsum dolor sit amet, consectetur adipisicing.
+         </li>
+        </ul>
+       </div>
       </div>
      </div>
     </div>

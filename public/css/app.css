@@ -714,6 +714,9 @@ select {
 .ml-4 {
   margin-left: 1rem;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .block {
   display: block;
 }
@@ -969,6 +972,9 @@ select {
 .pl-5 {
   padding-left: 1.25rem;
 }
+.pb-4 {
+  padding-bottom: 1rem;
+}
 .text-center {
   text-align: center;
 }
@@ -1107,8 +1113,16 @@ select {
     display: flex;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-4\/5 {
     height: 80%;
+  }
+
+  .sm\:h-10 {
+    height: 2.5rem;
   }
 
   .sm\:w-1\/3 {

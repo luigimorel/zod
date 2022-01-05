@@ -40,9 +40,11 @@ const Navbar = () => {
   <>
    <div className="flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar ">
     <a href="/">
-     <img src={Logo} alt="" className=" h-10" />
+     <img src={Logo} alt="" className=" sm:h-10 h-5" />
     </a>
-
+    <p onClick={() => setOpen(!open)} className=" sm:hidden">
+     Menu
+    </p>
     <div className="sm:flex hidden flex-row">
      <ul className="sm:flex flex-row justify-between items-center">
       {menuLinks.map((x) => (

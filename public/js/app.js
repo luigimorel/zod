@@ -6067,28 +6067,30 @@ Object.defineProperty(exports, "__esModule", ({
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
 var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/js/components/common/Button.tsx"));
 
 var MobileNavbar = function MobileNavbar() {
   var menuLinks = [{
     id: 1,
-    linkText: "Home",
-    route: "/"
+    linkText: 'Home',
+    route: '/'
   }, {
     id: 2,
-    linkText: "Solutions",
-    route: "/businesses"
+    linkText: 'Solutions',
+    route: '/solutions'
   }, {
     id: 3,
-    linkText: "Demo",
-    route: "/contact-us"
+    linkText: 'Contact Us ',
+    route: '/contact-us'
   }, {
     id: 4,
-    linkText: "Contact Us ",
-    route: "/contact-us"
+    linkText: 'Log In ',
+    route: '/accounts/login'
   }];
   return react_1["default"].createElement("div", {
-    className: " flex dropdown fixed mt-20 w-full animation-container"
+    className: " flex dropdown fixed mt-16 w-full animation-container"
   }, react_1["default"].createElement("ul", {
     className: "dropdown-menu bg-black  w-full"
   }, menuLinks.map(function (x) {
@@ -6099,10 +6101,12 @@ var MobileNavbar = function MobileNavbar() {
       className: "  text-white custom-animation w-full ml-24 bg-black custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap",
       href: x.route
     }, x.linkText));
-  }), react_1["default"].createElement(Button_1["default"], {
-    text: "Sign In",
-    className: "  "
-  })));
+  }), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/accounts/sign-up"
+  }, react_1["default"].createElement(Button_1["default"], {
+    text: "Sign Up",
+    className: "  ml-24 pb-4"
+  }))));
 };
 
 exports["default"] = MobileNavbar;
@@ -6216,8 +6220,13 @@ var Navbar = function Navbar() {
   }, react_1["default"].createElement("img", {
     src: logo_png_1["default"],
     alt: "",
-    className: " h-10"
-  })), react_1["default"].createElement("div", {
+    className: " sm:h-10 h-5"
+  })), react_1["default"].createElement("p", {
+    onClick: function onClick() {
+      return setOpen(!open);
+    },
+    className: " sm:hidden"
+  }, "Menu"), react_1["default"].createElement("div", {
     className: "sm:flex hidden flex-row"
   }, react_1["default"].createElement("ul", {
     className: "sm:flex flex-row justify-between items-center"
@@ -7072,7 +7081,7 @@ var Solutions = function Solutions() {
   }, react_1["default"].createElement("div", {
     className: "flex flex-col"
   }, react_1["default"].createElement("div", {
-    className: " flex sm:flex-row flex-col   items-center mb-12 sm:px-32 px-4"
+    className: " flex sm:flex-row flex-col   items-center mb-16  px-4"
   }, react_1["default"].createElement("img", {
     src: service_png_1["default"],
     alt: ""
@@ -7080,7 +7089,7 @@ var Solutions = function Solutions() {
     className: "flex flex-col sm:ml-20"
   }, react_1["default"].createElement("h2", {
     className: " text-4xl text-blue-700 mb-8"
-  }, "Lorem, ipsum."), react_1["default"].createElement("ul", {
+  }, "Works monitoring "), react_1["default"].createElement("ul", {
     className: " list-disc"
   }, react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
@@ -7091,12 +7100,12 @@ var Solutions = function Solutions() {
   }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
   }, "Lorem ipsum dolor sit amet, consectetur adipisicing.")))), react_1["default"].createElement("div", {
-    className: " flex sm:flex-row flex-col-reverse   items-center mb-12 sm:px-32 px-4"
+    className: " flex sm:flex-row flex-col-reverse   items-center mb-16 sm:px-32 px-4"
   }, react_1["default"].createElement("div", {
     className: "flex flex-col sm:mr-20"
   }, react_1["default"].createElement("h2", {
     className: " text-4xl text-blue-700 mb-8"
-  }, "Lorem, ipsum."), react_1["default"].createElement("ul", {
+  }, "Drone Services"), react_1["default"].createElement("ul", {
     className: " list-disc"
   }, react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
@@ -7109,7 +7118,26 @@ var Solutions = function Solutions() {
   }, "Lorem ipsum dolor sit amet, consectetur adipisicing."))), react_1["default"].createElement("img", {
     src: service_png_1["default"],
     alt: ""
-  }))))), react_1["default"].createElement(Footer_1["default"], null));
+  })), react_1["default"].createElement("div", {
+    className: " flex sm:flex-row flex-col   items-center mb-16  px-4"
+  }, react_1["default"].createElement("img", {
+    src: service_png_1["default"],
+    alt: ""
+  }), react_1["default"].createElement("div", {
+    className: "flex flex-col sm:ml-20"
+  }, react_1["default"].createElement("h2", {
+    className: " text-4xl text-blue-700 mb-8"
+  }, "Image data analysis "), react_1["default"].createElement("ul", {
+    className: " list-disc"
+  }, react_1["default"].createElement("li", {
+    className: " mb-2.5 text-gray-800"
+  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
+    className: " mb-2.5 text-gray-800"
+  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
+    className: " mb-2.5 text-gray-800"
+  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
+    className: " mb-2.5 text-gray-800"
+  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."))))))), react_1["default"].createElement(Footer_1["default"], null));
 };
 
 exports["default"] = Solutions;
