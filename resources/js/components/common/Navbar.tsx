@@ -46,13 +46,11 @@ const Navbar = () => {
     <div className="sm:flex hidden flex-row">
      <ul className="sm:flex flex-row justify-between items-center">
       {menuLinks.map((x) => (
-       <>
-        <a key={x.id} href={x.route}>
-         <li className="mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base">
-          {x.linkText}
-         </li>
-        </a>
-       </>
+       <a key={x.id} href={x.route}>
+        <li className="mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base">
+         {x.linkText}
+        </li>
+       </a>
       ))}
 
       <Link to="/accounts/sign-up">

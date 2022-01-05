@@ -5,11 +5,11 @@ import Video from './../../../../assets/images/video.png'
 
 const ClientsDashboard = () => {
  return (
-  <div className=" mx-24">
+  <div className=" mx-24 w-full">
    <div className=" flex flex-row mb-8 justify-between ">
     <div>
      <h5 className=" text-xl mb-4">Today's Video</h5>
-     <img src={Video} alt="" width={300} />
+     <img src={Video} alt="" />
     </div>
     {/* Start of the second video container  */}
     <div>

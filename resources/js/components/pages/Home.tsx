@@ -1,35 +1,36 @@
-import React from "react";
+import React from 'react'
 
 // Components
-import CallToAction from "../common/CallToAction";
-import Footer from "../common/Footer";
-import Hero from "../common/Hero";
-import IconsSection from "../common/IconsSection";
-import ImageSection from "../common/ImageSection";
-import Navbar from "../common/Navbar";
-import Verticals from "../common/Verticals";
+import CallToAction from '../common/CallToAction'
+import Footer from '../common/Footer'
+import Hero from '../common/Hero'
+import IconsSection from '../common/IconsSection'
+import ImageSection from '../common/ImageSection'
+import Navbar from '../common/Navbar'
+import Verticals from '../common/Verticals'
 
 const Home = () => {
-    return (
-        <>
-            <Navbar />
-            <div className="pt-28">
-                <Hero />
-                <Verticals />
-            </div>
-            <CallToAction />
+ return (
+  <>
+   <Navbar />
+   <div className="pt-28">
+    <Hero />
+   </div>
+   <Verticals />
 
-            <div className=" mt-10">
-                <IconsSection />
-            </div>
+   <CallToAction />
 
-            <div className=" mt-10">
-                <ImageSection />
-            </div>
+   <div className=" mt-10">
+    <IconsSection />
+   </div>
 
-            <Footer />
-        </>
-    );
-};
+   <div className=" mt-10">
+    <ImageSection />
+   </div>
 
-export default Home;
+   <Footer />
+  </>
+ )
+}
+
+export default Home

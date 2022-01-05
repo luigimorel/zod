@@ -5583,7 +5583,7 @@ var CallToAction = function CallToAction() {
   return react_1["default"].createElement("div", {
     className: " bg-cta"
   }, react_1["default"].createElement("div", {
-    className: " sm:px-32 flex flex-col"
+    className: " sm:px-32 px-8 flex flex-col"
   }, react_1["default"].createElement("p", {
     className: " text-xl text-white mb-12 mt-8"
   }, "Built for construction site oversight"), react_1["default"].createElement("p", {
@@ -5639,9 +5639,9 @@ var Linkedin_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/i
 
 var Footer = function Footer() {
   return react_1["default"].createElement("div", {
-    className: " bg-cta px-20 text-white"
+    className: " bg-cta sm:px-20 px-8 text-white"
   }, react_1["default"].createElement("div", {
-    className: "flex flex-row justify-between mr-20 mb-5"
+    className: "flex sm:flex-row flex-col  flex-justify-between mr-20 mb-5"
   }, react_1["default"].createElement("div", {
     className: " mt-11"
   }, react_1["default"].createElement("img", {
@@ -5650,7 +5650,7 @@ var Footer = function Footer() {
     alt: ""
   }), react_1["default"].createElement("p", {
     className: " text-white "
-  }, "Make faster and more informed data-driven decisions,", " ", react_1["default"].createElement("br", null), "stay on top of your project, and keep all stakeholders", " ", react_1["default"].createElement("br", null), "informed")), react_1["default"].createElement("div", {
+  }, "Make faster and more informed data-driven decisions, ", react_1["default"].createElement("br", null), "stay on top of your project, and keep all stakeholders ", react_1["default"].createElement("br", null), "informed")), react_1["default"].createElement("div", {
     className: "flex flex-col mt-11"
   }, react_1["default"].createElement("h2", {
     className: " text-2xl text-white mb-10"
@@ -5685,9 +5685,9 @@ var Footer = function Footer() {
   }, "Become a partner"))), react_1["default"].createElement("hr", {
     className: " h-px bg-slate-300"
   }), react_1["default"].createElement("div", {
-    className: " flex flex-row py-5 justify-between"
+    className: " flex sm:flex-row flex-col py-5 justify-between"
   }, react_1["default"].createElement("div", {
-    className: " flex flex-row"
+    className: " flex flex-row justify-center mb-4 sm:justify-start"
   }, react_1["default"].createElement("div", {
     className: "border-white bg-black border-2 h-10 mr-8 w-10 justify-center rounded-full items-center flex"
   }, react_1["default"].createElement("img", {
@@ -5706,10 +5706,12 @@ var Footer = function Footer() {
     src: Linkedin_svg_1["default"],
     alt: "",
     className: " h-5"
-  }))), react_1["default"].createElement("p", null, "Built By ", "  ", react_1["default"].createElement("a", {
+  }))), react_1["default"].createElement("p", {
+    className: " flex sm:justify-end justify-center text-center"
+  }, "Built By ", '  ', react_1["default"].createElement("a", {
     href: "https://luigimorel.me",
     className: " font-bold"
-  }, "Luigi Morel"))));
+  }, '  ', " Luigi Morel"))));
 };
 
 exports["default"] = Footer;
@@ -5786,11 +5788,11 @@ var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/
 
 var Hero = function Hero() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: " flex flex-row justify-between h-screen w-full sm:px-24 tab:px-12 px-3 "
+    className: " flex  sm:flex-row flex-col-reverse   justify-between h-screen w-full mb-20 sm:px-24 tab:px-12 px-3 "
   }, react_1["default"].createElement("div", {
-    className: " w-1/2 mt-24 sm:mr-12"
+    className: " sm:w-1/2 w-full sm:mt-24 sm:mr-12"
   }, react_1["default"].createElement("h3", {
-    className: " text-5xl mb-8 uppercase font-sans"
+    className: " sm:text-5xl text-3xl mb-8 uppercase font-sans"
   }, "Revolutionizing monitoring in the construction industry."), react_1["default"].createElement("p", {
     className: " mb-8 text-lg text-gray-700"
   }, "Pioneers of the constrution industry monitoring in the Sub Saharan Africa Region."), react_1["default"].createElement("p", {
@@ -5801,11 +5803,11 @@ var Hero = function Hero() {
     text: "Explore More",
     className: "  "
   }))), react_1["default"].createElement("div", {
-    className: " w-1/2 "
+    className: " sm:w-1/2 w-full tab:w-full "
   }, react_1["default"].createElement("img", {
     src: hero_jpg_1["default"],
     alt: "",
-    className: " h-4/5 w-full"
+    className: " sm:h-4/5 h-screen mt-28 sm:mt-0 w-full"
   }))));
 };
 
@@ -5844,45 +5846,44 @@ var IconsSection = function IconsSection() {
   var iconCards = [{
     id: 1,
     img: PlusIcon_svg_1["default"],
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?"
+    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
   }, {
     id: 2,
     img: PlusIcon_svg_1["default"],
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?"
+    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
   }, {
     id: 3,
     img: PlusIcon_svg_1["default"],
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?"
+    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
+  }, {
+    id: 4,
+    img: PlusIcon_svg_1["default"],
+    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
+  }, {
+    id: 5,
+    img: PlusIcon_svg_1["default"],
+    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
+  }, {
+    id: 6,
+    img: PlusIcon_svg_1["default"],
+    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
   }];
   return react_1["default"].createElement("div", {
     className: " mb-14"
   }, react_1["default"].createElement(Heading_1["default"], {
     text: " Our Values"
   }), react_1["default"].createElement("p", {
-    className: " mb-8 text-2xl w-2/4 sm:px-20 mx-auto my-0"
+    className: " mb-8 text-2xl sm:w-2/4 w-full sm:px-20 px-4 mx-auto my-0"
   }, "Consequat faucibus tristique vitae vulputate tristique vitae vulputate tristique vitae faucibus tristique vitae vulputate tristique vitae"), react_1["default"].createElement("div", {
-    className: " grid grid-cols-3 px-20 mb-12"
+    className: " grid sm:grid-cols-3 grid-rows-1  sm:px-20 px-4 mb-12"
   }, iconCards.map(function (x) {
     return react_1["default"].createElement("div", {
-      className: x.id === 3 ? "flex flex-col border mr-0 py-8 hover:bg-blue-700 hover:text-white " : "flex flex-col border mr-8 rounded  py-8 hover:bg-blue-700 hover:text-white",
+      className: "flex flex-col border mr-0 py-8 mb-6 px-3 mx-4 hover:bg-blue-700 hover:text-white ",
       key: x.id
     }, react_1["default"].createElement("img", {
       src: x.img,
       alt: "",
-      className: " items-center h-20 sm:mb-4"
-    }), react_1["default"].createElement("p", {
-      className: " sm:py-6 sm:px-8   text-lg"
-    }, x.text));
-  })), react_1["default"].createElement("div", {
-    className: " grid grid-cols-3 px-20 mb-12"
-  }, iconCards.map(function (x) {
-    return react_1["default"].createElement("div", {
-      className: x.id === 3 ? "flex flex-col border rounded mr-0 py-8 hover:bg-blue-700 hover:text-white " : "flex flex-col border mr-8 rounded  py-8 hover:bg-blue-700 hover:text-white",
-      key: x.id
-    }, react_1["default"].createElement("img", {
-      src: x.img,
-      alt: "",
-      className: " items-center h-20 sm:mb-4"
+      className: " items-center h-20 mb-4"
     }), react_1["default"].createElement("p", {
       className: " sm:py-6 sm:px-8   text-lg"
     }, x.text));
@@ -5926,7 +5927,7 @@ var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_mod
 
 var ImageSection = function ImageSection() {
   return react_1["default"].createElement("div", null, react_1["default"].createElement("div", {
-    className: " px-20 mb-32"
+    className: " sm:px-20 px-8 mb-32"
   }, react_1["default"].createElement("div", {
     className: " mb-16"
   }, react_1["default"].createElement(Heading_1["default"], {
@@ -5934,10 +5935,11 @@ var ImageSection = function ImageSection() {
   })), react_1["default"].createElement("div", {
     className: "flex flex-col"
   }, react_1["default"].createElement("div", {
-    className: " flex flex-row justify-between items-center mb-12 px-32   "
+    className: " flex flex-col sm:flex-row justify-between items-center mb-12 sm:px-32   "
   }, react_1["default"].createElement("img", {
     src: service_png_1["default"],
-    alt: ""
+    alt: "",
+    className: " w-full"
   }), react_1["default"].createElement("div", {
     className: "flex flex-col sm:ml-20"
   }, react_1["default"].createElement("h2", {
@@ -5953,9 +5955,13 @@ var ImageSection = function ImageSection() {
   }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
   }, "Lorem ipsum dolor sit amet, consectetur adipisicing.")))), react_1["default"].createElement("div", {
-    className: " flex flex-row justify-between items-center mb-8 px-32    "
-  }, react_1["default"].createElement("div", {
-    className: "flex flex-col sm:mr-20"
+    className: " flex flex-col sm:flex-row justify-between items-center mb-12 sm:px-32   "
+  }, react_1["default"].createElement("img", {
+    src: service_png_1["default"],
+    alt: "",
+    className: " w-full"
+  }), react_1["default"].createElement("div", {
+    className: "flex flex-col sm:ml-20"
   }, react_1["default"].createElement("h2", {
     className: " text-4xl text-blue-700 mb-8"
   }, "Lorem, ipsum."), react_1["default"].createElement("ul", {
@@ -5968,13 +5974,10 @@ var ImageSection = function ImageSection() {
     className: " mb-2.5 text-gray-800"
   }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."))), react_1["default"].createElement("img", {
-    src: service_png_1["default"],
-    alt: ""
-  })))), react_1["default"].createElement("div", {
-    className: " flex flex-col mb-24"
+  }, "Lorem ipsum dolor sit amet, consectetur adipisicing.")))))), react_1["default"].createElement("div", {
+    className: " flex flex-col sm:mb-24 mb-12 px-8"
   }, react_1["default"].createElement("div", {
-    className: " w-1/2 mx-auto my-0"
+    className: " sm:w-1/2 w-full mx-auto my-0"
   }, react_1["default"].createElement("h3", {
     className: " mb-10 sm:text-center font-bold uppercase text-3xl text-gray-800"
   }, "Mi orci nisl mauris nibh"), react_1["default"].createElement("p", {
@@ -6212,12 +6215,12 @@ var Navbar = function Navbar() {
   }, react_1["default"].createElement("ul", {
     className: "sm:flex flex-row justify-between items-center"
   }, menuLinks.map(function (x) {
-    return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("a", {
+    return react_1["default"].createElement("a", {
       key: x.id,
       href: x.route
     }, react_1["default"].createElement("li", {
       className: "mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base"
-    }, x.linkText)));
+    }, x.linkText));
   }), react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
   }, react_1["default"].createElement(Button_1["default"], {
@@ -6260,10 +6263,12 @@ var Branch_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/Bra
 var BranchDark_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/BranchDark.svg */ "./resources/assets/BranchDark.svg"));
 
 var Verticals = function Verticals() {
-  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Heading_1["default"], {
+  return react_1["default"].createElement("div", {
+    className: ""
+  }, react_1["default"].createElement(Heading_1["default"], {
     text: "Business Verticals"
   }), react_1["default"].createElement("div", {
-    className: "flex flex-row px-40 mb-20"
+    className: "flex sm:flex-row flex-col sm:px-40 px-8 mb-20"
   }, react_1["default"].createElement("div", {
     className: " flex flex-col "
   }, react_1["default"].createElement("div", {
@@ -6272,7 +6277,7 @@ var Verticals = function Verticals() {
     src: Branch_svg_1["default"],
     alt: ""
   })), react_1["default"].createElement("p", {
-    className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100  font-semibold"
+    className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
   }, "Tech")), react_1["default"].createElement("div", {
     className: " flex flex-col "
   }, react_1["default"].createElement("div", {
@@ -6281,7 +6286,7 @@ var Verticals = function Verticals() {
     src: BranchDark_svg_1["default"],
     alt: ""
   })), react_1["default"].createElement("p", {
-    className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100  font-semibold"
+    className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
   }, "Drones")), react_1["default"].createElement("div", {
     className: " flex flex-col "
   }, react_1["default"].createElement("div", {
@@ -6290,7 +6295,7 @@ var Verticals = function Verticals() {
     src: Branch_svg_1["default"],
     alt: ""
   })), react_1["default"].createElement("p", {
-    className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100  font-semibold"
+    className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
   }, "Cameras"))));
 };
 
@@ -6525,15 +6530,14 @@ var video_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/i
 
 var ClientsDashboard = function ClientsDashboard() {
   return react_1["default"].createElement("div", {
-    className: " mx-24"
+    className: " mx-24 w-full"
   }, react_1["default"].createElement("div", {
     className: " flex flex-row mb-8 justify-between "
   }, react_1["default"].createElement("div", null, react_1["default"].createElement("h5", {
     className: " text-xl mb-4"
   }, "Today's Video"), react_1["default"].createElement("img", {
     src: video_png_1["default"],
-    alt: "",
-    width: 300
+    alt: ""
   })), react_1["default"].createElement("div", null, react_1["default"].createElement("h5", {
     className: " text-xl mb-4"
   }, "Yesterday's Video"), react_1["default"].createElement("img", {
@@ -7001,7 +7005,7 @@ var Verticals_1 = __importDefault(__webpack_require__(/*! ../common/Verticals */
 var Home = function Home() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
     className: "pt-28"
-  }, react_1["default"].createElement(Hero_1["default"], null), react_1["default"].createElement(Verticals_1["default"], null)), react_1["default"].createElement(CallToAction_1["default"], null), react_1["default"].createElement("div", {
+  }, react_1["default"].createElement(Hero_1["default"], null)), react_1["default"].createElement(Verticals_1["default"], null), react_1["default"].createElement(CallToAction_1["default"], null), react_1["default"].createElement("div", {
     className: " mt-10"
   }, react_1["default"].createElement(IconsSection_1["default"], null)), react_1["default"].createElement("div", {
     className: " mt-10"
