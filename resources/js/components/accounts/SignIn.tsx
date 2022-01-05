@@ -48,7 +48,9 @@ const SignIn = () => {
 
       <div className="flex justify-between flex-row mb-4">
        <p>
-        <Link to={'/'}>Forgot password</Link>
+        <Link to={'/'} className=" text-blue-700">
+         Forgot password?
+        </Link>
        </p>
        <p>
         Don't have an account?{'  '}

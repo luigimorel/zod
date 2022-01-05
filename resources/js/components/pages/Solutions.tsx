@@ -26,7 +26,7 @@ const Solutions = () => {
 
     <div className=" mb-20 sm:px-20">
      <div className="flex flex-col">
-      <div className=" flex flex-row   items-center mb-12 px-32">
+      <div className=" flex sm:flex-row flex-col   items-center mb-12 sm:px-32 px-4">
        <img src={Service} alt="" />
        <div className="flex flex-col sm:ml-20">
         <h2 className=" text-4xl text-blue-700 mb-8">Lorem, ipsum.</h2>
@@ -52,7 +52,7 @@ const Solutions = () => {
 
       {/* this is the second image with the bullet points and the image */}
 
-      <div className=" flex flex-row justify-between items-center mb-8 px-32    ">
+      <div className=" flex sm:flex-row flex-col-reverse   items-center mb-12 sm:px-32 px-4">
        <div className="flex flex-col sm:mr-20">
         <h2 className=" text-4xl text-blue-700 mb-8">Lorem, ipsum.</h2>
         <ul className=" list-disc">

@@ -9,7 +9,7 @@ import Linkedin from './../../../assets/icons/Linkedin.svg'
 const Footer = () => {
  return (
   <div className=" bg-cta sm:px-20 px-8 text-white">
-   <div className="flex sm:flex-row flex-col  flex-justify-between mr-20 mb-5">
+   <div className="flex sm:flex-row flex-col justify-between sm:mr-20 mb-5">
     <div className=" mt-11">
      <img src={LogoLight} className=" mb-11 h-10 " alt="" />
 
@@ -23,26 +23,28 @@ const Footer = () => {
     <div className="flex flex-col mt-11">
      <h2 className=" text-2xl text-white mb-10">Company </h2>
 
-     <a href="#" className=" mb-4">
+     <a href="/" className=" mb-4">
       Home
      </a>
-     <a href="#" className=" mb-4">
-      About Us
+     <a href="/accounts/login" className=" mb-4">
+      Log In
      </a>
-     <a href="#" className=" mb-4">
+     <a href="/accounts/sign-up" className=" mb-4">
+      Sign Up
+     </a>
+
+     <a href="/solutions" className=" mb-4">
+      Solutions
+     </a>
+     <a href="/contact-us" className=" mb-4">
       Contact Us
-     </a>
-     <a href="#" className=" mb-4">
-      Terms
-     </a>
-     <a href="#" className=" mb-4">
-      Privacy
      </a>
     </div>
 
     <div className="flex flex-col mt-11">
      <h2 className=" text-2xl text-white mb-10">Resources </h2>
 
+     {/* TO DO: Ask for these from the person in charge */}
      <a href="#" className=" mb-4">
       Getting Started
      </a>
@@ -51,6 +53,12 @@ const Footer = () => {
      </a>
      <a href="#" className=" mb-4">
       Become a partner
+     </a>
+     <a href="#" className=" mb-4">
+      Terms
+     </a>
+     <a href="#" className=" mb-4">
+      Privacy
      </a>
     </div>
    </div>
@@ -73,9 +81,9 @@ const Footer = () => {
     </div>
 
     <p className=" flex sm:justify-end justify-center text-center">
-     Built By {'  '}
-     <a href="https://luigimorel.me" className=" font-bold">
-      {'  '} Luigi Morel
+     Built Bye
+     <a href="https://luigimorel.me" className=" font-bold ml-4">
+      Luigi Morel
      </a>
     </p>
    </div>

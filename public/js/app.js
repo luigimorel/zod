@@ -5286,7 +5286,7 @@ function App() {
     path: "/contact-us",
     element: react_1["default"].createElement(Contact_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
-    path: "/accounts/sign-in",
+    path: "/accounts/login",
     element: react_1["default"].createElement(SignIn_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/accounts/sign-up",
@@ -5373,8 +5373,9 @@ var SignIn = function SignIn() {
   })), react_1["default"].createElement("div", {
     className: "flex justify-between flex-row mb-4"
   }, react_1["default"].createElement("p", null, react_1["default"].createElement(react_router_dom_1.Link, {
-    to: '/'
-  }, "Forgot password")), react_1["default"].createElement("p", null, "Don't have an account?", '  ', react_1["default"].createElement("span", {
+    to: '/',
+    className: " text-blue-700"
+  }, "Forgot password?")), react_1["default"].createElement("p", null, "Don't have an account?", '  ', react_1["default"].createElement("span", {
     className: " text-blue-700 font-bold"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
@@ -5426,12 +5427,12 @@ var SignUp = function SignUp() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
     className: " mb-10 pt-28"
   }, react_1["default"].createElement(Heading_1["default"], {
-    text: "We are here to help",
+    text: "Sign Up",
     className: " uppercase "
   })), react_1["default"].createElement("div", {
     className: " flex  sm:flex-row flex-col px-4  sm:px-20 sm:mb-20"
   }, react_1["default"].createElement("div", {
-    className: " w-1/2 mr-16 h-auto"
+    className: " sm:w-1/2 w-full sm:mr-16 mr-0 mb-10 sm:mb-0 h-auto"
   }, react_1["default"].createElement("img", {
     src: hero_jpg_1["default"],
     className: " w-full h-auto",
@@ -5507,7 +5508,7 @@ var SignUp = function SignUp() {
     id: "tel",
     className: " w-full mb-4 rounded-sm border-gray-400"
   })), react_1["default"].createElement("div", {
-    className: " flex justify-center "
+    className: " flex justify-center mb-12"
   }, react_1["default"].createElement(Button_1["default"], {
     text: "Submit"
   }))))), react_1["default"].createElement(Footer_1["default"], null));
@@ -5641,7 +5642,7 @@ var Footer = function Footer() {
   return react_1["default"].createElement("div", {
     className: " bg-cta sm:px-20 px-8 text-white"
   }, react_1["default"].createElement("div", {
-    className: "flex sm:flex-row flex-col  flex-justify-between mr-20 mb-5"
+    className: "flex sm:flex-row flex-col justify-between sm:mr-20 mb-5"
   }, react_1["default"].createElement("div", {
     className: " mt-11"
   }, react_1["default"].createElement("img", {
@@ -5655,21 +5656,21 @@ var Footer = function Footer() {
   }, react_1["default"].createElement("h2", {
     className: " text-2xl text-white mb-10"
   }, "Company "), react_1["default"].createElement("a", {
-    href: "#",
+    href: "/",
     className: " mb-4"
   }, "Home"), react_1["default"].createElement("a", {
-    href: "#",
+    href: "/accounts/login",
     className: " mb-4"
-  }, "About Us"), react_1["default"].createElement("a", {
-    href: "#",
+  }, "Log In"), react_1["default"].createElement("a", {
+    href: "/accounts/sign-up",
     className: " mb-4"
-  }, "Contact Us"), react_1["default"].createElement("a", {
-    href: "#",
+  }, "Sign Up"), react_1["default"].createElement("a", {
+    href: "/solutions",
     className: " mb-4"
-  }, "Terms"), react_1["default"].createElement("a", {
-    href: "#",
+  }, "Solutions"), react_1["default"].createElement("a", {
+    href: "/contact-us",
     className: " mb-4"
-  }, "Privacy")), react_1["default"].createElement("div", {
+  }, "Contact Us")), react_1["default"].createElement("div", {
     className: "flex flex-col mt-11"
   }, react_1["default"].createElement("h2", {
     className: " text-2xl text-white mb-10"
@@ -5682,7 +5683,13 @@ var Footer = function Footer() {
   }, "FAQ"), react_1["default"].createElement("a", {
     href: "#",
     className: " mb-4"
-  }, "Become a partner"))), react_1["default"].createElement("hr", {
+  }, "Become a partner"), react_1["default"].createElement("a", {
+    href: "#",
+    className: " mb-4"
+  }, "Terms"), react_1["default"].createElement("a", {
+    href: "#",
+    className: " mb-4"
+  }, "Privacy"))), react_1["default"].createElement("hr", {
     className: " h-px bg-slate-300"
   }), react_1["default"].createElement("div", {
     className: " flex sm:flex-row flex-col py-5 justify-between"
@@ -5708,10 +5715,10 @@ var Footer = function Footer() {
     className: " h-5"
   }))), react_1["default"].createElement("p", {
     className: " flex sm:justify-end justify-center text-center"
-  }, "Built By ", '  ', react_1["default"].createElement("a", {
+  }, "Built Bye", react_1["default"].createElement("a", {
     href: "https://luigimorel.me",
-    className: " font-bold"
-  }, '  ', " Luigi Morel"))));
+    className: " font-bold ml-4"
+  }, "Luigi Morel"))));
 };
 
 exports["default"] = Footer;
@@ -6200,7 +6207,7 @@ var Navbar = function Navbar() {
   }, {
     id: 4,
     linkText: 'Log In ',
-    route: '/accounts/sign-in'
+    route: '/accounts/login'
   }];
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
     className: "flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
@@ -6893,7 +6900,9 @@ var Contact = function Contact() {
     className: " mb-10"
   }, react_1["default"].createElement("h1", {
     className: " text-2xl mb-4 text-gray-700"
-  }, "Please do not hesistate to get in ", react_1["default"].createElement("br", null), " touch with us."), react_1["default"].createElement("p", {
+  }, "Please do not hesistate to get in ", react_1["default"].createElement("br", {
+    className: " hidden sm:block"
+  }), ' ', "touch with us."), react_1["default"].createElement("p", {
     className: " text-base"
   }, "Fill in the form with any query and we wil get back to you as soon as possible.")), react_1["default"].createElement("div", {
     className: " flex flex-col"
@@ -6909,14 +6918,14 @@ var Contact = function Contact() {
     src: Email_svg_1["default"],
     className: " mr-4",
     alt: ""
-  }), react_1["default"].createElement("p", null, "info@zodon.com ")), react_1["default"].createElement("div", {
+  }), react_1["default"].createElement("p", null, "info@denebolatech.com ")), react_1["default"].createElement("div", {
     className: "flex flex-row mb-4"
   }, react_1["default"].createElement("img", {
     src: Phone_svg_1["default"],
     className: " mr-4",
     alt: ""
   }), react_1["default"].createElement("p", null, "+256 701 234 433 "))))), react_1["default"].createElement("div", {
-    className: " w-1/2"
+    className: " sm:w-1/2 w-full"
   }, react_1["default"].createElement("form", {
     action: "",
     method: "post"
@@ -6956,7 +6965,7 @@ var Contact = function Contact() {
     rows: 10,
     className: " rounded-sm border-gray-400"
   })), react_1["default"].createElement("div", {
-    className: " flex justify-center "
+    className: " flex justify-center mb-12 "
   }, react_1["default"].createElement(Button_1["default"], {
     text: "Submit"
   }))))), react_1["default"].createElement(Footer_1["default"], null));
@@ -7063,7 +7072,7 @@ var Solutions = function Solutions() {
   }, react_1["default"].createElement("div", {
     className: "flex flex-col"
   }, react_1["default"].createElement("div", {
-    className: " flex flex-row   items-center mb-12 px-32"
+    className: " flex sm:flex-row flex-col   items-center mb-12 sm:px-32 px-4"
   }, react_1["default"].createElement("img", {
     src: service_png_1["default"],
     alt: ""
@@ -7082,7 +7091,7 @@ var Solutions = function Solutions() {
   }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
   }, "Lorem ipsum dolor sit amet, consectetur adipisicing.")))), react_1["default"].createElement("div", {
-    className: " flex flex-row justify-between items-center mb-8 px-32    "
+    className: " flex sm:flex-row flex-col-reverse   items-center mb-12 sm:px-32 px-4"
   }, react_1["default"].createElement("div", {
     className: "flex flex-col sm:mr-20"
   }, react_1["default"].createElement("h2", {

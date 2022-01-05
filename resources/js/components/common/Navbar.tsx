@@ -32,7 +32,7 @@ const Navbar = () => {
   {
    id: 4,
    linkText: 'Log In ',
-   route: '/accounts/sign-in',
+   route: '/accounts/login',
   },
  ]
 

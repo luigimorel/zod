@@ -711,6 +711,9 @@ select {
 .mt-28 {
   margin-top: 7rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
 .block {
   display: block;
 }
@@ -1086,6 +1089,18 @@ select {
 
   .sm\:mt-0 {
     margin-top: 0px;
+  }
+
+  .sm\:mr-16 {
+    margin-right: 4rem;
+  }
+
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .sm\:block {
+    display: block;
   }
 
   .sm\:flex {

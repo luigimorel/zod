@@ -16,10 +16,10 @@ const SignUp = () => {
    <Navbar />
 
    <div className=" mb-10 pt-28">
-    <Heading text="We are here to help" className=" uppercase " />
+    <Heading text="Sign Up" className=" uppercase " />
    </div>
    <div className=" flex  sm:flex-row flex-col px-4  sm:px-20 sm:mb-20">
-    <div className=" w-1/2 mr-16 h-auto">
+    <div className=" sm:w-1/2 w-full sm:mr-16 mr-0 mb-10 sm:mb-0 h-auto">
      <img src={HeroImg} className=" w-full h-auto" alt="" />
     </div>
 
@@ -97,7 +97,7 @@ const SignUp = () => {
        />
       </div>
 
-      <div className=" flex justify-center ">
+      <div className=" flex justify-center mb-12">
        <Button text="Submit" />
       </div>
      </form>
