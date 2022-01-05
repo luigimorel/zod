@@ -5258,6 +5258,7 @@ var react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ "./node_m
 
 var Home_1 = __importDefault(__webpack_require__(/*! ./pages/Home */ "./resources/js/components/pages/Home.tsx"));
 
+<<<<<<< HEAD
 var Solutions_1 = __importDefault(__webpack_require__(/*! ./pages/Solutions */ "./resources/js/components/pages/Solutions.tsx"));
 
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
@@ -5271,12 +5272,20 @@ var SignIn_1 = __importDefault(__webpack_require__(/*! ./accounts/SignIn */ "./r
 var SignUp_1 = __importDefault(__webpack_require__(/*! ./accounts/SignUp */ "./resources/js/components/accounts/SignUp.tsx"));
 
 var ClientDashboard_1 = __importDefault(__webpack_require__(/*! ./pages/ClientDashboard */ "./resources/js/components/pages/ClientDashboard.tsx"));
+=======
+var Demo_1 = __importDefault(__webpack_require__(/*! ./pages/Demo */ "./resources/js/components/pages/Demo.tsx"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
+var Dashboard_1 = __importDefault(__webpack_require__(/*! ./pages/Dashboard */ "./resources/js/components/pages/Dashboard.tsx"));
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 
 function App() {
   return react_1["default"].createElement(react_router_dom_1.BrowserRouter, null, react_1["default"].createElement(react_router_dom_1.Routes, null, react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/",
     element: react_1["default"].createElement(Home_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
+<<<<<<< HEAD
     path: "/solutions",
     element: react_1["default"].createElement(Solutions_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
@@ -5294,17 +5303,30 @@ function App() {
   }), react_1["default"].createElement(react_router_dom_1.Route, {
     path: "dashboard-client",
     element: react_1["default"].createElement(ClientDashboard_1["default"], null)
+=======
+    path: "/demo",
+    element: react_1["default"].createElement(Demo_1["default"], null)
+  }), react_1["default"].createElement(react_router_dom_1.Route, {
+    path: "/dashboard",
+    element: react_1["default"].createElement(Dashboard_1["default"], null)
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
   })));
 }
 
 exports["default"] = App;
 
+<<<<<<< HEAD
 if (document.getElementById('root')) {
   react_dom_1["default"].render(react_1["default"].createElement(App, null), document.getElementById('root'));
+=======
+if (document.getElementById("root")) {
+  react_dom_1["default"].render(react_1["default"].createElement(App, null), document.getElementById("root"));
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 }
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/js/components/accounts/SignIn.tsx":
 /*!*****************************************************!*\
   !*** ./resources/js/components/accounts/SignIn.tsx ***!
@@ -5517,6 +5539,8 @@ exports["default"] = SignUp;
 
 /***/ }),
 
+=======
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /***/ "./resources/js/components/common/Button.tsx":
 /*!***************************************************!*\
   !*** ./resources/js/components/common/Button.tsx ***!
@@ -5575,8 +5599,11 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 
 var lazy_1 = __importDefault(__webpack_require__(/*! react-player/lazy */ "./node_modules/react-player/lazy/index.js"));
 
+<<<<<<< HEAD
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 
+=======
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/js/components/common/Button.tsx"));
 
 var CallToAction = function CallToAction() {
@@ -5592,6 +5619,7 @@ var CallToAction = function CallToAction() {
     className: " text-white text-base mb-12"
   }, "Make faster and more informed data-driven decisions, stay on top of your project, and keep all stakeholders informed while reducing surprises, delays, cost overruns, and claims."), react_1["default"].createElement("div", {
     className: "mb-4"
+<<<<<<< HEAD
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
   }, react_1["default"].createElement(Button_1["default"], {
@@ -5600,6 +5628,14 @@ var CallToAction = function CallToAction() {
     className: " w-full content-center flex flex-row justify-center mb-24"
   }, react_1["default"].createElement(lazy_1["default"], {
     url: 'https://www.youtube.com/watch?v=Tm3NXhGLvuU'
+=======
+  }, react_1["default"].createElement(Button_1["default"], {
+    text: " Sign Up"
+  })), react_1["default"].createElement("div", {
+    className: " w-full content-center flex flex-row justify-center mb-24"
+  }, react_1["default"].createElement(lazy_1["default"], {
+    url: "https://www.youtube.com/watch?v=Tm3NXhGLvuU"
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
   }))));
 };
 
@@ -6164,9 +6200,13 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
+<<<<<<< HEAD
 var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+=======
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 
 
 var MobileNavbar_1 = __importDefault(__webpack_require__(/*! ./MobileNavbar */ "./resources/js/components/common/MobileNavbar.tsx"));
@@ -6595,17 +6635,28 @@ var DashNav = function DashNav() {
     src: Notify_svg_1["default"],
     alt: "",
     className: " ml-10"
+<<<<<<< HEAD
   })), ' ')));
+=======
+  })), " ")));
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 };
 
 exports["default"] = DashNav;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/js/components/dashboard/clients/sidebar.dashboard.tsx":
 /*!*************************************************************************!*\
   !*** ./resources/js/components/dashboard/clients/sidebar.dashboard.tsx ***!
   \*************************************************************************/
+=======
+/***/ "./resources/js/components/common/dashboard/sidebar.dashboard.tsx":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/common/dashboard/sidebar.dashboard.tsx ***!
+  \************************************************************************/
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -6621,6 +6672,7 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
+<<<<<<< HEAD
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
 
 
@@ -6664,6 +6716,14 @@ var SidebarDashboard = function SidebarDashboard() {
   }, react_1["default"].createElement("p", {
     className: " text-center"
   }, "Logout")));
+=======
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var SidebarDashboard = function SidebarDashboard() {
+  return react_1["default"].createElement("div", {
+    className: " w-64 bg-blue-400"
+  }, "this is the sidebar dashboard");
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 };
 
 exports["default"] = SidebarDashboard;
@@ -11804,6 +11864,7 @@ class Tab extends BaseComponent {
     let parent = element.parentNode;
 
     if (parent && parent.nodeName === 'LI') {
+<<<<<<< HEAD
       parent = parent.parentNode;
     }
 
@@ -25478,6 +25539,302 @@ function toVal(mix) {
 	}
 	return str;
 }
+=======
+      parent = parent.parentNode;
+    }
+
+    if (parent && parent.classList.contains(CLASS_NAME_DROPDOWN_MENU)) {
+      const dropdownElement = element.closest(SELECTOR_DROPDOWN);
+
+      if (dropdownElement) {
+        SelectorEngine.find(SELECTOR_DROPDOWN_TOGGLE, dropdownElement).forEach(dropdown => dropdown.classList.add(CLASS_NAME_ACTIVE));
+      }
+
+      element.setAttribute('aria-expanded', true);
+    }
+
+    if (callback) {
+      callback();
+    }
+  } // Static
+
+
+  static jQueryInterface(config) {
+    return this.each(function () {
+      const data = Tab.getOrCreateInstance(this);
+
+      if (typeof config === 'string') {
+        if (typeof data[config] === 'undefined') {
+          throw new TypeError(`No method named "${config}"`);
+        }
+
+        data[config]();
+      }
+    });
+  }
+
+}
+/**
+ * ------------------------------------------------------------------------
+ * Data Api implementation
+ * ------------------------------------------------------------------------
+ */
+
+
+EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_DATA_TOGGLE, function (event) {
+  if (['A', 'AREA'].includes(this.tagName)) {
+    event.preventDefault();
+  }
+
+  if (isDisabled(this)) {
+    return;
+  }
+
+  const data = Tab.getOrCreateInstance(this);
+  data.show();
+});
+/**
+ * ------------------------------------------------------------------------
+ * jQuery
+ * ------------------------------------------------------------------------
+ * add .Tab to jQuery only if jQuery is present
+ */
+
+defineJQueryPlugin(Tab);
+
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v5.1.3): toast.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+/**
+ * ------------------------------------------------------------------------
+ * Constants
+ * ------------------------------------------------------------------------
+ */
+
+const NAME = 'toast';
+const DATA_KEY = 'bs.toast';
+const EVENT_KEY = `.${DATA_KEY}`;
+const EVENT_MOUSEOVER = `mouseover${EVENT_KEY}`;
+const EVENT_MOUSEOUT = `mouseout${EVENT_KEY}`;
+const EVENT_FOCUSIN = `focusin${EVENT_KEY}`;
+const EVENT_FOCUSOUT = `focusout${EVENT_KEY}`;
+const EVENT_HIDE = `hide${EVENT_KEY}`;
+const EVENT_HIDDEN = `hidden${EVENT_KEY}`;
+const EVENT_SHOW = `show${EVENT_KEY}`;
+const EVENT_SHOWN = `shown${EVENT_KEY}`;
+const CLASS_NAME_FADE = 'fade';
+const CLASS_NAME_HIDE = 'hide'; // @deprecated - kept here only for backwards compatibility
+
+const CLASS_NAME_SHOW = 'show';
+const CLASS_NAME_SHOWING = 'showing';
+const DefaultType = {
+  animation: 'boolean',
+  autohide: 'boolean',
+  delay: 'number'
+};
+const Default = {
+  animation: true,
+  autohide: true,
+  delay: 5000
+};
+/**
+ * ------------------------------------------------------------------------
+ * Class Definition
+ * ------------------------------------------------------------------------
+ */
+
+class Toast extends BaseComponent {
+  constructor(element, config) {
+    super(element);
+    this._config = this._getConfig(config);
+    this._timeout = null;
+    this._hasMouseInteraction = false;
+    this._hasKeyboardInteraction = false;
+
+    this._setListeners();
+  } // Getters
+
+
+  static get DefaultType() {
+    return DefaultType;
+  }
+
+  static get Default() {
+    return Default;
+  }
+
+  static get NAME() {
+    return NAME;
+  } // Public
+
+
+  show() {
+    const showEvent = EventHandler.trigger(this._element, EVENT_SHOW);
+
+    if (showEvent.defaultPrevented) {
+      return;
+    }
+
+    this._clearTimeout();
+
+    if (this._config.animation) {
+      this._element.classList.add(CLASS_NAME_FADE);
+    }
+
+    const complete = () => {
+      this._element.classList.remove(CLASS_NAME_SHOWING);
+
+      EventHandler.trigger(this._element, EVENT_SHOWN);
+
+      this._maybeScheduleHide();
+    };
+
+    this._element.classList.remove(CLASS_NAME_HIDE); // @deprecated
+
+
+    reflow(this._element);
+
+    this._element.classList.add(CLASS_NAME_SHOW);
+
+    this._element.classList.add(CLASS_NAME_SHOWING);
+
+    this._queueCallback(complete, this._element, this._config.animation);
+  }
+
+  hide() {
+    if (!this._element.classList.contains(CLASS_NAME_SHOW)) {
+      return;
+    }
+
+    const hideEvent = EventHandler.trigger(this._element, EVENT_HIDE);
+
+    if (hideEvent.defaultPrevented) {
+      return;
+    }
+
+    const complete = () => {
+      this._element.classList.add(CLASS_NAME_HIDE); // @deprecated
+
+
+      this._element.classList.remove(CLASS_NAME_SHOWING);
+
+      this._element.classList.remove(CLASS_NAME_SHOW);
+
+      EventHandler.trigger(this._element, EVENT_HIDDEN);
+    };
+
+    this._element.classList.add(CLASS_NAME_SHOWING);
+
+    this._queueCallback(complete, this._element, this._config.animation);
+  }
+
+  dispose() {
+    this._clearTimeout();
+
+    if (this._element.classList.contains(CLASS_NAME_SHOW)) {
+      this._element.classList.remove(CLASS_NAME_SHOW);
+    }
+
+    super.dispose();
+  } // Private
+
+
+  _getConfig(config) {
+    config = { ...Default,
+      ...Manipulator.getDataAttributes(this._element),
+      ...(typeof config === 'object' && config ? config : {})
+    };
+    typeCheckConfig(NAME, config, this.constructor.DefaultType);
+    return config;
+  }
+
+  _maybeScheduleHide() {
+    if (!this._config.autohide) {
+      return;
+    }
+
+    if (this._hasMouseInteraction || this._hasKeyboardInteraction) {
+      return;
+    }
+
+    this._timeout = setTimeout(() => {
+      this.hide();
+    }, this._config.delay);
+  }
+
+  _onInteraction(event, isInteracting) {
+    switch (event.type) {
+      case 'mouseover':
+      case 'mouseout':
+        this._hasMouseInteraction = isInteracting;
+        break;
+
+      case 'focusin':
+      case 'focusout':
+        this._hasKeyboardInteraction = isInteracting;
+        break;
+    }
+
+    if (isInteracting) {
+      this._clearTimeout();
+
+      return;
+    }
+
+    const nextElement = event.relatedTarget;
+
+    if (this._element === nextElement || this._element.contains(nextElement)) {
+      return;
+    }
+
+    this._maybeScheduleHide();
+  }
+
+  _setListeners() {
+    EventHandler.on(this._element, EVENT_MOUSEOVER, event => this._onInteraction(event, true));
+    EventHandler.on(this._element, EVENT_MOUSEOUT, event => this._onInteraction(event, false));
+    EventHandler.on(this._element, EVENT_FOCUSIN, event => this._onInteraction(event, true));
+    EventHandler.on(this._element, EVENT_FOCUSOUT, event => this._onInteraction(event, false));
+  }
+
+  _clearTimeout() {
+    clearTimeout(this._timeout);
+    this._timeout = null;
+  } // Static
+
+
+  static jQueryInterface(config) {
+    return this.each(function () {
+      const data = Toast.getOrCreateInstance(this, config);
+
+      if (typeof config === 'string') {
+        if (typeof data[config] === 'undefined') {
+          throw new TypeError(`No method named "${config}"`);
+        }
+
+        data[config](this);
+      }
+    });
+  }
+
+}
+
+enableDismissTrigger(Toast);
+/**
+ * ------------------------------------------------------------------------
+ * jQuery
+ * ------------------------------------------------------------------------
+ * add .Toast to jQuery only if jQuery is present
+ */
+
+defineJQueryPlugin(Toast);
+
+
+//# sourceMappingURL=bootstrap.esm.js.map
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 
 
 /***/ }),
@@ -25671,6 +26028,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/assets/icons/Email.svg":
 /*!******************************************!*\
   !*** ./resources/assets/icons/Email.svg ***!
@@ -25716,6 +26074,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+=======
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /***/ "./resources/assets/icons/Linkedin.svg":
 /*!*********************************************!*\
   !*** ./resources/assets/icons/Linkedin.svg ***!
@@ -25731,6 +26091,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/assets/icons/Location.svg":
 /*!*********************************************!*\
   !*** ./resources/assets/icons/Location.svg ***!
@@ -25746,6 +26107,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+=======
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /***/ "./resources/assets/icons/Notify.svg":
 /*!*******************************************!*\
   !*** ./resources/assets/icons/Notify.svg ***!
@@ -25761,6 +26124,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./resources/assets/icons/Phone.svg":
 /*!******************************************!*\
   !*** ./resources/assets/icons/Phone.svg ***!
@@ -25791,6 +26155,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+=======
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /***/ "./resources/assets/icons/Twitter.svg":
 /*!********************************************!*\
   !*** ./resources/assets/icons/Twitter.svg ***!
@@ -43289,12 +43655,18 @@ function memoizeOne(resultFn, isEqual) {
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
   \*******************************/
+<<<<<<< HEAD
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+=======
+/***/ (() => {
+
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nError: Can't resolve 'resources/assets/images/jumbo.png' in 'E:\\Clients\\zodon\\resources\\css'\n    at finishWithoutResolve (E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:293:18)\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:362:15\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (E:\\Clients\\zodon\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (E:\\Clients\\zodon\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\DescriptionFilePlugin.js:87:43\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (E:\\Clients\\zodon\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at processResult (E:\\Clients\\zodon\\node_modules\\webpack\\lib\\NormalModule.js:751:19)\n    at E:\\Clients\\zodon\\node_modules\\webpack\\lib\\NormalModule.js:853:5\n    at E:\\Clients\\zodon\\node_modules\\loader-runner\\lib\\LoaderRunner.js:399:11\n    at E:\\Clients\\zodon\\node_modules\\loader-runner\\lib\\LoaderRunner.js:251:18\n    at context.callback (E:\\Clients\\zodon\\node_modules\\loader-runner\\lib\\LoaderRunner.js:124:13)\n    at Object.loader (E:\\Clients\\zodon\\node_modules\\css-loader\\dist\\index.js:155:5)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)");
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 
 /***/ }),
 
@@ -44387,6 +44759,7 @@ module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/react-chartjs-2/dist/index.modern.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-chartjs-2/dist/index.modern.js ***!
@@ -44583,6 +44956,8 @@ const Scatter = /* #__PURE__ */ createTypedChart('scatter', chart_js__WEBPACK_IM
 
 /***/ }),
 
+=======
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /***/ "./node_modules/react-dom/cjs/react-dom.development.js":
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
@@ -77649,6 +78024,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
+<<<<<<< HEAD
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
 /******/ 		var deferred = [];
@@ -77681,6 +78057,8 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		};
 /******/ 	})();
 /******/ 	
+=======
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -77722,7 +78100,11 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
+<<<<<<< HEAD
 /******/ 			return "" + chunkId + ".css";
+=======
+/******/ 			return undefined;
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -77822,8 +78204,12 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
+<<<<<<< HEAD
 /******/ 			"/js/app": 0,
 /******/ 			"css/app": 0
+=======
+/******/ 			"/js/app": 0
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = (chunkId, promises) => {
@@ -77835,7 +78221,11 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
+<<<<<<< HEAD
 /******/ 						if("css/app" != chunkId) {
+=======
+/******/ 						if(true) { // all chunks have JS
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 							promises.push(installedChunkData[2] = promise);
@@ -77873,7 +78263,11 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		
 /******/ 		// no HMR manifest
 /******/ 		
+<<<<<<< HEAD
 /******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+=======
+/******/ 		// no on chunks loaded
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /******/ 		
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
@@ -77897,7 +78291,11 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 				}
 /******/ 				installedChunks[chunkIds[i]] = 0;
 /******/ 			}
+<<<<<<< HEAD
 /******/ 			return __webpack_require__.O(result);
+=======
+/******/ 		
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /******/ 		}
 /******/ 		
 /******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
@@ -77909,10 +78307,16 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
+<<<<<<< HEAD
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+=======
+/******/ 	__webpack_require__("./resources/js/app.js");
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	var __webpack_exports__ = __webpack_require__("./resources/css/app.css");
+>>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29
 /******/ 	
 /******/ })()
 ;
