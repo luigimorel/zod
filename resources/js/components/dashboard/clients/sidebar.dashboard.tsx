@@ -4,6 +4,7 @@ import React from 'react'
 import Eye from './../../../../assets/icons/Eye.svg'
 import Settings from './../../../../assets/icons/Settings.svg'
 import Graph from './../../../../assets/icons/Graph.svg'
+import SignOut from './../../../../assets/icons/SignOut.svg'
 
 const sidebarNav = [
  {
@@ -13,13 +14,23 @@ const sidebarNav = [
  },
  {
   id: 2,
-  text: 'Statistics',
+  text: 'Progress Reports',
   icon: Graph,
  },
  {
   id: 3,
+  text: 'Projects',
+  icon: Graph,
+ },
+ {
+  id: 4,
   text: 'Settings',
   icon: Settings,
+ },
+ {
+  id: 5,
+  text: 'Log Out',
+  icon: SignOut,
  },
 ]
 const SidebarDashboard = () => {
@@ -40,9 +51,6 @@ const SidebarDashboard = () => {
       <p className=" ml-2.5">{x.text}</p>
      </div>
     ))}
-   </div>
-   <div className="">
-    <p className=" text-center">Logout</p>
    </div>
   </div>
  )

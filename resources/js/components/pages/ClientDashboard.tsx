@@ -5,7 +5,7 @@ import ClientsDashboard from '../dashboard/clients/clients.dashboard'
 
 const ClientDashboard = () => {
  return (
-  <div>
+  <div className=" min-w-full">
    <div>
     <div className=" mb-8 ">
      <DashNav />

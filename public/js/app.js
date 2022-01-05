@@ -5544,7 +5544,7 @@ var Button = function Button(_ref) {
   return react_1["default"].createElement("div", {
     className: className
   }, react_1["default"].createElement("button", {
-    className: "  text-center px-8 py-4 bg-red-700 font-bold  rounded text-white hover:bg-black hover:text-blue-700"
+    className: "  text-center px-8 py-4 bg-red-700   rounded text-white hover:bg-red-600 "
   }, text));
 };
 
@@ -5720,9 +5720,38 @@ exports["default"] = Footer;
 /*!****************************************************!*\
   !*** ./resources/js/components/common/Heading.tsx ***!
   \****************************************************/
-/***/ (() => {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: E:\\Clients\\zodon\\resources\\js\\components\\common\\Heading.tsx: Unexpected token ','. (16:5)\n\n\u001b[0m \u001b[90m 14 |\u001b[39m         text\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m         \u001b[32m\": HeadingProps) => \"\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[32m\"return (\"\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m         react_1\u001b[33m.\u001b[39m\u001b[36mdefault\u001b[39m\u001b[33m.\u001b[39mcreateElement(\u001b[32m\"div\"\u001b[39m\u001b[33m,\u001b[39m { className\u001b[33m:\u001b[39m \u001b[32m\"mb-6\"\u001b[39m }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m             react_1\u001b[33m.\u001b[39m\u001b[36mdefault\u001b[39m\u001b[33m.\u001b[39mcreateElement(\u001b[32m\"h2\"\u001b[39m\u001b[33m,\u001b[39m { className\u001b[33m:\u001b[39m \u001b[32m\"text-center  text-3xl text-minor mb-2\"\u001b[39m }\u001b[33m,\u001b[39m text)\u001b[33m,\u001b[39m\u001b[0m\n    at Object._raise (E:\\Clients\\zodon\\node_modules\\@babel\\parser\\lib\\index.js:541:17)\n    at Object.raiseWithData (E:\\Clients\\zodon\\node_modules\\@babel\\parser\\lib\\index.js:534:17)\n    at Object.raise (E:\\Clients\\zodon\\node_modules\\@babel\\parser\\lib\\index.js:495:17)\n    at Object.parseExprListItem (E:\\Clients\\zodon\\node_modules\\@babel\\parser\\lib\\index.js:12855:14)\n    at Object.parseCallExpressionArguments (E:\\Clients\\zodon\\node_modules\\@babel\\parser\\lib\\index.js:11791:22)\n    at Object.parseCoverCallAndAsyncArrowHead (E:\\Clients\\zodon\\node_modules\\@babel\\parser\\lib\\index.js:11698:29)\n    at Object.parseSubscript (E:\\Clients\\zodon\\node_modules\\@babel\\parser\\lib\\index.js:11628:19)\n    at Object.parseSubscripts (E:\\Clients\\zodon\\node_modules\\@babel\\parser\\lib\\index.js:11601:19)\n    at Object.parseExprSubscripts (E:\\Clients\\zodon\\node_modules\\@babel\\parser\\lib\\index.js:11590:17)\n    at Object.parseUpdate (E:\\Clients\\zodon\\node_modules\\@babel\\parser\\lib\\index.js:11564:21)");
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var clsx_1 = __importDefault(__webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js"));
+
+var Heading = function Heading(_ref) {
+  var text = _ref.text,
+      className = _ref.className;
+  return react_1["default"].createElement("div", {
+    className: "mb-6"
+  }, react_1["default"].createElement("h2", {
+    className: (0, clsx_1["default"])(className, "text-center  text-3xl text-minor")
+  }, text), react_1["default"].createElement("div", {
+    className: " bg-yellow-500 h-0.5 w-20 my-0 mx-auto"
+  }));
+};
+
+exports["default"] = Heading;
 
 /***/ }),
 
@@ -6000,18 +6029,10 @@ var Jumbotron = function Jumbotron(_ref) {
     className: "text-center mb-10 text-xl text-white "
   }, header), react_1["default"].createElement("p", {
     className: " text-center mb-10 text-white"
-  }, "=======", react_1["default"].createElement("div", {
-    className: "pt-20 bg-cover h-40 bg-jumbo mb-20"
-  }, react_1["default"].createElement("div", {
-    className: "sm:px-12"
-  }, react_1["default"].createElement("div", {
-    className: "  flex flex-col px-10 py-20 justify-center"
-  }, react_1["default"].createElement("h1", {
-    className: "text-center mb-10 text-xl text-black"
-  }, header), react_1["default"].createElement("p", {
-    className: "text-black text-center mb-10"
-  }, ">>>>>>> adc64e7bc696ed74e3e8d9595b83dd8a4f781d29", leadingParagraph)))), "); }; export default Jumbotron;"))));
+  }, leadingParagraph))));
 };
+
+exports["default"] = Jumbotron;
 
 /***/ }),
 
@@ -6196,7 +6217,7 @@ var Navbar = function Navbar() {
       href: x.route
     }, react_1["default"].createElement("li", {
       className: "mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base"
-    }, x.linkText)), "z");
+    }, x.linkText)));
   }), react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
   }, react_1["default"].createElement(Button_1["default"], {
@@ -6497,10 +6518,78 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+
+
+var video_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/video.png */ "./resources/assets/images/video.png"));
 
 var ClientsDashboard = function ClientsDashboard() {
-  return react_1["default"].createElement("div", null, "this is from the clients container");
+  return react_1["default"].createElement("div", {
+    className: " mx-24"
+  }, react_1["default"].createElement("div", {
+    className: " flex flex-row mb-8 justify-between "
+  }, react_1["default"].createElement("div", null, react_1["default"].createElement("h5", {
+    className: " text-xl mb-4"
+  }, "Today's Video"), react_1["default"].createElement("img", {
+    src: video_png_1["default"],
+    alt: "",
+    width: 300
+  })), react_1["default"].createElement("div", null, react_1["default"].createElement("h5", {
+    className: " text-xl mb-4"
+  }, "Yesterday's Video"), react_1["default"].createElement("img", {
+    src: video_png_1["default"],
+    alt: ""
+  }))), react_1["default"].createElement("div", {
+    className: " rounded border border-gray-400 mb-8"
+  }, react_1["default"].createElement("div", {
+    className: " px-10"
+  }, react_1["default"].createElement("h4", {
+    className: " mt-10 font-bold text-[#858585] mb-11"
+  }, "Project\u2019s overview"), react_1["default"].createElement("table", {
+    className: " w-full"
+  }, react_1["default"].createElement("tr", null, react_1["default"].createElement("th", null, "Date"), react_1["default"].createElement("th", null, "Project ID"), react_1["default"].createElement("th", null, "Name"), react_1["default"].createElement("th", null, "Value"), react_1["default"].createElement("th", null, "Status"), react_1["default"].createElement("th", null, "Action")), react_1["default"].createElement("tr", null, react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "14/01/2021"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "12345678"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "Gulu Mall Construction"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "$10m"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, react_1["default"].createElement("p", {
+    className: " bg-green-700 text-white py-2 px-3"
+  }, "Completed")), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "...")), react_1["default"].createElement("tr", null, react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "14/01/2021"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "12345678"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "Gulu Mall Construction"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "$10m"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, react_1["default"].createElement("p", {
+    className: " bg-yellow-700 text-white py-2 px-3"
+  }, "In Progress")), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "...")), react_1["default"].createElement("tr", null, react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "14/01/2021"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "12345678"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "Gulu Mall Construction"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "$10m"), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, react_1["default"].createElement("p", {
+    className: " bg-blue-700 text-white py-2 px-3"
+  }, "Paused")), react_1["default"].createElement("td", {
+    className: " px-3 py-3"
+  }, "..."))))));
 };
 
 exports["default"] = ClientsDashboard;
@@ -6537,7 +6626,7 @@ var Notify_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/
 
 var DashNav = function DashNav() {
   return react_1["default"].createElement("div", {
-    className: " sm:px-12 mt-8 "
+    className: " sm:px-12 mt-8  "
   }, react_1["default"].createElement("div", {
     className: " flex flex-row items-center shadow-sm justify-between "
   }, react_1["default"].createElement("img", {
@@ -6574,7 +6663,7 @@ var DashNav = function DashNav() {
     src: Notify_svg_1["default"],
     alt: "",
     className: " ml-10"
-  })), ' ')));
+  })))));
 };
 
 exports["default"] = DashNav;
@@ -6609,18 +6698,28 @@ var Settings_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../asset
 
 var Graph_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Graph.svg */ "./resources/assets/icons/Graph.svg"));
 
+var SignOut_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/SignOut.svg */ "./resources/assets/icons/SignOut.svg"));
+
 var sidebarNav = [{
   id: 1,
   text: 'Overview',
   icon: Eye_svg_1["default"]
 }, {
   id: 2,
-  text: 'Statistics',
+  text: 'Progress Reports',
   icon: Graph_svg_1["default"]
 }, {
   id: 3,
+  text: 'Projects',
+  icon: Graph_svg_1["default"]
+}, {
+  id: 4,
   text: 'Settings',
   icon: Settings_svg_1["default"]
+}, {
+  id: 5,
+  text: 'Log Out',
+  icon: SignOut_svg_1["default"]
 }];
 
 var SidebarDashboard = function SidebarDashboard() {
@@ -6638,11 +6737,7 @@ var SidebarDashboard = function SidebarDashboard() {
     }), react_1["default"].createElement("p", {
       className: " ml-2.5"
     }, x.text));
-  })), react_1["default"].createElement("div", {
-    className: ""
-  }, react_1["default"].createElement("p", {
-    className: " text-center"
-  }, "Logout")));
+  })));
 };
 
 exports["default"] = SidebarDashboard;
@@ -6719,7 +6814,9 @@ var sidebar_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/c
 var clients_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/clients/clients.dashboard */ "./resources/js/components/dashboard/clients/clients.dashboard.tsx"));
 
 var ClientDashboard = function ClientDashboard() {
-  return react_1["default"].createElement("div", null, react_1["default"].createElement("div", null, react_1["default"].createElement("div", {
+  return react_1["default"].createElement("div", {
+    className: " min-w-full"
+  }, react_1["default"].createElement("div", null, react_1["default"].createElement("div", {
     className: " mb-8 "
   }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
     className: "flex flex-row"
@@ -25406,6 +25503,61 @@ function styleChanged(style, prevStyle) {
 
 /***/ }),
 
+/***/ "./node_modules/clsx/dist/clsx.m.js":
+/*!******************************************!*\
+  !*** ./node_modules/clsx/dist/clsx.m.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function toVal(mix) {
+	var k, y, str='';
+
+	if (typeof mix === 'string' || typeof mix === 'number') {
+		str += mix;
+	} else if (typeof mix === 'object') {
+		if (Array.isArray(mix)) {
+			for (k=0; k < mix.length; k++) {
+				if (mix[k]) {
+					if (y = toVal(mix[k])) {
+						str && (str += ' ');
+						str += y;
+					}
+				}
+			}
+		} else {
+			for (k in mix) {
+				if (mix[k]) {
+					str && (str += ' ');
+					str += k;
+				}
+			}
+		}
+	}
+
+	return str;
+}
+
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
+	var i=0, tmp, x, str='';
+	while (i < arguments.length) {
+		if (tmp = arguments[i++]) {
+			if (x = toVal(tmp)) {
+				str && (str += ' ');
+				str += x
+			}
+		}
+	}
+	return str;
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/deepmerge/dist/cjs.js":
 /*!********************************************!*\
   !*** ./node_modules/deepmerge/dist/cjs.js ***!
@@ -25715,6 +25867,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/icons/SignOut.svg":
+/*!********************************************!*\
+  !*** ./resources/assets/icons/SignOut.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/SignOut.svg?0733abe0122ce9290f689fdfe4e1e8cf");
+
+/***/ }),
+
 /***/ "./resources/assets/icons/Twitter.svg":
 /*!********************************************!*\
   !*** ./resources/assets/icons/Twitter.svg ***!
@@ -25817,6 +25984,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/service.png?7380d76231f269bfbe686bf466e27824");
+
+/***/ }),
+
+/***/ "./resources/assets/images/video.png":
+/*!*******************************************!*\
+  !*** ./resources/assets/images/video.png ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/video.png?612408689516ef873af3bc3ac7e169c9");
 
 /***/ }),
 
@@ -43213,9 +43395,12 @@ function memoizeOne(resultFn, isEqual) {
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
   \*******************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nError: Can't resolve 'resources/assets/images/jumboo.png' in 'E:\\Clients\\zodon\\resources\\css'\n    at finishWithoutResolve (E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:293:18)\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:362:15\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (E:\\Clients\\zodon\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (E:\\Clients\\zodon\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\DescriptionFilePlugin.js:87:43\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (E:\\Clients\\zodon\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at E:\\Clients\\zodon\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at processResult (E:\\Clients\\zodon\\node_modules\\webpack\\lib\\NormalModule.js:751:19)\n    at E:\\Clients\\zodon\\node_modules\\webpack\\lib\\NormalModule.js:853:5\n    at E:\\Clients\\zodon\\node_modules\\loader-runner\\lib\\LoaderRunner.js:399:11\n    at E:\\Clients\\zodon\\node_modules\\loader-runner\\lib\\LoaderRunner.js:251:18\n    at context.callback (E:\\Clients\\zodon\\node_modules\\loader-runner\\lib\\LoaderRunner.js:124:13)\n    at Object.loader (E:\\Clients\\zodon\\node_modules\\css-loader\\dist\\index.js:155:5)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -77570,6 +77755,38 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	(() => {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -77611,7 +77828,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return undefined;
+/******/ 			return "" + chunkId + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -77711,7 +77928,8 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js/app": 0
+/******/ 			"/js/app": 0,
+/******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = (chunkId, promises) => {
@@ -77723,7 +77941,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(true) { // all chunks have JS
+/******/ 						if("css/app" != chunkId) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 							promises.push(installedChunkData[2] = promise);
@@ -77761,7 +77979,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		
 /******/ 		// no HMR manifest
 /******/ 		
-/******/ 		// no on chunks loaded
+/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
 /******/ 		
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
@@ -77785,7 +78003,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 				}
 /******/ 				installedChunks[chunkIds[i]] = 0;
 /******/ 			}
-/******/ 		
+/******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
 /******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
@@ -77797,9 +78015,10 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	__webpack_require__("./resources/js/app.js");
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./resources/css/app.css");
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;

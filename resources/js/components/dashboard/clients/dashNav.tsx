@@ -7,7 +7,7 @@ import Notify from './../../../../assets/icons/Notify.svg'
 
 const DashNav = () => {
  return (
-  <div className=" sm:px-12 mt-8 ">
+  <div className=" sm:px-12 mt-8  ">
    <div className=" flex flex-row items-center shadow-sm justify-between ">
     <img src={Logo} className=" h-10" alt="" />
     <form action="" className="">
@@ -26,12 +26,13 @@ const DashNav = () => {
       </div>
      </label>
     </form>
+
     <div className="flex flex-row items-center">
      <img src={User} alt="" className=" mr-3" />
      <p className=" text-gray-700 pl-3 ">Admin User </p>
      <div className=" pl-10">
       <img src={Notify} alt="" className=" ml-10" />
-     </div>{' '}
+     </div>
     </div>
    </div>
   </div>
