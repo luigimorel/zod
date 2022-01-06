@@ -20,7 +20,10 @@ const DashNav = () => {
         className=" border border-gray-400 rounded-3xl h-10 "
         placeholder="Search e.g progress"
        />
-       <button type="submit" className=" bg-blue-600 text-white h-10 w-20 py-3">
+       <button
+        type="submit"
+        className=" bg-blue-600 rounded text-white h-10 w-20 py-3"
+       >
         Search
        </button>
       </div>
@@ -28,7 +31,7 @@ const DashNav = () => {
     </form>
     <div className="flex flex-row items-center">
      <img src={User} alt="" className=" mr-3" />
-     <p className=" text-gray-700 pl-3 ">Admin User </p>
+     <p className=" text-gray-700 pl-3 ">Client User </p>
      <div className=" pl-10">
       <img src={Notify} alt="" className=" ml-10" />
      </div>{' '}

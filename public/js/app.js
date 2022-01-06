@@ -5272,6 +5272,10 @@ var SignUp_1 = __importDefault(__webpack_require__(/*! ./accounts/SignUp */ "./r
 
 var ClientDashboard_1 = __importDefault(__webpack_require__(/*! ./pages/ClientDashboard */ "./resources/js/components/pages/ClientDashboard.tsx"));
 
+var admin_settings_1 = __importDefault(__webpack_require__(/*! ./dashboard/settings/admin.settings */ "./resources/js/components/dashboard/settings/admin.settings.tsx"));
+
+var client_settings_1 = __importDefault(__webpack_require__(/*! ./dashboard/settings/client.settings */ "./resources/js/components/dashboard/settings/client.settings.tsx"));
+
 function App() {
   return react_1["default"].createElement(react_router_dom_1.BrowserRouter, null, react_1["default"].createElement(react_router_dom_1.Routes, null, react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/",
@@ -5294,6 +5298,12 @@ function App() {
   }), react_1["default"].createElement(react_router_dom_1.Route, {
     path: "client-dashboard",
     element: react_1["default"].createElement(ClientDashboard_1["default"], null)
+  }), react_1["default"].createElement(react_router_dom_1.Route, {
+    path: "/admin-dashboard/settings",
+    element: react_1["default"].createElement(admin_settings_1["default"], null)
+  }), react_1["default"].createElement(react_router_dom_1.Route, {
+    path: "/client-dashboard/settings",
+    element: react_1["default"].createElement(client_settings_1["default"], null)
   })));
 }
 
@@ -5795,7 +5805,7 @@ var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/
 
 var Hero = function Hero() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: " flex  sm:flex-row flex-col-reverse   justify-between h-screen w-full mb-20 sm:px-24 tab:px-12 px-3 "
+    className: " flex  sm:flex-row flex-col-reverse   justify-between h-screen w-full sm:mb-10 sm:px-24 tab:px-12 px-3 "
   }, react_1["default"].createElement("div", {
     className: " sm:w-1/2 w-full sm:mt-24 sm:mr-12"
   }, react_1["default"].createElement("h3", {
@@ -5942,7 +5952,7 @@ var ImageSection = function ImageSection() {
   })), react_1["default"].createElement("div", {
     className: "flex flex-col"
   }, react_1["default"].createElement("div", {
-    className: " flex flex-col sm:flex-row justify-between items-center mb-12 sm:px-32   "
+    className: " flex flex-col sm:flex-row justify-between items-center mb-20 sm:px-32   "
   }, react_1["default"].createElement("img", {
     src: service_png_1["default"],
     alt: "",
@@ -5963,12 +5973,8 @@ var ImageSection = function ImageSection() {
     className: " mb-2.5 text-gray-800"
   }, "Lorem ipsum dolor sit amet, consectetur adipisicing.")))), react_1["default"].createElement("div", {
     className: " flex flex-col sm:flex-row justify-between items-center mb-12 sm:px-32   "
-  }, react_1["default"].createElement("img", {
-    src: service_png_1["default"],
-    alt: "",
-    className: " w-full"
-  }), react_1["default"].createElement("div", {
-    className: "flex flex-col sm:ml-20"
+  }, react_1["default"].createElement("div", {
+    className: "flex flex-col sm:mr-20"
   }, react_1["default"].createElement("h2", {
     className: " text-4xl text-blue-700 mb-8"
   }, "Lorem, ipsum."), react_1["default"].createElement("ul", {
@@ -5981,7 +5987,11 @@ var ImageSection = function ImageSection() {
     className: " mb-2.5 text-gray-800"
   }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing.")))))), react_1["default"].createElement("div", {
+  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."))), react_1["default"].createElement("img", {
+    src: service_png_1["default"],
+    alt: "",
+    className: " w-full"
+  })))), react_1["default"].createElement("div", {
     className: " flex flex-col sm:mb-24 mb-12 px-8"
   }, react_1["default"].createElement("div", {
     className: " sm:w-1/2 w-full mx-auto my-0"
@@ -6460,6 +6470,136 @@ exports["default"] = AdminDashboardContainer;
 
 /***/ }),
 
+/***/ "./resources/js/components/dashboard/admin/dashNav.tsx":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/dashboard/admin/dashNav.tsx ***!
+  \*************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+
+
+var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png"));
+
+var User_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/User.png */ "./resources/assets/images/User.png"));
+
+var Notify_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Notify.svg */ "./resources/assets/icons/Notify.svg"));
+
+var DashNav = function DashNav() {
+  return react_1["default"].createElement("div", {
+    className: " sm:px-12 mt-8 "
+  }, react_1["default"].createElement("div", {
+    className: " flex flex-row items-center shadow-sm justify-between "
+  }, react_1["default"].createElement("img", {
+    src: logo_png_1["default"],
+    className: " h-10",
+    alt: ""
+  }), react_1["default"].createElement("form", {
+    action: "",
+    className: ""
+  }, react_1["default"].createElement("label", {
+    htmlFor: "search"
+  }, react_1["default"].createElement("div", {
+    className: "flex w-full"
+  }, react_1["default"].createElement("input", {
+    type: "search",
+    name: "search",
+    id: "search",
+    className: " border border-gray-400 rounded-3xl h-10 ",
+    placeholder: "Search e.g progress"
+  }), react_1["default"].createElement("button", {
+    type: "submit",
+    className: " bg-blue-600 rounded text-white h-10 w-20 py-3"
+  }, "Search")))), react_1["default"].createElement("div", {
+    className: "flex flex-row items-center"
+  }, react_1["default"].createElement("img", {
+    src: User_png_1["default"],
+    alt: "",
+    className: " mr-3"
+  }), react_1["default"].createElement("p", {
+    className: " text-gray-700 pl-3 "
+  }, "Client User "), react_1["default"].createElement("div", {
+    className: " pl-10"
+  }, react_1["default"].createElement("img", {
+    src: Notify_svg_1["default"],
+    alt: "",
+    className: " ml-10"
+  })), ' ')));
+};
+
+exports["default"] = DashNav;
+
+/***/ }),
+
+/***/ "./resources/js/components/dashboard/admin/mobileNav.admin.tsx":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/dashboard/admin/mobileNav.admin.tsx ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var MobileNavbarAdminDashboard = function MobileNavbarAdminDashboard() {
+  var menuLinks = [{
+    id: 1,
+    text: 'Overview',
+    route: '/admin-dashboard'
+  }, {
+    id: 2,
+    text: 'Statistics',
+    route: '/admin-dashboard'
+  }, {
+    id: 3,
+    text: 'Settings',
+    route: '/admin-dashboard/settings'
+  }, {
+    id: 4,
+    text: 'Logout',
+    route: '/admin-dashboard/settings'
+  }];
+  return react_1["default"].createElement("div", {
+    className: " flex dropdown   w-full animation-container"
+  }, react_1["default"].createElement("ul", {
+    className: "dropdown-menu   w-full"
+  }, menuLinks.map(function (x) {
+    return react_1["default"].createElement("a", {
+      key: x.id,
+      className: "  text-black custom-animation w-full ml-24 bg-white custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap",
+      href: x.route
+    }, x.text);
+  })));
+};
+
+exports["default"] = MobileNavbarAdminDashboard;
+
+/***/ }),
+
 /***/ "./resources/js/components/dashboard/admin/sidebar.dashboard.tsx":
 /*!***********************************************************************!*\
   !*** ./resources/js/components/dashboard/admin/sidebar.dashboard.tsx ***!
@@ -6479,7 +6619,9 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
 
 
 var Eye_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Eye.svg */ "./resources/assets/icons/Eye.svg"));
@@ -6488,27 +6630,39 @@ var Settings_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../asset
 
 var Graph_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Graph.svg */ "./resources/assets/icons/Graph.svg"));
 
+var SignOut_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/SignOut.svg */ "./resources/assets/icons/SignOut.svg"));
+
 var sidebarNav = [{
   id: 1,
   text: 'Overview',
-  icon: Eye_svg_1["default"]
+  icon: Eye_svg_1["default"],
+  route: '/admin-dashboard'
 }, {
   id: 2,
   text: 'Statistics',
-  icon: Graph_svg_1["default"]
+  icon: Graph_svg_1["default"],
+  route: '/admin-dashboard'
 }, {
   id: 3,
   text: 'Settings',
-  icon: Settings_svg_1["default"]
+  icon: Settings_svg_1["default"],
+  route: '/admin-dashboard/settings'
+}, {
+  id: 4,
+  text: 'Logout',
+  icon: SignOut_svg_1["default"],
+  route: '/admin-dashboard/settings'
 }];
 
 var SidebarDashboard = function SidebarDashboard() {
+  //  const history = useHistory()
   return react_1["default"].createElement("div", {
     className: " w-64 border-r fixed h-full flex flex-col"
   }, react_1["default"].createElement("div", {
     className: " mb-20"
   }, sidebarNav.map(function (x) {
-    return react_1["default"].createElement("div", {
+    return react_1["default"].createElement(react_router_dom_1.Link, {
+      to: x.route,
       key: x.id,
       className: x.id === 1 ? ' ml-10 flex flex-row mb-4 bg-sidebar items-center py-4 rounded-r-full pl-5 text-white font-bold ' : ' ml-10 flex flex-row mb-4  items-center py-4  pl-5    '
     }, react_1["default"].createElement("img", {
@@ -6517,11 +6671,7 @@ var SidebarDashboard = function SidebarDashboard() {
     }), react_1["default"].createElement("p", {
       className: " ml-2.5"
     }, x.text));
-  })), react_1["default"].createElement("div", {
-    className: ""
-  }, react_1["default"].createElement("p", {
-    className: " text-center"
-  }, "Logout")));
+  })));
 };
 
 exports["default"] = SidebarDashboard;
@@ -6554,21 +6704,25 @@ var video_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/i
 
 var ClientsDashboard = function ClientsDashboard() {
   return react_1["default"].createElement("div", {
-    className: " mx-24 w-full"
+    className: " sm:px-24 px-4 w-full"
   }, react_1["default"].createElement("div", {
-    className: " flex flex-row mb-8 justify-between "
-  }, react_1["default"].createElement("div", null, react_1["default"].createElement("h5", {
+    className: " flex sm:flex-row flex-col mb-8 justify-between "
+  }, react_1["default"].createElement("div", {
+    className: " mb-4"
+  }, react_1["default"].createElement("h5", {
     className: " text-xl mb-4"
   }, "Today's Video"), react_1["default"].createElement("img", {
     src: video_png_1["default"],
     alt: ""
-  })), react_1["default"].createElement("div", null, react_1["default"].createElement("h5", {
+  })), react_1["default"].createElement("div", {
+    className: " mb-4"
+  }, react_1["default"].createElement("h5", {
     className: " text-xl mb-4"
   }, "Yesterday's Video"), react_1["default"].createElement("img", {
     src: video_png_1["default"],
     alt: ""
   }))), react_1["default"].createElement("div", {
-    className: " rounded border border-gray-400 mb-8"
+    className: " rounded border border-gray-400 mb-8 hidden sm:block"
   }, react_1["default"].createElement("div", {
     className: " px-10"
   }, react_1["default"].createElement("h4", {
@@ -6633,6 +6787,52 @@ exports["default"] = ClientsDashboard;
 "use strict";
 
 
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  Object.defineProperty(o, k2, {
+    enumerable: true,
+    get: function get() {
+      return m[k];
+    }
+  });
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
 var __importDefault = this && this.__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
     "default": mod
@@ -6643,7 +6843,7 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
 
 
 var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png"));
@@ -6653,8 +6853,13 @@ var User_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/im
 var Notify_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Notify.svg */ "./resources/assets/icons/Notify.svg"));
 
 var DashNav = function DashNav() {
+  var _ref = (0, react_1.useState)(false),
+      _ref2 = _slicedToArray(_ref, 2),
+      open = _ref2[0],
+      setOpen = _ref2[1];
+
   return react_1["default"].createElement("div", {
-    className: " sm:px-12  h-8 fixed w-full  "
+    className: " sm:px-20  h-8 fixed w-full  "
   }, react_1["default"].createElement("div", {
     className: " flex flex-row items-center shadow-sm justify-between "
   }, react_1["default"].createElement("img", {
@@ -6672,11 +6877,11 @@ var DashNav = function DashNav() {
     type: "search",
     name: "search",
     id: "search",
-    className: " border border-gray-400 rounded-3xl h-10 ",
+    className: " border border-gray-400 rounded  py-3 ",
     placeholder: "Search e.g progress"
   }), react_1["default"].createElement("button", {
     type: "submit",
-    className: " bg-blue-600 text-white h-10 w-20 py-3"
+    className: " bg-sidebar rounded  text-white -ml-1  w-20 py-3"
   }, "Search")))), react_1["default"].createElement("div", {
     className: "flex flex-row items-center"
   }, react_1["default"].createElement("img", {
@@ -6685,7 +6890,7 @@ var DashNav = function DashNav() {
     className: " mr-3"
   }), react_1["default"].createElement("p", {
     className: " text-gray-700 pl-3 "
-  }, "Admin User "), react_1["default"].createElement("div", {
+  }, "Client User "), react_1["default"].createElement("div", {
     className: " pl-10"
   }, react_1["default"].createElement("img", {
     src: Notify_svg_1["default"],
@@ -6695,6 +6900,65 @@ var DashNav = function DashNav() {
 };
 
 exports["default"] = DashNav;
+
+/***/ }),
+
+/***/ "./resources/js/components/dashboard/clients/mobileNav.clients.tsx":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/dashboard/clients/mobileNav.clients.tsx ***!
+  \*************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var MobileNavbarClientsDashboard = function MobileNavbarClientsDashboard() {
+  var menuLinks = [{
+    id: 1,
+    text: 'Overview',
+    route: '/client-dashboard'
+  }, {
+    id: 2,
+    text: 'Progress Reports',
+    route: '/client-dashboard'
+  }, {
+    id: 3,
+    text: 'Projects',
+    route: '/client-dashboard'
+  }, {
+    id: 4,
+    text: 'Settings',
+    route: '/client-dashboard/settings'
+  }, {
+    id: 5,
+    text: 'Log Out'
+  }];
+  return react_1["default"].createElement("div", {
+    className: " flex dropdown   w-full animation-container"
+  }, react_1["default"].createElement("ul", {
+    className: "dropdown-menu   w-full"
+  }, menuLinks.map(function (x) {
+    return react_1["default"].createElement("a", {
+      key: x.id,
+      className: "  text-black custom-animation w-full ml-24 bg-white custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap",
+      href: x.route
+    }, x.text);
+  })));
+};
+
+exports["default"] = MobileNavbarClientsDashboard;
 
 /***/ }),
 
@@ -6731,19 +6995,23 @@ var SignOut_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets
 var sidebarNav = [{
   id: 1,
   text: 'Overview',
-  icon: Eye_svg_1["default"]
+  icon: Eye_svg_1["default"],
+  route: '/client-dashboard'
 }, {
   id: 2,
   text: 'Progress Reports',
-  icon: Graph_svg_1["default"]
+  icon: Graph_svg_1["default"],
+  route: '/client-dashboard'
 }, {
   id: 3,
   text: 'Projects',
-  icon: Graph_svg_1["default"]
+  icon: Graph_svg_1["default"],
+  route: '/client-dashboard'
 }, {
   id: 4,
   text: 'Settings',
-  icon: Settings_svg_1["default"]
+  icon: Settings_svg_1["default"],
+  route: '/client-dashboard/settings'
 }, {
   id: 5,
   text: 'Log Out',
@@ -6756,7 +7024,8 @@ var SidebarDashboard = function SidebarDashboard() {
   }, react_1["default"].createElement("div", {
     className: " mb-20"
   }, sidebarNav.map(function (x) {
-    return react_1["default"].createElement("div", {
+    return react_1["default"].createElement("a", {
+      href: x.route,
       key: x.id,
       className: x.id === 1 ? ' ml-10 flex flex-row mb-4 bg-sidebar items-center py-4 rounded-r-full pl-5 text-white font-bold ' : ' ml-10 flex flex-row mb-4  items-center py-4  pl-5    '
     }, react_1["default"].createElement("img", {
@@ -6772,14 +7041,60 @@ exports["default"] = SidebarDashboard;
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/AdminDashboard.tsx":
-/*!**********************************************************!*\
-  !*** ./resources/js/components/pages/AdminDashboard.tsx ***!
-  \**********************************************************/
+/***/ "./resources/js/components/dashboard/settings/admin.settings.tsx":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/dashboard/settings/admin.settings.tsx ***!
+  \***********************************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  Object.defineProperty(o, k2, {
+    enumerable: true,
+    get: function get() {
+      return m[k];
+    }
+  });
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
 
 var __importDefault = this && this.__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
@@ -6791,20 +7106,417 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
 
-var container_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/admin/container.dashboard */ "./resources/js/components/dashboard/admin/container.dashboard.tsx")); // Components
+
+var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
+
+
+var dashNav_1 = __importDefault(__webpack_require__(/*! ../admin/dashNav */ "./resources/js/components/dashboard/admin/dashNav.tsx"));
+
+var sidebar_dashboard_1 = __importDefault(__webpack_require__(/*! ../admin/sidebar.dashboard */ "./resources/js/components/dashboard/admin/sidebar.dashboard.tsx"));
+
+var mobileNav_admin_1 = __importDefault(__webpack_require__(/*! ../admin/mobileNav.admin */ "./resources/js/components/dashboard/admin/mobileNav.admin.tsx"));
+
+var AdminSettings = function AdminSettings() {
+  var _ref = (0, react_1.useState)(false),
+      _ref2 = _slicedToArray(_ref, 2),
+      open = _ref2[0],
+      setOpen = _ref2[1];
+
+  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
+    className: " pb-10 hidden fixed w-full sm:block "
+  }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
+    className: "flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
+  }, react_1["default"].createElement("a", {
+    href: "/"
+  }, react_1["default"].createElement("img", {
+    src: logo_png_1["default"],
+    alt: "",
+    className: " sm:h-10 h-5"
+  })), react_1["default"].createElement("p", {
+    onClick: function onClick() {
+      return setOpen(!open);
+    },
+    className: " sm:hidden"
+  }, "Menu"), open && react_1["default"].createElement(mobileNav_admin_1["default"], null)), react_1["default"].createElement("div", {
+    className: "flex flex-row w-full pt-4 sm:pt-20"
+  }, react_1["default"].createElement("div", {
+    className: " w-64 hidden sm:flex "
+  }, react_1["default"].createElement(sidebar_dashboard_1["default"], null)), react_1["default"].createElement("div", {
+    className: " sm:w-1/3   mx-auto flex justify-center flex-col"
+  }, react_1["default"].createElement("p", {
+    className: " mb-5 text-gray-800 text-lg mt-4 text-center font-bold"
+  }, "Admin Details Change"), react_1["default"].createElement("form", {
+    action: "",
+    method: "post"
+  }, react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "firstName",
+    className: " mb-2.5"
+  }, "First Name"), react_1["default"].createElement("input", {
+    type: "text",
+    name: "firstName",
+    required: true,
+    id: "firstName",
+    className: "   mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "lastName",
+    className: " mb-2.5"
+  }, "Last Name"), react_1["default"].createElement("input", {
+    type: "text",
+    name: "lastName",
+    required: true,
+    id: "lastName",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "companyName",
+    className: " mb-2.5"
+  }, "Company Name"), react_1["default"].createElement("input", {
+    type: "text",
+    required: true,
+    name: "companyName",
+    id: "companyName",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "email",
+    className: " mb-2.5"
+  }, "Business Email"), react_1["default"].createElement("input", {
+    type: "email",
+    name: "email",
+    required: true,
+    readOnly: true,
+    id: "email",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "tel  ",
+    className: " mb-2.5"
+  }, "Business Phone Number"), react_1["default"].createElement("input", {
+    type: "tel",
+    name: "tel",
+    required: true,
+    id: "tel",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "tel  ",
+    className: " mb-2.5"
+  }, "Change Password"), react_1["default"].createElement("input", {
+    type: "tel",
+    name: "tel",
+    required: true,
+    id: "tel",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: " flex justify-center mb-12"
+  }, react_1["default"].createElement("button", {
+    className: " bg-sidebar text-center px-8 py-4 text-white "
+  }, "Save Changes"))))));
+};
+
+exports["default"] = AdminSettings;
+
+/***/ }),
+
+/***/ "./resources/js/components/dashboard/settings/client.settings.tsx":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/dashboard/settings/client.settings.tsx ***!
+  \************************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  Object.defineProperty(o, k2, {
+    enumerable: true,
+    get: function get() {
+      return m[k];
+    }
+  });
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+
+
+var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
+
+
+var dashNav_1 = __importDefault(__webpack_require__(/*! ../admin/dashNav */ "./resources/js/components/dashboard/admin/dashNav.tsx"));
+
+var sidebar_dashboard_1 = __importDefault(__webpack_require__(/*! ../clients/sidebar.dashboard */ "./resources/js/components/dashboard/clients/sidebar.dashboard.tsx"));
+
+var mobileNav_clients_1 = __importDefault(__webpack_require__(/*! ../clients/mobileNav.clients */ "./resources/js/components/dashboard/clients/mobileNav.clients.tsx"));
+
+var AdminSettings = function AdminSettings() {
+  var _ref = (0, react_1.useState)(false),
+      _ref2 = _slicedToArray(_ref, 2),
+      open = _ref2[0],
+      setOpen = _ref2[1];
+
+  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
+    className: " pb-10 hidden fixed w-full sm:block "
+  }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
+    className: "flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
+  }, react_1["default"].createElement("a", {
+    href: "/"
+  }, react_1["default"].createElement("img", {
+    src: logo_png_1["default"],
+    alt: "",
+    className: " sm:h-10 h-5"
+  })), react_1["default"].createElement("p", {
+    onClick: function onClick() {
+      return setOpen(!open);
+    },
+    className: " sm:hidden"
+  }, "Menu"), open && react_1["default"].createElement(mobileNav_clients_1["default"], null)), react_1["default"].createElement("div", {
+    className: "flex flex-row w-full pt-4 sm:pt-20"
+  }, react_1["default"].createElement("div", {
+    className: " w-64 hidden sm:flex "
+  }, react_1["default"].createElement(sidebar_dashboard_1["default"], null)), react_1["default"].createElement("div", {
+    className: " sm:w-1/3   mx-auto flex justify-center flex-col"
+  }, react_1["default"].createElement("p", {
+    className: " mb-5 text-gray-800 text-lg mt-4 text-center font-bold"
+  }, "Account Details' Change"), react_1["default"].createElement("form", {
+    action: "",
+    method: "post"
+  }, react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "firstName",
+    className: " mb-2.5"
+  }, "First Name"), react_1["default"].createElement("input", {
+    type: "text",
+    name: "firstName",
+    required: true,
+    id: "firstName",
+    className: "   mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "lastName",
+    className: " mb-2.5"
+  }, "Last Name"), react_1["default"].createElement("input", {
+    type: "text",
+    name: "lastName",
+    required: true,
+    id: "lastName",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "companyName",
+    className: " mb-2.5"
+  }, "Company Name"), react_1["default"].createElement("input", {
+    type: "text",
+    required: true,
+    name: "companyName",
+    id: "companyName",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "email",
+    className: " mb-2.5"
+  }, "Business Email"), react_1["default"].createElement("input", {
+    type: "email",
+    name: "email",
+    required: true,
+    readOnly: true,
+    id: "email",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "tel  ",
+    className: " mb-2.5"
+  }, "Business Phone Number"), react_1["default"].createElement("input", {
+    type: "tel",
+    name: "tel",
+    required: true,
+    id: "tel",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "tel  ",
+    className: " mb-2.5"
+  }, "Change Password"), react_1["default"].createElement("input", {
+    type: "tel",
+    name: "tel",
+    required: true,
+    id: "tel",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: " flex justify-center mb-12"
+  }, react_1["default"].createElement("button", {
+    className: " bg-sidebar text-center px-8 py-4 text-white "
+  }, "Save Changes"))))));
+};
+
+exports["default"] = AdminSettings;
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/AdminDashboard.tsx":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/pages/AdminDashboard.tsx ***!
+  \**********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  Object.defineProperty(o, k2, {
+    enumerable: true,
+    get: function get() {
+      return m[k];
+    }
+  });
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+
+
+var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
 
 
 var sidebar_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/admin/sidebar.dashboard */ "./resources/js/components/dashboard/admin/sidebar.dashboard.tsx"));
 
-var dashNav_1 = __importDefault(__webpack_require__(/*! ../dashboard/clients/dashNav */ "./resources/js/components/dashboard/clients/dashNav.tsx"));
+var dashNav_1 = __importDefault(__webpack_require__(/*! ../dashboard/admin/dashNav */ "./resources/js/components/dashboard/admin/dashNav.tsx"));
+
+var container_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/admin/container.dashboard */ "./resources/js/components/dashboard/admin/container.dashboard.tsx"));
+
+var mobileNav_admin_1 = __importDefault(__webpack_require__(/*! ../dashboard/admin/mobileNav.admin */ "./resources/js/components/dashboard/admin/mobileNav.admin.tsx"));
 
 var AdminDashboard = function AdminDashboard() {
+  var _ref = (0, react_1.useState)(false),
+      _ref2 = _slicedToArray(_ref, 2),
+      open = _ref2[0],
+      setOpen = _ref2[1];
+
   return react_1["default"].createElement("div", null, react_1["default"].createElement("div", {
     className: " mb-4 hidden sm:block "
   }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
-    className: "flex flex-row w-full pt-20"
+    className: "flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
+  }, react_1["default"].createElement("a", {
+    href: "/"
+  }, react_1["default"].createElement("img", {
+    src: logo_png_1["default"],
+    alt: "",
+    className: " sm:h-10 h-5"
+  })), react_1["default"].createElement("p", {
+    onClick: function onClick() {
+      return setOpen(!open);
+    },
+    className: " sm:hidden"
+  }, "Menu"), open && react_1["default"].createElement(mobileNav_admin_1["default"], null)), react_1["default"].createElement("div", {
+    className: "flex flex-row w-full pt-4 sm:pt-20"
   }, react_1["default"].createElement("div", {
     className: " w-64 hidden sm:flex "
   }, react_1["default"].createElement(sidebar_dashboard_1["default"], null)), react_1["default"].createElement(container_dashboard_1["default"], null)));
@@ -6823,6 +7535,52 @@ exports["default"] = AdminDashboard;
 "use strict";
 
 
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  Object.defineProperty(o, k2, {
+    enumerable: true,
+    get: function get() {
+      return m[k];
+    }
+  });
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
 var __importDefault = this && this.__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
     "default": mod
@@ -6833,7 +7591,11 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+
+
+var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
+
 
 var dashNav_1 = __importDefault(__webpack_require__(/*! ../dashboard/clients/dashNav */ "./resources/js/components/dashboard/clients/dashNav.tsx"));
 
@@ -6841,16 +7603,34 @@ var sidebar_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/c
 
 var clients_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/clients/clients.dashboard */ "./resources/js/components/dashboard/clients/clients.dashboard.tsx"));
 
+var mobileNav_clients_1 = __importDefault(__webpack_require__(/*! ../dashboard/clients/mobileNav.clients */ "./resources/js/components/dashboard/clients/mobileNav.clients.tsx"));
+
 var ClientDashboard = function ClientDashboard() {
-  return react_1["default"].createElement("div", {
-    className: " min-w-full"
-  }, react_1["default"].createElement("div", null, react_1["default"].createElement("div", {
-    className: " mb-8 "
+  var _ref = (0, react_1.useState)(false),
+      _ref2 = _slicedToArray(_ref, 2),
+      open = _ref2[0],
+      setOpen = _ref2[1];
+
+  return react_1["default"].createElement("div", null, react_1["default"].createElement("div", {
+    className: " mb-4 hidden sm:block "
   }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
-    className: "flex flex-row"
+    className: "flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
+  }, react_1["default"].createElement("a", {
+    href: "/"
+  }, react_1["default"].createElement("img", {
+    src: logo_png_1["default"],
+    alt: "",
+    className: " sm:h-10 h-5"
+  })), react_1["default"].createElement("p", {
+    onClick: function onClick() {
+      return setOpen(!open);
+    },
+    className: " sm:hidden"
+  }, "Menu"), open && react_1["default"].createElement(mobileNav_clients_1["default"], null)), react_1["default"].createElement("div", {
+    className: "flex flex-row w-full pt-4 sm:pt-20"
   }, react_1["default"].createElement("div", {
-    className: " w-64 "
-  }, react_1["default"].createElement(sidebar_dashboard_1["default"], null)), react_1["default"].createElement(clients_dashboard_1["default"], null))));
+    className: " w-64 hidden sm:flex "
+  }, react_1["default"].createElement(sidebar_dashboard_1["default"], null)), react_1["default"].createElement(clients_dashboard_1["default"], null)));
 };
 
 exports["default"] = ClientDashboard;
@@ -7030,7 +7810,7 @@ var Verticals_1 = __importDefault(__webpack_require__(/*! ../common/Verticals */
 
 var Home = function Home() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
-    className: "pt-28"
+    className: "pt-28 mb-20 sm:mb-0"
   }, react_1["default"].createElement(Hero_1["default"], null)), react_1["default"].createElement(Verticals_1["default"], null), react_1["default"].createElement(CallToAction_1["default"], null), react_1["default"].createElement("div", {
     className: " mt-10"
   }, react_1["default"].createElement(IconsSection_1["default"], null)), react_1["default"].createElement("div", {

@@ -630,8 +630,8 @@ select {
 .mb-4 {
   margin-bottom: 1rem;
 }
-.mr-16 {
-  margin-right: 4rem;
+.mr-0 {
+  margin-right: 0px;
 }
 .mb-12 {
   margin-bottom: 3rem;
@@ -645,9 +645,6 @@ select {
 .mb-24 {
   margin-bottom: 6rem;
 }
-.mr-20 {
-  margin-right: 5rem;
-}
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -660,17 +657,17 @@ select {
 .mr-8 {
   margin-right: 2rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
 .mb-6 {
   margin-bottom: 1.5rem;
 }
-.mb-20 {
-  margin-bottom: 5rem;
+.mt-28 {
+  margin-top: 7rem;
 }
 .mb-14 {
   margin-bottom: 3.5rem;
-}
-.mr-0 {
-  margin-right: 0px;
 }
 .mb-32 {
   margin-bottom: 8rem;
@@ -678,8 +675,8 @@ select {
 .mb-16 {
   margin-bottom: 4rem;
 }
-.mt-20 {
-  margin-top: 5rem;
+.mb-20 {
+  margin-bottom: 5rem;
 }
 .ml-24 {
   margin-left: 6rem;
@@ -699,23 +696,23 @@ select {
 .ml-10 {
   margin-left: 2.5rem;
 }
-.mr-40 {
-  margin-right: 10rem;
-}
 .ml-2\.5 {
   margin-left: 0.625rem;
 }
 .ml-2 {
   margin-left: 0.5rem;
 }
-.mt-28 {
-  margin-top: 7rem;
+.mt-4 {
+  margin-top: 1rem;
 }
-.ml-4 {
-  margin-left: 1rem;
+.-ml-2 {
+  margin-left: -0.5rem;
 }
-.mb-1 {
-  margin-bottom: 0.25rem;
+.-ml-1 {
+  margin-left: -0.25rem;
+}
+.mt-20 {
+  margin-top: 5rem;
 }
 .block {
   display: block;
@@ -753,23 +750,17 @@ select {
 .h-screen {
   height: 100vh;
 }
-.h-full {
-  height: 100%;
-}
 .h-20 {
   height: 5rem;
 }
-.h-96 {
-  height: 24rem;
+.h-full {
+  height: 100%;
 }
 .h-8 {
   height: 2rem;
 }
 .w-full {
   width: 100%;
-}
-.w-1\/2 {
-  width: 50%;
 }
 .w-10 {
   width: 2.5rem;
@@ -779,9 +770,6 @@ select {
 }
 .w-64 {
   width: 16rem;
-}
-.min-w-full {
-  min-width: 100%;
 }
 .list-disc {
   list-style-type: disc;
@@ -821,6 +809,9 @@ select {
 }
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+.rounded-none {
+  border-radius: 0px;
 }
 .rounded-r-full {
   border-top-right-radius: 9999px;
@@ -870,10 +861,6 @@ select {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-.bg-red-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 .bg-blue-600 {
   --tw-bg-opacity: 1;
@@ -949,17 +936,9 @@ select {
   padding-left: 6rem;
   padding-right: 6rem;
 }
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 .pb-16 {
   padding-bottom: 4rem;
@@ -970,8 +949,14 @@ select {
 .pt-28 {
   padding-top: 7rem;
 }
+.pb-4 {
+  padding-bottom: 1rem;
+}
 .pl-3 {
   padding-left: 0.75rem;
+}
+.pt-20 {
+  padding-top: 5rem;
 }
 .pl-10 {
   padding-left: 2.5rem;
@@ -979,11 +964,17 @@ select {
 .pl-5 {
   padding-left: 1.25rem;
 }
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
-.pt-20 {
-  padding-top: 5rem;
+.pt-8 {
+  padding-top: 2rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
+}
+.pt-4 {
+  padding-top: 1rem;
 }
 .text-center {
   text-align: center;
@@ -1075,10 +1066,6 @@ select {
 }
 @media (min-width: 640px) {
 
-  .sm\:visible {
-    visibility: visible;
-  }
-
   .sm\:mx-24 {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -1086,34 +1073,6 @@ select {
 
   .sm\:mb-20 {
     margin-bottom: 5rem;
-  }
-
-  .sm\:mt-24 {
-    margin-top: 6rem;
-  }
-
-  .sm\:mr-12 {
-    margin-right: 3rem;
-  }
-
-  .sm\:ml-20 {
-    margin-left: 5rem;
-  }
-
-  .sm\:mb-24 {
-    margin-bottom: 6rem;
-  }
-
-  .sm\:mr-20 {
-    margin-right: 5rem;
-  }
-
-  .sm\:ml-24 {
-    margin-left: 6rem;
-  }
-
-  .sm\:mt-0 {
-    margin-top: 0px;
   }
 
   .sm\:mr-16 {
@@ -1124,20 +1083,36 @@ select {
     margin-bottom: 0px;
   }
 
-  .sm\:ml-2 {
-    margin-left: 0.5rem;
+  .sm\:mr-20 {
+    margin-right: 5rem;
   }
 
   .sm\:mb-10 {
     margin-bottom: 2.5rem;
   }
 
-  .sm\:block {
-    display: block;
+  .sm\:mt-24 {
+    margin-top: 6rem;
   }
 
-  .sm\:inline-block {
-    display: inline-block;
+  .sm\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .sm\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .sm\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .sm\:block {
+    display: block;
   }
 
   .sm\:flex {
@@ -1166,6 +1141,10 @@ select {
 
   .sm\:w-2\/4 {
     width: 50%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:grid-cols-3 {
@@ -1217,6 +1196,20 @@ select {
   .sm\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .sm\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .sm\:pt-20 {
+    padding-top: 5rem;
   }
 
   .sm\:text-left {
