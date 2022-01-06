@@ -6518,11 +6518,11 @@ var DashNav = function DashNav() {
     type: "search",
     name: "search",
     id: "search",
-    className: " border border-gray-400 rounded-3xl h-10 ",
+    className: " border border-gray-400 rounded  py-3 ",
     placeholder: "Search e.g progress"
   }), react_1["default"].createElement("button", {
     type: "submit",
-    className: " bg-blue-600 rounded text-white h-10 w-20 py-3"
+    className: " bg-sidebar rounded  text-white -ml-1  w-20 py-3"
   }, "Search")))), react_1["default"].createElement("div", {
     className: "flex flex-row items-center"
   }, react_1["default"].createElement("img", {
