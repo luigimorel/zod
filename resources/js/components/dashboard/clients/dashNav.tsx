@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // Assets
 import Logo from './../../../../assets/images/logo.png'
 import User from './../../../../assets/images/User.png'
 import Notify from './../../../../assets/icons/Notify.svg'
 
+// Components
+import MobileNavbar from '../../common/MobileNavbar'
 const DashNav = () => {
+ const [open, setOpen] = useState(false)
+
  return (
-  <div className=" sm:px-12  h-8 fixed w-full  ">
+  <div className=" sm:px-20  h-8 fixed w-full  ">
    <div className=" flex flex-row items-center shadow-sm justify-between ">
     <img src={Logo} className=" h-10" alt="" />
     <form action="" className="">
@@ -17,10 +21,13 @@ const DashNav = () => {
         type="search"
         name="search"
         id="search"
-        className=" border border-gray-400 rounded-3xl h-10 "
+        className=" border border-gray-400 rounded  py-3 "
         placeholder="Search e.g progress"
        />
-       <button type="submit" className=" bg-blue-600 text-white h-10 w-20 py-3">
+       <button
+        type="submit"
+        className=" bg-sidebar rounded  text-white -ml-1  w-20 py-3"
+       >
         Search
        </button>
       </div>
@@ -29,7 +36,7 @@ const DashNav = () => {
 
     <div className="flex flex-row items-center">
      <img src={User} alt="" className=" mr-3" />
-     <p className=" text-gray-700 pl-3 ">Admin User </p>
+     <p className=" text-gray-700 pl-3 ">Client User </p>
      <div className=" pl-10">
       <img src={Notify} alt="" className=" ml-10" />
      </div>

@@ -5,14 +5,14 @@ import Video from './../../../../assets/images/video.png'
 
 const ClientsDashboard = () => {
  return (
-  <div className=" mx-24 w-full">
-   <div className=" flex flex-row mb-8 justify-between ">
-    <div>
+  <div className=" sm:px-24 px-4 w-full">
+   <div className=" flex sm:flex-row flex-col mb-8 justify-between ">
+    <div className=" mb-4">
      <h5 className=" text-xl mb-4">Today's Video</h5>
      <img src={Video} alt="" />
     </div>
     {/* Start of the second video container  */}
-    <div>
+    <div className=" mb-4">
      <h5 className=" text-xl mb-4">Yesterday's Video</h5>
      <img src={Video} alt="" />
     </div>
@@ -20,7 +20,7 @@ const ClientsDashboard = () => {
 
    {/* Start of the table  */}
 
-   <div className=" rounded border border-gray-400 mb-8">
+   <div className=" rounded border border-gray-400 mb-8 hidden sm:block">
     <div className=" px-10">
      <h4 className=" mt-10 font-bold text-[#858585] mb-11">
       Project’s overview
