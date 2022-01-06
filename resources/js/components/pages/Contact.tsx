@@ -18,7 +18,7 @@ const Contact = () => {
    <Navbar />
    <div className=" pt-28">
     <Jumbotron
-     leadingParagraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam?"
+     leadingParagraph="In case of any queries, please get in touch with us. We'll be gald to help"
      header="Contact us today"
     />
    </div>
@@ -36,9 +36,14 @@ const Contact = () => {
         touch with us.
        </h1>
 
-       <p className=" text-base">
+       <p className=" text-base text-gray-800 mb-4 ">
         Fill in the form with any query and we wil get back to you as soon as
         possible.
+       </p>
+
+       <p className=" text-base italic text-gray-700">
+        Fields marked with <span className=" text-red-600">*</span> are
+        required.
        </p>
       </div>
 
@@ -64,8 +69,8 @@ const Contact = () => {
     <div className=" sm:w-1/2 w-full">
      <form action="" method="post">
       <div className="flex flex-col">
-       <label htmlFor="email" className=" mb-2.5">
-        Email
+       <label htmlFor="email" className=" mb-2.5 text-gray-600">
+        Email <span className=" text-red-600">*</span>
        </label>
        <input
         type="email"
@@ -79,8 +84,8 @@ const Contact = () => {
 
       {/* Name */}
       <div className="flex flex-col">
-       <label htmlFor="name  " className=" mb-2.5">
-        Name
+       <label htmlFor="name  " className=" mb-2.5 text-gray-600">
+        Name <span className=" text-red-600">*</span>
        </label>
 
        <input
@@ -95,14 +100,15 @@ const Contact = () => {
 
       {/* Message */}
       <div className="flex flex-col mb-10">
-       <label htmlFor="name" className=" mb-2.5">
-        Your Message
+       <label htmlFor="name" className=" mb-2.5 text-gray-600">
+        Message <span className=" text-red-600">*</span>
        </label>
        <textarea
         name="message"
         id="message"
         cols={20}
         rows={10}
+        placeholder=" Your message"
         className=" rounded-sm border-gray-400"
        ></textarea>
       </div>

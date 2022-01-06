@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 // Assets
 import MobileNavbar from './MobileNavbar'
 
-import Logo from './../../../assets/images/logo.png'
+import Logo from './../../../assets/images/denebola-light.jpeg'
 
 // Components
 import Button from './Button'

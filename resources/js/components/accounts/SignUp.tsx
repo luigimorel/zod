@@ -19,7 +19,7 @@ const SignUp = () => {
     <Heading text="Sign Up" className=" uppercase " />
    </div>
    <div className=" flex  sm:flex-row flex-col px-4  sm:px-20 sm:mb-20">
-    <div className=" sm:w-1/2 w-full sm:mr-16 mr-0 mb-10 sm:mb-0 h-auto">
+    <div className=" sm:w-1/2 w-full sm:mr-16 mr-0 mb-10 sm:mb-0 h-screen">
      <img src={HeroImg} className=" w-full h-auto" alt="" />
     </div>
 
@@ -97,6 +97,36 @@ const SignUp = () => {
        />
       </div>
 
+      {/* Start of the password fields */}
+
+      <div className="flex flex-col">
+       <label htmlFor="tel  " className=" mb-2.5">
+        Password <span className=" text-red-700">*</span>
+       </label>
+
+       <input
+        type="password"
+        name="password"
+        required
+        id="password"
+        className=" w-full mb-4 rounded-sm border-gray-400"
+       />
+      </div>
+
+      {/* Start of the password confirmation  */}
+      <div className="flex flex-col">
+       <label htmlFor="tel  " className=" mb-2.5">
+        Confirm Password <span className=" text-red-700">*</span>
+       </label>
+
+       <input
+        type="password"
+        name="confirmPassword"
+        required
+        id="confirmPassword"
+        className=" w-full mb-4 rounded-sm border-gray-400"
+       />
+      </div>
       <div className=" flex justify-center mb-12">
        <Button text="Submit" />
       </div>

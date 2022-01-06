@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Assets
-import LogoLight from './../../../assets/images/logo-light.png'
+import LogoLight from './../../../assets/images/denebola.jpeg'
 import Twitter from './../../../assets/icons/Twitter.svg'
 import FB from './../../../assets/icons/fB.svg'
 import Linkedin from './../../../assets/icons/Linkedin.svg'
