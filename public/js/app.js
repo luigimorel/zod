@@ -5442,7 +5442,7 @@ var SignUp = function SignUp() {
   })), react_1["default"].createElement("div", {
     className: " flex  sm:flex-row flex-col px-4  sm:px-20 sm:mb-20"
   }, react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full sm:mr-16 mr-0 mb-10 sm:mb-0 h-auto"
+    className: " sm:w-1/2 w-full sm:mr-16 mr-0 mb-10 sm:mb-0 h-screen"
   }, react_1["default"].createElement("img", {
     src: hero_jpg_1["default"],
     className: " w-full h-auto",
@@ -5516,6 +5516,32 @@ var SignUp = function SignUp() {
     name: "tel",
     required: true,
     id: "tel",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "tel  ",
+    className: " mb-2.5"
+  }, "Password ", react_1["default"].createElement("span", {
+    className: " text-red-700"
+  }, "*")), react_1["default"].createElement("input", {
+    type: "password",
+    name: "password",
+    required: true,
+    id: "password",
+    className: " w-full mb-4 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "tel  ",
+    className: " mb-2.5"
+  }, "Confirm Password ", react_1["default"].createElement("span", {
+    className: " text-red-700"
+  }, "*")), react_1["default"].createElement("input", {
+    type: "password",
+    name: "confirmPassword",
+    required: true,
+    id: "confirmPassword",
     className: " w-full mb-4 rounded-sm border-gray-400"
   })), react_1["default"].createElement("div", {
     className: " flex justify-center mb-12"
@@ -5640,7 +5666,7 @@ Object.defineProperty(exports, "__esModule", ({
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
 
 
-var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
+var denebola_jpeg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/denebola.jpeg */ "./resources/assets/images/denebola.jpeg"));
 
 var Twitter_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Twitter.svg */ "./resources/assets/icons/Twitter.svg"));
 
@@ -5656,7 +5682,7 @@ var Footer = function Footer() {
   }, react_1["default"].createElement("div", {
     className: " mt-11"
   }, react_1["default"].createElement("img", {
-    src: logo_light_png_1["default"],
+    src: denebola_jpeg_1["default"],
     className: " mb-11 h-10 ",
     alt: ""
   }), react_1["default"].createElement("p", {
@@ -6195,7 +6221,7 @@ var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_mod
 
 var MobileNavbar_1 = __importDefault(__webpack_require__(/*! ./MobileNavbar */ "./resources/js/components/common/MobileNavbar.tsx"));
 
-var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
+var denebola_light_jpeg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/denebola-light.jpeg */ "./resources/assets/images/denebola-light.jpeg")); // Components
 
 
 var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/js/components/common/Button.tsx"));
@@ -6228,7 +6254,7 @@ var Navbar = function Navbar() {
   }, react_1["default"].createElement("a", {
     href: "/"
   }, react_1["default"].createElement("img", {
-    src: logo_png_1["default"],
+    src: denebola_light_jpeg_1["default"],
     alt: "",
     className: " sm:h-10 h-5"
   })), react_1["default"].createElement("p", {
@@ -7680,7 +7706,7 @@ var Contact = function Contact() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
     className: " pt-28"
   }, react_1["default"].createElement(Jumbotron_1["default"], {
-    leadingParagraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam?",
+    leadingParagraph: "In case of any queries, please get in touch with us. We'll be gald to help",
     header: "Contact us today"
   })), react_1["default"].createElement("div", {
     className: " mb-10"
@@ -7700,8 +7726,12 @@ var Contact = function Contact() {
   }, "Please do not hesistate to get in ", react_1["default"].createElement("br", {
     className: " hidden sm:block"
   }), ' ', "touch with us."), react_1["default"].createElement("p", {
-    className: " text-base"
-  }, "Fill in the form with any query and we wil get back to you as soon as possible.")), react_1["default"].createElement("div", {
+    className: " text-base text-gray-800 mb-4 "
+  }, "Fill in the form with any query and we wil get back to you as soon as possible."), react_1["default"].createElement("p", {
+    className: " text-base italic text-gray-700"
+  }, "Fields marked with ", react_1["default"].createElement("span", {
+    className: " text-red-600"
+  }, "*"), " are required.")), react_1["default"].createElement("div", {
     className: " flex flex-col"
   }, react_1["default"].createElement("div", {
     className: "flex flex-row mb-4"
@@ -7730,8 +7760,10 @@ var Contact = function Contact() {
     className: "flex flex-col"
   }, react_1["default"].createElement("label", {
     htmlFor: "email",
-    className: " mb-2.5"
-  }, "Email"), react_1["default"].createElement("input", {
+    className: " mb-2.5 text-gray-600"
+  }, "Email ", react_1["default"].createElement("span", {
+    className: " text-red-600"
+  }, "*")), react_1["default"].createElement("input", {
     type: "email",
     name: "email",
     required: true,
@@ -7742,8 +7774,10 @@ var Contact = function Contact() {
     className: "flex flex-col"
   }, react_1["default"].createElement("label", {
     htmlFor: "name  ",
-    className: " mb-2.5"
-  }, "Name"), react_1["default"].createElement("input", {
+    className: " mb-2.5 text-gray-600"
+  }, "Name ", react_1["default"].createElement("span", {
+    className: " text-red-600"
+  }, "*")), react_1["default"].createElement("input", {
     type: "text",
     name: "name",
     id: "name",
@@ -7754,12 +7788,15 @@ var Contact = function Contact() {
     className: "flex flex-col mb-10"
   }, react_1["default"].createElement("label", {
     htmlFor: "name",
-    className: " mb-2.5"
-  }, "Your Message"), react_1["default"].createElement("textarea", {
+    className: " mb-2.5 text-gray-600"
+  }, "Message ", react_1["default"].createElement("span", {
+    className: " text-red-600"
+  }, "*")), react_1["default"].createElement("textarea", {
     name: "message",
     id: "message",
     cols: 20,
     rows: 10,
+    placeholder: " Your message",
     className: " rounded-sm border-gray-400"
   })), react_1["default"].createElement("div", {
     className: " flex justify-center mb-12 "
@@ -26756,6 +26793,36 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/denebola-light.jpeg":
+/*!*****************************************************!*\
+  !*** ./resources/assets/images/denebola-light.jpeg ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/denebola-light.jpeg?ea553ab367b82c7f87a2113a20813a9b");
+
+/***/ }),
+
+/***/ "./resources/assets/images/denebola.jpeg":
+/*!***********************************************!*\
+  !*** ./resources/assets/images/denebola.jpeg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/denebola.jpeg?9a6617be35636ea4b8dbb2ce86196968");
+
+/***/ }),
+
 /***/ "./resources/assets/images/hero.jpg":
 /*!******************************************!*\
   !*** ./resources/assets/images/hero.jpg ***!
@@ -26768,21 +26835,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/hero.jpg?ad862cefb6113044ac1f32fb654f0eb7");
-
-/***/ }),
-
-/***/ "./resources/assets/images/logo-light.png":
-/*!************************************************!*\
-  !*** ./resources/assets/images/logo-light.png ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo-light.png?acf145741c06b3e8abdf6ecde07294de");
 
 /***/ }),
 
