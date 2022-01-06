@@ -11,21 +11,25 @@ const sidebarNav = [
   id: 1,
   text: 'Overview',
   icon: Eye,
+  route: '/client-dashboard',
  },
  {
   id: 2,
   text: 'Progress Reports',
   icon: Graph,
+  route: '/client-dashboard',
  },
  {
   id: 3,
   text: 'Projects',
   icon: Graph,
+  route: '/client-dashboard',
  },
  {
   id: 4,
   text: 'Settings',
   icon: Settings,
+  route: '/client-dashboard/settings',
  },
  {
   id: 5,
@@ -38,7 +42,8 @@ const SidebarDashboard = () => {
   <div className=" w-64 border-r fixed h-full flex flex-col">
    <div className=" mb-20">
     {sidebarNav.map((x) => (
-     <div
+     <a
+      href={x.route}
       key={x.id}
       className={
        x.id === 1
@@ -49,7 +54,7 @@ const SidebarDashboard = () => {
       <img src={x.icon} alt="" />
 
       <p className=" ml-2.5">{x.text}</p>
-     </div>
+     </a>
     ))}
    </div>
   </div>

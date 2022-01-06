@@ -10,6 +10,8 @@ import Contact from './pages/Contact'
 import SignIn from './accounts/SignIn'
 import SignUp from './accounts/SignUp'
 import ClientDashboard from './pages/ClientDashboard'
+import AdminSettings from './dashboard/settings/admin.settings'
+import ClientSettings from './dashboard/settings/client.settings'
 
 function App() {
  return (
@@ -22,6 +24,8 @@ function App() {
     <Route path="/accounts/login" element={<SignIn />} />
     <Route path="/accounts/sign-up" element={<SignUp />} />
     <Route path="client-dashboard" element={<ClientDashboard />} />
+    <Route path="/admin-dashboard/settings" element={<AdminSettings />} />
+    <Route path="/client-dashboard/settings" element={<ClientSettings />} />
    </Routes>
   </Router>
  )

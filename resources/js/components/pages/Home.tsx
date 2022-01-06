@@ -13,7 +13,7 @@ const Home = () => {
  return (
   <>
    <Navbar />
-   <div className="pt-28">
+   <div className="pt-28 mb-20 sm:mb-0">
     <Hero />
    </div>
    <Verticals />
