@@ -10,7 +10,7 @@ import Button from './Button'
 const Hero = () => {
  return (
   <>
-   <div className=" flex  sm:flex-row flex-col-reverse   justify-between h-screen w-full mb-20 sm:px-24 tab:px-12 px-3 ">
+   <div className=" flex  sm:flex-row flex-col-reverse   justify-between h-screen w-full sm:mb-10 sm:px-24 tab:px-12 px-3 ">
     <div className=" sm:w-1/2 w-full sm:mt-24 sm:mr-12">
      <h3 className=" sm:text-5xl text-3xl mb-8 uppercase font-sans">
       Revolutionizing monitoring in the construction industry.
