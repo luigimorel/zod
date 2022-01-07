@@ -4,11 +4,9 @@ import React from 'react'
 import Button from '../common/Button'
 import Footer from '../common/Footer'
 import Heading from '../common/Heading'
-import Jumbotron from '../common/Jumbotron'
 import Navbar from '../common/Navbar'
 
 // Assets
-import HeroImg from './../../../assets/images/hero.jpg'
 
 const SignUp = () => {
  return (
@@ -18,12 +16,12 @@ const SignUp = () => {
    <div className=" mb-10 pt-28">
     <Heading text="Sign Up" className=" uppercase " />
    </div>
-   <div className=" flex  sm:flex-row flex-col px-4  sm:px-20 sm:mb-20">
-    <div className=" sm:w-1/2 w-full sm:mr-16 mr-0 mb-10 sm:mb-0 h-screen">
-     <img src={HeroImg} className=" w-full h-auto" alt="" />
-    </div>
+   <div className=" sm:w-2/5 mx-auto my-0 ">
+    <div className=" sm:px-32 px-4 py-8 justify-center">
+     <h2 className=" text-center text-blue-700 font-bold mb-10">
+      Create an account today{' '}
+     </h2>
 
-    <div className=" sm:w-1/2 w-full justify-center">
      <form action="" method="post">
       <div className="flex flex-col">
        <label htmlFor="firstName" className=" mb-2.5">

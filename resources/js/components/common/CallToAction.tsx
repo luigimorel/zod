@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactPlayer from 'react-player/lazy'
+import ReactPlayer from 'react-player/youtube'
 import { Link } from 'react-router-dom'
 import Button from './Button'
 
@@ -15,8 +15,8 @@ const CallToAction = () => {
 
     <p className=" text-white text-base mb-12">
      Make faster and more informed data-driven decisions, stay on top of your
-     project, and keep all stakeholders informed while reducing surprises,
-     delays, cost overruns, and claims.
+     project, and keep all stakeholders <br className=" sm:block hidden" />{' '}
+     informed while reducing surprises, delays, cost overruns, and claims.
     </p>
 
     <div className="mb-4">
