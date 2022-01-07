@@ -1,19 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 // Assets
-import Logo from './../../../../assets/images/logo.png'
+import Logo from './../../../../assets/images/logo-light.png'
 import User from './../../../../assets/images/User.png'
 import Notify from './../../../../assets/icons/Notify.svg'
 
 // Components
-import MobileNavbar from '../../common/MobileNavbar'
 const DashNav = () => {
- const [open, setOpen] = useState(false)
-
  return (
   <div className=" sm:px-20  h-8 fixed w-full  ">
    <div className=" flex flex-row items-center shadow-sm justify-between ">
-    <img src={Logo} className=" h-10" alt="" />
+    <Link to={'/'}>
+     <img src={Logo} className=" h-10" alt="" />
+    </Link>
     <form action="" className="">
      <label htmlFor="search">
       <div className="flex w-full">
@@ -36,7 +36,7 @@ const DashNav = () => {
 
     <div className="flex flex-row items-center">
      <img src={User} alt="" className=" mr-3" />
-     <p className=" text-gray-700 pl-3 ">Client User </p>
+     <p className=" text-gray-700 pl-3 ">John Doe </p>
      <div className=" pl-10">
       <img src={Notify} alt="" className=" ml-10" />
      </div>

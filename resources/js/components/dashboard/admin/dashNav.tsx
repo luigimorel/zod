@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Assets
-import Logo from './../../../../assets/images/logo.png'
+import Logo from './../../../../assets/images/logo-light.png'
 import User from './../../../../assets/images/User.png'
 import Notify from './../../../../assets/icons/Notify.svg'
 
