@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // Assets
-import Logo from './../../../assets/images/logo.png'
+import Logo from './../../../assets/images/logo-light.png'
 
 // Components
 import Button from '../common/Button'

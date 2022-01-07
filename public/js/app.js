@@ -5277,7 +5277,9 @@ var admin_settings_1 = __importDefault(__webpack_require__(/*! ./dashboard/setti
 var client_settings_1 = __importDefault(__webpack_require__(/*! ./dashboard/settings/client.settings */ "./resources/js/components/dashboard/settings/client.settings.tsx"));
 
 function App() {
-  return react_1["default"].createElement(react_router_dom_1.BrowserRouter, null, react_1["default"].createElement(react_router_dom_1.Routes, null, react_1["default"].createElement(react_router_dom_1.Route, {
+  return react_1["default"].createElement(react_router_dom_1.BrowserRouter, {
+    basename: '/'
+  }, react_1["default"].createElement(react_router_dom_1.Routes, null, react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/",
     element: react_1["default"].createElement(Home_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
@@ -5339,7 +5341,7 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
 
 
-var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // Components
 
 
 var Button_1 = __importDefault(__webpack_require__(/*! ../common/Button */ "./resources/js/components/common/Button.tsx"));
@@ -5348,7 +5350,7 @@ var SignIn = function SignIn() {
   return react_1["default"].createElement("div", null, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/"
   }, react_1["default"].createElement("img", {
-    src: logo_png_1["default"],
+    src: logo_light_png_1["default"],
     className: " mx-auto mt-16 h-10 mb-10",
     alt: ""
   })), react_1["default"].createElement("div", {
@@ -5431,8 +5433,6 @@ var Heading_1 = __importDefault(__webpack_require__(/*! ../common/Heading */ "./
 var Navbar_1 = __importDefault(__webpack_require__(/*! ../common/Navbar */ "./resources/js/components/common/Navbar.tsx")); // Assets
 
 
-var hero_jpg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/hero.jpg */ "./resources/assets/images/hero.jpg"));
-
 var SignUp = function SignUp() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
     className: " mb-10 pt-28"
@@ -5440,16 +5440,12 @@ var SignUp = function SignUp() {
     text: "Sign Up",
     className: " uppercase "
   })), react_1["default"].createElement("div", {
-    className: " flex  sm:flex-row flex-col px-4  sm:px-20 sm:mb-20"
+    className: " sm:w-2/5 mx-auto my-0 "
   }, react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full sm:mr-16 mr-0 mb-10 sm:mb-0 h-screen"
-  }, react_1["default"].createElement("img", {
-    src: hero_jpg_1["default"],
-    className: " w-full h-auto",
-    alt: ""
-  })), react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full justify-center"
-  }, react_1["default"].createElement("form", {
+    className: " sm:px-32 px-4 py-8 justify-center"
+  }, react_1["default"].createElement("h2", {
+    className: " text-center text-blue-700 font-bold mb-10"
+  }, "Create an account today", ' '), react_1["default"].createElement("form", {
     action: "",
     method: "post"
   }, react_1["default"].createElement("div", {
@@ -5610,7 +5606,7 @@ Object.defineProperty(exports, "__esModule", ({
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var lazy_1 = __importDefault(__webpack_require__(/*! react-player/lazy */ "./node_modules/react-player/lazy/index.js"));
+var youtube_1 = __importDefault(__webpack_require__(/*! react-player/youtube */ "./node_modules/react-player/youtube.js"));
 
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 
@@ -5627,7 +5623,9 @@ var CallToAction = function CallToAction() {
     className: " text-4xl text-white mb-7"
   }, "Speed, flexibility and accuracy"), react_1["default"].createElement("p", {
     className: " text-white text-base mb-12"
-  }, "Make faster and more informed data-driven decisions, stay on top of your project, and keep all stakeholders informed while reducing surprises, delays, cost overruns, and claims."), react_1["default"].createElement("div", {
+  }, "Make faster and more informed data-driven decisions, stay on top of your project, and keep all stakeholders ", react_1["default"].createElement("br", {
+    className: " sm:block hidden"
+  }), ' ', "informed while reducing surprises, delays, cost overruns, and claims."), react_1["default"].createElement("div", {
     className: "mb-4"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
@@ -5635,7 +5633,7 @@ var CallToAction = function CallToAction() {
     text: " Sign Up"
   }))), react_1["default"].createElement("div", {
     className: " w-full content-center flex flex-row justify-center mb-24"
-  }, react_1["default"].createElement(lazy_1["default"], {
+  }, react_1["default"].createElement(youtube_1["default"], {
     url: 'https://www.youtube.com/watch?v=Tm3NXhGLvuU'
   }))));
 };
@@ -5666,7 +5664,7 @@ Object.defineProperty(exports, "__esModule", ({
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
 
 
-var denebola_jpeg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/denebola.jpeg */ "./resources/assets/images/denebola.jpeg"));
+var logo_dark_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-dark.png */ "./resources/assets/images/logo-dark.png"));
 
 var Twitter_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Twitter.svg */ "./resources/assets/icons/Twitter.svg"));
 
@@ -5682,7 +5680,7 @@ var Footer = function Footer() {
   }, react_1["default"].createElement("div", {
     className: " mt-11"
   }, react_1["default"].createElement("img", {
-    src: denebola_jpeg_1["default"],
+    src: logo_dark_png_1["default"],
     className: " mb-11 h-10 ",
     alt: ""
   }), react_1["default"].createElement("p", {
@@ -5788,12 +5786,10 @@ var Heading = function Heading(_ref) {
   var text = _ref.text,
       className = _ref.className;
   return react_1["default"].createElement("div", {
-    className: "mb-6"
+    className: "mb-10"
   }, react_1["default"].createElement("h2", {
-    className: (0, clsx_1["default"])(className, "text-center  text-3xl text-minor")
-  }, text), react_1["default"].createElement("div", {
-    className: " bg-yellow-500 h-0.5 w-20 my-0 mx-auto"
-  }));
+    className: (0, clsx_1["default"])(className, 'text-center  sm:text-3xl text-2xl text-minor')
+  }, text));
 };
 
 exports["default"] = Heading;
@@ -5831,26 +5827,28 @@ var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/
 
 var Hero = function Hero() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: " flex  sm:flex-row flex-col-reverse   justify-between h-screen w-full sm:mb-10 sm:px-24 tab:px-12 px-3 "
+    className: " flex  sm:flex-row flex-col-reverse   justify-between h-screen w-full sm:mb-10     "
   }, react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full sm:mt-24 sm:mr-12"
+    className: " sm:w-1/2 w-full sm:pt-20 sm:pl-24 tab:pl-12 pl-3  sm:mr-12"
   }, react_1["default"].createElement("h3", {
-    className: " sm:text-5xl text-3xl mb-8 uppercase font-sans"
+    className: " sm:text-5xl text-3xl mb-8 font-semibold font-serif uppercase  "
   }, "Revolutionizing monitoring in the construction industry."), react_1["default"].createElement("p", {
-    className: " mb-8 text-lg text-gray-700"
+    className: " mb-8 text-lg font-medium text-gray-800"
   }, "Pioneers of the constrution industry monitoring in the Sub Saharan Africa Region."), react_1["default"].createElement("p", {
-    className: " mb-8 text-lg text-gray-700"
-  }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis veniam possimus, ipsa at consectetur accusantium? Voluptas aut sed suscipit quod!"), react_1["default"].createElement(react_router_dom_1.Link, {
+    className: " mb-8 text-lg font-medium text-gray-800"
+  }, "We are committed to helping construction industry investors, developers and project managers easily get their work done through real time monitoring of their construction sites in real time."), react_1["default"].createElement("div", {
+    className: "flex justify-center sm:justify-start"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/solutions"
   }, react_1["default"].createElement(Button_1["default"], {
     text: "Explore More",
     className: "  "
-  }))), react_1["default"].createElement("div", {
+  })))), react_1["default"].createElement("div", {
     className: " sm:w-1/2 w-full tab:w-full "
   }, react_1["default"].createElement("img", {
     src: hero_jpg_1["default"],
     alt: "",
-    className: " sm:h-4/5 h-screen mt-28 sm:mt-0 w-full"
+    className: " sm:h-5/6 h-screen mt-28 sm:mt-0 w-full"
   }))));
 };
 
@@ -5883,51 +5881,69 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 var Heading_1 = __importDefault(__webpack_require__(/*! ./Heading */ "./resources/js/components/common/Heading.tsx")); // Assets
 
 
-var PlusIcon_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/PlusIcon.svg */ "./resources/assets/PlusIcon.svg"));
+var Simple_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Simple.svg */ "./resources/assets/icons/Simple.svg"));
+
+var Excellence_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Excellence.svg */ "./resources/assets/icons/Excellence.svg"));
+
+var Disruption_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Disruption.svg */ "./resources/assets/icons/Disruption.svg"));
+
+var Loyalty_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Loyalty.svg */ "./resources/assets/icons/Loyalty.svg"));
+
+var Dependable_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Dependable.svg */ "./resources/assets/icons/Dependable.svg"));
+
+var User_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/User.svg */ "./resources/assets/icons/User.svg"));
 
 var IconsSection = function IconsSection() {
   var iconCards = [{
     id: 1,
-    img: PlusIcon_svg_1["default"],
-    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
+    heading: 'Excellence ',
+    img: Excellence_svg_1["default"],
+    text: 'We aim at being excellent at delivering value for our clients.'
   }, {
     id: 2,
-    img: PlusIcon_svg_1["default"],
-    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
+    heading: 'Simplicity ',
+    img: Simple_svg_1["default"],
+    text: 'Simplicity is the ultimate sophistication. Denebolatech is a simple tool to use but delivers measurable value.'
   }, {
     id: 3,
-    img: PlusIcon_svg_1["default"],
-    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
+    heading: 'User Centric ',
+    img: User_svg_1["default"],
+    text: 'Users come first in whatever as we strive to satsify their needs.'
   }, {
     id: 4,
-    img: PlusIcon_svg_1["default"],
-    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
+    heading: 'Loyalty ',
+    img: Loyalty_svg_1["default"],
+    text: "We listen when you talk to us. Satsifying your construction company's is our mission."
   }, {
     id: 5,
-    img: PlusIcon_svg_1["default"],
-    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
+    heading: 'Disruption ',
+    img: Disruption_svg_1["default"],
+    text: 'Our goal is to make considerable impact on how the daily operations in the construction industry are carried out. '
   }, {
     id: 6,
-    img: PlusIcon_svg_1["default"],
-    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?'
+    heading: 'Dependable',
+    img: Dependable_svg_1["default"],
+    text: 'We are available to help in case of an emergency all the time. Reach out to us.'
   }];
   return react_1["default"].createElement("div", {
     className: " mb-14"
   }, react_1["default"].createElement(Heading_1["default"], {
-    text: " Our Values"
+    text: " OUR VALUES"
   }), react_1["default"].createElement("p", {
-    className: " mb-8 text-2xl sm:w-2/4 w-full sm:px-20 px-4 mx-auto my-0"
-  }, "Consequat faucibus tristique vitae vulputate tristique vitae vulputate tristique vitae faucibus tristique vitae vulputate tristique vitae"), react_1["default"].createElement("div", {
+    className: " mb-8 text-xl sm:w-2/4 w-full sm:px-20 px-4 mx-auto my-0"
+  }, "We have a set of values that guide our way of doing business... And", ' ', react_1["default"].createElement("b", null, "WE"), " ", '  ', "are true to whatever we say..."), react_1["default"].createElement("div", {
     className: " grid sm:grid-cols-3 grid-rows-1  sm:px-20 px-4 mb-12"
   }, iconCards.map(function (x) {
     return react_1["default"].createElement("div", {
-      className: "flex flex-col border mr-0 py-8 mb-6 px-3 mx-4 hover:bg-blue-700 hover:text-white ",
+      className: "flex flex-col mr-0 py-8 mb-6 px-3 mx-4 hover:border-b-blue-700 hover:bg-gray-100  hover:border-b-2 hover:shadow-md  ",
       key: x.id
     }, react_1["default"].createElement("img", {
       src: x.img,
       alt: "",
       className: " items-center h-20 mb-4"
-    }), react_1["default"].createElement("p", {
+    }), react_1["default"].createElement("h6", {
+      className: " text-center text-xl mb-4 sm:mb-0 font-bold text-[#212121]"
+    }, x.heading), react_1["default"].createElement("p", {
       className: " sm:py-6 sm:px-8   text-lg"
     }, x.text));
   })));
@@ -5956,13 +5972,8 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Components
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
 
-
-var Heading_1 = __importDefault(__webpack_require__(/*! ./Heading */ "./resources/js/components/common/Heading.tsx")); // Assets
-
-
-var service_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/service.png */ "./resources/assets/images/service.png"));
 
 var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/js/components/common/Button.tsx"));
 
@@ -5970,67 +5981,19 @@ var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_mod
 
 var ImageSection = function ImageSection() {
   return react_1["default"].createElement("div", null, react_1["default"].createElement("div", {
-    className: " sm:px-20 px-8 mb-32"
-  }, react_1["default"].createElement("div", {
-    className: " mb-16"
-  }, react_1["default"].createElement(Heading_1["default"], {
-    text: "Our Services"
-  })), react_1["default"].createElement("div", {
-    className: "flex flex-col"
-  }, react_1["default"].createElement("div", {
-    className: " flex flex-col sm:flex-row justify-between items-center mb-20 sm:px-32   "
-  }, react_1["default"].createElement("img", {
-    src: service_png_1["default"],
-    alt: "",
-    className: " w-full"
-  }), react_1["default"].createElement("div", {
-    className: "flex flex-col sm:ml-20"
-  }, react_1["default"].createElement("h2", {
-    className: " text-4xl text-blue-700 mb-8"
-  }, "Lorem, ipsum."), react_1["default"].createElement("ul", {
-    className: " list-disc"
-  }, react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing.")))), react_1["default"].createElement("div", {
-    className: " flex flex-col sm:flex-row justify-between items-center mb-12 sm:px-32   "
-  }, react_1["default"].createElement("div", {
-    className: "flex flex-col sm:mr-20"
-  }, react_1["default"].createElement("h2", {
-    className: " text-4xl text-blue-700 mb-8"
-  }, "Lorem, ipsum."), react_1["default"].createElement("ul", {
-    className: " list-disc"
-  }, react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."))), react_1["default"].createElement("img", {
-    src: service_png_1["default"],
-    alt: "",
-    className: " w-full"
-  })))), react_1["default"].createElement("div", {
     className: " flex flex-col sm:mb-24 mb-12 px-8"
   }, react_1["default"].createElement("div", {
     className: " sm:w-1/2 w-full mx-auto my-0"
   }, react_1["default"].createElement("h3", {
     className: " mb-10 sm:text-center font-bold uppercase text-3xl text-gray-800"
-  }, "Mi orci nisl mauris nibh"), react_1["default"].createElement("p", {
+  }, "Create an account today"), react_1["default"].createElement("p", {
     className: " mb-20 text-lg"
-  }, "Facilisis ultrices tristique urna nunc nunc, eu commodo auctor mattis tempor, sed accumsan, eu, in condimentum lacus et, pharetra mauris lectus et eleifend at lacus"), react_1["default"].createElement("div", {
+  }, "Make it easier to track the activities at your construction site by signing up on Denebolatech today!"), react_1["default"].createElement("div", {
     className: " flex flex-row justify-center"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
   }, react_1["default"].createElement(Button_1["default"], {
-    text: " Sign Up for free"
+    text: " Sign up today"
   }))))));
 };
 
@@ -6114,7 +6077,7 @@ var MobileNavbar = function MobileNavbar() {
     route: '/'
   }, {
     id: 2,
-    linkText: 'Solutions',
+    linkText: 'Our Solution',
     route: '/solutions'
   }, {
     id: 3,
@@ -6126,7 +6089,7 @@ var MobileNavbar = function MobileNavbar() {
     route: '/accounts/login'
   }];
   return react_1["default"].createElement("div", {
-    className: " flex dropdown fixed mt-16 w-full animation-container"
+    className: " flex dropdown fixed mt-14 w-full animation-container"
   }, react_1["default"].createElement("ul", {
     className: "dropdown-menu bg-black  w-full"
   }, menuLinks.map(function (x) {
@@ -6219,12 +6182,14 @@ var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/reac
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
 
 
-var MobileNavbar_1 = __importDefault(__webpack_require__(/*! ./MobileNavbar */ "./resources/js/components/common/MobileNavbar.tsx"));
+var Menu_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Menu.svg */ "./resources/assets/icons/Menu.svg"));
 
-var denebola_light_jpeg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/denebola-light.jpeg */ "./resources/assets/images/denebola-light.jpeg")); // Components
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // Components
 
 
 var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/js/components/common/Button.tsx"));
+
+var MobileNavbar_1 = __importDefault(__webpack_require__(/*! ./MobileNavbar */ "./resources/js/components/common/MobileNavbar.tsx"));
 
 var Navbar = function Navbar() {
   var _ref = (0, react_1.useState)(false),
@@ -6238,7 +6203,7 @@ var Navbar = function Navbar() {
     route: '/'
   }, {
     id: 2,
-    linkText: 'Solutions',
+    linkText: 'Our Solution',
     route: '/solutions'
   }, {
     id: 3,
@@ -6250,19 +6215,21 @@ var Navbar = function Navbar() {
     route: '/accounts/login'
   }];
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: "flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
+    className: "flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   "
   }, react_1["default"].createElement("a", {
     href: "/"
   }, react_1["default"].createElement("img", {
-    src: denebola_light_jpeg_1["default"],
+    src: logo_light_png_1["default"],
     alt: "",
     className: " sm:h-10 h-5"
-  })), react_1["default"].createElement("p", {
+  })), react_1["default"].createElement("img", {
     onClick: function onClick() {
       return setOpen(!open);
     },
-    className: " sm:hidden"
-  }, "Menu"), react_1["default"].createElement("div", {
+    className: " sm:hidden",
+    src: Menu_svg_1["default"],
+    alt: ""
+  }), react_1["default"].createElement("div", {
     className: "sm:flex hidden flex-row"
   }, react_1["default"].createElement("ul", {
     className: "sm:flex flex-row justify-between items-center"
@@ -6310,32 +6277,36 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 var Heading_1 = __importDefault(__webpack_require__(/*! ./Heading */ "./resources/js/components/common/Heading.tsx")); // Assets
 
 
-var Branch_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/Branch.svg */ "./resources/assets/Branch.svg"));
+var Cameras_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Cameras.svg */ "./resources/assets/icons/Cameras.svg"));
 
-var BranchDark_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/BranchDark.svg */ "./resources/assets/BranchDark.svg"));
+var Building_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Building.svg */ "./resources/assets/icons/Building.svg"));
+
+var Plane_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Plane.svg */ "./resources/assets/icons/Plane.svg"));
 
 var Verticals = function Verticals() {
   return react_1["default"].createElement("div", {
     className: ""
+  }, react_1["default"].createElement("div", {
+    className: " mb-4"
   }, react_1["default"].createElement(Heading_1["default"], {
-    text: "Business Verticals"
-  }), react_1["default"].createElement("div", {
-    className: "flex sm:flex-row flex-col sm:px-40 px-8 mb-20"
+    text: "BUSINESS VERTICALS"
+  })), react_1["default"].createElement("div", {
+    className: "flex sm:flex-row flex-col px-8 sm:px-0 justify-center   mb-20"
   }, react_1["default"].createElement("div", {
     className: " flex flex-col "
   }, react_1["default"].createElement("div", {
     className: " py-10 px-24 bg-red-700 "
   }, react_1["default"].createElement("img", {
-    src: Branch_svg_1["default"],
+    src: Building_svg_1["default"],
     alt: ""
   })), react_1["default"].createElement("p", {
     className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
-  }, "Tech")), react_1["default"].createElement("div", {
+  }, "Construction Tech")), react_1["default"].createElement("div", {
     className: " flex flex-col "
   }, react_1["default"].createElement("div", {
     className: " py-10 px-24 bg-yellow-500 "
   }, react_1["default"].createElement("img", {
-    src: BranchDark_svg_1["default"],
+    src: Plane_svg_1["default"],
     alt: ""
   })), react_1["default"].createElement("p", {
     className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
@@ -6344,7 +6315,7 @@ var Verticals = function Verticals() {
   }, react_1["default"].createElement("div", {
     className: " py-10 px-24 bg-red-700 "
   }, react_1["default"].createElement("img", {
-    src: Branch_svg_1["default"],
+    src: Cameras_svg_1["default"],
     alt: ""
   })), react_1["default"].createElement("p", {
     className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
@@ -6518,7 +6489,7 @@ Object.defineProperty(exports, "__esModule", ({
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
 
 
-var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png"));
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
 
 var User_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/User.png */ "./resources/assets/images/User.png"));
 
@@ -6530,7 +6501,7 @@ var DashNav = function DashNav() {
   }, react_1["default"].createElement("div", {
     className: " flex flex-row items-center shadow-sm justify-between "
   }, react_1["default"].createElement("img", {
-    src: logo_png_1["default"],
+    src: logo_light_png_1["default"],
     className: " h-10",
     alt: ""
   }), react_1["default"].createElement("form", {
@@ -6726,11 +6697,13 @@ Object.defineProperty(exports, "__esModule", ({
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
 
 
-var video_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/video.png */ "./resources/assets/images/video.png"));
+var VideoTwo_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/VideoTwo.svg */ "./resources/assets/icons/VideoTwo.svg"));
+
+var VideoOne_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/VideoOne.svg */ "./resources/assets/icons/VideoOne.svg"));
 
 var ClientsDashboard = function ClientsDashboard() {
   return react_1["default"].createElement("div", {
-    className: " sm:px-24 px-4 w-full"
+    className: " sm:px-20 px-4 w-full"
   }, react_1["default"].createElement("div", {
     className: " flex sm:flex-row flex-col mb-8 justify-between "
   }, react_1["default"].createElement("div", {
@@ -6738,14 +6711,14 @@ var ClientsDashboard = function ClientsDashboard() {
   }, react_1["default"].createElement("h5", {
     className: " text-xl mb-4"
   }, "Today's Video"), react_1["default"].createElement("img", {
-    src: video_png_1["default"],
+    src: VideoTwo_svg_1["default"],
     alt: ""
   })), react_1["default"].createElement("div", {
     className: " mb-4"
   }, react_1["default"].createElement("h5", {
     className: " text-xl mb-4"
   }, "Yesterday's Video"), react_1["default"].createElement("img", {
-    src: video_png_1["default"],
+    src: VideoOne_svg_1["default"],
     alt: ""
   }))), react_1["default"].createElement("div", {
     className: " rounded border border-gray-400 mb-8 hidden sm:block"
@@ -6755,46 +6728,60 @@ var ClientsDashboard = function ClientsDashboard() {
     className: " mt-10 font-bold text-[#858585] mb-11"
   }, "Project\u2019s overview"), react_1["default"].createElement("table", {
     className: " w-full"
-  }, react_1["default"].createElement("tr", null, react_1["default"].createElement("th", null, "Date"), react_1["default"].createElement("th", null, "Project ID"), react_1["default"].createElement("th", null, "Name"), react_1["default"].createElement("th", null, "Value"), react_1["default"].createElement("th", null, "Status"), react_1["default"].createElement("th", null, "Action")), react_1["default"].createElement("tr", null, react_1["default"].createElement("td", {
+  }, react_1["default"].createElement("tr", {
+    className: " border-b-2 border-b-blue-200 pb-2.5"
+  }, react_1["default"].createElement("th", {
+    className: " text-left pl-3 "
+  }, "Date"), react_1["default"].createElement("th", {
+    className: " text-left pl-3"
+  }, "Project ID"), react_1["default"].createElement("th", {
+    className: " text-left pl-3"
+  }, "Name"), react_1["default"].createElement("th", {
+    className: " text-left pl-3"
+  }, "Value"), react_1["default"].createElement("th", {
+    className: " text-left pl-3"
+  }, "Status"), react_1["default"].createElement("th", {
+    className: " text-left pl-3"
+  }, "Action")), react_1["default"].createElement("tr", null, react_1["default"].createElement("td", {
+    className: " px-3 py-3 font-semibold"
+  }, "04/01/2021"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
-  }, "14/01/2021"), react_1["default"].createElement("td", {
-    className: " px-3 py-3"
-  }, "12345678"), react_1["default"].createElement("td", {
+  }, "us67dsx"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
   }, "Gulu Mall Construction"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
-  }, "$10m"), react_1["default"].createElement("td", {
+  }, "UGX 200m"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
   }, react_1["default"].createElement("p", {
-    className: " bg-green-700 text-white py-2 px-3"
+    className: " bg-green-700 text-white text-center py-2 px-2"
   }, "Completed")), react_1["default"].createElement("td", {
     className: " px-3 py-3"
   }, "...")), react_1["default"].createElement("tr", null, react_1["default"].createElement("td", {
+    className: " px-3 py-3 font-semibold"
+  }, "06/01/2021"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
-  }, "14/01/2021"), react_1["default"].createElement("td", {
+  }, "sa893nw"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
-  }, "12345678"), react_1["default"].createElement("td", {
+  }, "City Road"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
-  }, "Gulu Mall Construction"), react_1["default"].createElement("td", {
-    className: " px-3 py-3"
-  }, "$10m"), react_1["default"].createElement("td", {
+  }, "UGX 100M"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
   }, react_1["default"].createElement("p", {
-    className: " bg-yellow-700 text-white py-2 px-3"
+    className: " bg-yellow-600 text-white text-center py-2 px-2"
   }, "In Progress")), react_1["default"].createElement("td", {
     className: " px-3 py-3"
   }, "...")), react_1["default"].createElement("tr", null, react_1["default"].createElement("td", {
+    className: " px-3 py-3 font-semibold"
+  }, "14/06/2021"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
-  }, "14/01/2021"), react_1["default"].createElement("td", {
+  }, "ew32kl8"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
-  }, "12345678"), react_1["default"].createElement("td", {
+  }, "Bidi School Construction"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
-  }, "Gulu Mall Construction"), react_1["default"].createElement("td", {
-    className: " px-3 py-3"
-  }, "$10m"), react_1["default"].createElement("td", {
+  }, "UGX 54m"), react_1["default"].createElement("td", {
     className: " px-3 py-3"
   }, react_1["default"].createElement("p", {
-    className: " bg-blue-700 text-white py-2 px-3"
+    className: " bg-blue-700 text-white text-center py-2 px-2"
   }, "Paused")), react_1["default"].createElement("td", {
     className: " px-3 py-3"
   }, "..."))))));
@@ -6813,52 +6800,6 @@ exports["default"] = ClientsDashboard;
 "use strict";
 
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  Object.defineProperty(o, k2, {
-    enumerable: true,
-    get: function get() {
-      return m[k];
-    }
-  });
-} : function (o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  o[k2] = m[k];
-});
-
-var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
-  Object.defineProperty(o, "default", {
-    enumerable: true,
-    value: v
-  });
-} : function (o, v) {
-  o["default"] = v;
-});
-
-var __importStar = this && this.__importStar || function (mod) {
-  if (mod && mod.__esModule) return mod;
-  var result = {};
-  if (mod != null) for (var k in mod) {
-    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-  }
-
-  __setModuleDefault(result, mod);
-
-  return result;
-};
-
 var __importDefault = this && this.__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
     "default": mod
@@ -6869,30 +6810,30 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
 
 
-var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png"));
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
 
 var User_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/User.png */ "./resources/assets/images/User.png"));
 
-var Notify_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Notify.svg */ "./resources/assets/icons/Notify.svg"));
+var Notify_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Notify.svg */ "./resources/assets/icons/Notify.svg")); // Components
+
 
 var DashNav = function DashNav() {
-  var _ref = (0, react_1.useState)(false),
-      _ref2 = _slicedToArray(_ref, 2),
-      open = _ref2[0],
-      setOpen = _ref2[1];
-
   return react_1["default"].createElement("div", {
     className: " sm:px-20  h-8 fixed w-full  "
   }, react_1["default"].createElement("div", {
     className: " flex flex-row items-center shadow-sm justify-between "
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/'
   }, react_1["default"].createElement("img", {
-    src: logo_png_1["default"],
+    src: logo_light_png_1["default"],
     className: " h-10",
     alt: ""
-  }), react_1["default"].createElement("form", {
+  })), react_1["default"].createElement("form", {
     action: "",
     className: ""
   }, react_1["default"].createElement("label", {
@@ -6916,7 +6857,7 @@ var DashNav = function DashNav() {
     className: " mr-3"
   }), react_1["default"].createElement("p", {
     className: " text-gray-700 pl-3 "
-  }, "Client User "), react_1["default"].createElement("div", {
+  }, "John Doe "), react_1["default"].createElement("div", {
     className: " pl-10"
   }, react_1["default"].createElement("img", {
     src: Notify_svg_1["default"],
@@ -7018,6 +6959,8 @@ var Graph_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/i
 
 var SignOut_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/SignOut.svg */ "./resources/assets/icons/SignOut.svg"));
 
+var Project_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Project.svg */ "./resources/assets/icons/Project.svg"));
+
 var sidebarNav = [{
   id: 1,
   text: 'Overview',
@@ -7031,7 +6974,7 @@ var sidebarNav = [{
 }, {
   id: 3,
   text: 'Projects',
-  icon: Graph_svg_1["default"],
+  icon: Project_svg_1["default"],
   route: '/client-dashboard'
 }, {
   id: 4,
@@ -7509,7 +7452,9 @@ Object.defineProperty(exports, "__esModule", ({
 var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
 
 
-var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
+
+var Menu_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Menu.svg */ "./resources/assets/icons/Menu.svg")); // Components
 
 
 var sidebar_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/admin/sidebar.dashboard */ "./resources/js/components/dashboard/admin/sidebar.dashboard.tsx"));
@@ -7533,15 +7478,16 @@ var AdminDashboard = function AdminDashboard() {
   }, react_1["default"].createElement("a", {
     href: "/"
   }, react_1["default"].createElement("img", {
-    src: logo_png_1["default"],
+    src: logo_light_png_1["default"],
     alt: "",
     className: " sm:h-10 h-5"
-  })), react_1["default"].createElement("p", {
+  })), react_1["default"].createElement("img", {
+    src: Menu_svg_1["default"],
     onClick: function onClick() {
       return setOpen(!open);
     },
     className: " sm:hidden"
-  }, "Menu"), open && react_1["default"].createElement(mobileNav_admin_1["default"], null)), react_1["default"].createElement("div", {
+  })), open && react_1["default"].createElement(mobileNav_admin_1["default"], null), react_1["default"].createElement("div", {
     className: "flex flex-row w-full pt-4 sm:pt-20"
   }, react_1["default"].createElement("div", {
     className: " w-64 hidden sm:flex "
@@ -7620,7 +7566,9 @@ Object.defineProperty(exports, "__esModule", ({
 var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
 
 
-var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
+
+var Menu_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Menu.svg */ "./resources/assets/icons/Menu.svg")); // Components
 
 
 var dashNav_1 = __importDefault(__webpack_require__(/*! ../dashboard/clients/dashNav */ "./resources/js/components/dashboard/clients/dashNav.tsx"));
@@ -7637,22 +7585,25 @@ var ClientDashboard = function ClientDashboard() {
       open = _ref2[0],
       setOpen = _ref2[1];
 
-  return react_1["default"].createElement("div", null, react_1["default"].createElement("div", {
-    className: " mb-4 hidden sm:block "
+  return react_1["default"].createElement("div", {
+    className: " w-full"
+  }, react_1["default"].createElement("div", {
+    className: " mb-4 -ml-8 hidden sm:flex "
   }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
     className: "flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
   }, react_1["default"].createElement("a", {
     href: "/"
   }, react_1["default"].createElement("img", {
-    src: logo_png_1["default"],
+    src: logo_light_png_1["default"],
     alt: "",
     className: " sm:h-10 h-5"
-  })), react_1["default"].createElement("p", {
+  })), react_1["default"].createElement("img", {
+    src: Menu_svg_1["default"],
     onClick: function onClick() {
       return setOpen(!open);
     },
     className: " sm:hidden"
-  }, "Menu"), open && react_1["default"].createElement(mobileNav_clients_1["default"], null)), react_1["default"].createElement("div", {
+  })), open && react_1["default"].createElement(mobileNav_clients_1["default"], null), react_1["default"].createElement("div", {
     className: "flex flex-row w-full pt-4 sm:pt-20"
   }, react_1["default"].createElement("div", {
     className: " w-64 hidden sm:flex "
@@ -7725,14 +7676,16 @@ var Contact = function Contact() {
     className: " text-2xl mb-4 text-gray-700"
   }, "Please do not hesistate to get in ", react_1["default"].createElement("br", {
     className: " hidden sm:block"
-  }), ' ', "touch with us."), react_1["default"].createElement("p", {
+  }), "touch with us."), react_1["default"].createElement("p", {
     className: " text-base text-gray-800 mb-4 "
-  }, "Fill in the form with any query and we wil get back to you as soon as possible."), react_1["default"].createElement("p", {
+  }, "Fill in the form with any query and we wil get back to", react_1["default"].createElement("br", {
+    className: "sm:hidden block"
+  }), " you as soon as possible."), react_1["default"].createElement("p", {
     className: " text-base italic text-gray-700"
   }, "Fields marked with ", react_1["default"].createElement("span", {
     className: " text-red-600"
   }, "*"), " are required.")), react_1["default"].createElement("div", {
-    className: " flex flex-col"
+    className: " flex flex-col sm:m-0 mb-8"
   }, react_1["default"].createElement("div", {
     className: "flex flex-row mb-4"
   }, react_1["default"].createElement("img", {
@@ -7768,7 +7721,6 @@ var Contact = function Contact() {
     name: "email",
     required: true,
     id: "email",
-    placeholder: "Your email",
     className: " w-full mb-8 rounded-sm border-gray-400"
   })), react_1["default"].createElement("div", {
     className: "flex flex-col"
@@ -7782,7 +7734,6 @@ var Contact = function Contact() {
     name: "name",
     id: "name",
     required: true,
-    placeholder: "Your name",
     className: " w-full mb-8 rounded-sm border-gray-400"
   })), react_1["default"].createElement("div", {
     className: "flex flex-col mb-10"
@@ -7796,7 +7747,6 @@ var Contact = function Contact() {
     id: "message",
     cols: 20,
     rows: 10,
-    placeholder: " Your message",
     className: " rounded-sm border-gray-400"
   })), react_1["default"].createElement("div", {
     className: " flex justify-center mb-12 "
@@ -7849,9 +7799,9 @@ var Home = function Home() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
     className: "pt-28 mb-20 sm:mb-0"
   }, react_1["default"].createElement(Hero_1["default"], null)), react_1["default"].createElement(Verticals_1["default"], null), react_1["default"].createElement(CallToAction_1["default"], null), react_1["default"].createElement("div", {
-    className: " mt-10"
+    className: " pt-10 bg-white"
   }, react_1["default"].createElement(IconsSection_1["default"], null)), react_1["default"].createElement("div", {
-    className: " mt-10"
+    className: "mt-14"
   }, react_1["default"].createElement(ImageSection_1["default"], null)), react_1["default"].createElement(Footer_1["default"], null));
 };
 
@@ -7890,79 +7840,81 @@ var Jumbotron_1 = __importDefault(__webpack_require__(/*! ../common/Jumbotron */
 var Navbar_1 = __importDefault(__webpack_require__(/*! ../common/Navbar */ "./resources/js/components/common/Navbar.tsx")); // Assets
 
 
-var service_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/service.png */ "./resources/assets/images/service.png"));
+var edit_size_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/edit-size.png */ "./resources/assets/images/edit-size.png"));
 
 var Solutions = function Solutions() {
-  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
+  return react_1["default"].createElement("div", {
+    className: " px-4 sm:px-0"
+  }, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
     className: "pt-28"
   }, react_1["default"].createElement(Jumbotron_1["default"], {
-    header: " Here is the heading",
-    leadingParagraph: "Lorem ipsum dolor sit amet consectetur. "
-  }), react_1["default"].createElement(Heading_1["default"], {
+    header: " Solutions",
+    leadingParagraph: "Check out the value that we offer to our esteemed cutomers. "
+  }), react_1["default"].createElement("div", {
+    className: " mb-8"
+  }, react_1["default"].createElement(Heading_1["default"], {
     text: "Solutions we offer",
     className: " uppercase font-semibold mb-6"
-  }), react_1["default"].createElement("div", {
+  })), react_1["default"].createElement("div", {
     className: " mb-20 sm:px-20"
   }, react_1["default"].createElement("div", {
     className: "flex flex-col"
   }, react_1["default"].createElement("div", {
-    className: " flex sm:flex-row flex-col   items-center mb-16  px-4"
+    className: " flex sm:flex-row flex-col    items-center mb-16  px-4"
   }, react_1["default"].createElement("img", {
-    src: service_png_1["default"],
-    alt: ""
+    src: edit_size_png_1["default"],
+    alt: "",
+    className: " sm:ml-20 sm:mr-20"
   }), react_1["default"].createElement("div", {
     className: "flex flex-col sm:ml-20"
   }, react_1["default"].createElement("h2", {
-    className: " text-4xl text-blue-700 mb-8"
-  }, "Works monitoring "), react_1["default"].createElement("ul", {
-    className: " list-disc"
+    className: " text-3xl uppercase font-medium text-blue-700 mb-8"
+  }, "Works Monitoring", ' '), react_1["default"].createElement("ul", {
+    className: " list-disc "
   }, react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
+  }, "Email reports from the dashboard to other stakeholders", ' '), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
+  }, "Generate reports about the on-going projects"), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing.")))), react_1["default"].createElement("div", {
+  }, "Invite team members for report collaboration")))), react_1["default"].createElement("div", {
     className: " flex sm:flex-row flex-col-reverse   items-center mb-16 sm:px-32 px-4"
   }, react_1["default"].createElement("div", {
     className: "flex flex-col sm:mr-20"
   }, react_1["default"].createElement("h2", {
-    className: " text-4xl text-blue-700 mb-8"
+    className: " text-3xl uppercase font-medium text-blue-700 mb-8"
   }, "Drone Services"), react_1["default"].createElement("ul", {
     className: " list-disc"
   }, react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
+  }, "Drone works monitoring. "), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
+  }, "Drone thermal imaging for construction sites."), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
+  }, "Risk assessment using drones."), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."))), react_1["default"].createElement("img", {
-    src: service_png_1["default"],
+  }, "Environmental protection compliance using drones."))), react_1["default"].createElement("img", {
+    src: edit_size_png_1["default"],
     alt: ""
   })), react_1["default"].createElement("div", {
     className: " flex sm:flex-row flex-col   items-center mb-16  px-4"
   }, react_1["default"].createElement("img", {
-    src: service_png_1["default"],
-    alt: ""
+    src: edit_size_png_1["default"],
+    alt: "",
+    className: " sm:ml-20 sm:mr-20"
   }), react_1["default"].createElement("div", {
-    className: "flex flex-col sm:ml-20"
+    className: "flex flex-col "
   }, react_1["default"].createElement("h2", {
-    className: " text-4xl text-blue-700 mb-8"
-  }, "Image data analysis "), react_1["default"].createElement("ul", {
+    className: " text-3xl font-medium uppercase text-blue-700 mb-8"
+  }, "Image data analysis"), react_1["default"].createElement("ul", {
     className: " list-disc"
   }, react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
+  }, "Image report generation for construction companies."), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
+  }, "Report conveyance to construction site managers."), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."), react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing."))))))), react_1["default"].createElement(Footer_1["default"], null));
+  }, "Analyze data from video reports gathered from the site."))))))), react_1["default"].createElement(Footer_1["default"], null));
 };
 
 exports["default"] = Solutions;
@@ -26568,10 +26520,10 @@ module.exports = deepmerge_1;
 
 /***/ }),
 
-/***/ "./resources/assets/Branch.svg":
-/*!*************************************!*\
-  !*** ./resources/assets/Branch.svg ***!
-  \*************************************/
+/***/ "./resources/assets/icons/Building.svg":
+/*!*********************************************!*\
+  !*** ./resources/assets/icons/Building.svg ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -26579,14 +26531,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Branch.svg?35b56a4988470be8000817694fe2c98d");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Building.svg?798cd417ec9978797d5573921f6bac97");
 
 /***/ }),
 
-/***/ "./resources/assets/BranchDark.svg":
-/*!*****************************************!*\
-  !*** ./resources/assets/BranchDark.svg ***!
-  \*****************************************/
+/***/ "./resources/assets/icons/Cameras.svg":
+/*!********************************************!*\
+  !*** ./resources/assets/icons/Cameras.svg ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -26594,14 +26546,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/BranchDark.svg?dc48b91e8242591573e572c3767e8523");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Cameras.svg?5587654792da9f4a2424356b061bb9e1");
 
 /***/ }),
 
-/***/ "./resources/assets/PlusIcon.svg":
-/*!***************************************!*\
-  !*** ./resources/assets/PlusIcon.svg ***!
-  \***************************************/
+/***/ "./resources/assets/icons/Dependable.svg":
+/*!***********************************************!*\
+  !*** ./resources/assets/icons/Dependable.svg ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -26609,7 +26561,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/PlusIcon.svg?3cdba9e8a1901c9f80dbdb3abf98c5df");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Dependable.svg?9ba3ee6cf6437bb9a0bed79b32d41f56");
+
+/***/ }),
+
+/***/ "./resources/assets/icons/Disruption.svg":
+/*!***********************************************!*\
+  !*** ./resources/assets/icons/Disruption.svg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Disruption.svg?cf6d451e4577ccca0ab901da6f105b5d");
 
 /***/ }),
 
@@ -26625,6 +26592,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Email.svg?7be6e02d7bdf46a5f64e94b42b255696");
+
+/***/ }),
+
+/***/ "./resources/assets/icons/Excellence.svg":
+/*!***********************************************!*\
+  !*** ./resources/assets/icons/Excellence.svg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Excellence.svg?baff54920b2c847ab545c0f0a5368c7c");
 
 /***/ }),
 
@@ -26688,6 +26670,36 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/icons/Loyalty.svg":
+/*!********************************************!*\
+  !*** ./resources/assets/icons/Loyalty.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Loyalty.svg?6a98dfe8a64787fb9b30880ec0dcef68");
+
+/***/ }),
+
+/***/ "./resources/assets/icons/Menu.svg":
+/*!*****************************************!*\
+  !*** ./resources/assets/icons/Menu.svg ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Menu.svg?9dbc5a3a96ad85a57422263699b1695d");
+
+/***/ }),
+
 /***/ "./resources/assets/icons/Notify.svg":
 /*!*******************************************!*\
   !*** ./resources/assets/icons/Notify.svg ***!
@@ -26715,6 +26727,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Phone.svg?4f06bac04c761b8b63e422c0753e2719");
+
+/***/ }),
+
+/***/ "./resources/assets/icons/Plane.svg":
+/*!******************************************!*\
+  !*** ./resources/assets/icons/Plane.svg ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Plane.svg?7fb856548b3baae70b1cda0a7de8b46e");
+
+/***/ }),
+
+/***/ "./resources/assets/icons/Project.svg":
+/*!********************************************!*\
+  !*** ./resources/assets/icons/Project.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Project.svg?a6d5ee006b61b7481a7e7908567b5e76");
 
 /***/ }),
 
@@ -26748,6 +26790,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/icons/Simple.svg":
+/*!*******************************************!*\
+  !*** ./resources/assets/icons/Simple.svg ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Simple.svg?810434cd3b7bf64e711098cda1ce87fc");
+
+/***/ }),
+
 /***/ "./resources/assets/icons/Twitter.svg":
 /*!********************************************!*\
   !*** ./resources/assets/icons/Twitter.svg ***!
@@ -26760,6 +26817,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Twitter.svg?8321bc7a32844b7a6c513ec925f8f47c");
+
+/***/ }),
+
+/***/ "./resources/assets/icons/User.svg":
+/*!*****************************************!*\
+  !*** ./resources/assets/icons/User.svg ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/User.svg?9ae9217c71dca949ae53744be46deb96");
+
+/***/ }),
+
+/***/ "./resources/assets/icons/VideoOne.svg":
+/*!*********************************************!*\
+  !*** ./resources/assets/icons/VideoOne.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/VideoOne.svg?26a5d24fa1b0da39f8235fcb284390a8");
+
+/***/ }),
+
+/***/ "./resources/assets/icons/VideoTwo.svg":
+/*!*********************************************!*\
+  !*** ./resources/assets/icons/VideoTwo.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/VideoTwo.svg?10ed08b04fcfa4d740895f73929b239e");
 
 /***/ }),
 
@@ -26793,24 +26895,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/images/denebola-light.jpeg":
-/*!*****************************************************!*\
-  !*** ./resources/assets/images/denebola-light.jpeg ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/denebola-light.jpeg?ea553ab367b82c7f87a2113a20813a9b");
-
-/***/ }),
-
-/***/ "./resources/assets/images/denebola.jpeg":
+/***/ "./resources/assets/images/edit-size.png":
 /*!***********************************************!*\
-  !*** ./resources/assets/images/denebola.jpeg ***!
+  !*** ./resources/assets/images/edit-size.png ***!
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -26819,7 +26906,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/denebola.jpeg?9a6617be35636ea4b8dbb2ce86196968");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/edit-size.png?fe411c2f94d8b9eced03235c097d1785");
 
 /***/ }),
 
@@ -26838,6 +26925,36 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/logo-dark.png":
+/*!***********************************************!*\
+  !*** ./resources/assets/images/logo-dark.png ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo-dark.png?9c62a95df84f8918818cf419157e2eb1");
+
+/***/ }),
+
+/***/ "./resources/assets/images/logo-light.png":
+/*!************************************************!*\
+  !*** ./resources/assets/images/logo-light.png ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo-light.png?36238587a9c211970cbfdfaf103f980e");
+
+/***/ }),
+
 /***/ "./resources/assets/images/logo.png":
 /*!******************************************!*\
   !*** ./resources/assets/images/logo.png ***!
@@ -26850,36 +26967,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo.png?919497bcdc63e48508f13ef3220818b4");
-
-/***/ }),
-
-/***/ "./resources/assets/images/service.png":
-/*!*********************************************!*\
-  !*** ./resources/assets/images/service.png ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/service.png?7380d76231f269bfbe686bf466e27824");
-
-/***/ }),
-
-/***/ "./resources/assets/images/video.png":
-/*!*******************************************!*\
-  !*** ./resources/assets/images/video.png ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/video.png?612408689516ef873af3bc3ac7e169c9");
 
 /***/ }),
 
@@ -72234,10 +72321,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./node_modules/react-player/lazy/Player.js":
-/*!**************************************************!*\
-  !*** ./node_modules/react-player/lazy/Player.js ***!
-  \**************************************************/
+/***/ "./node_modules/react-player/lib/Player.js":
+/*!*************************************************!*\
+  !*** ./node_modules/react-player/lib/Player.js ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -72254,7 +72341,7 @@ var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_mo
 
 var _reactFastCompare = _interopRequireDefault(__webpack_require__(/*! react-fast-compare */ "./node_modules/react-fast-compare/index.js"));
 
-var _props = __webpack_require__(/*! ./props */ "./node_modules/react-player/lazy/props.js");
+var _props = __webpack_require__(/*! ./props */ "./node_modules/react-player/lib/props.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -72657,16 +72744,218 @@ _defineProperty(Player, "defaultProps", _props.defaultProps);
 
 /***/ }),
 
-/***/ "./node_modules/react-player/lazy/ReactPlayer.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/react-player/lazy/ReactPlayer.js ***!
-  \*******************************************************/
+/***/ "./node_modules/react-player/lib/Preview.js":
+/*!**************************************************!*\
+  !*** ./node_modules/react-player/lib/Preview.js ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var ICON_SIZE = '64px';
+var cache = {};
+
+var Preview = /*#__PURE__*/function (_Component) {
+  _inherits(Preview, _Component);
+
+  var _super = _createSuper(Preview);
+
+  function Preview() {
+    var _this;
+
+    _classCallCheck(this, Preview);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    _defineProperty(_assertThisInitialized(_this), "mounted", false);
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      image: null
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleKeyPress", function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        _this.props.onClick();
+      }
+    });
+
+    return _this;
+  }
+
+  _createClass(Preview, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.mounted = true;
+      this.fetchImage(this.props);
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      var _this$props = this.props,
+          url = _this$props.url,
+          light = _this$props.light;
+
+      if (prevProps.url !== url || prevProps.light !== light) {
+        this.fetchImage(this.props);
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this.mounted = false;
+    }
+  }, {
+    key: "fetchImage",
+    value: function fetchImage(_ref) {
+      var _this2 = this;
+
+      var url = _ref.url,
+          light = _ref.light;
+
+      if (typeof light === 'string') {
+        this.setState({
+          image: light
+        });
+        return;
+      }
+
+      if (cache[url]) {
+        this.setState({
+          image: cache[url]
+        });
+        return;
+      }
+
+      this.setState({
+        image: null
+      });
+      return window.fetch("https://noembed.com/embed?url=".concat(url)).then(function (response) {
+        return response.json();
+      }).then(function (data) {
+        if (data.thumbnail_url && _this2.mounted) {
+          var image = data.thumbnail_url.replace('height=100', 'height=480');
+
+          _this2.setState({
+            image: image
+          });
+
+          cache[url] = image;
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          onClick = _this$props2.onClick,
+          playIcon = _this$props2.playIcon,
+          previewTabIndex = _this$props2.previewTabIndex;
+      var image = this.state.image;
+      var flexCenter = {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      };
+      var styles = {
+        preview: _objectSpread({
+          width: '100%',
+          height: '100%',
+          backgroundImage: image ? "url(".concat(image, ")") : undefined,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          cursor: 'pointer'
+        }, flexCenter),
+        shadow: _objectSpread({
+          background: 'radial-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 60%)',
+          borderRadius: ICON_SIZE,
+          width: ICON_SIZE,
+          height: ICON_SIZE
+        }, flexCenter),
+        playIcon: {
+          borderStyle: 'solid',
+          borderWidth: '16px 0 16px 26px',
+          borderColor: 'transparent transparent transparent white',
+          marginLeft: '7px'
+        }
+      };
+
+      var defaultPlayIcon = /*#__PURE__*/_react["default"].createElement("div", {
+        style: styles.shadow,
+        className: "react-player__shadow"
+      }, /*#__PURE__*/_react["default"].createElement("div", {
+        style: styles.playIcon,
+        className: "react-player__play-icon"
+      }));
+
+      return /*#__PURE__*/_react["default"].createElement("div", {
+        style: styles.preview,
+        className: "react-player__preview",
+        onClick: onClick,
+        tabIndex: previewTabIndex,
+        onKeyPress: this.handleKeyPress
+      }, playIcon || defaultPlayIcon);
+    }
+  }]);
+
+  return Preview;
+}(_react.Component);
+
+exports["default"] = Preview;
+
+/***/ }),
+
+/***/ "./node_modules/react-player/lib/ReactPlayer.js":
+/*!******************************************************!*\
+  !*** ./node_modules/react-player/lib/ReactPlayer.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
 
 Object.defineProperty(exports, "__esModule", ({
   value: true
@@ -72681,17 +72970,15 @@ var _memoizeOne = _interopRequireDefault(__webpack_require__(/*! memoize-one */ 
 
 var _reactFastCompare = _interopRequireDefault(__webpack_require__(/*! react-fast-compare */ "./node_modules/react-fast-compare/index.js"));
 
-var _props = __webpack_require__(/*! ./props */ "./node_modules/react-player/lazy/props.js");
+var _props = __webpack_require__(/*! ./props */ "./node_modules/react-player/lib/props.js");
 
-var _utils = __webpack_require__(/*! ./utils */ "./node_modules/react-player/lazy/utils.js");
+var _utils = __webpack_require__(/*! ./utils */ "./node_modules/react-player/lib/utils.js");
 
-var _Player3 = _interopRequireDefault(__webpack_require__(/*! ./Player */ "./node_modules/react-player/lazy/Player.js"));
+var _Player3 = _interopRequireDefault(__webpack_require__(/*! ./Player */ "./node_modules/react-player/lib/Player.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -72733,8 +73020,14 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
 var Preview = /*#__PURE__*/(0, _react.lazy)(function () {
-  return __webpack_require__.e(/*! import() | reactPlayerPreview */ "reactPlayerPreview").then(__webpack_require__.bind(__webpack_require__, /*! ./Preview */ "./node_modules/react-player/lazy/Preview.js"));
+  return Promise.resolve().then(function () {
+    return _interopRequireWildcard(__webpack_require__(/*! ./Preview */ "./node_modules/react-player/lib/Preview.js"));
+  });
 });
 var IS_BROWSER = typeof window !== 'undefined' && window.document;
 var IS_GLOBAL = typeof __webpack_require__.g !== 'undefined' && __webpack_require__.g.window && __webpack_require__.g.window.document;
@@ -72963,39 +73256,10 @@ exports.createReactPlayer = createReactPlayer;
 
 /***/ }),
 
-/***/ "./node_modules/react-player/lazy/index.js":
-/*!*************************************************!*\
-  !*** ./node_modules/react-player/lazy/index.js ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports["default"] = void 0;
-
-var _players = _interopRequireDefault(__webpack_require__(/*! ./players */ "./node_modules/react-player/lazy/players/index.js"));
-
-var _ReactPlayer = __webpack_require__(/*! ./ReactPlayer */ "./node_modules/react-player/lazy/ReactPlayer.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-// Fall back to FilePlayer if nothing else can play the URL
-var fallback = _players["default"][_players["default"].length - 1];
-
-var _default = (0, _ReactPlayer.createReactPlayer)(_players["default"], fallback);
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lazy/patterns.js":
-/*!****************************************************!*\
-  !*** ./node_modules/react-player/lazy/patterns.js ***!
-  \****************************************************/
+/***/ "./node_modules/react-player/lib/patterns.js":
+/*!***************************************************!*\
+  !*** ./node_modules/react-player/lib/patterns.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -73006,7 +73270,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.canPlay = exports.FLV_EXTENSIONS = exports.DASH_EXTENSIONS = exports.HLS_EXTENSIONS = exports.VIDEO_EXTENSIONS = exports.AUDIO_EXTENSIONS = exports.MATCH_URL_KALTURA = exports.MATCH_URL_VIDYARD = exports.MATCH_URL_MIXCLOUD = exports.MATCH_URL_DAILYMOTION = exports.MATCH_URL_TWITCH_CHANNEL = exports.MATCH_URL_TWITCH_VIDEO = exports.MATCH_URL_WISTIA = exports.MATCH_URL_STREAMABLE = exports.MATCH_URL_FACEBOOK_WATCH = exports.MATCH_URL_FACEBOOK = exports.MATCH_URL_VIMEO = exports.MATCH_URL_SOUNDCLOUD = exports.MATCH_URL_YOUTUBE = void 0;
 
-var _utils = __webpack_require__(/*! ./utils */ "./node_modules/react-player/lazy/utils.js");
+var _utils = __webpack_require__(/*! ./utils */ "./node_modules/react-player/lib/utils.js");
 
 function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
@@ -73130,122 +73394,362 @@ exports.canPlay = canPlay;
 
 /***/ }),
 
-/***/ "./node_modules/react-player/lazy/players/index.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/react-player/lazy/players/index.js ***!
-  \*********************************************************/
+/***/ "./node_modules/react-player/lib/players/YouTube.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-player/lib/players/YouTube.js ***!
+  \**********************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports["default"] = void 0;
 
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lazy/utils.js");
+var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lib/utils.js");
 
-var _patterns = __webpack_require__(/*! ../patterns */ "./node_modules/react-player/lazy/patterns.js");
+var _patterns = __webpack_require__(/*! ../patterns */ "./node_modules/react-player/lib/patterns.js");
 
-var _default = [{
-  key: 'youtube',
-  name: 'YouTube',
-  canPlay: _patterns.canPlay.youtube,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerYouTube */ "reactPlayerYouTube").then(__webpack_require__.bind(__webpack_require__, /*! ./YouTube */ "./node_modules/react-player/lazy/players/YouTube.js"));
-  })
-}, {
-  key: 'soundcloud',
-  name: 'SoundCloud',
-  canPlay: _patterns.canPlay.soundcloud,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerSoundCloud */ "reactPlayerSoundCloud").then(__webpack_require__.bind(__webpack_require__, /*! ./SoundCloud */ "./node_modules/react-player/lazy/players/SoundCloud.js"));
-  })
-}, {
-  key: 'vimeo',
-  name: 'Vimeo',
-  canPlay: _patterns.canPlay.vimeo,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerVimeo */ "reactPlayerVimeo").then(__webpack_require__.bind(__webpack_require__, /*! ./Vimeo */ "./node_modules/react-player/lazy/players/Vimeo.js"));
-  })
-}, {
-  key: 'facebook',
-  name: 'Facebook',
-  canPlay: _patterns.canPlay.facebook,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerFacebook */ "reactPlayerFacebook").then(__webpack_require__.bind(__webpack_require__, /*! ./Facebook */ "./node_modules/react-player/lazy/players/Facebook.js"));
-  })
-}, {
-  key: 'streamable',
-  name: 'Streamable',
-  canPlay: _patterns.canPlay.streamable,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerStreamable */ "reactPlayerStreamable").then(__webpack_require__.bind(__webpack_require__, /*! ./Streamable */ "./node_modules/react-player/lazy/players/Streamable.js"));
-  })
-}, {
-  key: 'wistia',
-  name: 'Wistia',
-  canPlay: _patterns.canPlay.wistia,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerWistia */ "reactPlayerWistia").then(__webpack_require__.bind(__webpack_require__, /*! ./Wistia */ "./node_modules/react-player/lazy/players/Wistia.js"));
-  })
-}, {
-  key: 'twitch',
-  name: 'Twitch',
-  canPlay: _patterns.canPlay.twitch,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerTwitch */ "reactPlayerTwitch").then(__webpack_require__.bind(__webpack_require__, /*! ./Twitch */ "./node_modules/react-player/lazy/players/Twitch.js"));
-  })
-}, {
-  key: 'dailymotion',
-  name: 'DailyMotion',
-  canPlay: _patterns.canPlay.dailymotion,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerDailyMotion */ "reactPlayerDailyMotion").then(__webpack_require__.bind(__webpack_require__, /*! ./DailyMotion */ "./node_modules/react-player/lazy/players/DailyMotion.js"));
-  })
-}, {
-  key: 'mixcloud',
-  name: 'Mixcloud',
-  canPlay: _patterns.canPlay.mixcloud,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerMixcloud */ "reactPlayerMixcloud").then(__webpack_require__.bind(__webpack_require__, /*! ./Mixcloud */ "./node_modules/react-player/lazy/players/Mixcloud.js"));
-  })
-}, {
-  key: 'vidyard',
-  name: 'Vidyard',
-  canPlay: _patterns.canPlay.vidyard,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerVidyard */ "reactPlayerVidyard").then(__webpack_require__.bind(__webpack_require__, /*! ./Vidyard */ "./node_modules/react-player/lazy/players/Vidyard.js"));
-  })
-}, {
-  key: 'kaltura',
-  name: 'Kaltura',
-  canPlay: _patterns.canPlay.kaltura,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerKaltura */ "reactPlayerKaltura").then(__webpack_require__.bind(__webpack_require__, /*! ./Kaltura */ "./node_modules/react-player/lazy/players/Kaltura.js"));
-  })
-}, {
-  key: 'file',
-  name: 'FilePlayer',
-  canPlay: _patterns.canPlay.file,
-  canEnablePIP: function canEnablePIP(url) {
-    return _patterns.canPlay.file(url) && (document.pictureInPictureEnabled || (0, _utils.supportsWebKitPresentationMode)()) && !_patterns.AUDIO_EXTENSIONS.test(url);
-  },
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return __webpack_require__.e(/*! import() | reactPlayerFilePlayer */ "reactPlayerFilePlayer").then(__webpack_require__.bind(__webpack_require__, /*! ./FilePlayer */ "./node_modules/react-player/lazy/players/FilePlayer.js"));
-  })
-}];
-exports["default"] = _default;
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var SDK_URL = 'https://www.youtube.com/iframe_api';
+var SDK_GLOBAL = 'YT';
+var SDK_GLOBAL_READY = 'onYouTubeIframeAPIReady';
+var MATCH_PLAYLIST = /[?&](?:list|channel)=([a-zA-Z0-9_-]+)/;
+var MATCH_USER_UPLOADS = /user\/([a-zA-Z0-9_-]+)\/?/;
+var MATCH_NOCOOKIE = /youtube-nocookie\.com/;
+var NOCOOKIE_HOST = 'https://www.youtube-nocookie.com';
+
+var YouTube = /*#__PURE__*/function (_Component) {
+  _inherits(YouTube, _Component);
+
+  var _super = _createSuper(YouTube);
+
+  function YouTube() {
+    var _this;
+
+    _classCallCheck(this, YouTube);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
+
+    _defineProperty(_assertThisInitialized(_this), "parsePlaylist", function (url) {
+      if (url instanceof Array) {
+        return {
+          listType: 'playlist',
+          playlist: url.map(_this.getID).join(',')
+        };
+      }
+
+      if (MATCH_PLAYLIST.test(url)) {
+        var _url$match = url.match(MATCH_PLAYLIST),
+            _url$match2 = _slicedToArray(_url$match, 2),
+            playlistId = _url$match2[1];
+
+        return {
+          listType: 'playlist',
+          list: playlistId.replace(/^UC/, 'UU')
+        };
+      }
+
+      if (MATCH_USER_UPLOADS.test(url)) {
+        var _url$match3 = url.match(MATCH_USER_UPLOADS),
+            _url$match4 = _slicedToArray(_url$match3, 2),
+            username = _url$match4[1];
+
+        return {
+          listType: 'user_uploads',
+          list: username
+        };
+      }
+
+      return {};
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onStateChange", function (event) {
+      var data = event.data;
+      var _this$props = _this.props,
+          onPlay = _this$props.onPlay,
+          onPause = _this$props.onPause,
+          onBuffer = _this$props.onBuffer,
+          onBufferEnd = _this$props.onBufferEnd,
+          onEnded = _this$props.onEnded,
+          onReady = _this$props.onReady,
+          loop = _this$props.loop,
+          _this$props$config = _this$props.config,
+          playerVars = _this$props$config.playerVars,
+          onUnstarted = _this$props$config.onUnstarted;
+      var _window$SDK_GLOBAL$Pl = window[SDK_GLOBAL].PlayerState,
+          UNSTARTED = _window$SDK_GLOBAL$Pl.UNSTARTED,
+          PLAYING = _window$SDK_GLOBAL$Pl.PLAYING,
+          PAUSED = _window$SDK_GLOBAL$Pl.PAUSED,
+          BUFFERING = _window$SDK_GLOBAL$Pl.BUFFERING,
+          ENDED = _window$SDK_GLOBAL$Pl.ENDED,
+          CUED = _window$SDK_GLOBAL$Pl.CUED;
+      if (data === UNSTARTED) onUnstarted();
+
+      if (data === PLAYING) {
+        onPlay();
+        onBufferEnd();
+      }
+
+      if (data === PAUSED) onPause();
+      if (data === BUFFERING) onBuffer();
+
+      if (data === ENDED) {
+        var isPlaylist = !!_this.callPlayer('getPlaylist'); // Only loop manually if not playing a playlist
+
+        if (loop && !isPlaylist) {
+          if (playerVars.start) {
+            _this.seekTo(playerVars.start);
+          } else {
+            _this.play();
+          }
+        }
+
+        onEnded();
+      }
+
+      if (data === CUED) onReady();
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "mute", function () {
+      _this.callPlayer('mute');
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
+      _this.callPlayer('unMute');
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "ref", function (container) {
+      _this.container = container;
+    });
+
+    return _this;
+  }
+
+  _createClass(YouTube, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.props.onMount && this.props.onMount(this);
+    }
+  }, {
+    key: "getID",
+    value: function getID(url) {
+      if (!url || url instanceof Array || MATCH_PLAYLIST.test(url)) {
+        return null;
+      }
+
+      return url.match(_patterns.MATCH_URL_YOUTUBE)[1];
+    }
+  }, {
+    key: "load",
+    value: function load(url, isReady) {
+      var _this2 = this;
+
+      var _this$props2 = this.props,
+          playing = _this$props2.playing,
+          muted = _this$props2.muted,
+          playsinline = _this$props2.playsinline,
+          controls = _this$props2.controls,
+          loop = _this$props2.loop,
+          config = _this$props2.config,
+          _onError = _this$props2.onError;
+      var playerVars = config.playerVars,
+          embedOptions = config.embedOptions;
+      var id = this.getID(url);
+
+      if (isReady) {
+        if (MATCH_PLAYLIST.test(url) || MATCH_USER_UPLOADS.test(url) || url instanceof Array) {
+          this.player.loadPlaylist(this.parsePlaylist(url));
+          return;
+        }
+
+        this.player.cueVideoById({
+          videoId: id,
+          startSeconds: (0, _utils.parseStartTime)(url) || playerVars.start,
+          endSeconds: (0, _utils.parseEndTime)(url) || playerVars.end
+        });
+        return;
+      }
+
+      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY, function (YT) {
+        return YT.loaded;
+      }).then(function (YT) {
+        if (!_this2.container) return;
+        _this2.player = new YT.Player(_this2.container, _objectSpread({
+          width: '100%',
+          height: '100%',
+          videoId: id,
+          playerVars: _objectSpread(_objectSpread({
+            autoplay: playing ? 1 : 0,
+            mute: muted ? 1 : 0,
+            controls: controls ? 1 : 0,
+            start: (0, _utils.parseStartTime)(url),
+            end: (0, _utils.parseEndTime)(url),
+            origin: window.location.origin,
+            playsinline: playsinline ? 1 : 0
+          }, _this2.parsePlaylist(url)), playerVars),
+          events: {
+            onReady: function onReady() {
+              if (loop) {
+                _this2.player.setLoop(true); // Enable playlist looping
+
+              }
+
+              _this2.props.onReady();
+            },
+            onStateChange: _this2.onStateChange,
+            onError: function onError(event) {
+              return _onError(event.data);
+            }
+          },
+          host: MATCH_NOCOOKIE.test(url) ? NOCOOKIE_HOST : undefined
+        }, embedOptions));
+      }, _onError);
+
+      if (embedOptions.events) {
+        console.warn('Using `embedOptions.events` will likely break things. Use ReactPlayer’s callback props instead, eg onReady, onPlay, onPause');
+      }
+    }
+  }, {
+    key: "play",
+    value: function play() {
+      this.callPlayer('playVideo');
+    }
+  }, {
+    key: "pause",
+    value: function pause() {
+      this.callPlayer('pauseVideo');
+    }
+  }, {
+    key: "stop",
+    value: function stop() {
+      if (!document.body.contains(this.callPlayer('getIframe'))) return;
+      this.callPlayer('stopVideo');
+    }
+  }, {
+    key: "seekTo",
+    value: function seekTo(amount) {
+      this.callPlayer('seekTo', amount);
+
+      if (!this.props.playing) {
+        this.pause();
+      }
+    }
+  }, {
+    key: "setVolume",
+    value: function setVolume(fraction) {
+      this.callPlayer('setVolume', fraction * 100);
+    }
+  }, {
+    key: "setPlaybackRate",
+    value: function setPlaybackRate(rate) {
+      this.callPlayer('setPlaybackRate', rate);
+    }
+  }, {
+    key: "setLoop",
+    value: function setLoop(loop) {
+      this.callPlayer('setLoop', loop);
+    }
+  }, {
+    key: "getDuration",
+    value: function getDuration() {
+      return this.callPlayer('getDuration');
+    }
+  }, {
+    key: "getCurrentTime",
+    value: function getCurrentTime() {
+      return this.callPlayer('getCurrentTime');
+    }
+  }, {
+    key: "getSecondsLoaded",
+    value: function getSecondsLoaded() {
+      return this.callPlayer('getVideoLoadedFraction') * this.getDuration();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var display = this.props.display;
+      var style = {
+        width: '100%',
+        height: '100%',
+        display: display
+      };
+      return /*#__PURE__*/_react["default"].createElement("div", {
+        style: style
+      }, /*#__PURE__*/_react["default"].createElement("div", {
+        ref: this.ref
+      }));
+    }
+  }]);
+
+  return YouTube;
+}(_react.Component);
+
+exports["default"] = YouTube;
+
+_defineProperty(YouTube, "displayName", 'YouTube');
+
+_defineProperty(YouTube, "canPlay", _patterns.canPlay.youtube);
 
 /***/ }),
 
-/***/ "./node_modules/react-player/lazy/props.js":
-/*!*************************************************!*\
-  !*** ./node_modules/react-player/lazy/props.js ***!
-  \*************************************************/
+/***/ "./node_modules/react-player/lib/props.js":
+/*!************************************************!*\
+  !*** ./node_modules/react-player/lib/props.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -73472,10 +73976,10 @@ exports.defaultProps = defaultProps;
 
 /***/ }),
 
-/***/ "./node_modules/react-player/lazy/utils.js":
-/*!*************************************************!*\
-  !*** ./node_modules/react-player/lazy/utils.js ***!
-  \*************************************************/
+/***/ "./node_modules/react-player/lib/utils.js":
+/*!************************************************!*\
+  !*** ./node_modules/react-player/lib/utils.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -73726,6 +74230,24 @@ function supportsWebKitPresentationMode() {
   var notMobile = /iPhone|iPod/.test(navigator.userAgent) === false;
   return video.webkitSupportsPresentationMode && typeof video.webkitSetPresentationMode === 'function' && notMobile;
 }
+
+/***/ }),
+
+/***/ "./node_modules/react-player/youtube.js":
+/*!**********************************************!*\
+  !*** ./node_modules/react-player/youtube.js ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+      const createReactPlayer = (__webpack_require__(/*! ./lib/ReactPlayer */ "./node_modules/react-player/lib/ReactPlayer.js").createReactPlayer)
+      const Player = (__webpack_require__(/*! ./lib/players/YouTube */ "./node_modules/react-player/lib/players/YouTube.js")["default"])
+      module.exports = createReactPlayer([{
+        key: 'youtube',
+        canPlay: Player.canPlay,
+        lazyPlayer: Player
+      }])
+    
 
 /***/ }),
 
@@ -78680,39 +79202,6 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/ensure chunk */
-/******/ 	(() => {
-/******/ 		__webpack_require__.f = {};
-/******/ 		// This file contains only the entry chunk.
-/******/ 		// The chunk loading function for additional chunks
-/******/ 		__webpack_require__.e = (chunkId) => {
-/******/ 			return Promise.all(Object.keys(__webpack_require__.f).reduce((promises, key) => {
-/******/ 				__webpack_require__.f[key](chunkId, promises);
-/******/ 				return promises;
-/******/ 			}, []));
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/get javascript chunk filename */
-/******/ 	(() => {
-/******/ 		// This function allow to reference async chunks
-/******/ 		__webpack_require__.u = (chunkId) => {
-/******/ 			// return url for filenames not based on template
-/******/ 			if ({"reactPlayerYouTube":1,"reactPlayerSoundCloud":1,"reactPlayerVimeo":1,"reactPlayerFacebook":1,"reactPlayerStreamable":1,"reactPlayerWistia":1,"reactPlayerTwitch":1,"reactPlayerDailyMotion":1,"reactPlayerMixcloud":1,"reactPlayerVidyard":1,"reactPlayerKaltura":1,"reactPlayerFilePlayer":1,"reactPlayerPreview":1}[chunkId]) return "js/" + chunkId + ".js";
-/******/ 			// return url for filenames based on template
-/******/ 			return undefined;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/get mini-css chunk filename */
-/******/ 	(() => {
-/******/ 		// This function allow to reference all chunks
-/******/ 		__webpack_require__.miniCssF = (chunkId) => {
-/******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + ".css";
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -78728,52 +79217,6 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/load script */
-/******/ 	(() => {
-/******/ 		var inProgress = {};
-/******/ 		// data-webpack is not used as build has no uniqueName
-/******/ 		// loadScript function to load a script via script tag
-/******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
-/******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
-/******/ 			var script, needAttach;
-/******/ 			if(key !== undefined) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				for(var i = 0; i < scripts.length; i++) {
-/******/ 					var s = scripts[i];
-/******/ 					if(s.getAttribute("src") == url) { script = s; break; }
-/******/ 				}
-/******/ 			}
-/******/ 			if(!script) {
-/******/ 				needAttach = true;
-/******/ 				script = document.createElement('script');
-/******/ 		
-/******/ 				script.charset = 'utf-8';
-/******/ 				script.timeout = 120;
-/******/ 				if (__webpack_require__.nc) {
-/******/ 					script.setAttribute("nonce", __webpack_require__.nc);
-/******/ 				}
-/******/ 		
-/******/ 				script.src = url;
-/******/ 			}
-/******/ 			inProgress[url] = [done];
-/******/ 			var onScriptComplete = (prev, event) => {
-/******/ 				// avoid mem leaks in IE.
-/******/ 				script.onerror = script.onload = null;
-/******/ 				clearTimeout(timeout);
-/******/ 				var doneFns = inProgress[url];
-/******/ 				delete inProgress[url];
-/******/ 				script.parentNode && script.parentNode.removeChild(script);
-/******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
-/******/ 				if(prev) return prev(event);
-/******/ 			}
-/******/ 			;
-/******/ 			var timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: 'timeout', target: script }), 120000);
-/******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
-/******/ 			script.onload = onScriptComplete.bind(null, script.onload);
-/******/ 			needAttach && document.head.appendChild(script);
-/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
@@ -78796,11 +79239,6 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
@@ -78813,44 +79251,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
-/******/ 		__webpack_require__.f.j = (chunkId, promises) => {
-/******/ 				// JSONP chunk loading for javascript
-/******/ 				var installedChunkData = __webpack_require__.o(installedChunks, chunkId) ? installedChunks[chunkId] : undefined;
-/******/ 				if(installedChunkData !== 0) { // 0 means "already installed".
-/******/ 		
-/******/ 					// a Promise means "currently loading".
-/******/ 					if(installedChunkData) {
-/******/ 						promises.push(installedChunkData[2]);
-/******/ 					} else {
-/******/ 						if("css/app" != chunkId) {
-/******/ 							// setup Promise in chunk cache
-/******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
-/******/ 							promises.push(installedChunkData[2] = promise);
-/******/ 		
-/******/ 							// start chunk loading
-/******/ 							var url = __webpack_require__.p + __webpack_require__.u(chunkId);
-/******/ 							// create error before stack unwound to get useful stacktrace later
-/******/ 							var error = new Error();
-/******/ 							var loadingEnded = (event) => {
-/******/ 								if(__webpack_require__.o(installedChunks, chunkId)) {
-/******/ 									installedChunkData = installedChunks[chunkId];
-/******/ 									if(installedChunkData !== 0) installedChunks[chunkId] = undefined;
-/******/ 									if(installedChunkData) {
-/******/ 										var errorType = event && (event.type === 'load' ? 'missing' : event.type);
-/******/ 										var realSrc = event && event.target && event.target.src;
-/******/ 										error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
-/******/ 										error.name = 'ChunkLoadError';
-/******/ 										error.type = errorType;
-/******/ 										error.request = realSrc;
-/******/ 										installedChunkData[1](error);
-/******/ 									}
-/******/ 								}
-/******/ 							};
-/******/ 							__webpack_require__.l(url, loadingEnded, "chunk-" + chunkId, chunkId);
-/******/ 						} else installedChunks[chunkId] = 0;
-/******/ 					}
-/******/ 				}
-/******/ 		};
+/******/ 		// no chunk on demand loading
 /******/ 		
 /******/ 		// no prefetching
 /******/ 		

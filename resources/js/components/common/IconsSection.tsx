@@ -4,62 +4,75 @@ import React from 'react'
 import Heading from './Heading'
 
 // Assets
-import PlusIcon from './../../../assets/PlusIcon.svg'
+import SimpleIcon from './../../../assets/icons/Simple.svg'
+import Excellence from './../../../assets/icons/Excellence.svg'
+import Disruption from './../../../assets/icons/Disruption.svg'
+import Loyalty from './../../../assets/icons/Loyalty.svg'
+import Dependable from './../../../assets/icons/Dependable.svg'
+import User from './../../../assets/icons/User.svg'
 
 const IconsSection = () => {
  const iconCards = [
   {
    id: 1,
-   img: PlusIcon,
-   text:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?',
+   heading: 'Excellence ',
+   img: Excellence,
+   text: 'We aim at being excellent at delivering value for our clients.',
   },
   {
    id: 2,
-   img: PlusIcon,
+   heading: 'Simplicity ',
+   img: SimpleIcon,
    text:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?',
+    'Simplicity is the ultimate sophistication. Denebolatech is a simple tool to use but delivers measurable value.',
   },
   {
    id: 3,
-   img: PlusIcon,
-   text:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?',
+   heading: 'User Centric ',
+   img: User,
+   text: 'Users come first in whatever as we strive to satsify their needs.',
   },
   {
    id: 4,
-   img: PlusIcon,
+   heading: 'Loyalty ',
+   img: Loyalty,
    text:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?',
+    "We listen when you talk to us. Satsifying your construction company's is our mission.",
   },
   {
    id: 5,
-   img: PlusIcon,
+   heading: 'Disruption ',
+   img: Disruption,
    text:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?',
+    'Our goal is to make considerable impact on how the daily operations in the construction industry are carried out. ',
   },
   {
    id: 6,
-   img: PlusIcon,
+   heading: 'Dependable',
+   img: Dependable,
    text:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem quidem, consequatur hic modi doloremque?',
+    'We are available to help in case of an emergency all the time. Reach out to us.',
   },
  ]
  return (
   <div className=" mb-14">
-   <Heading text=" Our Values" />
-   <p className=" mb-8 text-2xl sm:w-2/4 w-full sm:px-20 px-4 mx-auto my-0">
-    Consequat faucibus tristique vitae vulputate tristique vitae vulputate
-    tristique vitae faucibus tristique vitae vulputate tristique vitae
+   <Heading text=" OUR VALUES" />
+   <p className=" mb-8 text-xl sm:w-2/4 w-full sm:px-20 px-4 mx-auto my-0">
+    We have a set of values that guide our way of doing business... And{' '}
+    <b>WE</b> {'  '}
+    are true to whatever we say...
    </p>
 
    <div className=" grid sm:grid-cols-3 grid-rows-1  sm:px-20 px-4 mb-12">
     {iconCards.map((x) => (
      <div
-      className="flex flex-col border mr-0 py-8 mb-6 px-3 mx-4 hover:bg-blue-700 hover:text-white "
+      className="flex flex-col mr-0 py-8 mb-6 px-3 mx-4 hover:border-b-blue-700 hover:bg-gray-100  hover:border-b-2 hover:shadow-md  "
       key={x.id}
      >
       <img src={x.img} alt="" className=" items-center h-20 mb-4" />
+      <h6 className=" text-center text-xl mb-4 sm:mb-0 font-bold text-[#212121]">
+       {x.heading}
+      </h6>
       <p className=" sm:py-6 sm:px-8   text-lg">{x.text}</p>
      </div>
     ))}

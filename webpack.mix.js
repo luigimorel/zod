@@ -1,5 +1,13 @@
-const mix = require("laravel-mix");
+const mix = require('laravel-mix')
+require('laravel-mix-purgecss')
+require('laravel-mix-bundle-analyzer')
 
-mix.ts("resources/js/app.js", "public/js")
-    .react()
-    .postCss("resources/css/app.css", "public/css", [require("tailwindcss")]);
+if (!mix.inProduction()) {
+ mix.bundleAnalyzer()
+}
+
+mix
+ .ts('resources/js/app.js', 'public/js')
+ .react()
+ .postCss('resources/css/app.css', 'public/css', [require('tailwindcss')])
+ .purgeCss()

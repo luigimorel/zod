@@ -32,13 +32,13 @@ const Contact = () => {
      <div className=" flex flex-col">
       <div className=" mb-10">
        <h1 className=" text-2xl mb-4 text-gray-700">
-        Please do not hesistate to get in <br className=" hidden sm:block" />{' '}
+        Please do not hesistate to get in <br className=" hidden sm:block" />
         touch with us.
        </h1>
 
        <p className=" text-base text-gray-800 mb-4 ">
-        Fill in the form with any query and we wil get back to you as soon as
-        possible.
+        Fill in the form with any query and we wil get back to
+        <br className="sm:hidden block" /> you as soon as possible.
        </p>
 
        <p className=" text-base italic text-gray-700">
@@ -47,7 +47,7 @@ const Contact = () => {
        </p>
       </div>
 
-      <div className=" flex flex-col">
+      <div className=" flex flex-col sm:m-0 mb-8">
        <div className="flex flex-row mb-4">
         <img src={LocationIcon} className=" mr-4" alt="" />
         <p>Plot 5, Kampala Rd. </p>
@@ -77,7 +77,6 @@ const Contact = () => {
         name="email"
         required
         id="email"
-        placeholder="Your email"
         className=" w-full mb-8 rounded-sm border-gray-400"
        />
       </div>
@@ -93,7 +92,6 @@ const Contact = () => {
         name="name"
         id="name"
         required
-        placeholder="Your name"
         className=" w-full mb-8 rounded-sm border-gray-400"
        />
       </div>
@@ -108,9 +106,8 @@ const Contact = () => {
         id="message"
         cols={20}
         rows={10}
-        placeholder=" Your message"
         className=" rounded-sm border-gray-400"
-       ></textarea>
+       />
       </div>
 
       <div className=" flex justify-center mb-12 ">

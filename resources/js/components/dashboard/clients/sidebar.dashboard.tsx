@@ -5,6 +5,7 @@ import Eye from './../../../../assets/icons/Eye.svg'
 import Settings from './../../../../assets/icons/Settings.svg'
 import Graph from './../../../../assets/icons/Graph.svg'
 import SignOut from './../../../../assets/icons/SignOut.svg'
+import Projects from './../../../../assets/icons/Project.svg'
 
 const sidebarNav = [
  {
@@ -22,7 +23,7 @@ const sidebarNav = [
  {
   id: 3,
   text: 'Projects',
-  icon: Graph,
+  icon: Projects,
   route: '/client-dashboard',
  },
  {

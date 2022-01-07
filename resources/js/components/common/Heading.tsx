@@ -1,20 +1,21 @@
-import React from "react";
-import clsx from "clsx";
+import React from 'react'
+import clsx from 'clsx'
 
 interface HeadingProps {
-    text: string;
-    className?: string;
+ text: string
+ className?: string
 }
 
 const Heading = ({ text, className }: HeadingProps) => {
-    return (
-        <div className="mb-6">
-            <h2 className={clsx(className, "text-center  text-3xl text-minor")}>
-                {text}
-            </h2>
-            <div className=" bg-yellow-500 h-0.5 w-20 my-0 mx-auto"></div>
-        </div>
-    );
-};
+ return (
+  <div className="mb-10">
+   <h2
+    className={clsx(className, 'text-center  sm:text-3xl text-2xl text-minor')}
+   >
+    {text}
+   </h2>
+  </div>
+ )
+}
 
-export default Heading;
+export default Heading

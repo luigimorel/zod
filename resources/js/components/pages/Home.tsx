@@ -20,11 +20,11 @@ const Home = () => {
 
    <CallToAction />
 
-   <div className=" mt-10">
+   <div className=" pt-10 bg-white">
     <IconsSection />
    </div>
 
-   <div className=" mt-10">
+   <div className="mt-14">
     <ImageSection />
    </div>
 
