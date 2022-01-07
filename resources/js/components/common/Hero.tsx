@@ -35,7 +35,9 @@ const Hero = () => {
 
     <div className=" sm:w-1/2 w-full tab:w-full ">
      <img
-      src={HeroImg}
+      src={
+       'https://res.cloudinary.com/morelmiles/image/upload/v1641589820/contruction_img_gxsiok.jpg'
+      }
       alt=""
       className=" sm:h-5/6 h-screen mt-28 sm:mt-0 w-full"
      />

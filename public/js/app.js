@@ -5672,6 +5672,8 @@ var fB_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/f
 
 var Linkedin_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Linkedin.svg */ "./resources/assets/icons/Linkedin.svg"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
 var Footer = function Footer() {
   return react_1["default"].createElement("div", {
     className: " bg-cta sm:px-20 px-8 text-white"
@@ -5679,49 +5681,51 @@ var Footer = function Footer() {
     className: "flex sm:flex-row flex-col justify-between sm:mr-20 mb-5"
   }, react_1["default"].createElement("div", {
     className: " mt-11"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/'
   }, react_1["default"].createElement("img", {
     src: logo_dark_png_1["default"],
     className: " mb-11 h-10 ",
     alt: ""
-  }), react_1["default"].createElement("p", {
+  })), react_1["default"].createElement("p", {
     className: " text-white "
   }, "Make faster and more informed data-driven decisions, ", react_1["default"].createElement("br", null), "stay on top of your project, and keep all stakeholders ", react_1["default"].createElement("br", null), "informed")), react_1["default"].createElement("div", {
     className: "flex flex-col mt-11"
   }, react_1["default"].createElement("h2", {
     className: " text-2xl text-white mb-10"
-  }, "Company "), react_1["default"].createElement("a", {
-    href: "/",
+  }, "Company "), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/",
     className: " mb-4"
-  }, "Home"), react_1["default"].createElement("a", {
-    href: "/accounts/login",
+  }, "Home"), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/accounts/login",
     className: " mb-4"
-  }, "Log In"), react_1["default"].createElement("a", {
-    href: "/accounts/sign-up",
+  }, "Log In"), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/accounts/sign-up",
     className: " mb-4"
-  }, "Sign Up"), react_1["default"].createElement("a", {
-    href: "/solutions",
+  }, "Sign Up"), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/solutions",
     className: " mb-4"
-  }, "Solutions"), react_1["default"].createElement("a", {
-    href: "/contact-us",
+  }, "Solutions"), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/contact-us",
     className: " mb-4"
   }, "Contact Us")), react_1["default"].createElement("div", {
     className: "flex flex-col mt-11"
   }, react_1["default"].createElement("h2", {
     className: " text-2xl text-white mb-10"
-  }, "Resources "), react_1["default"].createElement("a", {
-    href: "#",
+  }, "Resources "), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "#",
     className: " mb-4"
-  }, "Getting Started"), react_1["default"].createElement("a", {
-    href: "#",
+  }, "Getting Started"), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "#",
     className: " mb-4"
-  }, "FAQ"), react_1["default"].createElement("a", {
-    href: "#",
+  }, "FAQ"), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "#",
     className: " mb-4"
-  }, "Become a partner"), react_1["default"].createElement("a", {
-    href: "#",
+  }, "Become a partner"), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "#",
     className: " mb-4"
-  }, "Terms"), react_1["default"].createElement("a", {
-    href: "#",
+  }, "Terms"), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "#",
     className: " mb-4"
   }, "Privacy"))), react_1["default"].createElement("hr", {
     className: " h-px bg-slate-300"
@@ -5751,7 +5755,9 @@ var Footer = function Footer() {
     className: " flex sm:justify-end justify-center text-center"
   }, "Built By", react_1["default"].createElement("a", {
     href: "https://luigimorel.me",
-    className: " font-bold ml-4"
+    className: " font-bold ml-4",
+    target: "_blank",
+    rel: "noreferrer noopenner"
   }, "Luigi Morel"))));
 };
 
@@ -5817,10 +5823,7 @@ Object.defineProperty(exports, "__esModule", ({
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
-
-
-var hero_jpg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/hero.jpg */ "./resources/assets/images/hero.jpg")); // Components
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Components
 
 
 var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/js/components/common/Button.tsx"));
@@ -5846,7 +5849,7 @@ var Hero = function Hero() {
   })))), react_1["default"].createElement("div", {
     className: " sm:w-1/2 w-full tab:w-full "
   }, react_1["default"].createElement("img", {
-    src: hero_jpg_1["default"],
+    src: 'https://res.cloudinary.com/morelmiles/image/upload/v1641589820/contruction_img_gxsiok.jpg',
     alt: "",
     className: " sm:h-5/6 h-screen mt-28 sm:mt-0 w-full"
   }))));
@@ -6096,9 +6099,9 @@ var MobileNavbar = function MobileNavbar() {
     return react_1["default"].createElement("li", {
       key: x.id,
       className: " "
-    }, react_1["default"].createElement("a", {
+    }, react_1["default"].createElement(react_router_dom_1.Link, {
       className: "  text-white custom-animation w-full ml-24 bg-black custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap",
-      href: x.route
+      to: x.route
     }, x.linkText));
   }), react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
@@ -6197,27 +6200,10 @@ var Navbar = function Navbar() {
       open = _ref2[0],
       setOpen = _ref2[1];
 
-  var menuLinks = [{
-    id: 1,
-    linkText: 'Home',
-    route: '/'
-  }, {
-    id: 2,
-    linkText: 'Our Solution',
-    route: '/solutions'
-  }, {
-    id: 3,
-    linkText: 'Contact Us ',
-    route: '/contact-us'
-  }, {
-    id: 4,
-    linkText: 'Log In ',
-    route: '/accounts/login'
-  }];
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
     className: "flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   "
-  }, react_1["default"].createElement("a", {
-    href: "/"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/"
   }, react_1["default"].createElement("img", {
     src: logo_light_png_1["default"],
     alt: "",
@@ -6233,14 +6219,23 @@ var Navbar = function Navbar() {
     className: "sm:flex hidden flex-row"
   }, react_1["default"].createElement("ul", {
     className: "sm:flex flex-row justify-between items-center"
-  }, menuLinks.map(function (x) {
-    return react_1["default"].createElement("a", {
-      key: x.id,
-      href: x.route
-    }, react_1["default"].createElement("li", {
-      className: "mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base"
-    }, x.linkText));
-  }), react_1["default"].createElement(react_router_dom_1.Link, {
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/'
+  }, react_1["default"].createElement("li", {
+    className: "mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base"
+  }, "Home")), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/solutions'
+  }, react_1["default"].createElement("li", {
+    className: "mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base"
+  }, "Solutions", ' ')), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/contact-us'
+  }, react_1["default"].createElement("li", {
+    className: "mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base"
+  }, "Contact Us")), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/accounts/login'
+  }, react_1["default"].createElement("li", {
+    className: "mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base"
+  }, "Log In", ' ')), react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
   }, react_1["default"].createElement(Button_1["default"], {
     text: "Sign Up",
@@ -6562,6 +6557,8 @@ Object.defineProperty(exports, "__esModule", ({
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
 var MobileNavbarAdminDashboard = function MobileNavbarAdminDashboard() {
   var menuLinks = [{
     id: 1,
@@ -6585,10 +6582,10 @@ var MobileNavbarAdminDashboard = function MobileNavbarAdminDashboard() {
   }, react_1["default"].createElement("ul", {
     className: "dropdown-menu   w-full"
   }, menuLinks.map(function (x) {
-    return react_1["default"].createElement("a", {
+    return react_1["default"].createElement(react_router_dom_1.Link, {
       key: x.id,
       className: "  text-black custom-animation w-full ml-24 bg-white custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap",
-      href: x.route
+      to: x.route
     }, x.text);
   })));
 };
@@ -6891,6 +6888,8 @@ Object.defineProperty(exports, "__esModule", ({
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
 var MobileNavbarClientsDashboard = function MobileNavbarClientsDashboard() {
   var menuLinks = [{
     id: 1,
@@ -6910,17 +6909,18 @@ var MobileNavbarClientsDashboard = function MobileNavbarClientsDashboard() {
     route: '/client-dashboard/settings'
   }, {
     id: 5,
-    text: 'Log Out'
+    text: 'Log Out',
+    route: '/'
   }];
   return react_1["default"].createElement("div", {
     className: " flex dropdown   w-full animation-container"
   }, react_1["default"].createElement("ul", {
     className: "dropdown-menu   w-full"
   }, menuLinks.map(function (x) {
-    return react_1["default"].createElement("a", {
+    return react_1["default"].createElement(react_router_dom_1.Link, {
       key: x.id,
       className: "  text-black custom-animation w-full ml-24 bg-white custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap",
-      href: x.route
+      to: x.route
     }, x.text);
   })));
 };
@@ -6961,6 +6961,8 @@ var SignOut_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets
 
 var Project_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Project.svg */ "./resources/assets/icons/Project.svg"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
 var sidebarNav = [{
   id: 1,
   text: 'Overview',
@@ -6984,7 +6986,8 @@ var sidebarNav = [{
 }, {
   id: 5,
   text: 'Log Out',
-  icon: SignOut_svg_1["default"]
+  icon: SignOut_svg_1["default"],
+  route: '/'
 }];
 
 var SidebarDashboard = function SidebarDashboard() {
@@ -6993,8 +6996,8 @@ var SidebarDashboard = function SidebarDashboard() {
   }, react_1["default"].createElement("div", {
     className: " mb-20"
   }, sidebarNav.map(function (x) {
-    return react_1["default"].createElement("a", {
-      href: x.route,
+    return react_1["default"].createElement(react_router_dom_1.Link, {
+      to: x.route,
       key: x.id,
       className: x.id === 1 ? ' ml-10 flex flex-row mb-4 bg-sidebar items-center py-4 rounded-r-full pl-5 text-white font-bold ' : ' ml-10 flex flex-row mb-4  items-center py-4  pl-5    '
     }, react_1["default"].createElement("img", {
@@ -7087,6 +7090,8 @@ var sidebar_dashboard_1 = __importDefault(__webpack_require__(/*! ../admin/sideb
 
 var mobileNav_admin_1 = __importDefault(__webpack_require__(/*! ../admin/mobileNav.admin */ "./resources/js/components/dashboard/admin/mobileNav.admin.tsx"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
 var AdminSettings = function AdminSettings() {
   var _ref = (0, react_1.useState)(false),
       _ref2 = _slicedToArray(_ref, 2),
@@ -7097,8 +7102,8 @@ var AdminSettings = function AdminSettings() {
     className: " pb-10 hidden fixed w-full sm:block "
   }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
     className: "flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
-  }, react_1["default"].createElement("a", {
-    href: "/"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/"
   }, react_1["default"].createElement("img", {
     src: logo_png_1["default"],
     alt: "",
@@ -7274,6 +7279,8 @@ var sidebar_dashboard_1 = __importDefault(__webpack_require__(/*! ../clients/sid
 
 var mobileNav_clients_1 = __importDefault(__webpack_require__(/*! ../clients/mobileNav.clients */ "./resources/js/components/dashboard/clients/mobileNav.clients.tsx"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
 var AdminSettings = function AdminSettings() {
   var _ref = (0, react_1.useState)(false),
       _ref2 = _slicedToArray(_ref, 2),
@@ -7284,8 +7291,8 @@ var AdminSettings = function AdminSettings() {
     className: " pb-10 hidden fixed w-full sm:block "
   }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
     className: "flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
-  }, react_1["default"].createElement("a", {
-    href: "/"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/"
   }, react_1["default"].createElement("img", {
     src: logo_png_1["default"],
     alt: "",
@@ -7465,6 +7472,8 @@ var container_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard
 
 var mobileNav_admin_1 = __importDefault(__webpack_require__(/*! ../dashboard/admin/mobileNav.admin */ "./resources/js/components/dashboard/admin/mobileNav.admin.tsx"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
 var AdminDashboard = function AdminDashboard() {
   var _ref = (0, react_1.useState)(false),
       _ref2 = _slicedToArray(_ref, 2),
@@ -7475,8 +7484,8 @@ var AdminDashboard = function AdminDashboard() {
     className: " mb-4 hidden sm:block "
   }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
     className: "flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
-  }, react_1["default"].createElement("a", {
-    href: "/"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/"
   }, react_1["default"].createElement("img", {
     src: logo_light_png_1["default"],
     alt: "",
@@ -7579,6 +7588,8 @@ var clients_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/c
 
 var mobileNav_clients_1 = __importDefault(__webpack_require__(/*! ../dashboard/clients/mobileNav.clients */ "./resources/js/components/dashboard/clients/mobileNav.clients.tsx"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
 var ClientDashboard = function ClientDashboard() {
   var _ref = (0, react_1.useState)(false),
       _ref2 = _slicedToArray(_ref, 2),
@@ -7591,8 +7602,8 @@ var ClientDashboard = function ClientDashboard() {
     className: " mb-4 -ml-8 hidden sm:flex "
   }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
     className: "flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
-  }, react_1["default"].createElement("a", {
-    href: "/"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/"
   }, react_1["default"].createElement("img", {
     src: logo_light_png_1["default"],
     alt: "",
@@ -26907,21 +26918,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/edit-size.png?fe411c2f94d8b9eced03235c097d1785");
-
-/***/ }),
-
-/***/ "./resources/assets/images/hero.jpg":
-/*!******************************************!*\
-  !*** ./resources/assets/images/hero.jpg ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/hero.jpg?ad862cefb6113044ac1f32fb654f0eb7");
 
 /***/ }),
 
