@@ -4,21 +4,25 @@ import React from 'react'
 import Heading from './Heading'
 
 // Assets
-import BranchLight from './../../../assets/Branch.svg'
-import BranchDark from './../../../assets/BranchDark.svg'
+import Camera from './../../../assets/icons/Cameras.svg'
+import Building from './../../../assets/icons/Building.svg'
+import Plane from './../../../assets/icons/Plane.svg'
 
 const Verticals = () => {
  return (
   <div className="">
-   <Heading text="Business Verticals" />
+   <div className=" mb-4">
+    <Heading text="BUSINESS VERTICALS" />
+   </div>
 
-   <div className="flex sm:flex-row flex-col sm:px-40 px-8 mb-20">
+   <div className="flex sm:flex-row flex-col px-8 sm:px-0 justify-center   mb-20">
+    {/* this is the first card  */}
     <div className=" flex flex-col ">
      <div className=" py-10 px-24 bg-red-700 ">
-      <img src={BranchLight} alt="" />
+      <img src={Building} alt="" />
      </div>
      <p className=" text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold">
-      Tech
+      Construction Tech
      </p>
     </div>
 
@@ -26,7 +30,7 @@ const Verticals = () => {
 
     <div className=" flex flex-col ">
      <div className=" py-10 px-24 bg-yellow-500 ">
-      <img src={BranchDark} alt="" />
+      <img src={Plane} alt="" />
      </div>
      <p className=" text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold">
       Drones
@@ -36,7 +40,7 @@ const Verticals = () => {
     {/* this is the third card  */}
     <div className=" flex flex-col ">
      <div className=" py-10 px-24 bg-red-700 ">
-      <img src={BranchLight} alt="" />
+      <img src={Camera} alt="" />
      </div>
      <p className=" text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold">
       Cameras

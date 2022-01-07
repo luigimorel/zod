@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 // Assets
-import MobileNavbar from './MobileNavbar'
-
-import Logo from './../../../assets/images/denebola-light.jpeg'
+import MenuIcon from './../../../assets/icons/Menu.svg'
+import Logo from './../../../assets/images/logo-light.png'
 
 // Components
 import Button from './Button'
+import MobileNavbar from './MobileNavbar'
 
 const Navbar = () => {
  const [open, setOpen] = useState(false)
@@ -20,7 +20,7 @@ const Navbar = () => {
   },
   {
    id: 2,
-   linkText: 'Solutions',
+   linkText: 'Our Solution',
    route: '/solutions',
   },
 
@@ -38,13 +38,19 @@ const Navbar = () => {
 
  return (
   <>
-   <div className="flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar ">
+   <div className="flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   ">
     <a href="/">
      <img src={Logo} alt="" className=" sm:h-10 h-5" />
     </a>
-    <p onClick={() => setOpen(!open)} className=" sm:hidden">
-     Menu
-    </p>
+
+    {/* Menu icons for the mobile screens  */}
+    <img
+     onClick={() => setOpen(!open)}
+     className=" sm:hidden"
+     src={MenuIcon}
+     alt=""
+    />
+
     <div className="sm:flex hidden flex-row">
      <ul className="sm:flex flex-row justify-between items-center">
       {menuLinks.map((x) => (

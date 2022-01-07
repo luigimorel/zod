@@ -11,7 +11,7 @@ const MobileNavbar = () => {
   },
   {
    id: 2,
-   linkText: 'Solutions',
+   linkText: 'Our Solution',
    route: '/solutions',
   },
 
@@ -28,7 +28,7 @@ const MobileNavbar = () => {
  ]
 
  return (
-  <div className=" flex dropdown fixed mt-16 w-full animation-container">
+  <div className=" flex dropdown fixed mt-14 w-full animation-container">
    <ul className="dropdown-menu bg-black  w-full">
     {menuLinks.map((x) => (
      <li key={x.id} className=" ">
