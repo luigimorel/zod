@@ -29,13 +29,13 @@ const MobileNavbarAdminDashboard = () => {
   <div className=" flex dropdown   w-full animation-container">
    <ul className="dropdown-menu   w-full">
     {menuLinks.map((x) => (
-     <a
+     <Link
       key={x.id}
       className="  text-black custom-animation w-full ml-24 bg-white custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap"
-      href={x.route}
+      to={x.route}
      >
       {x.text}
-     </a>
+     </Link>
     ))}
    </ul>
   </div>

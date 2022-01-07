@@ -7,6 +7,7 @@ import Logo from './../../../../assets/images/logo.png'
 import DashNav from '../admin/dashNav'
 import SidebarDashboard from '../admin/sidebar.dashboard'
 import MobileNavbarAdminDashboard from '../admin/mobileNav.admin'
+import { Link } from 'react-router-dom';
 
 const AdminSettings = () => {
  const [open, setOpen] = useState(false)
@@ -18,9 +19,9 @@ const AdminSettings = () => {
    </div>
 
    <div className="flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar ">
-    <a href="/">
+    <Link to="/">
      <img src={Logo} alt="" className=" sm:h-10 h-5" />
-    </a>
+    </Link>
     <p onClick={() => setOpen(!open)} className=" sm:hidden">
      Menu
     </p>

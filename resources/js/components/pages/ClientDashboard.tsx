@@ -9,6 +9,7 @@ import DashNav from '../dashboard/clients/dashNav'
 import SidebarDashboard from '../dashboard/clients/sidebar.dashboard'
 import ClientsDashboard from '../dashboard/clients/clients.dashboard'
 import MobileNavbarClientsDashboard from '../dashboard/clients/mobileNav.clients'
+import { Link } from 'react-router-dom'
 
 const ClientDashboard = () => {
  const [open, setOpen] = useState(false)
@@ -19,9 +20,9 @@ const ClientDashboard = () => {
     <DashNav />
    </div>
    <div className="flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar ">
-    <a href="/">
+    <Link to="/">
      <img src={Logo} alt="" className=" sm:h-10 h-5" />
-    </a>
+    </Link>
 
     <img src={MenuIcon} onClick={() => setOpen(!open)} className=" sm:hidden" />
    </div>

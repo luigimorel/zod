@@ -6,6 +6,7 @@ import Settings from './../../../../assets/icons/Settings.svg'
 import Graph from './../../../../assets/icons/Graph.svg'
 import SignOut from './../../../../assets/icons/SignOut.svg'
 import Projects from './../../../../assets/icons/Project.svg'
+import { Link } from 'react-router-dom'
 
 const sidebarNav = [
  {
@@ -36,6 +37,7 @@ const sidebarNav = [
   id: 5,
   text: 'Log Out',
   icon: SignOut,
+  route: '/',
  },
 ]
 const SidebarDashboard = () => {
@@ -43,8 +45,8 @@ const SidebarDashboard = () => {
   <div className=" w-64 border-r fixed h-full flex flex-col">
    <div className=" mb-20">
     {sidebarNav.map((x) => (
-     <a
-      href={x.route}
+     <Link
+      to={x.route}
       key={x.id}
       className={
        x.id === 1
@@ -55,7 +57,7 @@ const SidebarDashboard = () => {
       <img src={x.icon} alt="" />
 
       <p className=" ml-2.5">{x.text}</p>
-     </a>
+     </Link>
     ))}
    </div>
   </div>

@@ -9,6 +9,7 @@ import SidebarDashboard from '../dashboard/admin/sidebar.dashboard'
 import DashNav from '../dashboard/admin/dashNav'
 import AdminDashboardContainer from '../dashboard/admin/container.dashboard'
 import MobileNavbarAdminDashboard from '../dashboard/admin/mobileNav.admin'
+import { Link } from 'react-router-dom';
 
 const AdminDashboard = () => {
  const [open, setOpen] = useState(false)
@@ -20,9 +21,9 @@ const AdminDashboard = () => {
    </div>
    {/* Start of the mobile navbar */}
    <div className="flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar ">
-    <a href="/">
+    <Link to="/">
      <img src={Logo} alt="" className=" sm:h-10 h-5" />
-    </a>
+    </Link>
 
     {/* Start of the menu icon for the mobile screens  */}
     <img src={MenuIcon} onClick={() => setOpen(!open)} className=" sm:hidden" />
