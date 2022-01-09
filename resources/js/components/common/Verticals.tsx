@@ -22,7 +22,7 @@ const Verticals = () => {
       <img src={Building} alt="" />
      </div>
      <p className=" text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold">
-      Construction Tech
+      Smart Construction Site
      </p>
     </div>
 
@@ -32,8 +32,8 @@ const Verticals = () => {
      <div className=" py-10 px-24 bg-yellow-500 ">
       <img src={Plane} alt="" />
      </div>
-     <p className=" text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold">
-      Drones
+     <p className=" text-xlg text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold">
+      Artificial Intelligence
      </p>
     </div>
 
@@ -43,7 +43,7 @@ const Verticals = () => {
       <img src={Camera} alt="" />
      </div>
      <p className=" text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold">
-      Cameras
+      Actionable Insights
      </p>
     </div>
    </div>
