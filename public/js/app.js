@@ -5577,7 +5577,7 @@ var Button = function Button(_ref) {
   return react_1["default"].createElement("div", {
     className: className
   }, react_1["default"].createElement("button", {
-    className: "  text-center px-8 py-4 bg-red-700   rounded text-white hover:bg-red-600 "
+    className: "  text-center px-8 py-4 bg-primary hover:bg-opacity-80  rounded text-white hover:bg-[#4caceb]"
   }, text));
 };
 
@@ -5619,7 +5619,7 @@ var CallToAction = function CallToAction() {
     className: " sm:px-32 px-8 flex flex-col"
   }, react_1["default"].createElement("p", {
     className: " text-xl text-white mb-12 mt-8"
-  }, "Built for construction site oversight"), react_1["default"].createElement("p", {
+  }, "Built for construction site monitoring"), react_1["default"].createElement("p", {
     className: " text-4xl text-white mb-7"
   }, "Speed, flexibility and accuracy"), react_1["default"].createElement("p", {
     className: " text-white text-base mb-12"
@@ -5830,16 +5830,14 @@ var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/
 
 var Hero = function Hero() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: " flex  sm:flex-row flex-col-reverse   justify-between h-screen w-full sm:mb-10     "
+    className: " flex sm:-mt-12  sm:flex-row flex-col-reverse items-center   justify-between h-screen w-full sm:mb-10     "
   }, react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full sm:pt-20 sm:pl-24 tab:pl-12 pl-3  sm:mr-12"
+    className: " sm:w-1/2 w-full   sm:pl-24 tab:pl-12 pl-3  sm:mr-12"
   }, react_1["default"].createElement("h3", {
-    className: " sm:text-5xl text-3xl mb-8 font-semibold font-serif uppercase  "
-  }, "Revolutionizing monitoring in the construction industry."), react_1["default"].createElement("p", {
-    className: " mb-8 text-lg font-medium text-gray-800"
-  }, "Pioneers of the constrution industry monitoring in the Sub Saharan Africa Region."), react_1["default"].createElement("p", {
-    className: " mb-8 text-lg font-medium text-gray-800"
-  }, "We are committed to helping construction industry investors, developers and project managers easily get their work done through real time monitoring of their construction sites in real time."), react_1["default"].createElement("div", {
+    className: " sm:text-5xl text-3xl mb-8 font-sans font-semibold uppercase  "
+  }, "CONSTRUCTION SITE MONITORING SIMPLIFIED"), react_1["default"].createElement("p", {
+    className: " mb-8 text-lg text-gray-800"
+  }, "We are committed to helping construction industry investors, developers and project managers easily get their work ", react_1["default"].createElement("br", null), " done through real time monitoring of their ", react_1["default"].createElement("br", null), " construction sites in real time."), react_1["default"].createElement("div", {
     className: "flex justify-center sm:justify-start"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/solutions"
@@ -5847,11 +5845,11 @@ var Hero = function Hero() {
     text: "Explore More",
     className: "  "
   })))), react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full tab:w-full "
+    className: " sm:w-1/2 w-full tab:w-full mr-12 "
   }, react_1["default"].createElement("img", {
     src: 'https://res.cloudinary.com/morelmiles/image/upload/v1641589820/contruction_img_gxsiok.jpg',
     alt: "",
-    className: " sm:h-5/6 h-screen mt-28 sm:mt-0 w-full"
+    className: " rounded w-auto h-3/5"
   }))));
 };
 
@@ -6029,18 +6027,18 @@ var Jumbotron = function Jumbotron(_ref) {
   var header = _ref.header,
       leadingParagraph = _ref.leadingParagraph;
   return react_1["default"].createElement("div", {
+    className: "  mb-20 ",
     style: {
-      backgroundImage: "url(\"https://res.cloudinary.com/morelmiles/image/upload/v1641151093/jumboo_r70wt2.png\") cover no-repeat"
-    },
-    className: "  mb-20"
+      backgroundImage: "url('https://res.cloudinary.com/morelmiles/image/upload/v1641151093/jumboo_r70wt2.png')"
+    }
   }, react_1["default"].createElement("div", {
     className: " sm:px-12 bg-overlay"
   }, react_1["default"].createElement("div", {
     className: "  flex flex-col px-10 py-20 justify-center"
   }, react_1["default"].createElement("h1", {
-    className: "text-center mb-10 text-xl text-white "
+    className: "text-center mb-10 text-2xl text-white font-semibold uppercase "
   }, header), react_1["default"].createElement("p", {
-    className: " text-center mb-10 text-white"
+    className: " text-center font-medium text-xl mb-10 text-white"
   }, leadingParagraph))));
 };
 
@@ -6290,13 +6288,13 @@ var Verticals = function Verticals() {
   }, react_1["default"].createElement("div", {
     className: " flex flex-col "
   }, react_1["default"].createElement("div", {
-    className: " py-10 px-24 bg-red-700 "
+    className: " py-10 px-24 bg-[#3aa6ef] "
   }, react_1["default"].createElement("img", {
     src: Building_svg_1["default"],
     alt: ""
   })), react_1["default"].createElement("p", {
     className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
-  }, "Construction Tech")), react_1["default"].createElement("div", {
+  }, "Smart Construction Site")), react_1["default"].createElement("div", {
     className: " flex flex-col "
   }, react_1["default"].createElement("div", {
     className: " py-10 px-24 bg-yellow-500 "
@@ -6305,16 +6303,16 @@ var Verticals = function Verticals() {
     alt: ""
   })), react_1["default"].createElement("p", {
     className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
-  }, "Drones")), react_1["default"].createElement("div", {
+  }, "Artificial Intelligence")), react_1["default"].createElement("div", {
     className: " flex flex-col "
   }, react_1["default"].createElement("div", {
-    className: " py-10 px-24 bg-red-700 "
+    className: " py-10 px-24 bg-[#3aa6ef] "
   }, react_1["default"].createElement("img", {
     src: Cameras_svg_1["default"],
     alt: ""
   })), react_1["default"].createElement("p", {
     className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
-  }, "Cameras"))));
+  }, "Actionable Insights"))));
 };
 
 exports["default"] = Verticals;
@@ -26542,7 +26540,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Building.svg?798cd417ec9978797d5573921f6bac97");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Building.svg?526a38c364859e65f2c9479f0c1912fb");
 
 /***/ }),
 
@@ -26557,7 +26555,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Cameras.svg?5587654792da9f4a2424356b061bb9e1");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Cameras.svg?97b8e62d4765d85d5156a40fc4c6c952");
 
 /***/ }),
 
@@ -26572,7 +26570,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Dependable.svg?9ba3ee6cf6437bb9a0bed79b32d41f56");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Dependable.svg?553a23eacfd542d5dec5545b7dfc319f");
 
 /***/ }),
 
@@ -26587,7 +26585,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Disruption.svg?cf6d451e4577ccca0ab901da6f105b5d");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Disruption.svg?4d519fb05e8f5555c70cfef78cb76721");
 
 /***/ }),
 
@@ -26617,7 +26615,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Excellence.svg?baff54920b2c847ab545c0f0a5368c7c");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Excellence.svg?a1ec341e2df5c0658c42082a443c94c2");
 
 /***/ }),
 
@@ -26692,7 +26690,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Loyalty.svg?6a98dfe8a64787fb9b30880ec0dcef68");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Loyalty.svg?23b65a6963012472a45e71fd050b8535");
 
 /***/ }),
 
@@ -26812,7 +26810,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Simple.svg?810434cd3b7bf64e711098cda1ce87fc");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Simple.svg?f0f12141f6acc9289ababe154b176bfb");
 
 /***/ }),
 
@@ -26842,7 +26840,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/User.svg?9ae9217c71dca949ae53744be46deb96");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/User.svg?f9b9e7ac925f3ba0539ec7a87e21f318");
 
 /***/ }),
 

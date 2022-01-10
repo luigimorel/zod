@@ -8,7 +8,7 @@ const CallToAction = () => {
   <div className=" bg-cta">
    <div className=" sm:px-32 px-8 flex flex-col">
     <p className=" text-xl text-white mb-12 mt-8">
-     Built for construction site oversight
+     Built for construction site monitoring
     </p>
 
     <p className=" text-4xl text-white mb-7">Speed, flexibility and accuracy</p>

@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Zodon.AI | Helping you monitor your construction works in real time. </title>
+    <title>Denebolatech | Helping you monitor your construction works in real time. </title>
 
     <!-- Scripts -->
     <script>

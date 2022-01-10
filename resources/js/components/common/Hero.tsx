@@ -10,21 +10,16 @@ import Button from './Button'
 const Hero = () => {
  return (
   <>
-   <div className=" flex  sm:flex-row flex-col-reverse   justify-between h-screen w-full sm:mb-10     ">
-    <div className=" sm:w-1/2 w-full sm:pt-20 sm:pl-24 tab:pl-12 pl-3  sm:mr-12">
-     <h3 className=" sm:text-5xl text-3xl mb-8 font-semibold font-serif uppercase  ">
-      Revolutionizing monitoring in the construction industry.
+   <div className=" flex sm:-mt-12  sm:flex-row flex-col-reverse items-center   justify-between h-screen w-full sm:mb-10     ">
+    <div className=" sm:w-1/2 w-full   sm:pl-24 tab:pl-12 pl-3  sm:mr-12">
+     <h3 className=" sm:text-5xl text-3xl mb-8 font-sans font-semibold uppercase  ">
+      CONSTRUCTION SITE MONITORING SIMPLIFIED
      </h3>
 
-     <p className=" mb-8 text-lg font-medium text-gray-800">
-      Pioneers of the constrution industry monitoring in the Sub Saharan Africa
-      Region.
-     </p>
-
-     <p className=" mb-8 text-lg font-medium text-gray-800">
+     <p className=" mb-8 text-lg text-gray-800">
       We are committed to helping construction industry investors, developers
-      and project managers easily get their work done through real time
-      monitoring of their construction sites in real time.
+      and project managers easily get their work <br /> done through real time
+      monitoring of their <br /> construction sites in real time.
      </p>
      <div className="flex justify-center sm:justify-start">
       <Link to="/solutions">
@@ -33,13 +28,13 @@ const Hero = () => {
      </div>
     </div>
 
-    <div className=" sm:w-1/2 w-full tab:w-full ">
+    <div className=" sm:w-1/2 w-full tab:w-full mr-12 ">
      <img
       src={
        'https://res.cloudinary.com/morelmiles/image/upload/v1641589820/contruction_img_gxsiok.jpg'
       }
       alt=""
-      className=" sm:h-5/6 h-screen mt-28 sm:mt-0 w-full"
+      className=" rounded w-auto h-3/5"
      />
     </div>
    </div>
