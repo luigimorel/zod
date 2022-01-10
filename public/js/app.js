@@ -5614,18 +5614,18 @@ var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/
 
 var CallToAction = function CallToAction() {
   return react_1["default"].createElement("div", {
-    className: " bg-cta"
+    className: " bg-cta mb-8"
   }, react_1["default"].createElement("div", {
-    className: " sm:px-32 px-8 flex flex-col"
+    className: " sm:px-32 px-8 tab:px-16 flex flex-col"
   }, react_1["default"].createElement("p", {
     className: " text-xl text-white mb-12 mt-8"
   }, "Built for construction site monitoring"), react_1["default"].createElement("p", {
     className: " text-4xl text-white mb-7"
-  }, "Speed, flexibility and accuracy"), react_1["default"].createElement("p", {
+  }, "Speed, flexibility and accuracy..."), react_1["default"].createElement("p", {
     className: " text-white text-base mb-12"
-  }, "Make faster and more informed data-driven decisions, stay on top of your project, and keep all stakeholders ", react_1["default"].createElement("br", {
-    className: " sm:block hidden"
-  }), ' ', "informed while reducing surprises, delays, cost overruns, and claims."), react_1["default"].createElement("div", {
+  }, "Make faster and more informed data-driven decisions, stay on top of your project, and keep all stakeholders", ' ', react_1["default"].createElement("br", {
+    className: " sm:block hidden tab:hidden"
+  }), " informed while reducing surprises, delays, cost overruns and claims."), react_1["default"].createElement("div", {
     className: "mb-4"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
@@ -5676,9 +5676,9 @@ var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_mod
 
 var Footer = function Footer() {
   return react_1["default"].createElement("div", {
-    className: " bg-cta sm:px-20 px-8 text-white"
+    className: " bg-cta sm:px-20 tab:px-10 px-8 text-white"
   }, react_1["default"].createElement("div", {
-    className: "flex sm:flex-row flex-col justify-between sm:mr-20 mb-5"
+    className: "flex sm:flex-row flex-col justify-between sm:mr-20 tab:mr-0 mb-5"
   }, react_1["default"].createElement("div", {
     className: " mt-11"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
@@ -5689,7 +5689,11 @@ var Footer = function Footer() {
     alt: ""
   })), react_1["default"].createElement("p", {
     className: " text-white "
-  }, "Make faster and more informed data-driven decisions, ", react_1["default"].createElement("br", null), "stay on top of your project, and keep all stakeholders ", react_1["default"].createElement("br", null), "informed")), react_1["default"].createElement("div", {
+  }, "Make faster and more informed data-driven", ' ', react_1["default"].createElement("br", {
+    className: " sm:flex hidden tab:flex"
+  }), " decisions, stay on top of your project, ", react_1["default"].createElement("br", {
+    className: " sm:flex hidden tab:flex"
+  }), " and keep all stakeholders informed")), react_1["default"].createElement("div", {
     className: "flex flex-col mt-11"
   }, react_1["default"].createElement("h2", {
     className: " text-2xl text-white mb-10"
@@ -5830,14 +5834,14 @@ var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/
 
 var Hero = function Hero() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: " flex sm:-mt-12  sm:flex-row flex-col-reverse items-center   justify-between h-screen w-full sm:mb-10     "
+    className: " flex sm:-mt-16 px-4  sm:flex-row tab:mt-32 tab:flex-col-reverse flex-col-reverse items-center relative   justify-between h-screen w-full sm:mb-10     "
   }, react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full   sm:pl-24 tab:pl-12 pl-3  sm:mr-12"
+    className: " sm:w-1/2 w-full tab:w-full   sm:pl-24 tab:pl-12 pl-3 tab:mr-0 tab:px-4  sm:mr-12"
   }, react_1["default"].createElement("h3", {
     className: " sm:text-5xl text-3xl mb-8 font-sans font-semibold uppercase  "
   }, "CONSTRUCTION SITE MONITORING SIMPLIFIED"), react_1["default"].createElement("p", {
-    className: " mb-8 text-lg text-gray-800"
-  }, "We are committed to helping construction industry investors, developers and project managers easily get their work ", react_1["default"].createElement("br", null), " done through real time monitoring of their ", react_1["default"].createElement("br", null), " construction sites in real time."), react_1["default"].createElement("div", {
+    className: " mb-12 text-lg sm:mr-4 text-gray-800"
+  }, "We are committed to helping construction industry investors, developers and project managers easily get their work done through real time monitoring of their construction sites."), react_1["default"].createElement("div", {
     className: "flex justify-center sm:justify-start"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/solutions"
@@ -5845,11 +5849,11 @@ var Hero = function Hero() {
     text: "Explore More",
     className: "  "
   })))), react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full tab:w-full mr-12 "
+    className: " sm:w-1/2 w-full tab:w-full mb-8 sm:mb-0 sm:border-cta  rounded-3xl tab:rounded-xl tab:border-2 border-8 tab:mr-0 tab:px-8  sm:mr-12 "
   }, react_1["default"].createElement("img", {
     src: 'https://res.cloudinary.com/morelmiles/image/upload/v1641589820/contruction_img_gxsiok.jpg',
     alt: "",
-    className: " rounded w-auto h-3/5"
+    className: " w-auto sm:h-3/5 h-full tab:h-full tab:mb-10 rounded-2xl"
   }))));
 };
 
@@ -5899,17 +5903,17 @@ var IconsSection = function IconsSection() {
     id: 1,
     heading: 'Excellence ',
     img: Excellence_svg_1["default"],
-    text: 'We aim at being excellent at delivering value for our clients.'
+    text: 'We aim at being excellent at delivering insightful value and data for our clients.'
   }, {
     id: 2,
     heading: 'Simplicity ',
     img: Simple_svg_1["default"],
-    text: 'Simplicity is the ultimate sophistication. Denebolatech is a simple tool to use but delivers measurable value.'
+    text: 'We prioritize simplicity over sophistication. A simple tool to use but delivers measurable value.'
   }, {
     id: 3,
-    heading: 'User Centric ',
+    heading: 'User Centricity ',
     img: User_svg_1["default"],
-    text: 'Users come first in whatever as we strive to satsify their needs.'
+    text: 'We place users at the forefront of whatever we do as we strive to satsify your needs.'
   }, {
     id: 4,
     heading: 'Loyalty ',
@@ -5919,21 +5923,22 @@ var IconsSection = function IconsSection() {
     id: 5,
     heading: 'Disruption ',
     img: Disruption_svg_1["default"],
-    text: 'Our goal is to make considerable impact on how the daily operations in the construction industry are carried out. '
+    text: 'Our goal is to make considerable impact on the daily operations in the construction industry are carried out. '
   }, {
     id: 6,
     heading: 'Dependable',
     img: Dependable_svg_1["default"],
-    text: 'We are available to help in case of an emergency all the time. Reach out to us.'
+    text: 'We are eager to help in case of an emergency ALL the time. Please reach out to us.'
   }];
   return react_1["default"].createElement("div", {
     className: " mb-14"
   }, react_1["default"].createElement(Heading_1["default"], {
-    text: " OUR VALUES"
+    text: " OUR VALUES ",
+    className: " font-sans font-bold"
   }), react_1["default"].createElement("p", {
-    className: " mb-8 text-xl sm:w-2/4 w-full sm:px-20 px-4 mx-auto my-0"
-  }, "We have a set of values that guide our way of doing business... And", ' ', react_1["default"].createElement("b", null, "WE"), " ", '  ', "are true to whatever we say..."), react_1["default"].createElement("div", {
-    className: " grid sm:grid-cols-3 grid-rows-1  sm:px-20 px-4 mb-12"
+    className: " text-xl sm:w-2/4 tab:w-2/3 w-full tab:mb-4 sm:px-20 font-sans px-4 mx-auto my-0"
+  }, "We have a set of values that guide our way of doing business. ", react_1["default"].createElement("b", null, "WE", ''), ' ', "are true to whatever we say we are."), react_1["default"].createElement("div", {
+    className: " grid sm:grid-cols-3 tab:grid-cols-2 grid-rows-1  sm:px-20 px-4 mb-12"
   }, iconCards.map(function (x) {
     return react_1["default"].createElement("div", {
       className: "flex flex-col mr-0 py-8 mb-6 px-3 mx-4 hover:border-b-blue-700 hover:bg-gray-100  hover:border-b-2 hover:shadow-md  ",
@@ -5945,7 +5950,7 @@ var IconsSection = function IconsSection() {
     }), react_1["default"].createElement("h6", {
       className: " text-center text-xl mb-4 sm:mb-0 font-bold text-[#212121]"
     }, x.heading), react_1["default"].createElement("p", {
-      className: " sm:py-6 sm:px-8   text-lg"
+      className: " sm:py-6 sm:px-8 tab:px-0   text-lg"
     }, x.text));
   })));
 };
@@ -6092,7 +6097,7 @@ var MobileNavbar = function MobileNavbar() {
   return react_1["default"].createElement("div", {
     className: " flex dropdown fixed mt-14 w-full animation-container"
   }, react_1["default"].createElement("ul", {
-    className: "dropdown-menu bg-black  w-full"
+    className: "dropdown-menu bg-black   w-full"
   }, menuLinks.map(function (x) {
     return react_1["default"].createElement("li", {
       key: x.id,
@@ -6199,7 +6204,7 @@ var Navbar = function Navbar() {
       setOpen = _ref2[1];
 
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: "flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   "
+    className: "flex flex-row justify-between   bg-white fixed tab:relative shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   "
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/"
   }, react_1["default"].createElement("img", {
@@ -6210,11 +6215,11 @@ var Navbar = function Navbar() {
     onClick: function onClick() {
       return setOpen(!open);
     },
-    className: " sm:hidden",
+    className: " sm:hidden tab:inline-block ",
     src: Menu_svg_1["default"],
     alt: ""
   }), react_1["default"].createElement("div", {
-    className: "sm:flex hidden flex-row"
+    className: "sm:flex tab:hidden hidden flex-row"
   }, react_1["default"].createElement("ul", {
     className: "sm:flex flex-row justify-between items-center"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
@@ -6282,7 +6287,8 @@ var Verticals = function Verticals() {
   }, react_1["default"].createElement("div", {
     className: " mb-4"
   }, react_1["default"].createElement(Heading_1["default"], {
-    text: "BUSINESS VERTICALS"
+    text: "BUSINESS VERTICALS",
+    className: " font-sans font-bold "
   })), react_1["default"].createElement("div", {
     className: "flex sm:flex-row flex-col px-8 sm:px-0 justify-center   mb-20"
   }, react_1["default"].createElement("div", {
@@ -7664,7 +7670,7 @@ var Phone_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icon
 
 var Contact = function Contact() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
-    className: " pt-28"
+    className: " sm:pt-24 pt-0 tab:pt-0"
   }, react_1["default"].createElement(Jumbotron_1["default"], {
     leadingParagraph: "In case of any queries, please get in touch with us. We'll be gald to help",
     header: "Contact us today"
@@ -7674,17 +7680,17 @@ var Contact = function Contact() {
     text: "We are here to help",
     className: " uppercase "
   })), react_1["default"].createElement("div", {
-    className: " flex  sm:flex-row flex-col px-4  sm:px-20 sm:mb-20"
+    className: " flex  sm:flex-row tab:flex-col flex-col px-4  sm:px-20 sm:mb-20"
   }, react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full"
+    className: " sm:w-1/2 w-full tab:w-full tab:mb-8"
   }, react_1["default"].createElement("div", {
     className: " flex flex-col"
   }, react_1["default"].createElement("div", {
     className: " mb-10"
   }, react_1["default"].createElement("h1", {
-    className: " text-2xl mb-4 text-gray-700"
-  }, "Please do not hesistate to get in ", react_1["default"].createElement("br", {
-    className: " hidden sm:block"
+    className: " text-2xl mb-4 text-gray-700 font-sans"
+  }, "Please do not hesistate to get in", ' ', react_1["default"].createElement("br", {
+    className: " hidden sm:block tab:hidden"
   }), "touch with us."), react_1["default"].createElement("p", {
     className: " text-base text-gray-800 mb-4 "
   }, "Fill in the form with any query and we wil get back to", react_1["default"].createElement("br", {
@@ -7714,7 +7720,7 @@ var Contact = function Contact() {
     className: " mr-4",
     alt: ""
   }), react_1["default"].createElement("p", null, "+256 701 234 433 "))))), react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full"
+    className: " sm:w-1/2 tab:w-full w-full"
   }, react_1["default"].createElement("form", {
     action: "",
     method: "post"
@@ -7753,6 +7759,7 @@ var Contact = function Contact() {
     className: " text-red-600"
   }, "*")), react_1["default"].createElement("textarea", {
     name: "message",
+    required: true,
     id: "message",
     cols: 20,
     rows: 10,
@@ -7808,7 +7815,7 @@ var Home = function Home() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
     className: "pt-28 mb-20 sm:mb-0"
   }, react_1["default"].createElement(Hero_1["default"], null)), react_1["default"].createElement(Verticals_1["default"], null), react_1["default"].createElement(CallToAction_1["default"], null), react_1["default"].createElement("div", {
-    className: " pt-10 bg-white"
+    className: " pt-10 bg-white "
   }, react_1["default"].createElement(IconsSection_1["default"], null)), react_1["default"].createElement("div", {
     className: "mt-14"
   }, react_1["default"].createElement(ImageSection_1["default"], null)), react_1["default"].createElement(Footer_1["default"], null));
@@ -7852,33 +7859,37 @@ var Navbar_1 = __importDefault(__webpack_require__(/*! ../common/Navbar */ "./re
 var edit_size_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/edit-size.png */ "./resources/assets/images/edit-size.png"));
 
 var Solutions = function Solutions() {
-  return react_1["default"].createElement("div", {
-    className: " px-4 sm:px-0"
-  }, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
-    className: "pt-28"
+  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
+    className: "pt-16 tab:pt-0 sm:pt-24"
   }, react_1["default"].createElement(Jumbotron_1["default"], {
     header: " Solutions",
     leadingParagraph: "Check out the value that we offer to our esteemed cutomers. "
-  }), react_1["default"].createElement("div", {
+  })), react_1["default"].createElement("div", {
+    className: " px-4 sm:px-0"
+  }, react_1["default"].createElement("div", {
+    className: " "
+  }, react_1["default"].createElement("div", {
     className: " mb-8"
   }, react_1["default"].createElement(Heading_1["default"], {
     text: "Solutions we offer",
-    className: " uppercase font-semibold mb-6"
-  })), react_1["default"].createElement("div", {
-    className: " mb-20 sm:px-20"
+    className: " uppercase font-semibold mb-2"
+  }), react_1["default"].createElement("p", {
+    className: " text-xl sm:w-2/4 tab:w-2/3 w-full tab:mb-4 sm:px-20 font-sans px-4 mx-auto my-0"
+  }, "We have a set of values that guide our way of doing business.", ' ', react_1["default"].createElement("b", null, "WE", ''), " are true to whatever we say we are.")), react_1["default"].createElement("div", {
+    className: " mb-20 "
   }, react_1["default"].createElement("div", {
     className: "flex flex-col"
   }, react_1["default"].createElement("div", {
-    className: " flex sm:flex-row flex-col    items-center mb-16  px-4"
+    className: " flex sm:flex-row flex-col tab:flex-col    items-center mb-16  px-4"
   }, react_1["default"].createElement("img", {
     src: edit_size_png_1["default"],
     alt: "",
-    className: " sm:ml-20 sm:mr-20"
+    className: " sm:mx-20 mb-10 "
   }), react_1["default"].createElement("div", {
     className: "flex flex-col sm:ml-20"
   }, react_1["default"].createElement("h2", {
-    className: " text-3xl uppercase font-medium text-blue-700 mb-8"
-  }, "Works Monitoring", ' '), react_1["default"].createElement("ul", {
+    className: " text-3xl uppercase font-semibold text-blue-700 mb-8"
+  }, "Works Monitoring"), react_1["default"].createElement("ul", {
     className: " list-disc "
   }, react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
@@ -7887,34 +7898,11 @@ var Solutions = function Solutions() {
   }, "Generate reports about the on-going projects"), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
   }, "Invite team members for report collaboration")))), react_1["default"].createElement("div", {
-    className: " flex sm:flex-row flex-col-reverse   items-center mb-16 sm:px-32 px-4"
+    className: " flex sm:flex-row flex-col-reverse tab:flex-col-reverse   items-center mb-16  px-4"
   }, react_1["default"].createElement("div", {
-    className: "flex flex-col sm:mr-20"
+    className: "flex flex-col sm:ml-20"
   }, react_1["default"].createElement("h2", {
-    className: " text-3xl uppercase font-medium text-blue-700 mb-8"
-  }, "Drone Services"), react_1["default"].createElement("ul", {
-    className: " list-disc"
-  }, react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Drone works monitoring. "), react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Drone thermal imaging for construction sites."), react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Risk assessment using drones."), react_1["default"].createElement("li", {
-    className: " mb-2.5 text-gray-800"
-  }, "Environmental protection compliance using drones."))), react_1["default"].createElement("img", {
-    src: edit_size_png_1["default"],
-    alt: ""
-  })), react_1["default"].createElement("div", {
-    className: " flex sm:flex-row flex-col   items-center mb-16  px-4"
-  }, react_1["default"].createElement("img", {
-    src: edit_size_png_1["default"],
-    alt: "",
-    className: " sm:ml-20 sm:mr-20"
-  }), react_1["default"].createElement("div", {
-    className: "flex flex-col "
-  }, react_1["default"].createElement("h2", {
-    className: " text-3xl font-medium uppercase text-blue-700 mb-8"
+    className: " text-3xl font-semibold uppercase text-blue-700 mb-8"
   }, "Image data analysis"), react_1["default"].createElement("ul", {
     className: " list-disc"
   }, react_1["default"].createElement("li", {
@@ -7923,7 +7911,47 @@ var Solutions = function Solutions() {
     className: " mb-2.5 text-gray-800"
   }, "Report conveyance to construction site managers."), react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
-  }, "Analyze data from video reports gathered from the site."))))))), react_1["default"].createElement(Footer_1["default"], null));
+  }, "Analyze data from video reports gathered from the site."))), react_1["default"].createElement("img", {
+    src: edit_size_png_1["default"],
+    alt: "",
+    className: " sm:mx-20 mb-10 "
+  })), react_1["default"].createElement("div", {
+    className: " flex sm:flex-row flex-col tab:flex-col   items-center mb-16  px-4"
+  }, react_1["default"].createElement("img", {
+    src: edit_size_png_1["default"],
+    alt: "",
+    className: " sm:mx-20 mb-10  "
+  }), react_1["default"].createElement("div", {
+    className: "flex flex-col "
+  }, react_1["default"].createElement("h2", {
+    className: " text-3xl font-semibold uppercase text-blue-700 mb-8"
+  }, "A.I assisted inspection"), react_1["default"].createElement("ul", {
+    className: " list-disc"
+  }, react_1["default"].createElement("li", {
+    className: " mb-2.5 text-gray-800"
+  }, "Image report generation for construction companies."), react_1["default"].createElement("li", {
+    className: " mb-2.5 text-gray-800"
+  }, "Report conveyance to construction site managers."), react_1["default"].createElement("li", {
+    className: " mb-2.5 text-gray-800"
+  }, "Analyze data from video reports gathered from the site.")))), react_1["default"].createElement("div", {
+    className: " flex sm:flex-row flex-col-reverse tab:flex-col-reverse    items-center mb-16  px-4"
+  }, react_1["default"].createElement("div", {
+    className: "flex flex-col sm:ml-20"
+  }, react_1["default"].createElement("h2", {
+    className: " text-3xl font-semibold uppercase text-blue-700 mb-8"
+  }, "Report and progress charts' generation"), react_1["default"].createElement("ul", {
+    className: " list-disc"
+  }, react_1["default"].createElement("li", {
+    className: " mb-2.5 text-gray-800"
+  }, "Image report generation for construction companies."), react_1["default"].createElement("li", {
+    className: " mb-2.5 text-gray-800"
+  }, "Report conveyance to construction site managers."), react_1["default"].createElement("li", {
+    className: " mb-2.5 text-gray-800"
+  }, "Analyze data from video reports gathered from the site."))), react_1["default"].createElement("img", {
+    src: edit_size_png_1["default"],
+    alt: "",
+    className: " sm:mx-20 mb-10 "
+  })))))), react_1["default"].createElement(Footer_1["default"], null));
 };
 
 exports["default"] = Solutions;

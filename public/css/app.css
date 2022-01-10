@@ -313,7 +313,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
-.border, .border-2, .border-r, .border-b-2, .hover\:border-b-2{
+.border, .border-2, .border-8, .border-r, .border-b-2, .hover\:border-b-2, .tab\:border-2{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
@@ -471,6 +471,11 @@ select{
 .container{
   width: 100%;
 }
+@media (min-width: 639px){
+  .container{
+    max-width: 639px;
+  }
+}
 @media (min-width: 640px){
   .container{
     max-width: 640px;
@@ -498,6 +503,9 @@ select{
 }
 .fixed{
   position: fixed;
+}
+.relative{
+  position: relative;
 }
 .mx-auto{
   margin-left: auto;
@@ -559,9 +567,6 @@ select{
 .ml-4{
   margin-left: 1rem;
 }
-.mr-12{
-  margin-right: 3rem;
-}
 .mb-14{
   margin-bottom: 3.5rem;
 }
@@ -579,6 +584,9 @@ select{
 }
 .ml-24{
   margin-left: 6rem;
+}
+.mr-12{
+  margin-right: 3rem;
 }
 .-ml-8{
   margin-left: -2rem;
@@ -637,14 +645,11 @@ select{
 .h-screen{
   height: 100vh;
 }
-.h-3\/5{
-  height: 60%;
+.h-full{
+  height: 100%;
 }
 .h-20{
   height: 5rem;
-}
-.h-full{
-  height: 100%;
 }
 .h-8{
   height: 2rem;
@@ -703,6 +708,9 @@ select{
 .rounded-3xl{
   border-radius: 1.5rem;
 }
+.rounded-2xl{
+  border-radius: 1rem;
+}
 .rounded-r-full{
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
@@ -712,6 +720,9 @@ select{
 }
 .border-2{
   border-width: 2px;
+}
+.border-8{
+  border-width: 8px;
 }
 .border-r{
   border-right-width: 1px;
@@ -726,6 +737,10 @@ select{
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-cta{
+  --tw-border-opacity: 1;
+  border-color: rgb(23 34 54 / var(--tw-border-opacity));
 }
 .border-b-blue-200{
   --tw-border-opacity: 1;
@@ -751,9 +766,9 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-red-700{
+.bg-\[\#3aa6ef\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+  background-color: rgb(58 166 239 / var(--tw-bg-opacity));
 }
 .bg-gray-100{
   --tw-bg-opacity: 1;
@@ -782,10 +797,6 @@ select{
 .bg-blue-700{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-.bg-\[\#3aa6ef\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(58 166 239 / var(--tw-bg-opacity));
 }
 .bg-overlay{
   background-image: linear-gradient(89.4deg, #3aa6ef 9.52%, rgba(24, 24, 27, 0.9) 89.41%);
@@ -867,6 +878,9 @@ select{
 .pt-4{
   padding-top: 1rem;
 }
+.pt-16{
+  padding-top: 4rem;
+}
 .pl-10{
   padding-left: 2.5rem;
 }
@@ -881,6 +895,12 @@ select{
 }
 .pb-10{
   padding-bottom: 2.5rem;
+}
+.pb-8{
+  padding-bottom: 2rem;
+}
+.pt-0{
+  padding-top: 0px;
 }
 .text-left{
   text-align: left;
@@ -1018,6 +1038,10 @@ body {
   .sm\:m-0{
     margin: 0px;
   }
+  .sm\:mx-20{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
   .sm\:mx-24{
     margin-left: 6rem;
     margin-right: 6rem;
@@ -1025,14 +1049,17 @@ body {
   .sm\:mr-20{
     margin-right: 5rem;
   }
-  .sm\:-mt-12{
-    margin-top: -3rem;
+  .sm\:-mt-16{
+    margin-top: -4rem;
   }
   .sm\:mb-10{
     margin-bottom: 2.5rem;
   }
   .sm\:mr-12{
     margin-right: 3rem;
+  }
+  .sm\:mr-4{
+    margin-right: 1rem;
   }
   .sm\:mb-0{
     margin-bottom: 0px;
@@ -1054,6 +1081,9 @@ body {
   }
   .sm\:hidden{
     display: none;
+  }
+  .sm\:h-3\/5{
+    height: 60%;
   }
   .sm\:h-10{
     height: 2.5rem;
@@ -1081,6 +1111,10 @@ body {
   }
   .sm\:justify-end{
     justify-content: flex-end;
+  }
+  .sm\:border-cta{
+    --tw-border-opacity: 1;
+    border-color: rgb(23 34 54 / var(--tw-border-opacity));
   }
   .sm\:px-32{
     padding-left: 8rem;
@@ -1116,6 +1150,12 @@ body {
   .sm\:pt-20{
     padding-top: 5rem;
   }
+  .sm\:pt-28{
+    padding-top: 7rem;
+  }
+  .sm\:pt-24{
+    padding-top: 6rem;
+  }
   .sm\:text-left{
     text-align: left;
   }
@@ -1129,6 +1169,106 @@ body {
   .sm\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 639px) and (max-width: 900px){
+  .tab\:visible{
+    visibility: visible;
+  }
+  .tab\:relative{
+    position: relative;
+  }
+  .tab\:mr-8{
+    margin-right: 2rem;
+  }
+  .tab\:mt-32{
+    margin-top: 8rem;
+  }
+  .tab\:mr-0{
+    margin-right: 0px;
+  }
+  .tab\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+  .tab\:mb-4{
+    margin-bottom: 1rem;
+  }
+  .tab\:mb-8{
+    margin-bottom: 2rem;
+  }
+  .tab\:inline-block{
+    display: inline-block;
+  }
+  .tab\:flex{
+    display: flex;
+  }
+  .tab\:hidden{
+    display: none;
+  }
+  .tab\:h-full{
+    height: 100%;
+  }
+  .tab\:w-full{
+    width: 100%;
+  }
+  .tab\:w-1\/3{
+    width: 33.333333%;
+  }
+  .tab\:w-2\/3{
+    width: 66.666667%;
+  }
+  .tab\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .tab\:flex-col{
+    flex-direction: column;
+  }
+  .tab\:flex-col-reverse{
+    flex-direction: column-reverse;
+  }
+  .tab\:items-center{
+    align-items: center;
+  }
+  .tab\:rounded-xl{
+    border-radius: 0.75rem;
+  }
+  .tab\:border-2{
+    border-width: 2px;
+  }
+  .tab\:border-red-300{
+    --tw-border-opacity: 1;
+    border-color: rgb(252 165 165 / var(--tw-border-opacity));
+  }
+  .tab\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .tab\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .tab\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .tab\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .tab\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .tab\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .tab\:pl-12{
+    padding-left: 3rem;
+  }
+  .tab\:pt-0{
+    padding-top: 0px;
   }
 }
 

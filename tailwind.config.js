@@ -2,6 +2,9 @@ module.exports = {
  content: ['./resources/**/*.blade.php', './resources/**/*.tsx'],
  theme: {
   extend: {
+   screens: {
+    tab: { min: '639px', max: '900px' },
+   },
    fontFamily: {
     sans: ['"Hind Madurai"', 'cursive'],
    },
