@@ -12,7 +12,7 @@ const Verticals = () => {
  return (
   <div className="">
    <div className=" mb-4">
-    <Heading text="BUSINESS VERTICALS" />
+    <Heading text="BUSINESS VERTICALS" className=" font-sans font-bold " />
    </div>
 
    <div className="flex sm:flex-row flex-col px-8 sm:px-0 justify-center   mb-20">
