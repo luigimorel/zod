@@ -16,7 +16,7 @@ const Contact = () => {
  return (
   <>
    <Navbar />
-   <div className=" pt-28">
+   <div className=" sm:pt-24 pt-0 tab:pt-0">
     <Jumbotron
      leadingParagraph="In case of any queries, please get in touch with us. We'll be gald to help"
      header="Contact us today"
@@ -27,12 +27,13 @@ const Contact = () => {
     <Heading text="We are here to help" className=" uppercase " />
    </div>
 
-   <div className=" flex  sm:flex-row flex-col px-4  sm:px-20 sm:mb-20">
-    <div className=" sm:w-1/2 w-full">
+   <div className=" flex  sm:flex-row tab:flex-col flex-col px-4  sm:px-20 sm:mb-20">
+    <div className=" sm:w-1/2 w-full tab:w-full tab:mb-8">
      <div className=" flex flex-col">
       <div className=" mb-10">
-       <h1 className=" text-2xl mb-4 text-gray-700">
-        Please do not hesistate to get in <br className=" hidden sm:block" />
+       <h1 className=" text-2xl mb-4 text-gray-700 font-sans">
+        Please do not hesistate to get in{' '}
+        <br className=" hidden sm:block tab:hidden" />
         touch with us.
        </h1>
 
@@ -66,7 +67,7 @@ const Contact = () => {
      </div>
     </div>
 
-    <div className=" sm:w-1/2 w-full">
+    <div className=" sm:w-1/2 tab:w-full w-full">
      <form action="" method="post">
       <div className="flex flex-col">
        <label htmlFor="email" className=" mb-2.5 text-gray-600">
@@ -103,6 +104,7 @@ const Contact = () => {
        </label>
        <textarea
         name="message"
+        required
         id="message"
         cols={20}
         rows={10}

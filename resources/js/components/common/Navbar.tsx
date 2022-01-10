@@ -14,7 +14,7 @@ const Navbar = () => {
 
  return (
   <>
-   <div className="flex flex-row justify-between   bg-white fixed shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   ">
+   <div className="flex flex-row justify-between   bg-white fixed tab:relative shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   ">
     <Link to="/">
      <img src={Logo} alt="" className=" sm:h-10 h-5" />
     </Link>
@@ -22,12 +22,12 @@ const Navbar = () => {
     {/* Menu icons for the mobile screens  */}
     <img
      onClick={() => setOpen(!open)}
-     className=" sm:hidden"
+     className=" sm:hidden tab:inline-block "
      src={MenuIcon}
      alt=""
     />
 
-    <div className="sm:flex hidden flex-row">
+    <div className="sm:flex tab:hidden hidden flex-row">
      <ul className="sm:flex flex-row justify-between items-center">
       <Link to={'/'}>
        <li className="mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base">
