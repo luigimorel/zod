@@ -20,7 +20,7 @@ const Home = () => {
 
    <CallToAction />
 
-   <div className=" pt-10 bg-white">
+   <div className=" pt-10 bg-white ">
     <IconsSection />
    </div>
 

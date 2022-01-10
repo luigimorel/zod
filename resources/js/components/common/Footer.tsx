@@ -9,16 +9,17 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
  return (
-  <div className=" bg-cta sm:px-20 px-8 text-white">
-   <div className="flex sm:flex-row flex-col justify-between sm:mr-20 mb-5">
+  <div className=" bg-cta sm:px-20 tab:px-10 px-8 text-white">
+   <div className="flex sm:flex-row flex-col justify-between sm:mr-20 tab:mr-0 mb-5">
     <div className=" mt-11">
      <Link to={'/'}>
       <img src={LogoLight} className=" mb-11 h-10 " alt="" />
      </Link>
      <p className=" text-white ">
-      Make faster and more informed data-driven decisions, <br />
-      stay on top of your project, and keep all stakeholders <br />
-      informed
+      Make faster and more informed data-driven{' '}
+      <br className=" sm:flex hidden tab:flex" /> decisions, stay on top of your
+      project, <br className=" sm:flex hidden tab:flex" /> and keep all
+      stakeholders informed
      </p>
     </div>
 
