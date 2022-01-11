@@ -5354,7 +5354,7 @@ var SignIn = function SignIn() {
     className: " mx-auto mt-16 h-10 mb-10",
     alt: ""
   })), react_1["default"].createElement("div", {
-    className: " sm:w-1/3 mx-auto my-0 border  border-gray-400"
+    className: " sm:w-1/3 tab:w-2/3 mx-auto my-0 border  border-gray-400"
   }, react_1["default"].createElement("div", {
     className: " px-10 pb-16 pt-10"
   }, react_1["default"].createElement("h2", {
@@ -5383,19 +5383,21 @@ var SignIn = function SignIn() {
     id: "password",
     className: " w-full mb-3 rounded-sm border-gray-400"
   })), react_1["default"].createElement("div", {
-    className: "flex justify-between flex-row mb-4"
+    className: "flex justify-end flex-row mb-4"
   }, react_1["default"].createElement("p", null, react_1["default"].createElement(react_router_dom_1.Link, {
     to: '/',
     className: " text-blue-700"
-  }, "Forgot password?")), react_1["default"].createElement("p", null, "Don't have an account?", '  ', react_1["default"].createElement("span", {
+  }, "Forgot password?"))), react_1["default"].createElement("div", {
+    className: " flex justify-center mb-8 "
+  }, react_1["default"].createElement(Button_1["default"], {
+    text: "Submit"
+  }))), react_1["default"].createElement("p", {
+    className: " text-center"
+  }, "Don't have an account?", '  ', react_1["default"].createElement("span", {
     className: " text-blue-700 font-bold"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
-  }, "Sign Up")))), react_1["default"].createElement("div", {
-    className: " flex justify-center "
-  }, react_1["default"].createElement(Button_1["default"], {
-    text: "Submit"
-  }))))));
+  }, "Sign Up"))))));
 };
 
 exports["default"] = SignIn;
@@ -5421,7 +5423,9 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Components
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Components
 
 
 var Button_1 = __importDefault(__webpack_require__(/*! ../common/Button */ "./resources/js/components/common/Button.tsx"));
@@ -5435,19 +5439,26 @@ var Navbar_1 = __importDefault(__webpack_require__(/*! ../common/Navbar */ "./re
 
 var SignUp = function SignUp() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
-    className: " mb-10 pt-28"
+    className: " mb-5 sm:pt-32 pt-20 tab:pt-4"
   }, react_1["default"].createElement(Heading_1["default"], {
     text: "Sign Up",
-    className: " uppercase "
+    className: " mb-0 uppercase "
   })), react_1["default"].createElement("div", {
-    className: " sm:w-2/5 mx-auto my-0 "
+    className: " sm:w-3/5 tab:w-4/5 mx-auto my-0 "
   }, react_1["default"].createElement("div", {
-    className: " sm:px-32 px-4 py-8 justify-center"
+    className: " sm:px-32 tab:px-12 px-4 py-8 justify-center"
   }, react_1["default"].createElement("h2", {
-    className: " text-center text-blue-700 font-bold mb-10"
-  }, "Create an account today", ' '), react_1["default"].createElement("form", {
+    className: " text-center  font-medium mb-10"
+  }, "Create an account today on Denebolatech today.", react_1["default"].createElement("br", null), react_1["default"].createElement("span", {
+    className: " font-normal"
+  }, "Already have an account?", ' ', react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/accounts/login",
+    className: " text-primary"
+  }, "Log In", ' '))), react_1["default"].createElement("form", {
     action: "",
     method: "post"
+  }, react_1["default"].createElement("div", {
+    className: "flex sm:flex-row tab:flex-col flex-col justify-between"
   }, react_1["default"].createElement("div", {
     className: "flex flex-col"
   }, react_1["default"].createElement("label", {
@@ -5474,7 +5485,9 @@ var SignUp = function SignUp() {
     required: true,
     id: "lastName",
     className: " w-full mb-4 rounded-sm border-gray-400"
-  })), react_1["default"].createElement("div", {
+  }))), react_1["default"].createElement("div", {
+    className: "flex justify-between tab:flex-col flex-col sm:flex-row"
+  }, react_1["default"].createElement("div", {
     className: "flex flex-col"
   }, react_1["default"].createElement("label", {
     htmlFor: "companyName",
@@ -5500,7 +5513,7 @@ var SignUp = function SignUp() {
     required: true,
     id: "email",
     className: " w-full mb-4 rounded-sm border-gray-400"
-  })), react_1["default"].createElement("div", {
+  }))), react_1["default"].createElement("div", {
     className: "flex flex-col"
   }, react_1["default"].createElement("label", {
     htmlFor: "tel  ",
@@ -5839,7 +5852,11 @@ var Hero = function Hero() {
     className: " sm:w-1/2 w-full tab:w-full   sm:pl-24 tab:pl-12 pl-3 tab:mr-0 tab:px-4  sm:mr-12"
   }, react_1["default"].createElement("h3", {
     className: " sm:text-5xl text-3xl mb-8 font-sans font-semibold uppercase  "
-  }, "CONSTRUCTION SITE MONITORING SIMPLIFIED"), react_1["default"].createElement("p", {
+  }, "CONSTRUCTION SITE MONITORING", ' ', react_1["default"].createElement("span", {
+    className: " text-red-700"
+  }, "SIMPLIFIED", react_1["default"].createElement("span", {
+    className: " text-primary"
+  }, "..."))), react_1["default"].createElement("p", {
     className: " mb-12 text-lg sm:mr-4 text-gray-800"
   }, "We are committed to helping construction industry investors, developers and project managers easily get their work done through real time monitoring of their construction sites."), react_1["default"].createElement("div", {
     className: "flex justify-center sm:justify-start"
@@ -6223,22 +6240,18 @@ var Navbar = function Navbar() {
   }, react_1["default"].createElement("ul", {
     className: "sm:flex flex-row justify-between items-center"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
-    to: '/'
-  }, react_1["default"].createElement("li", {
-    className: "mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base"
-  }, "Home")), react_1["default"].createElement(react_router_dom_1.Link, {
-    to: '/solutions'
-  }, react_1["default"].createElement("li", {
-    className: "mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base"
-  }, "Solutions", ' ')), react_1["default"].createElement(react_router_dom_1.Link, {
-    to: '/contact-us'
-  }, react_1["default"].createElement("li", {
-    className: "mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base"
-  }, "Contact Us")), react_1["default"].createElement(react_router_dom_1.Link, {
-    to: '/accounts/login'
-  }, react_1["default"].createElement("li", {
-    className: "mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base"
-  }, "Log In", ' ')), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/',
+    className: "mr-12 tab:mr-8 py-2 text-black font-semibold hover:text-blue-700 text-base"
+  }, "Home"), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/solutions',
+    className: "mr-12 tab:mr-8 py-2 text-black font-semibold hover:text-blue-700 text-base"
+  }, "Solutions"), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/contact-us',
+    className: "mr-12 tab:mr-8 text-black py-2 font-semibold hover:text-blue-700 text-base"
+  }, "Contact Us"), react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/accounts/login',
+    className: "mr-12 tab:mr-8 text-black py-2 font-semibold hover:text-blue-700 text-base"
+  }, "Log In"), react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
   }, react_1["default"].createElement(Button_1["default"], {
     text: "Sign Up",
@@ -7670,7 +7683,7 @@ var Phone_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icon
 
 var Contact = function Contact() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
-    className: " sm:pt-24 pt-0 tab:pt-0"
+    className: " sm:pt-24 pt-16 tab:pt-0"
   }, react_1["default"].createElement(Jumbotron_1["default"], {
     leadingParagraph: "In case of any queries, please get in touch with us. We'll be gald to help",
     header: "Contact us today"
@@ -7689,12 +7702,10 @@ var Contact = function Contact() {
     className: " mb-10"
   }, react_1["default"].createElement("h1", {
     className: " text-2xl mb-4 text-gray-700 font-sans"
-  }, "Please do not hesistate to get in", ' ', react_1["default"].createElement("br", {
-    className: " hidden sm:block tab:hidden"
-  }), "touch with us."), react_1["default"].createElement("p", {
+  }, "Get in touch now..."), react_1["default"].createElement("p", {
     className: " text-base text-gray-800 mb-4 "
   }, "Fill in the form with any query and we wil get back to", react_1["default"].createElement("br", {
-    className: "sm:hidden block"
+    className: "sm:block hidden"
   }), " you as soon as possible."), react_1["default"].createElement("p", {
     className: " text-base italic text-gray-700"
   }, "Fields marked with ", react_1["default"].createElement("span", {
