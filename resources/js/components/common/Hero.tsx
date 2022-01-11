@@ -10,7 +10,10 @@ const Hero = () => {
    <div className=" flex sm:-mt-16 px-4  sm:flex-row tab:mt-32 tab:flex-col-reverse flex-col-reverse items-center relative   justify-between h-screen w-full sm:mb-10     ">
     <div className=" sm:w-1/2 w-full tab:w-full   sm:pl-24 tab:pl-12 pl-3 tab:mr-0 tab:px-4  sm:mr-12">
      <h3 className=" sm:text-5xl text-3xl mb-8 font-sans font-semibold uppercase  ">
-      CONSTRUCTION SITE MONITORING SIMPLIFIED
+      CONSTRUCTION SITE MONITORING{' '}
+      <span className=" text-red-700">
+       SIMPLIFIED<span className=" text-primary">...</span>
+      </span>
      </h3>
 
      <p className=" mb-12 text-lg sm:mr-4 text-gray-800">
