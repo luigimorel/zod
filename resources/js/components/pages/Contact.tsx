@@ -16,7 +16,7 @@ const Contact = () => {
  return (
   <>
    <Navbar />
-   <div className=" sm:pt-24 pt-0 tab:pt-0">
+   <div className=" sm:pt-24 pt-16 tab:pt-0">
     <Jumbotron
      leadingParagraph="In case of any queries, please get in touch with us. We'll be gald to help"
      header="Contact us today"
@@ -32,14 +32,12 @@ const Contact = () => {
      <div className=" flex flex-col">
       <div className=" mb-10">
        <h1 className=" text-2xl mb-4 text-gray-700 font-sans">
-        Please do not hesistate to get in{' '}
-        <br className=" hidden sm:block tab:hidden" />
-        touch with us.
+        Get in touch now...
        </h1>
 
        <p className=" text-base text-gray-800 mb-4 ">
         Fill in the form with any query and we wil get back to
-        <br className="sm:hidden block" /> you as soon as possible.
+        <br className="sm:block hidden" /> you as soon as possible.
        </p>
 
        <p className=" text-base italic text-gray-700">
