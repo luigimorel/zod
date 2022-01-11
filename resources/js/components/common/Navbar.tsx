@@ -29,26 +29,30 @@ const Navbar = () => {
 
     <div className="sm:flex tab:hidden hidden flex-row">
      <ul className="sm:flex flex-row justify-between items-center">
-      <Link to={'/'}>
-       <li className="mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base">
-        Home
-       </li>
+      <Link
+       to={'/'}
+       className="mr-12 tab:mr-8 py-2 text-black font-semibold hover:text-blue-700 text-base"
+      >
+       Home
       </Link>
 
-      <Link to={'/solutions'}>
-       <li className="mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base">
-        Solutions{' '}
-       </li>
+      <Link
+       to={'/solutions'}
+       className="mr-12 tab:mr-8 py-2 text-black font-semibold hover:text-blue-700 text-base"
+      >
+       Solutions
       </Link>
-      <Link to={'/contact-us'}>
-       <li className="mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base">
-        Contact Us
-       </li>
+      <Link
+       to={'/contact-us'}
+       className="mr-12 tab:mr-8 text-black py-2 font-semibold hover:text-blue-700 text-base"
+      >
+       Contact Us
       </Link>
-      <Link to={'/accounts/login'}>
-       <li className="mr-12 tab:mr-8 text-black font-semibold hover:text-blue-700 text-base">
-        Log In{' '}
-       </li>
+      <Link
+       to={'/accounts/login'}
+       className="mr-12 tab:mr-8 text-black py-2 font-semibold hover:text-blue-700 text-base"
+      >
+       Log In
       </Link>
 
       <Link to="/accounts/sign-up">
