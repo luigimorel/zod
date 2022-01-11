@@ -14,7 +14,7 @@ const SignIn = () => {
     <img src={Logo} className=" mx-auto mt-16 h-10 mb-10" alt="" />
    </Link>
 
-   <div className=" sm:w-1/3 mx-auto my-0 border  border-gray-400">
+   <div className=" sm:w-1/3 tab:w-2/3 mx-auto my-0 border  border-gray-400">
     <div className=" px-10 pb-16 pt-10">
      <h2 className=" text-center text-blue-700 font-bold text-xl mb-10">
       Log In
@@ -46,24 +46,25 @@ const SignIn = () => {
        />
       </div>
 
-      <div className="flex justify-between flex-row mb-4">
+      <div className="flex justify-end flex-row mb-4">
        <p>
         <Link to={'/'} className=" text-blue-700">
          Forgot password?
         </Link>
        </p>
-       <p>
-        Don't have an account?{'  '}
-        <span className=" text-blue-700 font-bold">
-         <Link to="/accounts/sign-up">Sign Up</Link>
-        </span>
-       </p>
       </div>
 
-      <div className=" flex justify-center ">
+      <div className=" flex justify-center mb-8 ">
        <Button text="Submit" />
       </div>
      </form>
+
+     <p className=" text-center">
+      Don't have an account?{'  '}
+      <span className=" text-blue-700 font-bold">
+       <Link to="/accounts/sign-up">Sign Up</Link>
+      </span>
+     </p>
     </div>
    </div>
   </div>

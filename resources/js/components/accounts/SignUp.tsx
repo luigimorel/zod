@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 // Components
 import Button from '../common/Button'
@@ -13,71 +14,80 @@ const SignUp = () => {
   <>
    <Navbar />
 
-   <div className=" mb-10 pt-28">
-    <Heading text="Sign Up" className=" uppercase " />
+   <div className=" mb-5 sm:pt-32 pt-20 tab:pt-4">
+    <Heading text="Sign Up" className=" mb-0 uppercase " />
    </div>
-   <div className=" sm:w-2/5 mx-auto my-0 ">
-    <div className=" sm:px-32 px-4 py-8 justify-center">
-     <h2 className=" text-center text-blue-700 font-bold mb-10">
-      Create an account today{' '}
+   <div className=" sm:w-3/5 tab:w-4/5 mx-auto my-0 ">
+    <div className=" sm:px-32 tab:px-12 px-4 py-8 justify-center">
+     <h2 className=" text-center  font-medium mb-10">
+      Create an account today on Denebolatech today.
+      <br />
+      <span className=" font-normal">
+       Already have an account?{' '}
+       <Link to="/accounts/login" className=" text-primary">
+        Log In{' '}
+       </Link>
+      </span>
      </h2>
 
      <form action="" method="post">
-      <div className="flex flex-col">
-       <label htmlFor="firstName" className=" mb-2.5">
-        First Name <span className=" text-red-700">*</span>{' '}
-       </label>
-       <input
-        type="text"
-        name="firstName"
-        required
-        id="firstName"
-        className=" w-full mb-4 rounded-sm border-gray-400"
-       />
+      <div className="flex sm:flex-row tab:flex-col flex-col justify-between">
+       <div className="flex flex-col">
+        <label htmlFor="firstName" className=" mb-2.5">
+         First Name <span className=" text-red-700">*</span>{' '}
+        </label>
+        <input
+         type="text"
+         name="firstName"
+         required
+         id="firstName"
+         className=" w-full mb-4 rounded-sm border-gray-400"
+        />
+       </div>
+
+       {/* Last Name */}
+       <div className="flex flex-col">
+        <label htmlFor="lastName" className=" mb-2.5">
+         Last Name <span className=" text-red-700">*</span>{' '}
+        </label>
+        <input
+         type="text"
+         name="lastName"
+         required
+         id="lastName"
+         className=" w-full mb-4 rounded-sm border-gray-400"
+        />
+       </div>
       </div>
 
-      {/* Last Name */}
-      <div className="flex flex-col">
-       <label htmlFor="lastName" className=" mb-2.5">
-        Last Name <span className=" text-red-700">*</span>{' '}
-       </label>
-       <input
-        type="text"
-        name="lastName"
-        required
-        id="lastName"
-        className=" w-full mb-4 rounded-sm border-gray-400"
-       />
-      </div>
+      {/* Company Name */}
+      <div className="flex justify-between tab:flex-col flex-col sm:flex-row">
+       <div className="flex flex-col">
+        <label htmlFor="companyName" className=" mb-2.5">
+         Company Name <span className=" text-red-700">*</span>{' '}
+        </label>
+        <input
+         type="text"
+         required
+         name="companyName"
+         id="companyName"
+         className=" w-full mb-4 rounded-sm border-gray-400"
+        />
+       </div>
 
-      {/* Company Name  */}
-
-      {/* Last Name */}
-      <div className="flex flex-col">
-       <label htmlFor="companyName" className=" mb-2.5">
-        Company Name <span className=" text-red-700">*</span>{' '}
-       </label>
-       <input
-        type="text"
-        required
-        name="companyName"
-        id="companyName"
-        className=" w-full mb-4 rounded-sm border-gray-400"
-       />
-      </div>
-
-      {/* Email */}
-      <div className="flex flex-col">
-       <label htmlFor="email" className=" mb-2.5">
-        Business Email <span className=" text-red-700">*</span>
-       </label>
-       <input
-        type="email"
-        name="email"
-        required
-        id="email"
-        className=" w-full mb-4 rounded-sm border-gray-400"
-       />
+       {/* Email */}
+       <div className="flex flex-col">
+        <label htmlFor="email" className=" mb-2.5">
+         Business Email <span className=" text-red-700">*</span>
+        </label>
+        <input
+         type="email"
+         name="email"
+         required
+         id="email"
+         className=" w-full mb-4 rounded-sm border-gray-400"
+        />
+       </div>
       </div>
 
       {/* Name */}
