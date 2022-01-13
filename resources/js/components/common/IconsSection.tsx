@@ -4,11 +4,20 @@ import React from 'react'
 import Heading from './Heading'
 
 // Assets
+// @ts-ignore
 import SimpleIcon from './../../../assets/icons/Simple.svg'
+// @ts-ignore
+
 import Excellence from './../../../assets/icons/Excellence.svg'
+// @ts-ignore
+
 import Disruption from './../../../assets/icons/Disruption.svg'
+// @ts-ignore
+
 import Loyalty from './../../../assets/icons/Loyalty.svg'
+// @ts-ignore
 import Dependable from './../../../assets/icons/Dependable.svg'
+// @ts-ignore
 import User from './../../../assets/icons/User.svg'
 
 const IconsSection = () => {
@@ -39,7 +48,7 @@ const IconsSection = () => {
    heading: 'Loyalty ',
    img: Loyalty,
    text:
-    "We listen when you talk to us. Satsifying your construction company's is our mission.",
+    "We listen when you talk to us. Satsifying your construction company's needs is our mission.",
   },
   {
    id: 5,

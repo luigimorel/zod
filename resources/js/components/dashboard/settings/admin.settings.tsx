@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 // Assets
+// @ts-ignore
 import Logo from './../../../../assets/images/logo.png'
 
 // Components
 import DashNav from '../admin/dashNav'
 import SidebarDashboard from '../admin/sidebar.dashboard'
 import MobileNavbarAdminDashboard from '../admin/mobileNav.admin'
-import { Link } from 'react-router-dom';
 
 const AdminSettings = () => {
  const [open, setOpen] = useState(false)

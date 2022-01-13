@@ -1,11 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 // Assets
+// @ts-ignore
 import LogoLight from './../../../assets/images/logo-dark.png'
+// @ts-ignore
 import Twitter from './../../../assets/icons/Twitter.svg'
+// @ts-ignore
 import FB from './../../../assets/icons/fB.svg'
+// @ts-ignore
 import Linkedin from './../../../assets/icons/Linkedin.svg'
-import { Link } from 'react-router-dom'
 
 const Footer = () => {
  return (

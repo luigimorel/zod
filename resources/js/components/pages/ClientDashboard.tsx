@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 // Assets
+// @ts-ignore
 import Logo from './../../../assets/images/logo-light.png'
+// @ts-ignore
 import MenuIcon from './../../../assets/icons/Menu.svg'
 
 // Components
@@ -9,7 +12,6 @@ import DashNav from '../dashboard/clients/dashNav'
 import SidebarDashboard from '../dashboard/clients/sidebar.dashboard'
 import ClientsDashboard from '../dashboard/clients/clients.dashboard'
 import MobileNavbarClientsDashboard from '../dashboard/clients/mobileNav.clients'
-import { Link } from 'react-router-dom'
 
 const ClientDashboard = () => {
  const [open, setOpen] = useState(false)

@@ -5339,6 +5339,7 @@ Object.defineProperty(exports, "__esModule", ({
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
 
 
 var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // Components
@@ -5674,18 +5675,22 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
 
 
-var logo_dark_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-dark.png */ "./resources/assets/images/logo-dark.png"));
+var logo_dark_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-dark.png */ "./resources/assets/images/logo-dark.png")); // @ts-ignore
 
-var Twitter_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Twitter.svg */ "./resources/assets/icons/Twitter.svg"));
 
-var fB_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/fB.svg */ "./resources/assets/icons/fB.svg"));
+var Twitter_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Twitter.svg */ "./resources/assets/icons/Twitter.svg")); // @ts-ignore
+
+
+var fB_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/fB.svg */ "./resources/assets/icons/fB.svg")); // @ts-ignore
+
 
 var Linkedin_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Linkedin.svg */ "./resources/assets/icons/Linkedin.svg"));
-
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 
 var Footer = function Footer() {
   return react_1["default"].createElement("div", {
@@ -5901,17 +5906,23 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 
 
 var Heading_1 = __importDefault(__webpack_require__(/*! ./Heading */ "./resources/js/components/common/Heading.tsx")); // Assets
+// @ts-ignore
 
 
-var Simple_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Simple.svg */ "./resources/assets/icons/Simple.svg"));
+var Simple_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Simple.svg */ "./resources/assets/icons/Simple.svg")); // @ts-ignore
 
-var Excellence_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Excellence.svg */ "./resources/assets/icons/Excellence.svg"));
 
-var Disruption_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Disruption.svg */ "./resources/assets/icons/Disruption.svg"));
+var Excellence_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Excellence.svg */ "./resources/assets/icons/Excellence.svg")); // @ts-ignore
 
-var Loyalty_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Loyalty.svg */ "./resources/assets/icons/Loyalty.svg"));
 
-var Dependable_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Dependable.svg */ "./resources/assets/icons/Dependable.svg"));
+var Disruption_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Disruption.svg */ "./resources/assets/icons/Disruption.svg")); // @ts-ignore
+
+
+var Loyalty_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Loyalty.svg */ "./resources/assets/icons/Loyalty.svg")); // @ts-ignore
+
+
+var Dependable_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Dependable.svg */ "./resources/assets/icons/Dependable.svg")); // @ts-ignore
+
 
 var User_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/User.svg */ "./resources/assets/icons/User.svg"));
 
@@ -5935,7 +5946,7 @@ var IconsSection = function IconsSection() {
     id: 4,
     heading: 'Loyalty ',
     img: Loyalty_svg_1["default"],
-    text: "We listen when you talk to us. Satsifying your construction company's is our mission."
+    text: "We listen when you talk to us. Satsifying your construction company's needs is our mission."
   }, {
     id: 5,
     heading: 'Disruption ',
@@ -6089,7 +6100,8 @@ Object.defineProperty(exports, "__esModule", ({
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Components
+
 
 var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/js/components/common/Button.tsx"));
 
@@ -6203,9 +6215,11 @@ Object.defineProperty(exports, "__esModule", ({
 var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
 
 
-var Menu_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Menu.svg */ "./resources/assets/icons/Menu.svg"));
+var Menu_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Menu.svg */ "./resources/assets/icons/Menu.svg")); // @ts-ignore
+
 
 var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // Components
 
@@ -6286,11 +6300,14 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 
 
 var Heading_1 = __importDefault(__webpack_require__(/*! ./Heading */ "./resources/js/components/common/Heading.tsx")); // Assets
+// @ts-ignore
 
 
-var Cameras_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Cameras.svg */ "./resources/assets/icons/Cameras.svg"));
+var Cameras_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Cameras.svg */ "./resources/assets/icons/Cameras.svg")); // @ts-ignore
 
-var Building_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Building.svg */ "./resources/assets/icons/Building.svg"));
+
+var Building_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Building.svg */ "./resources/assets/icons/Building.svg")); // @ts-ignore
+
 
 var Plane_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Plane.svg */ "./resources/assets/icons/Plane.svg"));
 
@@ -6444,7 +6461,9 @@ var AdminDashboardContainer = function AdminDashboardContainer() {
     className: " text-xl font-bold text-gray-700 mb-3"
   }, "\uD83D\uDCC8 User accounts growth"), react_1["default"].createElement("p", {
     className: " mb-4 font-semibold"
-  }, "Increase in user accounts"), react_1["default"].createElement(react_chartjs_2_1.Line, {
+  }, "Increase in user accounts"), react_1["default"].createElement(react_chartjs_2_1.Line // @ts-ignore
+  , {
+    // @ts-ignore
     data: barData,
     height: 300,
     options: {
@@ -6461,7 +6480,9 @@ var AdminDashboardContainer = function AdminDashboardContainer() {
     className: " text-xl font-bold text-gray-700 mb-3"
   }, "\u23F0 Month\u2019s difference"), react_1["default"].createElement("p", {
     className: " mb-4 font-semibold"
-  }, "Differene between Nov & Dec"), react_1["default"].createElement(react_chartjs_2_1.Line, {
+  }, "Differene between Nov & Dec"), react_1["default"].createElement(react_chartjs_2_1.Line // @ts-ignore
+  , {
+    // @ts-ignore
     data: lineData,
     height: 300,
     options: {
@@ -6499,11 +6520,14 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+// @ts-ignore
 
 
-var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // @ts-ignore
 
-var User_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/User.png */ "./resources/assets/images/User.png"));
+
+var User_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/User.png */ "./resources/assets/images/User.png")); // @ts-ignore
+
 
 var Notify_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Notify.svg */ "./resources/assets/icons/Notify.svg"));
 
@@ -6633,13 +6657,17 @@ Object.defineProperty(exports, "__esModule", ({
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
 
 
-var Eye_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Eye.svg */ "./resources/assets/icons/Eye.svg"));
+var Eye_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Eye.svg */ "./resources/assets/icons/Eye.svg")); // @ts-ignore
 
-var Settings_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Settings.svg */ "./resources/assets/icons/Settings.svg"));
 
-var Graph_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Graph.svg */ "./resources/assets/icons/Graph.svg"));
+var Settings_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Settings.svg */ "./resources/assets/icons/Settings.svg")); // @ts-ignore
+
+
+var Graph_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Graph.svg */ "./resources/assets/icons/Graph.svg")); // @ts-ignore
+
 
 var SignOut_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/SignOut.svg */ "./resources/assets/icons/SignOut.svg"));
 
@@ -6709,9 +6737,11 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+// @ts-ignore
 
 
-var VideoTwo_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/VideoTwo.svg */ "./resources/assets/icons/VideoTwo.svg"));
+var VideoTwo_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/VideoTwo.svg */ "./resources/assets/icons/VideoTwo.svg")); // @ts-ignore
+
 
 var VideoOne_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/VideoOne.svg */ "./resources/assets/icons/VideoOne.svg"));
 
@@ -6827,11 +6857,14 @@ Object.defineProperty(exports, "__esModule", ({
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
 
 
-var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // @ts-ignore
 
-var User_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/User.png */ "./resources/assets/images/User.png"));
+
+var User_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/User.png */ "./resources/assets/images/User.png")); // @ts-ignore
+
 
 var Notify_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Notify.svg */ "./resources/assets/icons/Notify.svg")); // Components
 
@@ -6965,20 +6998,25 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
 
 
-var Eye_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Eye.svg */ "./resources/assets/icons/Eye.svg"));
+var Eye_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Eye.svg */ "./resources/assets/icons/Eye.svg")); // @ts-ignore
 
-var Settings_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Settings.svg */ "./resources/assets/icons/Settings.svg"));
 
-var Graph_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Graph.svg */ "./resources/assets/icons/Graph.svg"));
+var Settings_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Settings.svg */ "./resources/assets/icons/Settings.svg")); // @ts-ignore
 
-var SignOut_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/SignOut.svg */ "./resources/assets/icons/SignOut.svg"));
+
+var Graph_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Graph.svg */ "./resources/assets/icons/Graph.svg")); // @ts-ignore
+
+
+var SignOut_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/SignOut.svg */ "./resources/assets/icons/SignOut.svg")); // @ts-ignore
+
 
 var Project_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Project.svg */ "./resources/assets/icons/Project.svg"));
-
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 
 var sidebarNav = [{
   id: 1,
@@ -7095,7 +7133,10 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
 
 
 var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
@@ -7106,8 +7147,6 @@ var dashNav_1 = __importDefault(__webpack_require__(/*! ../admin/dashNav */ "./r
 var sidebar_dashboard_1 = __importDefault(__webpack_require__(/*! ../admin/sidebar.dashboard */ "./resources/js/components/dashboard/admin/sidebar.dashboard.tsx"));
 
 var mobileNav_admin_1 = __importDefault(__webpack_require__(/*! ../admin/mobileNav.admin */ "./resources/js/components/dashboard/admin/mobileNav.admin.tsx"));
-
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 
 var AdminSettings = function AdminSettings() {
   var _ref = (0, react_1.useState)(false),
@@ -7284,7 +7323,10 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
 
 
 var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
@@ -7295,8 +7337,6 @@ var dashNav_1 = __importDefault(__webpack_require__(/*! ../admin/dashNav */ "./r
 var sidebar_dashboard_1 = __importDefault(__webpack_require__(/*! ../clients/sidebar.dashboard */ "./resources/js/components/dashboard/clients/sidebar.dashboard.tsx"));
 
 var mobileNav_clients_1 = __importDefault(__webpack_require__(/*! ../clients/mobileNav.clients */ "./resources/js/components/dashboard/clients/mobileNav.clients.tsx"));
-
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 
 var AdminSettings = function AdminSettings() {
   var _ref = (0, react_1.useState)(false),
@@ -7473,10 +7513,14 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
 
 
-var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // @ts-ignore
+
 
 var Menu_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Menu.svg */ "./resources/assets/icons/Menu.svg")); // Components
 
@@ -7488,8 +7532,6 @@ var dashNav_1 = __importDefault(__webpack_require__(/*! ../dashboard/admin/dashN
 var container_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/admin/container.dashboard */ "./resources/js/components/dashboard/admin/container.dashboard.tsx"));
 
 var mobileNav_admin_1 = __importDefault(__webpack_require__(/*! ../dashboard/admin/mobileNav.admin */ "./resources/js/components/dashboard/admin/mobileNav.admin.tsx"));
-
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 
 var AdminDashboard = function AdminDashboard() {
   var _ref = (0, react_1.useState)(false),
@@ -7589,10 +7631,14 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 
-var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js")); // Assets
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
 
 
-var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // @ts-ignore
+
 
 var Menu_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Menu.svg */ "./resources/assets/icons/Menu.svg")); // Components
 
@@ -7604,8 +7650,6 @@ var sidebar_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/c
 var clients_dashboard_1 = __importDefault(__webpack_require__(/*! ../dashboard/clients/clients.dashboard */ "./resources/js/components/dashboard/clients/clients.dashboard.tsx"));
 
 var mobileNav_clients_1 = __importDefault(__webpack_require__(/*! ../dashboard/clients/mobileNav.clients */ "./resources/js/components/dashboard/clients/mobileNav.clients.tsx"));
-
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 
 var ClientDashboard = function ClientDashboard() {
   var _ref = (0, react_1.useState)(false),
@@ -7673,11 +7717,14 @@ var Heading_1 = __importDefault(__webpack_require__(/*! ../common/Heading */ "./
 var Jumbotron_1 = __importDefault(__webpack_require__(/*! ../common/Jumbotron */ "./resources/js/components/common/Jumbotron.tsx"));
 
 var Navbar_1 = __importDefault(__webpack_require__(/*! ../common/Navbar */ "./resources/js/components/common/Navbar.tsx")); // Assets
+// @ts-ignore
 
 
-var Location_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Location.svg */ "./resources/assets/icons/Location.svg"));
+var Location_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Location.svg */ "./resources/assets/icons/Location.svg")); // @ts-ignore
 
-var Email_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Email.svg */ "./resources/assets/icons/Email.svg"));
+
+var Email_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Email.svg */ "./resources/assets/icons/Email.svg")); // @ts-ignore
+
 
 var Phone_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Phone.svg */ "./resources/assets/icons/Phone.svg"));
 
@@ -7865,6 +7912,7 @@ var Heading_1 = __importDefault(__webpack_require__(/*! ../common/Heading */ "./
 var Jumbotron_1 = __importDefault(__webpack_require__(/*! ../common/Jumbotron */ "./resources/js/components/common/Jumbotron.tsx"));
 
 var Navbar_1 = __importDefault(__webpack_require__(/*! ../common/Navbar */ "./resources/js/components/common/Navbar.tsx")); // Assets
+// @ts-ignore
 
 
 var edit_size_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/edit-size.png */ "./resources/assets/images/edit-size.png"));

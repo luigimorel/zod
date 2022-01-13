@@ -1,12 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 // Assets
+// @ts-ignore
 import Eye from './../../../../assets/icons/Eye.svg'
+// @ts-ignore
 import Settings from './../../../../assets/icons/Settings.svg'
+// @ts-ignore
 import Graph from './../../../../assets/icons/Graph.svg'
+// @ts-ignore
 import SignOut from './../../../../assets/icons/SignOut.svg'
+// @ts-ignore
 import Projects from './../../../../assets/icons/Project.svg'
-import { Link } from 'react-router-dom'
 
 const sidebarNav = [
  {

@@ -1,7 +1,6 @@
 import React from "react";
 
 // Components
-import Hero from "../common/Hero";
 import Jumbotron from "../common/Jumbotron";
 import Navbar from "../common/Navbar";
 

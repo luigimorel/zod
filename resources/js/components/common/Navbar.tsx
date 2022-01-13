@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 // Assets
+// @ts-ignore
+
 import MenuIcon from './../../../assets/icons/Menu.svg'
+// @ts-ignore
 import Logo from './../../../assets/images/logo-light.png'
 
 // Components

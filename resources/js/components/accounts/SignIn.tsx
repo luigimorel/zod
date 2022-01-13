@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // Assets
+// @ts-ignore
 import Logo from './../../../assets/images/logo-light.png'
 
 // Components

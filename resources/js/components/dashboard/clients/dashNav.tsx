@@ -2,8 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // Assets
+// @ts-ignore
 import Logo from './../../../../assets/images/logo-light.png'
+// @ts-ignore
 import User from './../../../../assets/images/User.png'
+// @ts-ignore
 import Notify from './../../../../assets/icons/Notify.svg'
 
 // Components

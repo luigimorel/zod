@@ -4,8 +4,11 @@ import React from 'react'
 import Heading from './Heading'
 
 // Assets
+// @ts-ignore
 import Camera from './../../../assets/icons/Cameras.svg'
-import Building from './../../../assets/icons/Building.svg'
+// @ts-ignore
+ import Building from './../../../assets/icons/Building.svg'
+// @ts-ignore
 import Plane from './../../../assets/icons/Plane.svg'
 
 const Verticals = () => {

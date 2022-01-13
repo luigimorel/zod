@@ -1,7 +1,9 @@
 import React from 'react'
 
 // Assets
+// @ts-ignore
 import VideoOne from './../../../../assets/icons/VideoTwo.svg'
+// @ts-ignore
 import VideoTwo from './../../../../assets/icons/VideoOne.svg'
 
 const ClientsDashboard = () => {

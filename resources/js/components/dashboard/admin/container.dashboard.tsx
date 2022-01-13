@@ -1,5 +1,5 @@
 import React from 'react'
-import { Pie, Doughnut, Line, Bar } from 'react-chartjs-2'
+import { Pie, Doughnut, Line } from 'react-chartjs-2'
 import 'chart.js/auto'
 
 // Start of the component
@@ -62,7 +62,7 @@ const AdminDashboardContainer = () => {
      <Pie
       data={data}
       height={300}
-           options={{
+      options={{
        plugins: {
         legend: {
          display: true,
@@ -102,6 +102,8 @@ const AdminDashboardContainer = () => {
      <p className=" mb-4 font-semibold">Increase in user accounts</p>
 
      <Line
+      // @ts-ignore
+
       data={barData}
       height={300}
       options={{
@@ -123,6 +125,7 @@ const AdminDashboardContainer = () => {
      <p className=" mb-4 font-semibold">Differene between Nov & Dec</p>
 
      <Line
+      // @ts-ignore
       data={lineData}
       height={300}
       options={{

@@ -8,8 +8,11 @@ import Jumbotron from '../common/Jumbotron'
 import Navbar from '../common/Navbar'
 
 // Assets
+// @ts-ignore
 import LocationIcon from './../../../assets/icons/Location.svg'
+// @ts-ignore
 import EmailIcon from './../../../assets/icons/Email.svg'
+// @ts-ignore
 import PhoneIcon from './../../../assets/icons/Phone.svg'
 
 const Contact = () => {

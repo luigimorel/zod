@@ -7,6 +7,7 @@ import Jumbotron from '../common/Jumbotron'
 import Navbar from '../common/Navbar'
 
 // Assets
+// @ts-ignore
 import Edit from './../../../assets/images/edit-size.png'
 
 const Solutions = () => {
