@@ -26,7 +26,7 @@ const DashNav = () => {
        />
        <button
         type="submit"
-        className=" bg-sidebar rounded  text-white -ml-1  w-20 py-3"
+        className=" bg-primary rounded  text-white -ml-1  w-20 py-3"
        >
         Search
        </button>

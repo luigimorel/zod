@@ -9,15 +9,15 @@ import VideoTwo from './../../../../assets/icons/VideoOne.svg'
 const ClientsDashboard = () => {
  return (
   <div className=" sm:px-20 px-4 w-full">
-   <div className=" flex sm:flex-row flex-col mb-8 justify-between ">
+   <div className=" flex sm:flex-row flex-col mb-8 justify-between tab:justify-start ">
     <div className=" mb-4">
      <h5 className=" text-xl mb-4">Today's Video</h5>
-     <img src={VideoOne} alt="" />
+     <img src={VideoOne} alt="" className="tab:mr-4" />
     </div>
     {/* Start of the second video container  */}
     <div className=" mb-4">
      <h5 className=" text-xl mb-4">Yesterday's Video</h5>
-     <img src={VideoTwo} alt="" />
+     <img src={VideoTwo} alt="" className=" " />
     </div>
    </div>
 

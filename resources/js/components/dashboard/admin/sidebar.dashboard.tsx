@@ -49,7 +49,7 @@ const SidebarDashboard = () => {
       key={x.id}
       className={
        x.id === 1
-        ? ' ml-10 flex flex-row mb-4 bg-sidebar items-center py-4 rounded-r-full pl-5 text-white font-bold '
+        ? ' ml-10 flex flex-row mb-4 bg-primary items-center py-4 rounded-r-full pl-5 text-white font-bold '
         : ' ml-10 flex flex-row mb-4  items-center py-4  pl-5    '
       }
      >
