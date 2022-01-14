@@ -32,7 +32,7 @@ const ClientDashboard = () => {
    {open && <MobileNavbarClientsDashboard />}
 
    <div className="flex flex-row w-full pt-4 sm:pt-20">
-    <div className=" w-64 hidden sm:flex ">
+    <div className=" w-64 hidden tab:hidden sm:flex ">
      <SidebarDashboard />
     </div>
     <ClientsDashboard />

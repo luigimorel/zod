@@ -31,16 +31,18 @@ const MobileNavbarClientsDashboard = () => {
  ]
 
  return (
-  <div className=" flex dropdown   w-full animation-container">
+  <div className=" flex dropdown fixed w-full bg-[#212121] animation-container">
    <ul className="dropdown-menu   w-full">
     {menuLinks.map((x) => (
-     <Link
-      key={x.id}
-      className="  text-black custom-animation w-full ml-24 bg-white custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap"
-      to={x.route}
-     >
-      {x.text}
-     </Link>
+     <li>
+      <Link
+       key={x.id}
+       className="  text-white custom-animation w-full text-center custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap"
+       to={x.route}
+      >
+       {x.text}
+      </Link>
+     </li>
     ))}
    </ul>
   </div>

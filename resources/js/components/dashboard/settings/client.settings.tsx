@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 // Assets
 // @ts-ignore
 import Logo from './../../../../assets/images/logo.png'
+// @ts-ignore
+import MenuIcon from './../../../../assets/icons/Menu.svg'
 
 // Components
 import DashNav from '../admin/dashNav'
@@ -15,21 +17,24 @@ const AdminSettings = () => {
 
  return (
   <>
-   <div className=" pb-10 hidden fixed w-full sm:block ">
+   <div className="hidden fixed tab:hidden w-full sm:block ">
     <DashNav />
    </div>
-   <div className="flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar ">
+   <div className="flex flex-row justify-between sm:hidden tab:block   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar ">
     <Link to="/">
      <img src={Logo} alt="" className=" sm:h-10 h-5" />
     </Link>
-    <p onClick={() => setOpen(!open)} className=" sm:hidden">
-     Menu
-    </p>
-
-    {open && <MobileNavbarClientsDashboard />}
+    <img
+     onClick={() => setOpen(!open)}
+     className=" sm:hidden tab:block"
+     src={MenuIcon}
+    />
    </div>
+
+   {open && <MobileNavbarClientsDashboard />}
+
    <div className="flex flex-row w-full pt-4 sm:pt-20">
-    <div className=" w-64 hidden sm:flex ">
+    <div className=" w-64 hidden tab:hidden sm:flex ">
      <SidebarDashboard />
     </div>
 
@@ -125,7 +130,7 @@ const AdminSettings = () => {
        />
       </div>
       <div className=" flex justify-center mb-12">
-       <button className=" bg-sidebar text-center px-8 py-4 text-white ">
+       <button className=" bg-primary text-center px-8 py-4 text-white ">
         Save Changes
        </button>
       </div>
