@@ -5278,7 +5278,7 @@ var client_settings_1 = __importDefault(__webpack_require__(/*! ./dashboard/sett
 
 function App() {
   return react_1["default"].createElement(react_router_dom_1.BrowserRouter, {
-    basename: '/'
+    basename: "/zodon"
   }, react_1["default"].createElement(react_router_dom_1.Routes, null, react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/",
     element: react_1["default"].createElement(Home_1["default"], null)

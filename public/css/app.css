@@ -507,9 +507,6 @@ select{
 .relative{
   position: relative;
 }
-.m-8{
-  margin: 2rem;
-}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -566,9 +563,6 @@ select{
 }
 .mb-11{
   margin-bottom: 2.75rem;
-}
-.mr-8{
-  margin-right: 2rem;
 }
 .ml-4{
   margin-left: 1rem;
@@ -780,6 +774,10 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
+.bg-\[\#212121\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 33 33 / var(--tw-bg-opacity));
+}
 .bg-green-700{
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
@@ -791,10 +789,6 @@ select{
 .bg-blue-700{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-.bg-\[\#212121\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 33 33 / var(--tw-bg-opacity));
 }
 .bg-overlay{
   background-image: linear-gradient(89.4deg, #3aa6ef 9.52%, rgba(24, 24, 27, 0.9) 89.41%);
