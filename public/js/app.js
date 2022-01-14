@@ -5734,46 +5734,45 @@ var Footer = function Footer() {
     className: "flex flex-col mt-11"
   }, react_1["default"].createElement("h2", {
     className: " text-2xl text-white mb-10"
-  }, "Resources "), react_1["default"].createElement(react_router_dom_1.Link, {
-    to: "#",
-    className: " mb-4"
-  }, "Getting Started"), react_1["default"].createElement(react_router_dom_1.Link, {
-    to: "#",
-    className: " mb-4"
-  }, "FAQ"), react_1["default"].createElement(react_router_dom_1.Link, {
-    to: "#",
-    className: " mb-4"
-  }, "Become a partner"), react_1["default"].createElement(react_router_dom_1.Link, {
-    to: "#",
-    className: " mb-4"
-  }, "Terms"), react_1["default"].createElement(react_router_dom_1.Link, {
-    to: "#",
-    className: " mb-4"
-  }, "Privacy"))), react_1["default"].createElement("hr", {
-    className: " h-px bg-slate-300"
-  }), react_1["default"].createElement("div", {
-    className: " flex sm:flex-row flex-col py-5 justify-between"
+  }, "Stay in touch "), react_1["default"].createElement("div", {
+    className: " flex flex-col justify-center mb-4 sm:justify-start"
   }, react_1["default"].createElement("div", {
-    className: " flex flex-row justify-center mb-4 sm:justify-start"
-  }, react_1["default"].createElement("div", {
-    className: "border-white bg-black border-2 h-10 mr-8 w-10 justify-center rounded-full items-center flex"
+    className: "border-white bg-black border-2 h-10 mb-4 w-10 justify-center rounded-full items-center flex"
+  }, react_1["default"].createElement("a", {
+    href: "http://",
+    target: "_blank",
+    rel: "noreferrer noopener"
   }, react_1["default"].createElement("img", {
     src: Twitter_svg_1["default"],
     alt: "",
     className: " h-5"
-  })), react_1["default"].createElement("div", {
-    className: "   border-white border-2 bg-black h-10 w-10 mr-8 justify-center rounded-full items-center flex"
+  }), ' ')), react_1["default"].createElement("div", {
+    className: "   border-white border-2 bg-black h-10 w-10 mb-4 justify-center rounded-full items-center flex"
+  }, react_1["default"].createElement("a", {
+    href: "http://",
+    target: "_blank",
+    rel: "noreferrer noopener"
   }, react_1["default"].createElement("img", {
     src: fB_svg_1["default"],
     alt: "",
     className: " h-5"
-  })), react_1["default"].createElement("div", {
-    className: "   border-white bg-black border-2 h-10 w-10 mr-8 justify-center rounded-full items-center flex"
+  }))), react_1["default"].createElement("div", {
+    className: "   border-white bg-black border-2 h-10 w-10 mb-4 justify-center rounded-full items-center flex"
+  }, react_1["default"].createElement("a", {
+    href: "http://",
+    target: "_blank",
+    rel: "noreferrer noopener"
   }, react_1["default"].createElement("img", {
     src: Linkedin_svg_1["default"],
     alt: "",
     className: " h-5"
-  }))), react_1["default"].createElement("p", {
+  })))))), react_1["default"].createElement("hr", {
+    className: " h-px bg-slate-300"
+  }), react_1["default"].createElement("div", {
+    className: " flex sm:flex-row flex-col py-5 justify-between"
+  }, react_1["default"].createElement("p", {
+    className: " flex sm:justify-end justify-center text-center"
+  }, "\xA9 Denebolatech ", new Date().getFullYear(), ". All rights reserved."), react_1["default"].createElement("p", {
     className: " flex sm:justify-end justify-center text-center"
   }, "Built By", react_1["default"].createElement("a", {
     href: "https://luigimorel.me",
@@ -5854,7 +5853,7 @@ var Hero = function Hero() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
     className: " flex sm:-mt-16 px-4  sm:flex-row tab:mt-32 tab:flex-col-reverse flex-col-reverse items-center relative   justify-between h-screen w-full sm:mb-10     "
   }, react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full tab:w-full   sm:pl-24 tab:pl-12 pl-3 tab:mr-0 tab:px-4  sm:mr-12"
+    className: " sm:w-1/2 w-full tab:w-full tab:mb-10  sm:pl-24 tab:pl-12 pl-3 tab:mr-0 tab:px-4  sm:mr-12"
   }, react_1["default"].createElement("h3", {
     className: " sm:text-5xl text-3xl mb-8 font-sans font-semibold uppercase  "
   }, "CONSTRUCTION SITE MONITORING", ' ', react_1["default"].createElement("span", {
@@ -5871,11 +5870,11 @@ var Hero = function Hero() {
     text: "Explore More",
     className: "  "
   })))), react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full tab:w-full mb-8 sm:mb-0 sm:border-cta  rounded-3xl tab:rounded-xl tab:border-2 border-8 tab:mr-0 tab:px-8  sm:mr-12 "
+    className: " sm:w-1/2 w-full tab:w-full  tab:mb-20 mb-8 sm:mb-0 sm:border-cta  rounded-3xl tab:rounded-3-xl tab:border-2 border-8 tab:mr-0 tab:px-8  sm:mr-12 "
   }, react_1["default"].createElement("img", {
     src: 'https://res.cloudinary.com/morelmiles/image/upload/v1641589820/contruction_img_gxsiok.jpg',
     alt: "",
-    className: " w-auto sm:h-3/5 h-full tab:h-full tab:mb-10 rounded-2xl"
+    className: " w-full sm:h-3/5 h-full tab:h-full tab:mb-10 rounded-2xl"
   }))));
 };
 
@@ -6531,16 +6530,20 @@ var User_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/im
 
 var Notify_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Notify.svg */ "./resources/assets/icons/Notify.svg"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
 var DashNav = function DashNav() {
   return react_1["default"].createElement("div", {
     className: " sm:px-12 mt-8 "
   }, react_1["default"].createElement("div", {
     className: " flex flex-row items-center shadow-sm justify-between "
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/"
   }, react_1["default"].createElement("img", {
     src: logo_light_png_1["default"],
     className: " h-10",
     alt: ""
-  }), react_1["default"].createElement("form", {
+  })), react_1["default"].createElement("form", {
     action: "",
     className: ""
   }, react_1["default"].createElement("label", {
@@ -6555,7 +6558,7 @@ var DashNav = function DashNav() {
     placeholder: "Search e.g progress"
   }), react_1["default"].createElement("button", {
     type: "submit",
-    className: " bg-sidebar rounded  text-white -ml-1  w-20 py-3"
+    className: " bg-primary rounded  text-white -ml-1  w-20 py-3"
   }, "Search")))), react_1["default"].createElement("div", {
     className: "flex flex-row items-center"
   }, react_1["default"].createElement("img", {
@@ -6619,13 +6622,13 @@ var MobileNavbarAdminDashboard = function MobileNavbarAdminDashboard() {
     route: '/admin-dashboard/settings'
   }];
   return react_1["default"].createElement("div", {
-    className: " flex dropdown   w-full animation-container"
+    className: " flex dropdown fixed w-full bg-[#212121] animation-container"
   }, react_1["default"].createElement("ul", {
     className: "dropdown-menu   w-full"
   }, menuLinks.map(function (x) {
     return react_1["default"].createElement(react_router_dom_1.Link, {
       key: x.id,
-      className: "  text-black custom-animation w-full ml-24 bg-white custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap",
+      className: "  text-white custom-animation w-full text-center custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap",
       to: x.route
     }, x.text);
   })));
@@ -6703,7 +6706,7 @@ var SidebarDashboard = function SidebarDashboard() {
     return react_1["default"].createElement(react_router_dom_1.Link, {
       to: x.route,
       key: x.id,
-      className: x.id === 1 ? ' ml-10 flex flex-row mb-4 bg-sidebar items-center py-4 rounded-r-full pl-5 text-white font-bold ' : ' ml-10 flex flex-row mb-4  items-center py-4  pl-5    '
+      className: x.id === 1 ? ' ml-10 flex flex-row mb-4 bg-primary items-center py-4 rounded-r-full pl-5 text-white font-bold ' : ' ml-10 flex flex-row mb-4  items-center py-4  pl-5    '
     }, react_1["default"].createElement("img", {
       src: x.icon,
       alt: ""
@@ -6749,21 +6752,23 @@ var ClientsDashboard = function ClientsDashboard() {
   return react_1["default"].createElement("div", {
     className: " sm:px-20 px-4 w-full"
   }, react_1["default"].createElement("div", {
-    className: " flex sm:flex-row flex-col mb-8 justify-between "
+    className: " flex sm:flex-row flex-col mb-8 justify-between tab:justify-start "
   }, react_1["default"].createElement("div", {
     className: " mb-4"
   }, react_1["default"].createElement("h5", {
     className: " text-xl mb-4"
   }, "Today's Video"), react_1["default"].createElement("img", {
     src: VideoTwo_svg_1["default"],
-    alt: ""
+    alt: "",
+    className: "tab:mr-4"
   })), react_1["default"].createElement("div", {
     className: " mb-4"
   }, react_1["default"].createElement("h5", {
     className: " text-xl mb-4"
   }, "Yesterday's Video"), react_1["default"].createElement("img", {
     src: VideoOne_svg_1["default"],
-    alt: ""
+    alt: "",
+    className: " "
   }))), react_1["default"].createElement("div", {
     className: " rounded border border-gray-400 mb-8 hidden sm:block"
   }, react_1["default"].createElement("div", {
@@ -6871,7 +6876,7 @@ var Notify_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/
 
 var DashNav = function DashNav() {
   return react_1["default"].createElement("div", {
-    className: " sm:px-20  h-8 fixed w-full  "
+    className: " sm:px-20 sm:mt-8  h-8 fixed w-full  "
   }, react_1["default"].createElement("div", {
     className: " flex flex-row items-center shadow-sm justify-between "
   }, react_1["default"].createElement(react_router_dom_1.Link, {
@@ -6895,7 +6900,7 @@ var DashNav = function DashNav() {
     placeholder: "Search e.g progress"
   }), react_1["default"].createElement("button", {
     type: "submit",
-    className: " bg-sidebar rounded  text-white -ml-1  w-20 py-3"
+    className: " bg-primary rounded  text-white -ml-1  w-20 py-3"
   }, "Search")))), react_1["default"].createElement("div", {
     className: "flex flex-row items-center"
   }, react_1["default"].createElement("img", {
@@ -6963,15 +6968,15 @@ var MobileNavbarClientsDashboard = function MobileNavbarClientsDashboard() {
     route: '/'
   }];
   return react_1["default"].createElement("div", {
-    className: " flex dropdown   w-full animation-container"
+    className: " flex dropdown fixed w-full bg-[#212121] animation-container"
   }, react_1["default"].createElement("ul", {
     className: "dropdown-menu   w-full"
   }, menuLinks.map(function (x) {
-    return react_1["default"].createElement(react_router_dom_1.Link, {
+    return react_1["default"].createElement("li", null, react_1["default"].createElement(react_router_dom_1.Link, {
       key: x.id,
-      className: "  text-black custom-animation w-full ml-24 bg-white custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap",
+      className: "  text-white custom-animation w-full text-center custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap",
       to: x.route
-    }, x.text);
+    }, x.text));
   })));
 };
 
@@ -7054,7 +7059,7 @@ var SidebarDashboard = function SidebarDashboard() {
     return react_1["default"].createElement(react_router_dom_1.Link, {
       to: x.route,
       key: x.id,
-      className: x.id === 1 ? ' ml-10 flex flex-row mb-4 bg-sidebar items-center py-4 rounded-r-full pl-5 text-white font-bold ' : ' ml-10 flex flex-row mb-4  items-center py-4  pl-5    '
+      className: x.id === 1 ? ' ml-10 flex flex-row mb-4 bg-primary items-center py-4 rounded-r-full pl-5 text-white font-bold ' : ' ml-10 flex flex-row mb-4  items-center py-4  pl-5    '
     }, react_1["default"].createElement("img", {
       src: x.icon,
       alt: ""
@@ -7329,7 +7334,10 @@ var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_mod
 // @ts-ignore
 
 
-var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
+var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // @ts-ignore
+
+
+var Menu_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Menu.svg */ "./resources/assets/icons/Menu.svg")); // Components
 
 
 var dashNav_1 = __importDefault(__webpack_require__(/*! ../admin/dashNav */ "./resources/js/components/dashboard/admin/dashNav.tsx"));
@@ -7345,24 +7353,25 @@ var AdminSettings = function AdminSettings() {
       setOpen = _ref2[1];
 
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: " pb-10 hidden fixed w-full sm:block "
+    className: "hidden fixed tab:hidden w-full sm:block "
   }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
-    className: "flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
+    className: "flex flex-row justify-between sm:hidden tab:block   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/"
   }, react_1["default"].createElement("img", {
     src: logo_png_1["default"],
     alt: "",
     className: " sm:h-10 h-5"
-  })), react_1["default"].createElement("p", {
+  })), react_1["default"].createElement("img", {
     onClick: function onClick() {
       return setOpen(!open);
     },
-    className: " sm:hidden"
-  }, "Menu"), open && react_1["default"].createElement(mobileNav_clients_1["default"], null)), react_1["default"].createElement("div", {
+    className: " sm:hidden tab:block",
+    src: Menu_svg_1["default"]
+  })), open && react_1["default"].createElement(mobileNav_clients_1["default"], null), react_1["default"].createElement("div", {
     className: "flex flex-row w-full pt-4 sm:pt-20"
   }, react_1["default"].createElement("div", {
-    className: " w-64 hidden sm:flex "
+    className: " w-64 hidden tab:hidden sm:flex "
   }, react_1["default"].createElement(sidebar_dashboard_1["default"], null)), react_1["default"].createElement("div", {
     className: " sm:w-1/3   mx-auto flex justify-center flex-col"
   }, react_1["default"].createElement("p", {
@@ -7440,7 +7449,7 @@ var AdminSettings = function AdminSettings() {
   })), react_1["default"].createElement("div", {
     className: " flex justify-center mb-12"
   }, react_1["default"].createElement("button", {
-    className: " bg-sidebar text-center px-8 py-4 text-white "
+    className: " bg-primary text-center px-8 py-4 text-white "
   }, "Save Changes"))))));
 };
 
@@ -7539,7 +7548,9 @@ var AdminDashboard = function AdminDashboard() {
       open = _ref2[0],
       setOpen = _ref2[1];
 
-  return react_1["default"].createElement("div", null, react_1["default"].createElement("div", {
+  return react_1["default"].createElement("div", {
+    className: " w-full"
+  }, react_1["default"].createElement("div", {
     className: " mb-4 hidden sm:block "
   }, react_1["default"].createElement(dashNav_1["default"], null)), react_1["default"].createElement("div", {
     className: "flex flex-row justify-between sm:hidden   bg-white   shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6 navbar "
@@ -7558,7 +7569,7 @@ var AdminDashboard = function AdminDashboard() {
   })), open && react_1["default"].createElement(mobileNav_admin_1["default"], null), react_1["default"].createElement("div", {
     className: "flex flex-row w-full pt-4 sm:pt-20"
   }, react_1["default"].createElement("div", {
-    className: " w-64 hidden sm:flex "
+    className: " w-64 hidden tab:hidden sm:flex "
   }, react_1["default"].createElement(sidebar_dashboard_1["default"], null)), react_1["default"].createElement(container_dashboard_1["default"], null)));
 };
 
@@ -7678,7 +7689,7 @@ var ClientDashboard = function ClientDashboard() {
   })), open && react_1["default"].createElement(mobileNav_clients_1["default"], null), react_1["default"].createElement("div", {
     className: "flex flex-row w-full pt-4 sm:pt-20"
   }, react_1["default"].createElement("div", {
-    className: " w-64 hidden sm:flex "
+    className: " w-64 hidden tab:hidden sm:flex "
   }, react_1["default"].createElement(sidebar_dashboard_1["default"], null)), react_1["default"].createElement(clients_dashboard_1["default"], null)));
 };
 
@@ -7870,7 +7881,9 @@ var Navbar_1 = __importDefault(__webpack_require__(/*! ../common/Navbar */ "./re
 var Verticals_1 = __importDefault(__webpack_require__(/*! ../common/Verticals */ "./resources/js/components/common/Verticals.tsx"));
 
 var Home = function Home() {
-  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
+  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
+    className: "tab:mb-20"
+  }, react_1["default"].createElement(Navbar_1["default"], null)), react_1["default"].createElement("div", {
     className: "pt-28 mb-20 sm:mb-0"
   }, react_1["default"].createElement(Hero_1["default"], null)), react_1["default"].createElement(Verticals_1["default"], null), react_1["default"].createElement(CallToAction_1["default"], null), react_1["default"].createElement("div", {
     className: " pt-10 bg-white "
@@ -7945,10 +7958,10 @@ var Solutions = function Solutions() {
     alt: "",
     className: " sm:mx-20 mb-10 "
   }), react_1["default"].createElement("div", {
-    className: "flex flex-col sm:ml-20"
+    className: "flex flex-col tab:ml-8 sm:ml-20"
   }, react_1["default"].createElement("h2", {
     className: " text-3xl uppercase font-semibold text-blue-700 mb-8"
-  }, "Works Monitoring"), react_1["default"].createElement("ul", {
+  }, "Construction Works Monitoring"), react_1["default"].createElement("ul", {
     className: " list-disc "
   }, react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
@@ -26732,7 +26745,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Graph.svg?1ebc9dcfa40fc421934b00335edf90a2");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Graph.svg?d88d36ea18e3ff3de4beb37149c1330f");
 
 /***/ }),
 
@@ -26852,7 +26865,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Project.svg?a6d5ee006b61b7481a7e7908567b5e76");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Project.svg?1524f8552491708b9f16a3231cb57c8a");
 
 /***/ }),
 
@@ -26867,7 +26880,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Settings.svg?3aade548f11bcbd9267fbe599b487096");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Settings.svg?b3d984fa52f89b03eed14d6eb99dd7fc");
 
 /***/ }),
 
@@ -26882,7 +26895,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/SignOut.svg?0733abe0122ce9290f689fdfe4e1e8cf");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/SignOut.svg?bf5fe6b0ca123c826e51839d1b60c196");
 
 /***/ }),
 

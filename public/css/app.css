@@ -507,6 +507,9 @@ select{
 .relative{
   position: relative;
 }
+.m-8{
+  margin: 2rem;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -639,11 +642,11 @@ select{
 .h-10{
   height: 2.5rem;
 }
-.h-px{
-  height: 1px;
-}
 .h-5{
   height: 1.25rem;
+}
+.h-px{
+  height: 1px;
 }
 .h-screen{
   height: 100vh;
@@ -662,9 +665,6 @@ select{
 }
 .w-10{
   width: 2.5rem;
-}
-.w-auto{
-  width: auto;
 }
 .w-64{
   width: 16rem;
@@ -756,13 +756,13 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(23 34 54 / var(--tw-bg-opacity));
 }
-.bg-slate-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-slate-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -791,6 +791,10 @@ select{
 .bg-blue-700{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+.bg-\[\#212121\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 33 33 / var(--tw-bg-opacity));
 }
 .bg-overlay{
   background-image: linear-gradient(89.4deg, #3aa6ef 9.52%, rgba(24, 24, 27, 0.9) 89.41%);
@@ -1071,6 +1075,9 @@ body {
   .sm\:ml-20{
     margin-left: 5rem;
   }
+  .sm\:mt-8{
+    margin-top: 2rem;
+  }
   .sm\:block{
     display: block;
   }
@@ -1183,6 +1190,9 @@ body {
   .tab\:mb-10{
     margin-bottom: 2.5rem;
   }
+  .tab\:mb-20{
+    margin-bottom: 5rem;
+  }
   .tab\:mb-4{
     margin-bottom: 1rem;
   }
@@ -1191,6 +1201,15 @@ body {
   }
   .tab\:mb-8{
     margin-bottom: 2rem;
+  }
+  .tab\:ml-8{
+    margin-left: 2rem;
+  }
+  .tab\:mr-4{
+    margin-right: 1rem;
+  }
+  .tab\:block{
+    display: block;
   }
   .tab\:inline-block{
     display: inline-block;
@@ -1222,8 +1241,8 @@ body {
   .tab\:flex-col-reverse{
     flex-direction: column-reverse;
   }
-  .tab\:rounded-xl{
-    border-radius: 0.75rem;
+  .tab\:justify-start{
+    justify-content: flex-start;
   }
   .tab\:border-2{
     border-width: 2px;
