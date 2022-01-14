@@ -49,44 +49,37 @@ const Footer = () => {
     </div>
 
     <div className="flex flex-col mt-11">
-     <h2 className=" text-2xl text-white mb-10">Resources </h2>
+     <h2 className=" text-2xl text-white mb-10">Stay in touch </h2>
 
      {/* TO DO: Ask for these from the person in charge */}
-     <Link to="#" className=" mb-4">
-      Getting Started
-     </Link>
-     <Link to="#" className=" mb-4">
-      FAQ
-     </Link>
-     <Link to="#" className=" mb-4">
-      Become a partner
-     </Link>
-     <Link to="#" className=" mb-4">
-      Terms
-     </Link>
-     <Link to="#" className=" mb-4">
-      Privacy
-     </Link>
+     <div className=" flex flex-col justify-center mb-4 sm:justify-start">
+      <div className="border-white bg-black border-2 h-10 mb-4 w-10 justify-center rounded-full items-center flex">
+       <a href="http://" target="_blank" rel="noreferrer noopener">
+        <img src={Twitter} alt="" className=" h-5" />{' '}
+       </a>
+      </div>
+
+      <div className="   border-white border-2 bg-black h-10 w-10 mb-4 justify-center rounded-full items-center flex">
+       <a href="http://" target="_blank" rel="noreferrer noopener">
+        <img src={FB} alt="" className=" h-5" />
+       </a>
+      </div>
+
+      <div className="   border-white bg-black border-2 h-10 w-10 mb-4 justify-center rounded-full items-center flex">
+       <a href="http://" target="_blank" rel="noreferrer noopener">
+        <img src={Linkedin} alt="" className=" h-5" />
+       </a>
+      </div>
+     </div>
     </div>
    </div>
 
    <hr className=" h-px bg-slate-300" />
 
    <div className=" flex sm:flex-row flex-col py-5 justify-between">
-    <div className=" flex flex-row justify-center mb-4 sm:justify-start">
-     <div className="border-white bg-black border-2 h-10 mr-8 w-10 justify-center rounded-full items-center flex">
-      <img src={Twitter} alt="" className=" h-5" />
-     </div>
-
-     <div className="   border-white border-2 bg-black h-10 w-10 mr-8 justify-center rounded-full items-center flex">
-      <img src={FB} alt="" className=" h-5" />
-     </div>
-
-     <div className="   border-white bg-black border-2 h-10 w-10 mr-8 justify-center rounded-full items-center flex">
-      <img src={Linkedin} alt="" className=" h-5" />
-     </div>
-    </div>
-
+    <p className=" flex sm:justify-end justify-center text-center">
+     © Denebolatech {new Date().getFullYear()}. All rights reserved.
+    </p>
     <p className=" flex sm:justify-end justify-center text-center">
      Built By
      <a

@@ -8,12 +8,15 @@ import Logo from './../../../../assets/images/logo-light.png'
 import User from './../../../../assets/images/User.png'
 // @ts-ignore
 import Notify from './../../../../assets/icons/Notify.svg'
+import { Link } from 'react-router-dom'
 
 const DashNav = () => {
  return (
   <div className=" sm:px-12 mt-8 ">
    <div className=" flex flex-row items-center shadow-sm justify-between ">
-    <img src={Logo} className=" h-10" alt="" />
+    <Link to="/">
+     <img src={Logo} className=" h-10" alt="" />
+    </Link>
     <form action="" className="">
      <label htmlFor="search">
       <div className="flex w-full">
