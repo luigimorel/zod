@@ -12,7 +12,7 @@ import Notify from './../../../../assets/icons/Notify.svg'
 // Components
 const DashNav = () => {
  return (
-  <div className=" sm:px-20  h-8 fixed w-full  ">
+  <div className=" sm:px-20 sm:mt-8  h-8 fixed w-full  ">
    <div className=" flex flex-row items-center shadow-sm justify-between ">
     <Link to={'/'}>
      <img src={Logo} className=" h-10" alt="" />
@@ -29,7 +29,7 @@ const DashNav = () => {
        />
        <button
         type="submit"
-        className=" bg-sidebar rounded  text-white -ml-1  w-20 py-3"
+        className=" bg-primary rounded  text-white -ml-1  w-20 py-3"
        >
         Search
        </button>
