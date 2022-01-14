@@ -12,7 +12,10 @@ import Verticals from '../common/Verticals'
 const Home = () => {
  return (
   <>
-   <Navbar />
+   <div className="tab:mb-20">
+    <Navbar />
+   </div>
+
    <div className="pt-28 mb-20 sm:mb-0">
     <Hero />
    </div>

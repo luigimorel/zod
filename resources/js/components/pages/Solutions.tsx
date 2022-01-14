@@ -39,9 +39,9 @@ const Solutions = () => {
       <div className="flex flex-col">
        <div className=" flex sm:flex-row flex-col tab:flex-col    items-center mb-16  px-4">
         <img src={Edit} alt="" className=" sm:mx-20 mb-10 " />
-        <div className="flex flex-col sm:ml-20">
+        <div className="flex flex-col tab:ml-8 sm:ml-20">
          <h2 className=" text-3xl uppercase font-semibold text-blue-700 mb-8">
-          Works Monitoring
+          Construction Works Monitoring
          </h2>
          <ul className=" list-disc ">
           <li className=" mb-2.5 text-gray-800">

@@ -17,7 +17,7 @@ const AdminDashboard = () => {
  const [open, setOpen] = useState(false)
 
  return (
-  <div>
+  <div className=" w-full">
    <div className=" mb-4 hidden sm:block ">
     <DashNav />
    </div>
@@ -34,7 +34,7 @@ const AdminDashboard = () => {
    {open && <MobileNavbarAdminDashboard />}
 
    <div className="flex flex-row w-full pt-4 sm:pt-20">
-    <div className=" w-64 hidden sm:flex ">
+    <div className=" w-64 hidden tab:hidden sm:flex ">
      <SidebarDashboard />
     </div>
     <AdminDashboardContainer />
