@@ -5277,9 +5277,7 @@ var admin_settings_1 = __importDefault(__webpack_require__(/*! ./dashboard/setti
 var client_settings_1 = __importDefault(__webpack_require__(/*! ./dashboard/settings/client.settings */ "./resources/js/components/dashboard/settings/client.settings.tsx"));
 
 function App() {
-  return react_1["default"].createElement(react_router_dom_1.BrowserRouter, {
-    basename: "/zodon"
-  }, react_1["default"].createElement(react_router_dom_1.Routes, null, react_1["default"].createElement(react_router_dom_1.Route, {
+  return react_1["default"].createElement(react_router_dom_1.BrowserRouter, null, react_1["default"].createElement(react_router_dom_1.Routes, null, react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/",
     element: react_1["default"].createElement(Home_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
@@ -5851,7 +5849,7 @@ var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/
 
 var Hero = function Hero() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: " flex sm:-mt-16 px-4  sm:flex-row tab:mt-32 tab:flex-col-reverse flex-col-reverse items-center relative   justify-between h-screen w-full sm:mb-10     "
+    className: " flex sm:-mt-20 px-4  sm:flex-row mt-16 tab:flex-col-reverse flex-col-reverse items-center relative   justify-between h-screen w-full sm:mb-10     "
   }, react_1["default"].createElement("div", {
     className: " sm:w-1/2 w-full tab:w-full tab:mb-10  sm:pl-24 tab:pl-12 pl-3 tab:mr-0 tab:px-4  sm:mr-12"
   }, react_1["default"].createElement("h3", {
@@ -5870,7 +5868,7 @@ var Hero = function Hero() {
     text: "Explore More",
     className: "  "
   })))), react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full tab:w-full  tab:mb-20 mb-8 sm:mb-0 sm:border-cta  rounded-3xl tab:rounded-3-xl tab:border-2 border-8 tab:mr-0 tab:px-8  sm:mr-12 "
+    className: " sm:w-1/2 w-full tab:w-full  tab:mb-20 mb-8 sm:mb-0 sm:border-cta tab:border-none  rounded-3xl tab:rounded-3-xl tab:border-2 border-8 tab:mr-0 tab:px-8  sm:mr-12 "
   }, react_1["default"].createElement("img", {
     src: 'https://res.cloudinary.com/morelmiles/image/upload/v1641589820/contruction_img_gxsiok.jpg',
     alt: "",

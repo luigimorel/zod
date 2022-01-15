@@ -15,7 +15,7 @@ import ClientSettings from './dashboard/settings/client.settings'
 
 function App() {
  return (
-  <Router basename="/zodon">
+  <Router>
    <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/solutions" element={<Solutions />} />
