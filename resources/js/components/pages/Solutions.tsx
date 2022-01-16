@@ -15,7 +15,7 @@ const Solutions = () => {
   <>
    <Navbar />
 
-   <div className="pt-16 tab:pt-0 sm:pt-24">
+   <div className="">
     <Jumbotron
      header=" Solutions"
      leadingParagraph="Check out the value that we offer to our esteemed cutomers. "

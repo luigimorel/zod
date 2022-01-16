@@ -5733,9 +5733,9 @@ var Footer = function Footer() {
   }, react_1["default"].createElement("h2", {
     className: " text-2xl text-white mb-10"
   }, "Stay in touch "), react_1["default"].createElement("div", {
-    className: " flex flex-col justify-center mb-4 sm:justify-start"
+    className: " flex sm:flex-col flex-row tab:flex-col sm:justify-center mb-4 justify-between"
   }, react_1["default"].createElement("div", {
-    className: "border-white bg-black border-2 h-10 mb-4 w-10 justify-center rounded-full items-center flex"
+    className: "border-white border-2 h-10 mb-4 w-10 justify-center rounded-full items-center flex"
   }, react_1["default"].createElement("a", {
     href: "http://",
     target: "_blank",
@@ -5745,7 +5745,7 @@ var Footer = function Footer() {
     alt: "",
     className: " h-5"
   }), ' ')), react_1["default"].createElement("div", {
-    className: "   border-white border-2 bg-black h-10 w-10 mb-4 justify-center rounded-full items-center flex"
+    className: "   border-white border-2 h-10 w-10 mb-4 justify-center rounded-full items-center flex"
   }, react_1["default"].createElement("a", {
     href: "http://",
     target: "_blank",
@@ -5755,7 +5755,7 @@ var Footer = function Footer() {
     alt: "",
     className: " h-5"
   }))), react_1["default"].createElement("div", {
-    className: "   border-white bg-black border-2 h-10 w-10 mb-4 justify-center rounded-full items-center flex"
+    className: "   border-white border-2 h-10 w-10 mb-4 justify-center rounded-full items-center flex"
   }, react_1["default"].createElement("a", {
     href: "http://",
     target: "_blank",
@@ -5769,12 +5769,12 @@ var Footer = function Footer() {
   }), react_1["default"].createElement("div", {
     className: " flex sm:flex-row flex-col py-5 justify-between"
   }, react_1["default"].createElement("p", {
-    className: " flex sm:justify-end justify-center text-center"
+    className: " flex sm:justify-end justify-center sm:text-center text-left"
   }, "\xA9 Denebolatech ", new Date().getFullYear(), ". All rights reserved."), react_1["default"].createElement("p", {
     className: " flex sm:justify-end justify-center text-center"
   }, "Built By", react_1["default"].createElement("a", {
     href: "https://luigimorel.me",
-    className: " font-bold ml-4",
+    className: " font-bold ml-2",
     target: "_blank",
     rel: "noreferrer noopenner"
   }, "Luigi Morel"))));
@@ -5849,7 +5849,7 @@ var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/
 
 var Hero = function Hero() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: " flex sm:-mt-20 px-4  sm:flex-row mt-16 tab:flex-col-reverse flex-col-reverse items-center relative   justify-between h-screen w-full sm:mb-10     "
+    className: " flex px-4  sm:flex-row tab:flex-col-reverse pt-12 flex-col-reverse items-center relative   justify-between  w-full sm:mb-20     "
   }, react_1["default"].createElement("div", {
     className: " sm:w-1/2 w-full tab:w-full tab:mb-10  sm:pl-24 tab:pl-12 pl-3 tab:mr-0 tab:px-4  sm:mr-12"
   }, react_1["default"].createElement("h3", {
@@ -5861,18 +5861,18 @@ var Hero = function Hero() {
   }, "..."))), react_1["default"].createElement("p", {
     className: " mb-12 text-lg sm:mr-4 text-gray-800"
   }, "We are committed to helping construction industry investors, developers and project managers easily get their work done through real time monitoring of their construction sites."), react_1["default"].createElement("div", {
-    className: "flex justify-center sm:justify-start"
+    className: "flex justify-center mb-10 sm:justify-start"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/solutions"
   }, react_1["default"].createElement(Button_1["default"], {
     text: "Explore More",
     className: "  "
   })))), react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full tab:w-full  tab:mb-20 mb-8 sm:mb-0 sm:border-cta tab:border-none  rounded-3xl tab:rounded-3-xl tab:border-2 border-8 tab:mr-0 tab:px-8  sm:mr-12 "
+    className: " sm:w-1/2 w-full tab:w-full  tab:mb-20 mb-8 sm:mt-0 tab:mt-10 sm:mb-0 sm:border-cta tab:border-none border-none  rounded-3xl tab:rounded-3-xl tab:border-2 border-8 tab:mr-0 tab:px-8  sm:mr-12 "
   }, react_1["default"].createElement("img", {
     src: 'https://res.cloudinary.com/morelmiles/image/upload/v1641589820/contruction_img_gxsiok.jpg',
     alt: "",
-    className: " w-full sm:h-3/5 h-full tab:h-full tab:mb-10 rounded-2xl"
+    className: " w-full sm:h-3/5 h-auto tab:h-auto tab:mb-10 rounded-2xl"
   }))));
 };
 
@@ -6121,7 +6121,7 @@ var MobileNavbar = function MobileNavbar() {
     route: '/accounts/login'
   }];
   return react_1["default"].createElement("div", {
-    className: " flex dropdown fixed mt-14 w-full animation-container"
+    className: " flex dropdown  w-full animation-container"
   }, react_1["default"].createElement("ul", {
     className: "dropdown-menu bg-black   w-full"
   }, menuLinks.map(function (x) {
@@ -6232,7 +6232,7 @@ var Navbar = function Navbar() {
       setOpen = _ref2[1];
 
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: "flex flex-row justify-between   bg-white fixed tab:relative shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   "
+    className: "flex flex-row justify-between   bg-white tab:relative shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   "
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/"
   }, react_1["default"].createElement("img", {
@@ -6306,11 +6306,11 @@ var Cameras_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/ic
 var Building_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Building.svg */ "./resources/assets/icons/Building.svg")); // @ts-ignore
 
 
-var Plane_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/Plane.svg */ "./resources/assets/icons/Plane.svg"));
+var AI_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icons/AI.svg */ "./resources/assets/icons/AI.svg"));
 
 var Verticals = function Verticals() {
   return react_1["default"].createElement("div", {
-    className: ""
+    className: "mt-20"
   }, react_1["default"].createElement("div", {
     className: " mb-4"
   }, react_1["default"].createElement(Heading_1["default"], {
@@ -6332,7 +6332,7 @@ var Verticals = function Verticals() {
   }, react_1["default"].createElement("div", {
     className: " py-10 px-24 bg-yellow-500 "
   }, react_1["default"].createElement("img", {
-    src: Plane_svg_1["default"],
+    src: AI_svg_1["default"],
     alt: ""
   })), react_1["default"].createElement("p", {
     className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
@@ -7739,7 +7739,7 @@ var Phone_svg_1 = __importDefault(__webpack_require__(/*! ./../../../assets/icon
 
 var Contact = function Contact() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
-    className: " sm:pt-24 pt-16 tab:pt-0"
+    className: ""
   }, react_1["default"].createElement(Jumbotron_1["default"], {
     leadingParagraph: "In case of any queries, please get in touch with us. We'll be gald to help",
     header: "Contact us today"
@@ -7879,11 +7879,7 @@ var Navbar_1 = __importDefault(__webpack_require__(/*! ../common/Navbar */ "./re
 var Verticals_1 = __importDefault(__webpack_require__(/*! ../common/Verticals */ "./resources/js/components/common/Verticals.tsx"));
 
 var Home = function Home() {
-  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: "tab:mb-20"
-  }, react_1["default"].createElement(Navbar_1["default"], null)), react_1["default"].createElement("div", {
-    className: "pt-28 mb-20 sm:mb-0"
-  }, react_1["default"].createElement(Hero_1["default"], null)), react_1["default"].createElement(Verticals_1["default"], null), react_1["default"].createElement(CallToAction_1["default"], null), react_1["default"].createElement("div", {
+  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement(Hero_1["default"], null), react_1["default"].createElement(Verticals_1["default"], null), react_1["default"].createElement(CallToAction_1["default"], null), react_1["default"].createElement("div", {
     className: " pt-10 bg-white "
   }, react_1["default"].createElement(IconsSection_1["default"], null)), react_1["default"].createElement("div", {
     className: "mt-14"
@@ -7930,7 +7926,7 @@ var edit_size_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/
 
 var Solutions = function Solutions() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
-    className: "pt-16 tab:pt-0 sm:pt-24"
+    className: ""
   }, react_1["default"].createElement(Jumbotron_1["default"], {
     header: " Solutions",
     leadingParagraph: "Check out the value that we offer to our esteemed cutomers. "
@@ -26627,6 +26623,21 @@ module.exports = deepmerge_1;
 
 /***/ }),
 
+/***/ "./resources/assets/icons/AI.svg":
+/*!***************************************!*\
+  !*** ./resources/assets/icons/AI.svg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/AI.svg?44ed14784fb0f16ac0bd83d40ec71146");
+
+/***/ }),
+
 /***/ "./resources/assets/icons/Building.svg":
 /*!*********************************************!*\
   !*** ./resources/assets/icons/Building.svg ***!
@@ -26834,21 +26845,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Phone.svg?4f06bac04c761b8b63e422c0753e2719");
-
-/***/ }),
-
-/***/ "./resources/assets/icons/Plane.svg":
-/*!******************************************!*\
-  !*** ./resources/assets/icons/Plane.svg ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Plane.svg?7fb856548b3baae70b1cda0a7de8b46e");
 
 /***/ }),
 

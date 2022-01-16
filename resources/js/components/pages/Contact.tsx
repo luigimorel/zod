@@ -19,7 +19,7 @@ const Contact = () => {
  return (
   <>
    <Navbar />
-   <div className=" sm:pt-24 pt-16 tab:pt-0">
+   <div className="">
     <Jumbotron
      leadingParagraph="In case of any queries, please get in touch with us. We'll be gald to help"
      header="Contact us today"

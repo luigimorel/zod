@@ -17,7 +17,7 @@ const Navbar = () => {
 
  return (
   <>
-   <div className="flex flex-row justify-between   bg-white fixed tab:relative shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   ">
+   <div className="flex flex-row justify-between   bg-white tab:relative shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   ">
     <Link to="/">
      <img src={Logo} alt="" className=" sm:h-10 h-5" />
     </Link>

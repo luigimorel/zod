@@ -52,20 +52,20 @@ const Footer = () => {
      <h2 className=" text-2xl text-white mb-10">Stay in touch </h2>
 
      {/* TO DO: Ask for these from the person in charge */}
-     <div className=" flex flex-col justify-center mb-4 sm:justify-start">
-      <div className="border-white bg-black border-2 h-10 mb-4 w-10 justify-center rounded-full items-center flex">
+     <div className=" flex sm:flex-col flex-row tab:flex-col sm:justify-center mb-4 justify-between">
+      <div className="border-white border-2 h-10 mb-4 w-10 justify-center rounded-full items-center flex">
        <a href="http://" target="_blank" rel="noreferrer noopener">
         <img src={Twitter} alt="" className=" h-5" />{' '}
        </a>
       </div>
 
-      <div className="   border-white border-2 bg-black h-10 w-10 mb-4 justify-center rounded-full items-center flex">
+      <div className="   border-white border-2 h-10 w-10 mb-4 justify-center rounded-full items-center flex">
        <a href="http://" target="_blank" rel="noreferrer noopener">
         <img src={FB} alt="" className=" h-5" />
        </a>
       </div>
 
-      <div className="   border-white bg-black border-2 h-10 w-10 mb-4 justify-center rounded-full items-center flex">
+      <div className="   border-white border-2 h-10 w-10 mb-4 justify-center rounded-full items-center flex">
        <a href="http://" target="_blank" rel="noreferrer noopener">
         <img src={Linkedin} alt="" className=" h-5" />
        </a>
@@ -77,14 +77,14 @@ const Footer = () => {
    <hr className=" h-px bg-slate-300" />
 
    <div className=" flex sm:flex-row flex-col py-5 justify-between">
-    <p className=" flex sm:justify-end justify-center text-center">
-     © Denebolatech {new Date().getFullYear()}. All rights reserved.
+    <p className=" flex sm:justify-end justify-center sm:text-center text-left">
+     &copy; Denebolatech {new Date().getFullYear()}. All rights reserved.
     </p>
     <p className=" flex sm:justify-end justify-center text-center">
      Built By
      <a
       href="https://luigimorel.me"
-      className=" font-bold ml-4"
+      className=" font-bold ml-2"
       target="_blank"
       rel="noreferrer noopenner"
      >

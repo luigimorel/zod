@@ -30,7 +30,7 @@ const MobileNavbar = () => {
  ]
 
  return (
-  <div className=" flex dropdown fixed mt-14 w-full animation-container">
+  <div className=" flex dropdown  w-full animation-container">
    <ul className="dropdown-menu bg-black   w-full">
     {menuLinks.map((x) => (
      <li key={x.id} className=" ">
