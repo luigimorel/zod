@@ -564,8 +564,8 @@ select{
 .mb-11{
   margin-bottom: 2.75rem;
 }
-.ml-4{
-  margin-left: 1rem;
+.ml-2{
+  margin-left: 0.5rem;
 }
 .mb-14{
   margin-bottom: 3.5rem;
@@ -579,20 +579,23 @@ select{
 .mb-20{
   margin-bottom: 5rem;
 }
-.mt-14{
-  margin-top: 3.5rem;
-}
 .ml-24{
   margin-left: 6rem;
 }
 .mr-12{
   margin-right: 3rem;
 }
+.mt-20{
+  margin-top: 5rem;
+}
 .-ml-8{
   margin-left: -2rem;
 }
 .mr-4{
   margin-right: 1rem;
+}
+.mt-14{
+  margin-top: 3.5rem;
 }
 .mb-16{
   margin-bottom: 4rem;
@@ -609,20 +612,11 @@ select{
 .ml-2\.5{
   margin-left: 0.625rem;
 }
-.ml-2{
-  margin-left: 0.5rem;
-}
 .mt-10{
   margin-top: 2.5rem;
 }
 .mt-4{
   margin-top: 1rem;
-}
-.mt-20{
-  margin-top: 5rem;
-}
-.mt-40{
-  margin-top: 10rem;
 }
 .block{
   display: block;
@@ -648,20 +642,17 @@ select{
 .h-px{
   height: 1px;
 }
-.h-screen{
-  height: 100vh;
-}
-.h-full{
-  height: 100%;
+.h-auto{
+  height: auto;
 }
 .h-20{
   height: 5rem;
 }
+.h-full{
+  height: 100%;
+}
 .h-8{
   height: 2rem;
-}
-.h-auto{
-  height: auto;
 }
 .w-full{
   width: 100%;
@@ -762,13 +753,13 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(23 34 54 / var(--tw-bg-opacity));
 }
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
 .bg-slate-300{
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -873,6 +864,9 @@ select{
 .pt-20{
   padding-top: 5rem;
 }
+.pt-12{
+  padding-top: 3rem;
+}
 .pl-3{
   padding-left: 0.75rem;
 }
@@ -881,9 +875,6 @@ select{
 }
 .pt-4{
   padding-top: 1rem;
-}
-.pt-16{
-  padding-top: 4rem;
 }
 .pt-28{
   padding-top: 7rem;
@@ -902,12 +893,6 @@ select{
 }
 .pb-10{
   padding-bottom: 2.5rem;
-}
-.pt-24{
-  padding-top: 6rem;
-}
-.pt-12{
-  padding-top: 3rem;
 }
 .text-left{
   text-align: left;
@@ -1063,11 +1048,8 @@ body {
   .sm\:mr-20{
     margin-right: 5rem;
   }
-  .sm\:-mt-16{
-    margin-top: -4rem;
-  }
-  .sm\:mb-10{
-    margin-bottom: 2.5rem;
+  .sm\:mb-20{
+    margin-bottom: 5rem;
   }
   .sm\:mr-12{
     margin-right: 3rem;
@@ -1075,35 +1057,23 @@ body {
   .sm\:mr-4{
     margin-right: 1rem;
   }
+  .sm\:mt-0{
+    margin-top: 0px;
+  }
   .sm\:mb-0{
     margin-bottom: 0px;
   }
   .sm\:mb-24{
     margin-bottom: 6rem;
   }
-  .sm\:mb-20{
-    margin-bottom: 5rem;
-  }
   .sm\:ml-20{
     margin-left: 5rem;
   }
+  .sm\:mb-10{
+    margin-bottom: 2.5rem;
+  }
   .sm\:mt-8{
     margin-top: 2rem;
-  }
-  .sm\:mt-16{
-    margin-top: 4rem;
-  }
-  .sm\:mt-12{
-    margin-top: 3rem;
-  }
-  .sm\:mt-20{
-    margin-top: 5rem;
-  }
-  .sm\:-mt-20{
-    margin-top: -5rem;
-  }
-  .sm\:mt-0{
-    margin-top: 0px;
   }
   .sm\:block{
     display: block;
@@ -1191,9 +1161,6 @@ body {
   .sm\:pt-20{
     padding-top: 5rem;
   }
-  .sm\:pt-24{
-    padding-top: 6rem;
-  }
   .sm\:text-left{
     text-align: left;
   }
@@ -1217,14 +1184,14 @@ body {
   .tab\:mr-0{
     margin-right: 0px;
   }
-  .tab\:mt-32{
-    margin-top: 8rem;
-  }
   .tab\:mb-10{
     margin-bottom: 2.5rem;
   }
   .tab\:mb-20{
     margin-bottom: 5rem;
+  }
+  .tab\:mt-10{
+    margin-top: 2.5rem;
   }
   .tab\:mb-4{
     margin-bottom: 1rem;
@@ -1241,12 +1208,6 @@ body {
   .tab\:mr-4{
     margin-right: 1rem;
   }
-  .tab\:mt-20{
-    margin-top: 5rem;
-  }
-  .tab\:mt-10{
-    margin-top: 2.5rem;
-  }
   .tab\:block{
     display: block;
   }
@@ -1258,9 +1219,6 @@ body {
   }
   .tab\:hidden{
     display: none;
-  }
-  .tab\:h-full{
-    height: 100%;
   }
   .tab\:h-auto{
     height: auto;
@@ -1277,9 +1235,6 @@ body {
   .tab\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .tab\:flex-row{
-    flex-direction: row;
-  }
   .tab\:flex-col{
     flex-direction: column;
   }
@@ -1288,9 +1243,6 @@ body {
   }
   .tab\:justify-start{
     justify-content: flex-start;
-  }
-  .tab\:justify-between{
-    justify-content: space-between;
   }
   .tab\:border-2{
     border-width: 2px;
@@ -1327,12 +1279,6 @@ body {
   }
   .tab\:pl-12{
     padding-left: 3rem;
-  }
-  .tab\:pt-0{
-    padding-top: 0px;
-  }
-  .tab\:pt-28{
-    padding-top: 7rem;
   }
 }
 
