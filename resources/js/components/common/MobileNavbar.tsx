@@ -13,7 +13,7 @@ const MobileNavbar = () => {
   },
   {
    id: 2,
-   linkText: 'Our Solution',
+   linkText: 'Solutions',
    route: '/solutions',
   },
 

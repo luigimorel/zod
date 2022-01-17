@@ -6109,7 +6109,7 @@ var MobileNavbar = function MobileNavbar() {
     route: '/'
   }, {
     id: 2,
-    linkText: 'Our Solution',
+    linkText: 'Solutions',
     route: '/solutions'
   }, {
     id: 3,
@@ -7955,7 +7955,7 @@ var Solutions = function Solutions() {
     className: "flex flex-col tab:ml-8 sm:ml-20"
   }, react_1["default"].createElement("h2", {
     className: " text-3xl uppercase font-semibold text-blue-700 mb-8"
-  }, "Construction Works Monitoring"), react_1["default"].createElement("ul", {
+  }, "Works Monitoring"), react_1["default"].createElement("ul", {
     className: " list-disc "
   }, react_1["default"].createElement("li", {
     className: " mb-2.5 text-gray-800"
