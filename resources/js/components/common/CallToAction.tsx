@@ -5,7 +5,7 @@ import Button from './Button'
 
 const CallToAction = () => {
  return (
-  <div className=" bg-cta mb-8">
+  <div className=" bg-cta sm:mb-16 tab:mb-16 mb-8">
    <div className=" sm:px-32 px-8 tab:px-16 flex flex-col">
     <p className=" text-xl text-white mb-12 mt-8">
      Built for construction site monitoring
