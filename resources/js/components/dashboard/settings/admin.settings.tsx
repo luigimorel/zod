@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 // Assets
 // @ts-ignore
-import Logo from './../../../../assets/images/logo.png'
+import Logo from './../../../../assets/images/logo-light.png'
 
 // Components
 import DashNav from '../admin/dashNav'

@@ -5284,6 +5284,8 @@ var AdminDashboard_1 = __importDefault(__webpack_require__(/*! ./pages/AdminDash
 
 var client_settings_1 = __importDefault(__webpack_require__(/*! ./dashboard/settings/client.settings */ "./resources/js/components/dashboard/settings/client.settings.tsx"));
 
+var ErrorPage_1 = __importDefault(__webpack_require__(/*! ./pages/ErrorPage */ "./resources/js/components/pages/ErrorPage.tsx"));
+
 function App() {
   return react_1["default"].createElement(react_router_dom_1.BrowserRouter, null, react_1["default"].createElement(react_router_dom_1.Routes, null, react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/",
@@ -5321,6 +5323,8 @@ function App() {
   }), react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/client-dashboard/settings",
     element: react_1["default"].createElement(client_settings_1["default"], null)
+  }), react_1["default"].createElement(react_router_dom_1.Route, {
+    element: react_1["default"].createElement(ErrorPage_1["default"], null)
   })));
 }
 
@@ -6007,15 +6011,18 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Components
 
 
-var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/js/components/common/Button.tsx"));
+var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/js/components/common/Button.tsx")); // @ts-ignore
+
+
+var hero_png_1 = __importDefault(__webpack_require__(/*! ../../../assets/images/hero.png */ "./resources/assets/images/hero.png"));
 
 var Hero = function Hero() {
-  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
-    className: " flex px-4  sm:flex-row tab:flex-col-reverse pt-12 flex-col-reverse items-center relative   justify-between  w-full sm:mb-20     "
+  return react_1["default"].createElement("div", {
+    className: " flex px-4  sm:flex-row tab:flex-col sm:pt-24  flex-col relative  w-full sm:mb-20     "
   }, react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full tab:w-full tab:mb-10  sm:pl-24 tab:pl-12 pl-3 tab:mr-0 tab:px-4  sm:mr-12"
+    className: " sm:w-1/2 w-full tab:w-full mb-8 tab:mb-10  sm:pl-24 tab:pl-12 pl-3  tab:mr-0 tab:px-4  sm:mr-12"
   }, react_1["default"].createElement("h3", {
-    className: " sm:text-5xl text-3xl mb-8 font-sans font-semibold uppercase  "
+    className: " sm:text-5xl text-3xl mb-8 mt-8 font-sans font-semibold uppercase  "
   }, "CONSTRUCTION SITE MONITORING", ' ', react_1["default"].createElement("span", {
     className: " text-red-700"
   }, "SIMPLIFIED", react_1["default"].createElement("span", {
@@ -6023,19 +6030,19 @@ var Hero = function Hero() {
   }, "..."))), react_1["default"].createElement("p", {
     className: " mb-12 text-lg sm:mr-4 text-gray-800"
   }, "We are committed to helping construction industry investors, developers and project managers easily get their work done through real time monitoring of their construction sites."), react_1["default"].createElement("div", {
-    className: "flex justify-center mb-10 sm:justify-start"
+    className: "flex justify-center mb-4 sm:mb-0 sm:justify-start"
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/solutions"
   }, react_1["default"].createElement(Button_1["default"], {
     text: "Explore More",
     className: "  "
   })))), react_1["default"].createElement("div", {
-    className: " sm:w-1/2 w-full tab:w-full  tab:mb-20 mb-8 sm:mt-0 tab:mt-10 sm:mb-0 sm:border-cta tab:border-none border-none  rounded-3xl tab:rounded-3-xl tab:border-2 border-8 tab:mr-0 tab:px-8  sm:mr-12 "
+    className: " sm:w-1/2 w-full tab:w-full  tab:mb-20 mb-8  sm:mb-28 sm:border-cta    tab:mr-0 tab:px-8  sm:mr-12 "
   }, react_1["default"].createElement("img", {
-    src: 'https://res.cloudinary.com/morelmiles/image/upload/v1641589820/contruction_img_gxsiok.jpg',
+    src: hero_png_1["default"],
     alt: "",
-    className: " w-full sm:h-3/5 h-auto tab:h-auto tab:mb-10 rounded-2xl"
-  }))));
+    className: " w-full  tab:mb-10 rounded-2xl"
+  })));
 };
 
 exports["default"] = Hero;
@@ -6261,10 +6268,7 @@ Object.defineProperty(exports, "__esModule", ({
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Components
-
-
-var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/js/components/common/Button.tsx"));
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 
 var MobileNavbar = function MobileNavbar() {
   var menuLinks = [{
@@ -6285,23 +6289,22 @@ var MobileNavbar = function MobileNavbar() {
     route: '/accounts/login'
   }];
   return react_1["default"].createElement("div", {
-    className: " flex dropdown  w-full animation-container"
+    className: " flex dropdown bg-white w-full animation-container"
   }, react_1["default"].createElement("ul", {
-    className: "dropdown-menu bg-black   w-full"
+    className: "dropdown-menu w-full "
   }, menuLinks.map(function (x) {
     return react_1["default"].createElement("li", {
       key: x.id,
       className: " "
     }, react_1["default"].createElement(react_router_dom_1.Link, {
-      className: "  text-white custom-animation w-full ml-24 bg-black custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap",
+      className: "  text-black custom-animation w-full bg-white ml-4 custom-transform    text-base mb-4 font-semibold  block whitespace-no-wrap",
       to: x.route
     }, x.linkText));
   }), react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
-  }, react_1["default"].createElement(Button_1["default"], {
-    text: "Sign Up",
-    className: "  ml-24 pb-4"
-  }))));
+  }, react_1["default"].createElement("button", {
+    className: "text-center ml-4 w-full mb-8 py-4 bg-primary hover:bg-opacity-80  rounded text-white hover:bg-[#4caceb]"
+  }, "Sign Up"))));
 };
 
 exports["default"] = MobileNavbar;
@@ -7306,7 +7309,7 @@ var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_mod
 // @ts-ignore
 
 
-var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // Components
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // Components
 
 
 var dashNav_1 = __importDefault(__webpack_require__(/*! ../admin/dashNav */ "./resources/js/components/dashboard/admin/dashNav.tsx"));
@@ -7328,7 +7331,7 @@ var AdminSettings = function AdminSettings() {
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/"
   }, react_1["default"].createElement("img", {
-    src: logo_png_1["default"],
+    src: logo_light_png_1["default"],
     alt: "",
     className: " sm:h-10 h-5"
   })), react_1["default"].createElement("p", {
@@ -7496,7 +7499,7 @@ var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_mod
 // @ts-ignore
 
 
-var logo_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo.png */ "./resources/assets/images/logo.png")); // @ts-ignore
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // @ts-ignore
 
 
 var Menu_svg_1 = __importDefault(__webpack_require__(/*! ./../../../../assets/icons/Menu.svg */ "./resources/assets/icons/Menu.svg")); // Components
@@ -7521,7 +7524,7 @@ var AdminSettings = function AdminSettings() {
   }, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/"
   }, react_1["default"].createElement("img", {
-    src: logo_png_1["default"],
+    src: logo_light_png_1["default"],
     alt: "",
     className: " sm:h-10 h-5"
   })), react_1["default"].createElement("img", {
@@ -7950,7 +7953,7 @@ var Contact = function Contact() {
     src: Phone_svg_1["default"],
     className: " mr-4",
     alt: ""
-  }), react_1["default"].createElement("p", null, "+256 701 234 433 "))))), react_1["default"].createElement("div", {
+  }), react_1["default"].createElement("p", null, "+256 775 828940 "))))), react_1["default"].createElement("div", {
     className: " sm:w-1/2 tab:w-full w-full"
   }, react_1["default"].createElement("form", {
     action: "",
@@ -8003,6 +8006,35 @@ var Contact = function Contact() {
 };
 
 exports["default"] = Contact;
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/ErrorPage.tsx":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/pages/ErrorPage.tsx ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var ErrorPage = function ErrorPage() {
+  return react_1["default"].createElement("div", null, "this is the 404 page");
+};
+
+exports["default"] = ErrorPage;
 
 /***/ }),
 
@@ -27177,6 +27209,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/images/hero.png":
+/*!******************************************!*\
+  !*** ./resources/assets/images/hero.png ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/hero.png?ad862cefb6113044ac1f32fb654f0eb7");
+
+/***/ }),
+
 /***/ "./resources/assets/images/logo-dark.png":
 /*!***********************************************!*\
   !*** ./resources/assets/images/logo-dark.png ***!
@@ -27204,21 +27251,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo-light.png?36238587a9c211970cbfdfaf103f980e");
-
-/***/ }),
-
-/***/ "./resources/assets/images/logo.png":
-/*!******************************************!*\
-  !*** ./resources/assets/images/logo.png ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo.png?919497bcdc63e48508f13ef3220818b4");
 
 /***/ }),
 

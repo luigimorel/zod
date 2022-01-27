@@ -30,12 +30,12 @@ const MobileNavbar = () => {
  ]
 
  return (
-  <div className=" flex dropdown  w-full animation-container">
-   <ul className="dropdown-menu bg-black   w-full">
+  <div className=" flex dropdown bg-white w-full animation-container">
+   <ul className="dropdown-menu w-full ">
     {menuLinks.map((x) => (
      <li key={x.id} className=" ">
       <Link
-       className="  text-white custom-animation w-full ml-24 bg-black custom-transform   minor-nav  text-base  py-2  mb-4 font-semibold  block whitespace-no-wrap"
+       className="  text-black custom-animation w-full bg-white ml-4 custom-transform    text-base mb-4 font-semibold  block whitespace-no-wrap"
        to={x.route}
       >
        {x.linkText}
@@ -44,7 +44,9 @@ const MobileNavbar = () => {
     ))}
 
     <Link to="/accounts/sign-up">
-     <Button text="Sign Up" className="  ml-24 pb-4" />
+     <button className="text-center ml-4 w-full mb-8 py-4 bg-primary hover:bg-opacity-80  rounded text-white hover:bg-[#4caceb]">
+      Sign Up
+     </button>
     </Link>
    </ul>
   </div>

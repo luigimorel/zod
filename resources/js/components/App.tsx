@@ -19,6 +19,7 @@ import ClientDashboard from './pages/ClientDashboard'
 import AdminSettings from './dashboard/settings/admin.settings'
 import AdminDashboard from './pages/AdminDashboard'
 import ClientSettings from './dashboard/settings/client.settings'
+import ErrorPage from './pages/ErrorPage'
 
 function App() {
  return (
@@ -41,6 +42,7 @@ function App() {
     <Route path="/admin-dashboard" element={<AdminDashboard />} />
     <Route path="/admin-dashboard/settings" element={<AdminSettings />} />
     <Route path="/client-dashboard/settings" element={<ClientSettings />} />
+    <Route element={<ErrorPage />} />
    </Routes>
   </BrowserRouter>
  )
