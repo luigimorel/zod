@@ -14,7 +14,7 @@ const SignUp = () => {
   <>
    <Navbar />
 
-   <div className=" mb-5 sm:pt-32 pt-20 tab:pt-4">
+   <div className=" mb-5 sm:pt-32 pt-20 tab:pt-4 ">
     <Heading text="Sign Up" className=" mb-0 uppercase " />
    </div>
    <div className=" sm:w-3/5 tab:w-4/5 mx-auto my-0 ">

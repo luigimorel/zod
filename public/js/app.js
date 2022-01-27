@@ -5324,6 +5324,7 @@ function App() {
     path: "/client-dashboard/settings",
     element: react_1["default"].createElement(client_settings_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
+    path: "*",
     element: react_1["default"].createElement(ErrorPage_1["default"], null)
   })));
 }
@@ -5476,8 +5477,60 @@ Object.defineProperty(exports, "__esModule", ({
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
+
+
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
+
 var ResetPassword = function ResetPassword() {
-  return react_1["default"].createElement("div", null, "this is the reset password component");
+  return react_1["default"].createElement("div", null, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/"
+  }, react_1["default"].createElement("img", {
+    src: logo_light_png_1["default"],
+    className: " mx-auto mt-16 h-10 mb-10",
+    alt: ""
+  })), react_1["default"].createElement("div", {
+    className: " sm:w-1/3 tab:w-2/3 mx-auto my-0 bg-white"
+  }, react_1["default"].createElement("div", {
+    className: " px-10 pb-10 pt-10"
+  }, react_1["default"].createElement("h2", {
+    className: " text-center text-blue-700 font-bold text-xl mb-10"
+  }, "Choose a new password"), react_1["default"].createElement("form", {
+    action: "",
+    method: "post"
+  }, react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "email",
+    className: " mb-2"
+  }, "New Password"), react_1["default"].createElement("input", {
+    type: "password",
+    name: "password",
+    id: "password",
+    className: " w-full mb-3 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("label", {
+    htmlFor: "email",
+    className: " mb-2"
+  }, "Confirm New  Password"), react_1["default"].createElement("input", {
+    type: "password",
+    name: "password",
+    id: "password",
+    className: " w-full mb-8 rounded-sm border-gray-400"
+  })), react_1["default"].createElement("div", {
+    className: " flex justify-center mb-8 "
+  }, react_1["default"].createElement("button", {
+    type: "submit",
+    className: "  text-center px-8 py-3 w-full bg-primary hover:bg-opacity-80  rounded text-white hover:bg-[#4caceb]"
+  }, "Reset Password"))), react_1["default"].createElement("p", {
+    className: " text-center"
+  }, "Don't have an account?", '  ', react_1["default"].createElement("span", {
+    className: " text-blue-700 font-bold"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/accounts/sign-up"
+  }, "Sign Up"))))));
 };
 
 exports["default"] = ResetPassword;
@@ -5519,7 +5572,7 @@ var SignIn = function SignIn() {
     className: " mx-auto mt-16 h-10 mb-10",
     alt: ""
   })), react_1["default"].createElement("div", {
-    className: " sm:w-1/3 tab:w-2/3 mx-auto my-0 border  border-gray-400"
+    className: " sm:w-1/3 tab:w-2/3 mx-auto my-0 bg-white"
   }, react_1["default"].createElement("div", {
     className: " px-10 pb-10 pt-10"
   }, react_1["default"].createElement("h2", {
@@ -5604,7 +5657,7 @@ var Navbar_1 = __importDefault(__webpack_require__(/*! ../common/Navbar */ "./re
 
 var SignUp = function SignUp() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
-    className: " mb-5 sm:pt-32 pt-20 tab:pt-4"
+    className: " mb-5 sm:pt-32 pt-20 tab:pt-4 "
   }, react_1["default"].createElement(Heading_1["default"], {
     text: "Sign Up",
     className: " mb-0 uppercase "
@@ -6289,21 +6342,21 @@ var MobileNavbar = function MobileNavbar() {
     route: '/accounts/login'
   }];
   return react_1["default"].createElement("div", {
-    className: " flex dropdown bg-white w-full animation-container"
+    className: " dropdown bg-white w-full block animation-container"
   }, react_1["default"].createElement("ul", {
-    className: "dropdown-menu w-full "
+    className: "dropdown-menu w-full mb-4 "
   }, menuLinks.map(function (x) {
     return react_1["default"].createElement("li", {
       key: x.id,
       className: " "
     }, react_1["default"].createElement(react_router_dom_1.Link, {
-      className: "  text-black custom-animation w-full bg-white ml-4 custom-transform    text-base mb-4 font-semibold  block whitespace-no-wrap",
+      className: "  text-black custom-animation w-full bg-white ml-4 custom-transform    text-base mb-4 font-semibold",
       to: x.route
     }, x.linkText));
   }), react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
   }, react_1["default"].createElement("button", {
-    className: "text-center ml-4 w-full mb-8 py-4 bg-primary hover:bg-opacity-80  rounded text-white hover:bg-[#4caceb]"
+    className: "mx-4 w-4/5 mb-8 py-4 bg-primary hover:bg-opacity-80  rounded text-white hover:bg-[#4caceb]"
   }, "Sign Up"))));
 };
 
@@ -6392,12 +6445,31 @@ var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/
 
 var MobileNavbar_1 = __importDefault(__webpack_require__(/*! ./MobileNavbar */ "./resources/js/components/common/MobileNavbar.tsx"));
 
+var menuLinks = [{
+  id: 1,
+  text: 'Home',
+  route: '/'
+}, {
+  id: 2,
+  text: 'Solutions',
+  route: '/solutions'
+}, {
+  id: 3,
+  text: 'Contact Us',
+  route: '/contact-us'
+}, {
+  id: 4,
+  text: 'Log In',
+  route: '/accounts/login'
+}];
+
 var Navbar = function Navbar() {
   var _ref = (0, react_1.useState)(false),
       _ref2 = _slicedToArray(_ref, 2),
       open = _ref2[0],
       setOpen = _ref2[1];
 
+  var router = (0, react_router_dom_1.useLocation)();
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
     className: "flex flex-row justify-between   bg-white tab:relative shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   "
   }, react_1["default"].createElement(react_router_dom_1.Link, {
@@ -6417,19 +6489,13 @@ var Navbar = function Navbar() {
     className: "sm:flex tab:hidden hidden flex-row"
   }, react_1["default"].createElement("ul", {
     className: "sm:flex flex-row justify-between items-center"
-  }, react_1["default"].createElement(react_router_dom_1.Link, {
-    to: '/',
-    className: "mr-12 tab:mr-8 py-2 text-black font-semibold hover:text-blue-700 text-base"
-  }, "Home"), react_1["default"].createElement(react_router_dom_1.Link, {
-    to: '/solutions',
-    className: "mr-12 tab:mr-8 py-2 text-black font-semibold hover:text-blue-700 text-base"
-  }, "Solutions"), react_1["default"].createElement(react_router_dom_1.Link, {
-    to: '/contact-us',
-    className: "mr-12 tab:mr-8 text-black py-2 font-semibold hover:text-blue-700 text-base"
-  }, "Contact Us"), react_1["default"].createElement(react_router_dom_1.Link, {
-    to: '/accounts/login',
-    className: "mr-12 tab:mr-8 text-black py-2 font-semibold hover:text-blue-700 text-base"
-  }, "Log In"), react_1["default"].createElement(react_router_dom_1.Link, {
+  }, menuLinks.map(function (x) {
+    return react_1["default"].createElement(react_router_dom_1.NavLink, {
+      key: x.id,
+      to: x.route,
+      className: router.pathname === x.route ? 'mr-12 tab:mr-8 py-2 font-semibold text-blue-700 border-blue-400 border-b-2 text-base' : 'mr-12 tab:mr-8 py-2 text-black font-semibold hover:border-blue-400 text-base'
+    }, x.text);
+  }), react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
   }, react_1["default"].createElement(Button_1["default"], {
     text: "Sign Up",
@@ -7908,12 +7974,12 @@ var Contact = function Contact() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
     className: ""
   }, react_1["default"].createElement(Jumbotron_1["default"], {
-    leadingParagraph: "In case of any queries, please get in touch with us. We'll be gald to help",
-    header: "Contact us today"
+    leadingParagraph: "In case of any queries, please get in touch with us. We'll be gald to help.",
+    header: "Contact us today."
   })), react_1["default"].createElement("div", {
     className: " mb-10"
   }, react_1["default"].createElement(Heading_1["default"], {
-    text: "We are here to help",
+    text: "We are here to help.",
     className: " uppercase "
   })), react_1["default"].createElement("div", {
     className: " flex  sm:flex-row tab:flex-col flex-col px-4  sm:px-20 sm:mb-20"
@@ -8030,8 +8096,31 @@ Object.defineProperty(exports, "__esModule", ({
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Components
+
+
+var Button_1 = __importDefault(__webpack_require__(/*! ../common/Button */ "./resources/js/components/common/Button.tsx"));
+
+var Footer_1 = __importDefault(__webpack_require__(/*! ../common/Footer */ "./resources/js/components/common/Footer.tsx"));
+
+var Navbar_1 = __importDefault(__webpack_require__(/*! ../common/Navbar */ "./resources/js/components/common/Navbar.tsx"));
+
 var ErrorPage = function ErrorPage() {
-  return react_1["default"].createElement("div", null, "this is the 404 page");
+  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
+    className: " sm:mb-48 mb-20"
+  }, react_1["default"].createElement("div", {
+    className: " sm:w-1/3 tab:w-full mx-auto my-0 "
+  }, react_1["default"].createElement("div", {
+    className: " sm:px-10 px-4 pb-10 pt-24  sm:pt-32"
+  }, react_1["default"].createElement("h2", {
+    className: " text-center text-[#212121] font-semibold text-xl mb-10"
+  }, "Sorry, the page you requested for does not exist.\uD83D\uDE22"), react_1["default"].createElement("div", {
+    className: " flex justify-center"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/'
+  }, react_1["default"].createElement(Button_1["default"], {
+    text: "Back Home"
+  })))))), react_1["default"].createElement(Footer_1["default"], null));
 };
 
 exports["default"] = ErrorPage;

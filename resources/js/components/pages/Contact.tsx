@@ -21,13 +21,13 @@ const Contact = () => {
    <Navbar />
    <div className="">
     <Jumbotron
-     leadingParagraph="In case of any queries, please get in touch with us. We'll be gald to help"
-     header="Contact us today"
+     leadingParagraph="In case of any queries, please get in touch with us. We'll be gald to help."
+     header="Contact us today."
     />
    </div>
 
    <div className=" mb-10">
-    <Heading text="We are here to help" className=" uppercase " />
+    <Heading text="We are here to help." className=" uppercase " />
    </div>
 
    <div className=" flex  sm:flex-row tab:flex-col flex-col px-4  sm:px-20 sm:mb-20">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 // Assets
 // @ts-ignore
@@ -12,8 +12,31 @@ import Logo from './../../../assets/images/logo-light.png'
 import Button from './Button'
 import MobileNavbar from './MobileNavbar'
 
+const menuLinks = [
+ {
+  id: 1,
+  text: 'Home',
+  route: '/',
+ },
+ {
+  id: 2,
+  text: 'Solutions',
+  route: '/solutions',
+ },
+ {
+  id: 3,
+  text: 'Contact Us',
+  route: '/contact-us',
+ },
+ {
+  id: 4,
+  text: 'Log In',
+  route: '/accounts/login',
+ },
+]
 const Navbar = () => {
  const [open, setOpen] = useState(false)
+ const router = useLocation()
 
  return (
   <>
@@ -32,31 +55,19 @@ const Navbar = () => {
 
     <div className="sm:flex tab:hidden hidden flex-row">
      <ul className="sm:flex flex-row justify-between items-center">
-      <Link
-       to={'/'}
-       className="mr-12 tab:mr-8 py-2 text-black font-semibold hover:text-blue-700 text-base"
-      >
-       Home
-      </Link>
-
-      <Link
-       to={'/solutions'}
-       className="mr-12 tab:mr-8 py-2 text-black font-semibold hover:text-blue-700 text-base"
-      >
-       Solutions
-      </Link>
-      <Link
-       to={'/contact-us'}
-       className="mr-12 tab:mr-8 text-black py-2 font-semibold hover:text-blue-700 text-base"
-      >
-       Contact Us
-      </Link>
-      <Link
-       to={'/accounts/login'}
-       className="mr-12 tab:mr-8 text-black py-2 font-semibold hover:text-blue-700 text-base"
-      >
-       Log In
-      </Link>
+      {menuLinks.map((x) => (
+       <NavLink
+        key={x.id}
+        to={x.route}
+        className={
+         router.pathname === x.route
+          ? 'mr-12 tab:mr-8 py-2 font-semibold text-blue-700 border-blue-400 border-b-2 text-base'
+          : 'mr-12 tab:mr-8 py-2 text-black font-semibold hover:border-blue-400 text-base'
+        }
+       >
+        {x.text}
+       </NavLink>
+      ))}
 
       <Link to="/accounts/sign-up">
        <Button text="Sign Up" className="  " />

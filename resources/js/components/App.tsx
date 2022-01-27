@@ -42,7 +42,7 @@ function App() {
     <Route path="/admin-dashboard" element={<AdminDashboard />} />
     <Route path="/admin-dashboard/settings" element={<AdminSettings />} />
     <Route path="/client-dashboard/settings" element={<ClientSettings />} />
-    <Route element={<ErrorPage />} />
+    <Route path="*" element={<ErrorPage />} />
    </Routes>
   </BrowserRouter>
  )

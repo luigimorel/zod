@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom'
 // @ts-ignore
 import Logo from '../../../assets/images/logo-light.png'
 
-// Components
-import Button from '../common/Button'
-
 const RecoveryAccountSuccess = () => {
  return (
   <div className="  h-screen pt-16">
