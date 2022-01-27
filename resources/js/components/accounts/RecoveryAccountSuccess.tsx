@@ -16,7 +16,7 @@ const RecoveryAccountSuccess = () => {
    </Link>
 
    <div className=" sm:w-1/3 tab:w-full mx-auto my-0 ">
-    <div className=" sm:px-10 px-4 pb-10 pt-10">
+    <div className=" sm:px-10 px-4 pb-10 pt-10  sm:pt-32">
      <h2 className=" text-center text-blue-700 font-semibold text-xl mb-10">
       Email has been sent 🚀
      </h2>
