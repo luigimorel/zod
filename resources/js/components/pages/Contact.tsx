@@ -62,7 +62,7 @@ const Contact = () => {
 
        <div className="flex flex-row mb-4">
         <img src={PhoneIcon} className=" mr-4" alt="" />
-        <p>+256 701 234 433 </p>
+        <p>+256 775 828940 </p>
        </div>
       </div>
      </div>
