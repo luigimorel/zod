@@ -5253,26 +5253,34 @@ Object.defineProperty(exports, "__esModule", ({
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js")); // Components
+var react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Static pages
 
 
 var Home_1 = __importDefault(__webpack_require__(/*! ./pages/Home */ "./resources/js/components/pages/Home.tsx"));
 
 var Solutions_1 = __importDefault(__webpack_require__(/*! ./pages/Solutions */ "./resources/js/components/pages/Solutions.tsx"));
 
-var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+var Contact_1 = __importDefault(__webpack_require__(/*! ./pages/Contact */ "./resources/js/components/pages/Contact.tsx")); // User account management
 
-var AdminDashboard_1 = __importDefault(__webpack_require__(/*! ./pages/AdminDashboard */ "./resources/js/components/pages/AdminDashboard.tsx"));
-
-var Contact_1 = __importDefault(__webpack_require__(/*! ./pages/Contact */ "./resources/js/components/pages/Contact.tsx"));
 
 var SignIn_1 = __importDefault(__webpack_require__(/*! ./accounts/SignIn */ "./resources/js/components/accounts/SignIn.tsx"));
 
 var SignUp_1 = __importDefault(__webpack_require__(/*! ./accounts/SignUp */ "./resources/js/components/accounts/SignUp.tsx"));
 
+var RecoverPassword_1 = __importDefault(__webpack_require__(/*! ./accounts/RecoverPassword */ "./resources/js/components/accounts/RecoverPassword.tsx"));
+
+var RecoveryAccountSuccess_1 = __importDefault(__webpack_require__(/*! ./accounts/RecoveryAccountSuccess */ "./resources/js/components/accounts/RecoveryAccountSuccess.tsx"));
+
+var ResetPassword_1 = __importDefault(__webpack_require__(/*! ./accounts/ResetPassword */ "./resources/js/components/accounts/ResetPassword.tsx")); // Dashboards
+
+
 var ClientDashboard_1 = __importDefault(__webpack_require__(/*! ./pages/ClientDashboard */ "./resources/js/components/pages/ClientDashboard.tsx"));
 
 var admin_settings_1 = __importDefault(__webpack_require__(/*! ./dashboard/settings/admin.settings */ "./resources/js/components/dashboard/settings/admin.settings.tsx"));
+
+var AdminDashboard_1 = __importDefault(__webpack_require__(/*! ./pages/AdminDashboard */ "./resources/js/components/pages/AdminDashboard.tsx"));
 
 var client_settings_1 = __importDefault(__webpack_require__(/*! ./dashboard/settings/client.settings */ "./resources/js/components/dashboard/settings/client.settings.tsx"));
 
@@ -5284,11 +5292,11 @@ function App() {
     path: "/solutions",
     element: react_1["default"].createElement(Solutions_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
-    path: "/admin-dashboard",
-    element: react_1["default"].createElement(AdminDashboard_1["default"], null)
-  }), react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/contact-us",
     element: react_1["default"].createElement(Contact_1["default"], null)
+  }), react_1["default"].createElement(react_router_dom_1.Route, {
+    path: "/accounts/recover-account",
+    element: react_1["default"].createElement(RecoverPassword_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/accounts/login",
     element: react_1["default"].createElement(SignIn_1["default"], null)
@@ -5296,8 +5304,17 @@ function App() {
     path: "/accounts/sign-up",
     element: react_1["default"].createElement(SignUp_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
-    path: "client-dashboard",
+    path: "/accounts/recovery-success",
+    element: react_1["default"].createElement(RecoveryAccountSuccess_1["default"], null)
+  }), react_1["default"].createElement(react_router_dom_1.Route, {
+    path: "/accounts/reset-password",
+    element: react_1["default"].createElement(ResetPassword_1["default"], null)
+  }), react_1["default"].createElement(react_router_dom_1.Route, {
+    path: "/client-dashboard",
     element: react_1["default"].createElement(ClientDashboard_1["default"], null)
+  }), ' ', react_1["default"].createElement(react_router_dom_1.Route, {
+    path: "/admin-dashboard",
+    element: react_1["default"].createElement(AdminDashboard_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/admin-dashboard/settings",
     element: react_1["default"].createElement(admin_settings_1["default"], null)
@@ -5312,6 +5329,154 @@ exports["default"] = App;
 if (document.getElementById('root')) {
   react_dom_1["default"].render(react_1["default"].createElement(App, null), document.getElementById('root'));
 }
+
+/***/ }),
+
+/***/ "./resources/js/components/accounts/RecoverPassword.tsx":
+/*!**************************************************************!*\
+  !*** ./resources/js/components/accounts/RecoverPassword.tsx ***!
+  \**************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
+
+
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // Components
+
+
+var Button_1 = __importDefault(__webpack_require__(/*! ../common/Button */ "./resources/js/components/common/Button.tsx"));
+
+var RecoverPassword = function RecoverPassword() {
+  return react_1["default"].createElement("div", {
+    className: "  h-screen pt-16"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/"
+  }, react_1["default"].createElement("img", {
+    src: logo_light_png_1["default"],
+    className: " mx-auto  h-10 mb-10",
+    alt: ""
+  })), react_1["default"].createElement("div", {
+    className: " sm:w-1/3 tab:w-2/3 mx-auto my-0 "
+  }, react_1["default"].createElement("div", {
+    className: " sm:px-10 px-4 pb-10 pt-10"
+  }, react_1["default"].createElement("h2", {
+    className: " text-center text-blue-700 font-bold text-xl mb-10"
+  }, "Recover your account"), react_1["default"].createElement("p", {
+    className: " sm:pb-8 pb-4"
+  }, "Please enter your email address. You will receive a password reset link in your inbox."), react_1["default"].createElement("form", {
+    action: "",
+    method: "post"
+  }, react_1["default"].createElement("div", {
+    className: "flex flex-col"
+  }, react_1["default"].createElement("input", {
+    type: "email",
+    name: "email",
+    id: "email",
+    className: " w-full mb-6 py-3 bg-white focus:bg-white rounded-sm border-gray-400"
+  }), react_1["default"].createElement("div", {
+    className: "mx-auto"
+  }, react_1["default"].createElement(Button_1["default"], {
+    text: "Recover account"
+  })))))));
+};
+
+exports["default"] = RecoverPassword;
+
+/***/ }),
+
+/***/ "./resources/js/components/accounts/RecoveryAccountSuccess.tsx":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/accounts/RecoveryAccountSuccess.tsx ***!
+  \*********************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
+
+
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
+
+var RecoveryAccountSuccess = function RecoveryAccountSuccess() {
+  return react_1["default"].createElement("div", {
+    className: "  h-screen pt-16"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/"
+  }, react_1["default"].createElement("img", {
+    src: logo_light_png_1["default"],
+    className: " mx-auto  h-10 mb-10",
+    alt: ""
+  })), react_1["default"].createElement("div", {
+    className: " sm:w-1/3 tab:w-full mx-auto my-0 "
+  }, react_1["default"].createElement("div", {
+    className: " sm:px-10 px-4 pb-10 pt-10  sm:pt-32"
+  }, react_1["default"].createElement("h2", {
+    className: " text-center text-blue-700 font-semibold text-xl mb-10"
+  }, "Email has been sent \uD83D\uDE80"), react_1["default"].createElement("p", {
+    className: " text-center sm:pb-8 pb-4"
+  }, "Please check your email inbox for the password recovery link."))));
+};
+
+exports["default"] = RecoveryAccountSuccess;
+
+/***/ }),
+
+/***/ "./resources/js/components/accounts/ResetPassword.tsx":
+/*!************************************************************!*\
+  !*** ./resources/js/components/accounts/ResetPassword.tsx ***!
+  \************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var ResetPassword = function ResetPassword() {
+  return react_1["default"].createElement("div", null, "this is the reset password component");
+};
+
+exports["default"] = ResetPassword;
 
 /***/ }),
 
@@ -5340,10 +5505,7 @@ var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_mod
 // @ts-ignore
 
 
-var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png")); // Components
-
-
-var Button_1 = __importDefault(__webpack_require__(/*! ../common/Button */ "./resources/js/components/common/Button.tsx"));
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ./../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
 
 var SignIn = function SignIn() {
   return react_1["default"].createElement("div", null, react_1["default"].createElement(react_router_dom_1.Link, {
@@ -5355,7 +5517,7 @@ var SignIn = function SignIn() {
   })), react_1["default"].createElement("div", {
     className: " sm:w-1/3 tab:w-2/3 mx-auto my-0 border  border-gray-400"
   }, react_1["default"].createElement("div", {
-    className: " px-10 pb-16 pt-10"
+    className: " px-10 pb-10 pt-10"
   }, react_1["default"].createElement("h2", {
     className: " text-center text-blue-700 font-bold text-xl mb-10"
   }, "Log In"), react_1["default"].createElement("form", {
@@ -5365,17 +5527,17 @@ var SignIn = function SignIn() {
     className: "flex flex-col"
   }, react_1["default"].createElement("label", {
     htmlFor: "email",
-    className: " mb-2.5"
+    className: " mb-2"
   }, "Email"), react_1["default"].createElement("input", {
     type: "email",
     name: "email",
     id: "email",
-    className: " w-full mb-8 rounded-sm border-gray-400"
+    className: " w-full mb-4 rounded-sm border-gray-400"
   })), react_1["default"].createElement("div", {
     className: "flex flex-col"
   }, react_1["default"].createElement("label", {
     htmlFor: "email",
-    className: " mb-2.5"
+    className: " mb-2"
   }, "Password"), react_1["default"].createElement("input", {
     type: "password",
     name: "password",
@@ -5384,13 +5546,13 @@ var SignIn = function SignIn() {
   })), react_1["default"].createElement("div", {
     className: "flex justify-end flex-row mb-4"
   }, react_1["default"].createElement("p", null, react_1["default"].createElement(react_router_dom_1.Link, {
-    to: '/',
+    to: '/accounts/recover-account',
     className: " text-blue-700"
   }, "Forgot password?"))), react_1["default"].createElement("div", {
     className: " flex justify-center mb-8 "
-  }, react_1["default"].createElement(Button_1["default"], {
-    text: "Submit"
-  }))), react_1["default"].createElement("p", {
+  }, react_1["default"].createElement("button", {
+    className: "  text-center px-8 py-3 w-full bg-primary hover:bg-opacity-80  rounded text-white hover:bg-[#4caceb]"
+  }, "Log In"))), react_1["default"].createElement("p", {
     className: " text-center"
   }, "Don't have an account?", '  ', react_1["default"].createElement("span", {
     className: " text-blue-700 font-bold"
@@ -5626,7 +5788,7 @@ var Button_1 = __importDefault(__webpack_require__(/*! ./Button */ "./resources/
 
 var CallToAction = function CallToAction() {
   return react_1["default"].createElement("div", {
-    className: " bg-cta mb-8"
+    className: " bg-cta sm:mb-16 tab:mb-16 mb-8"
   }, react_1["default"].createElement("div", {
     className: " sm:px-32 px-8 tab:px-16 flex flex-col"
   }, react_1["default"].createElement("p", {
@@ -5953,7 +6115,7 @@ var IconsSection = function IconsSection() {
     id: 6,
     heading: 'Dependable',
     img: Dependable_svg_1["default"],
-    text: 'We are eager to help in case of an emergency ALL the time. Please reach out to us.'
+    text: 'We are eager to help in case of an emergency at ANY time. Please reach out to us.'
   }];
   return react_1["default"].createElement("div", {
     className: " mb-14"
@@ -5961,21 +6123,23 @@ var IconsSection = function IconsSection() {
     text: " OUR VALUES ",
     className: " font-sans font-bold"
   }), react_1["default"].createElement("p", {
-    className: " text-xl sm:w-2/4 tab:w-2/3 w-full tab:mb-4 sm:px-20 font-sans px-4 mx-auto my-0"
+    className: " text-xl sm:w-2/4 tab:w-2/3 w-full sm:mb-8 mb-4 sm:px-20 font-sans px-4 mx-auto my-0"
   }, "We have a set of values that guide our way of doing business. ", react_1["default"].createElement("b", null, "WE", ''), ' ', "are true to whatever we say we are."), react_1["default"].createElement("div", {
     className: " grid sm:grid-cols-3 tab:grid-cols-2 grid-rows-1  sm:px-20 px-4 mb-12"
   }, iconCards.map(function (x) {
     return react_1["default"].createElement("div", {
-      className: "flex flex-col mr-0 py-8 mb-6 px-3 mx-4 hover:border-b-blue-700 hover:bg-gray-100  hover:border-b-2 hover:shadow-md  ",
+      className: "flex flex-col mr-0 py-8 mb-6 sm:px-8 px-4 mx-4 hover:border-b-blue-700 hover:bg-gray-100  hover:border-b-2 hover:shadow-md  ",
       key: x.id
+    }, react_1["default"].createElement("div", {
+      className: " h-10 mr-0 mb-8"
     }, react_1["default"].createElement("img", {
       src: x.img,
       alt: "",
-      className: " items-center h-20 mb-4"
-    }), react_1["default"].createElement("h6", {
-      className: " text-center text-xl mb-4 sm:mb-0 font-bold text-[#212121]"
+      className: ""
+    })), react_1["default"].createElement("h6", {
+      className: " text-xl mb-4 sm:mb-0 font-bold text-[#212121]"
     }, x.heading), react_1["default"].createElement("p", {
-      className: " sm:py-6 sm:px-8 tab:px-0   text-lg"
+      className: " sm:py-4 tab:px-0   text-lg"
     }, x.text));
   })));
 };
@@ -26679,7 +26843,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Dependable.svg?553a23eacfd542d5dec5545b7dfc319f");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Dependable.svg?91984f13af8c273ab4059bb35afab648");
 
 /***/ }),
 
@@ -26694,7 +26858,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Disruption.svg?4d519fb05e8f5555c70cfef78cb76721");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Disruption.svg?e2b8a97c50d3839ed05f52d51880ba0e");
 
 /***/ }),
 
@@ -26724,7 +26888,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Excellence.svg?a1ec341e2df5c0658c42082a443c94c2");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Excellence.svg?1d7e5e6338e8f1bf913134d2cf36e82a");
 
 /***/ }),
 
@@ -26799,7 +26963,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Loyalty.svg?23b65a6963012472a45e71fd050b8535");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Loyalty.svg?5a036d604f91b401c0444836156d0d63");
 
 /***/ }),
 
@@ -26904,7 +27068,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Simple.svg?f0f12141f6acc9289ababe154b176bfb");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Simple.svg?2f9ef672ab867d72784289c3a3a45495");
 
 /***/ }),
 
@@ -26934,7 +27098,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/User.svg?f9b9e7ac925f3ba0539ec7a87e21f318");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/User.svg?fa9c84f0307f7c46e399abc5ec950893");
 
 /***/ }),
 
