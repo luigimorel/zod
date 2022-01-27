@@ -5273,7 +5273,9 @@ var RecoverPassword_1 = __importDefault(__webpack_require__(/*! ./accounts/Recov
 
 var RecoveryAccountSuccess_1 = __importDefault(__webpack_require__(/*! ./accounts/RecoveryAccountSuccess */ "./resources/js/components/accounts/RecoveryAccountSuccess.tsx"));
 
-var ResetPassword_1 = __importDefault(__webpack_require__(/*! ./accounts/ResetPassword */ "./resources/js/components/accounts/ResetPassword.tsx")); // Dashboards
+var ResetPassword_1 = __importDefault(__webpack_require__(/*! ./accounts/ResetPassword */ "./resources/js/components/accounts/ResetPassword.tsx"));
+
+var PasswordResetSuccess_1 = __importDefault(__webpack_require__(/*! ./accounts/PasswordResetSuccess */ "./resources/js/components/accounts/PasswordResetSuccess.tsx")); // Dashboards
 
 
 var ClientDashboard_1 = __importDefault(__webpack_require__(/*! ./pages/ClientDashboard */ "./resources/js/components/pages/ClientDashboard.tsx"));
@@ -5312,6 +5314,9 @@ function App() {
     path: "/accounts/reset-password",
     element: react_1["default"].createElement(ResetPassword_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
+    path: "/accounts/password-reset-success",
+    element: react_1["default"].createElement(PasswordResetSuccess_1["default"], null)
+  }), react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/client-dashboard",
     element: react_1["default"].createElement(ClientDashboard_1["default"], null)
   }), ' ', react_1["default"].createElement(react_router_dom_1.Route, {
@@ -5334,6 +5339,63 @@ exports["default"] = App;
 if (document.getElementById('root')) {
   react_dom_1["default"].render(react_1["default"].createElement(App, null), document.getElementById('root'));
 }
+
+/***/ }),
+
+/***/ "./resources/js/components/accounts/PasswordResetSuccess.tsx":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/accounts/PasswordResetSuccess.tsx ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js"); // Assets
+// @ts-ignore
+
+
+var logo_light_png_1 = __importDefault(__webpack_require__(/*! ../../../assets/images/logo-light.png */ "./resources/assets/images/logo-light.png"));
+
+var Button_1 = __importDefault(__webpack_require__(/*! ../common/Button */ "./resources/js/components/common/Button.tsx"));
+
+var PasswordResetSuccess = function PasswordResetSuccess() {
+  return react_1["default"].createElement("div", {
+    className: "  h-screen pt-16"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: "/"
+  }, react_1["default"].createElement("img", {
+    src: logo_light_png_1["default"],
+    className: " mx-auto  h-10 mb-10",
+    alt: ""
+  })), react_1["default"].createElement("div", {
+    className: " sm:w-1/3 tab:w-full mx-auto my-0 "
+  }, react_1["default"].createElement("div", {
+    className: " sm:px-10 px-4 pb-10 pt-10  sm:pt-32"
+  }, react_1["default"].createElement("h2", {
+    className: " text-center text-[#212121] font-semibold text-xl mb-10"
+  }, "Password has been reset"), react_1["default"].createElement("div", {
+    className: " flex justify-center"
+  }, react_1["default"].createElement(react_router_dom_1.Link, {
+    to: '/accounts/login'
+  }, react_1["default"].createElement(Button_1["default"], {
+    text: 'Click here to login'
+  }))))));
+};
+
+exports["default"] = PasswordResetSuccess;
 
 /***/ }),
 

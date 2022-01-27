@@ -13,6 +13,7 @@ import SignUp from './accounts/SignUp'
 import RecoveryPassword from './accounts/RecoverPassword'
 import RecoveryAccountSuccess from './accounts/RecoveryAccountSuccess'
 import ResetPassword from './accounts/ResetPassword'
+import PasswordResetSuccess from './accounts/PasswordResetSuccess'
 
 // Dashboards
 import ClientDashboard from './pages/ClientDashboard'
@@ -37,6 +38,10 @@ function App() {
      element={<RecoveryAccountSuccess />}
     />
     <Route path="/accounts/reset-password" element={<ResetPassword />} />
+    <Route
+     path="/accounts/password-reset-success"
+     element={<PasswordResetSuccess />}
+    />
     {/* Dashboard components  */}
     <Route path="/client-dashboard" element={<ClientDashboard />} />{' '}
     <Route path="/admin-dashboard" element={<AdminDashboard />} />
