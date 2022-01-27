@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom'
 // @ts-ignore
 import Logo from './../../../assets/images/logo-light.png'
 
-// Components
-import Button from '../common/Button'
-
 const SignIn = () => {
  return (
   <div>
@@ -16,7 +13,7 @@ const SignIn = () => {
    </Link>
 
    <div className=" sm:w-1/3 tab:w-2/3 mx-auto my-0 border  border-gray-400">
-    <div className=" px-10 pb-16 pt-10">
+    <div className=" px-10 pb-10 pt-10">
      <h2 className=" text-center text-blue-700 font-bold text-xl mb-10">
       Log In
      </h2>
@@ -24,19 +21,19 @@ const SignIn = () => {
      {/* Start of the form */}
      <form action="" method="post">
       <div className="flex flex-col">
-       <label htmlFor="email" className=" mb-2.5">
+       <label htmlFor="email" className=" mb-2">
         Email
        </label>
        <input
         type="email"
         name="email"
         id="email"
-        className=" w-full mb-8 rounded-sm border-gray-400"
+        className=" w-full mb-4 rounded-sm border-gray-400"
        />
       </div>
 
       <div className="flex flex-col">
-       <label htmlFor="email" className=" mb-2.5">
+       <label htmlFor="email" className=" mb-2">
         Password
        </label>
        <input
@@ -49,14 +46,16 @@ const SignIn = () => {
 
       <div className="flex justify-end flex-row mb-4">
        <p>
-        <Link to={'/'} className=" text-blue-700">
+        <Link to={'/accounts/recover-account'} className=" text-blue-700">
          Forgot password?
         </Link>
        </p>
       </div>
 
       <div className=" flex justify-center mb-8 ">
-       <Button text="Submit" />
+       <button className="  text-center px-8 py-3 w-full bg-primary hover:bg-opacity-80  rounded text-white hover:bg-[#4caceb]">
+        Log In
+       </button>
       </div>
      </form>
 
