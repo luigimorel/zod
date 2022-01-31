@@ -17,9 +17,9 @@ module.exports = {
     primary: '#3aa6ef',
    },
    backgroundImage: {
-    jumbo: "url('resources/assets/images/jumboo.png')",
+    jumbo: "url('/images/hero.png')",
     overlay:
-     'linear-gradient(89.4deg, #3aa6ef 9.52%, rgba(24, 24, 27, 0.9) 89.41%)',
+     'linear-gradient(89.4deg, #3aa6ef 9.52%, rgba(24, 24, 27, 0.7) 89.41%)',
     sidebar: ' linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);',
    },
   },
