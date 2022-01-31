@@ -114,7 +114,7 @@ const Contact = () => {
       </div>
 
       <div className=" flex justify-center mb-12 ">
-       <Button text="Submit" />
+       <Button text="Send Message" />
       </div>
      </form>
     </div>

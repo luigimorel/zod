@@ -100,6 +100,7 @@ const SignUp = () => {
         type="tel"
         name="tel"
         required
+        autoComplete="true"
         id="tel"
         className=" w-full mb-4 rounded-sm border-gray-400"
        />

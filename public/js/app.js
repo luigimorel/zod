@@ -5804,6 +5804,7 @@ var SignUp = function SignUp() {
     type: "tel",
     name: "tel",
     required: true,
+    autoComplete: "true",
     id: "tel",
     className: " w-full mb-4 rounded-sm border-gray-400"
   })), react_1["default"].createElement("div", {
@@ -6343,10 +6344,7 @@ var Jumbotron = function Jumbotron(_ref) {
   var header = _ref.header,
       leadingParagraph = _ref.leadingParagraph;
   return react_1["default"].createElement("div", {
-    className: "  mb-20 ",
-    style: {
-      backgroundImage: "url('https://res.cloudinary.com/morelmiles/image/upload/v1641151093/jumboo_r70wt2.png')"
-    }
+    className: "  mb-20 bg-jumbo bg-cover bg-no-repeat"
   }, react_1["default"].createElement("div", {
     className: " sm:px-12 bg-overlay"
   }, react_1["default"].createElement("div", {
@@ -8129,7 +8127,7 @@ var Contact = function Contact() {
   })), react_1["default"].createElement("div", {
     className: " flex justify-center mb-12 "
   }, react_1["default"].createElement(Button_1["default"], {
-    text: "Submit"
+    text: "Send Message"
   }))))), react_1["default"].createElement(Footer_1["default"], null));
 };
 
@@ -27056,7 +27054,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Email.svg?7be6e02d7bdf46a5f64e94b42b255696");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Email.svg?ebae7224cb24ec1f2ba6bef646fbea76");
 
 /***/ }),
 
@@ -27131,7 +27129,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Location.svg?f5a0282e073c1839526a6984256e3d21");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Location.svg?ce97c71b70e9e6a09454ab53ac1703f5");
 
 /***/ }),
 
@@ -27191,7 +27189,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Phone.svg?4f06bac04c761b8b63e422c0753e2719");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/Phone.svg?29790e06bde0f37d76a544af89206ea6");
 
 /***/ }),
 
