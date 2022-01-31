@@ -32,9 +32,11 @@ const Verticals = () => {
 
     {/* this is the second card */}
 
-    <div className=" flex flex-col ">
-     <div className=" py-10 px-24 bg-yellow-500 ">
+    <div className=" flex flex-col bg-jumbo card  ">
+     <div className=" py-10 px-24  ">
       <img src={AI} alt="" />
+
+      <p className=" hidden">Lorem ipsum dolor sit amet.</p>
      </div>
      <p className=" text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold">
       Artificial Intelligence

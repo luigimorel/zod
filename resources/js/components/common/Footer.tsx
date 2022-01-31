@@ -77,7 +77,7 @@ const Footer = () => {
    <hr className=" h-px bg-slate-300" />
 
    <div className=" flex sm:flex-row flex-col py-5 justify-between">
-    <p className=" flex sm:justify-end justify-center sm:text-center text-left">
+    <p className=" flex sm:justify-end justify-center mb-5 sm:mb-0 sm:text-center text-left">
      &copy; Denebolatech {new Date().getFullYear()}. All rights reserved.
     </p>
     <p className=" flex sm:justify-end justify-center text-center">

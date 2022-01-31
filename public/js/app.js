@@ -6051,7 +6051,7 @@ var Footer = function Footer() {
   }), react_1["default"].createElement("div", {
     className: " flex sm:flex-row flex-col py-5 justify-between"
   }, react_1["default"].createElement("p", {
-    className: " flex sm:justify-end justify-center sm:text-center text-left"
+    className: " flex sm:justify-end justify-center mb-5 sm:mb-0 sm:text-center text-left"
   }, "\xA9 Denebolatech ", new Date().getFullYear(), ". All rights reserved."), react_1["default"].createElement("p", {
     className: " flex sm:justify-end justify-center text-center"
   }, "Built By", react_1["default"].createElement("a", {
@@ -6402,7 +6402,7 @@ var MobileNavbar = function MobileNavbar() {
     route: '/accounts/login'
   }];
   return react_1["default"].createElement("div", {
-    className: " dropdown bg-white w-full block animation-container"
+    className: " dropdown bg-white w-full animation-container"
   }, react_1["default"].createElement("ul", {
     className: "dropdown-menu w-full mb-4 "
   }, menuLinks.map(function (x) {
@@ -6410,7 +6410,7 @@ var MobileNavbar = function MobileNavbar() {
       key: x.id,
       className: " "
     }, react_1["default"].createElement(react_router_dom_1.Link, {
-      className: "  text-black custom-animation w-full bg-white ml-4 custom-transform    text-base mb-4 font-semibold",
+      className: "  text-black custom-animation w-full bg-white ml-4 custom-transform    text-base mb-5 font-semibold",
       to: x.route
     }, x.linkText));
   }), react_1["default"].createElement(react_router_dom_1.Link, {
@@ -6530,6 +6530,11 @@ var Navbar = function Navbar() {
       setOpen = _ref2[1];
 
   var router = (0, react_router_dom_1.useLocation)();
+
+  var handleClick = function handleClick(e) {
+    setOpen(!open);
+  };
+
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", {
     className: "flex flex-row justify-between   bg-white tab:relative shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   "
   }, react_1["default"].createElement(react_router_dom_1.Link, {
@@ -6539,9 +6544,7 @@ var Navbar = function Navbar() {
     alt: "",
     className: " sm:h-10 h-5"
   })), react_1["default"].createElement("img", {
-    onClick: function onClick() {
-      return setOpen(!open);
-    },
+    onClick: handleClick,
     className: " sm:hidden tab:inline-block ",
     src: Menu_svg_1["default"],
     alt: ""
@@ -6553,7 +6556,7 @@ var Navbar = function Navbar() {
     return react_1["default"].createElement(react_router_dom_1.NavLink, {
       key: x.id,
       to: x.route,
-      className: router.pathname === x.route ? 'mr-12 tab:mr-8 py-2 font-semibold text-blue-700 border-blue-400 border-b-2 text-base' : 'mr-12 tab:mr-8 py-2 text-black font-semibold hover:border-blue-400 text-base'
+      className: router.pathname === x.route ? 'mr-12 tab:mr-8 py-2 font-semibold text-primary text-base' : 'mr-12 tab:mr-8 py-2 text-black font-semibold hover:border-blue-400 text-base'
     }, x.text);
   }), react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/accounts/sign-up"
@@ -6621,13 +6624,15 @@ var Verticals = function Verticals() {
   })), react_1["default"].createElement("p", {
     className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
   }, "Smart Construction Site")), react_1["default"].createElement("div", {
-    className: " flex flex-col "
+    className: " flex flex-col bg-jumbo card  "
   }, react_1["default"].createElement("div", {
-    className: " py-10 px-24 bg-yellow-500 "
+    className: " py-10 px-24  "
   }, react_1["default"].createElement("img", {
     src: AI_svg_1["default"],
     alt: ""
-  })), react_1["default"].createElement("p", {
+  }), react_1["default"].createElement("p", {
+    className: " hidden"
+  }, "Lorem ipsum dolor sit amet.")), react_1["default"].createElement("p", {
     className: " text-xl text-gray-800 py-4 pl-3 bg-gray-100 text-center sm:text-left  font-semibold"
   }, "Artificial Intelligence")), react_1["default"].createElement("div", {
     className: " flex flex-col "
@@ -8034,7 +8039,7 @@ var Contact = function Contact() {
   return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(Navbar_1["default"], null), react_1["default"].createElement("div", {
     className: ""
   }, react_1["default"].createElement(Jumbotron_1["default"], {
-    leadingParagraph: "In case of any queries, please get in touch with us. We'll be gald to help.",
+    leadingParagraph: "In case of any queries, please get in touch with us. We'll be glad to help.",
     header: "Contact us today."
   })), react_1["default"].createElement("div", {
     className: " mb-10"

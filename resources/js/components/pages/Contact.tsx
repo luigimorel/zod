@@ -21,7 +21,7 @@ const Contact = () => {
    <Navbar />
    <div className="">
     <Jumbotron
-     leadingParagraph="In case of any queries, please get in touch with us. We'll be gald to help."
+     leadingParagraph="In case of any queries, please get in touch with us. We'll be glad to help."
      header="Contact us today."
     />
    </div>

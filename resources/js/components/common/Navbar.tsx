@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { MouseEventHandler, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 
 // Assets
@@ -38,6 +38,9 @@ const Navbar = () => {
  const [open, setOpen] = useState(false)
  const router = useLocation()
 
+ const handleClick = (e: any) => {
+  setOpen(!open)
+ }
  return (
   <>
    <div className="flex flex-row justify-between   bg-white tab:relative shadow-sm   w-full sm:px-24 tab:px-12 px-3  items-center py-6   ">
@@ -47,7 +50,7 @@ const Navbar = () => {
 
     {/* Menu icons for the mobile screens  */}
     <img
-     onClick={() => setOpen(!open)}
+     onClick={handleClick}
      className=" sm:hidden tab:inline-block "
      src={MenuIcon}
      alt=""
@@ -61,7 +64,7 @@ const Navbar = () => {
         to={x.route}
         className={
          router.pathname === x.route
-          ? 'mr-12 tab:mr-8 py-2 font-semibold text-blue-700 border-blue-400 border-b-2 text-base'
+          ? 'mr-12 tab:mr-8 py-2 font-semibold text-primary text-base'
           : 'mr-12 tab:mr-8 py-2 text-black font-semibold hover:border-blue-400 text-base'
         }
        >

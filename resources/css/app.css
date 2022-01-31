@@ -6,3 +6,7 @@
 body {
  background-color: #ebebeb;
 }
+
+.card:hover > .card-p {
+ display: flex;
+}

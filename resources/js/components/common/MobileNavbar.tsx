@@ -30,12 +30,12 @@ const MobileNavbar = () => {
  ]
 
  return (
-  <div className=" dropdown bg-white w-full block animation-container">
+  <div className=" dropdown bg-white w-full animation-container">
    <ul className="dropdown-menu w-full mb-4 ">
     {menuLinks.map((x) => (
      <li key={x.id} className=" ">
       <Link
-       className="  text-black custom-animation w-full bg-white ml-4 custom-transform    text-base mb-4 font-semibold"
+       className="  text-black custom-animation w-full bg-white ml-4 custom-transform    text-base mb-5 font-semibold"
        to={x.route}
       >
        {x.linkText}

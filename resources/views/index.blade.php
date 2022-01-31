@@ -8,10 +8,31 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+<!-- Primary Meta Tags -->
+<title>Denebolatech: Helping you monitor your construction works in real time.</title>
+<meta name="title" content="Denebolatech: Helping you monitor your construction works in real time.">
+<meta name="description" content="We offer real time construction industry monitoring services making it easier for investors, proprietors and related stakeholders to oversee the progress of the works and plan ahead in times of disaster and stakeholder planning.">
 
-    <title>Denebolatech | Helping you monitor your construction works in real time. </title>
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://denebolatech.com/">
+<meta property="og:title" content="Denebolatech: Helping you monitor your construction works in real time.">
+<meta property="og:description" content="We offer real time construction industry monitoring services making it easier for investors, proprietors and related stakeholders to oversee the progress of the works and plan ahead in times of disaster and stakeholder planning.">
+<meta property="og:image" content="">
 
-    <!-- Scripts -->
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://denebolatech.com/">
+<meta property="twitter:title" content="Denebolatech: Helping you monitor your construction works in real time.">
+<meta property="twitter:description" content="We offer real time construction industry monitoring services making it easier for investors, proprietors and related stakeholders to oversee the progress of the works and plan ahead in times of disaster and stakeholder planning.">
+<meta property="twitter:image" content="">
+<title>Denebolatech | Helping you monitor your construction works in real time. </title>
+     
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+
+<!-- Start of the tags -->    <!-- Scripts -->
     <script>
         window.App = {!! json_encode([
             'name' => config('app.name')
@@ -23,6 +44,7 @@
 
     <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link rel="icon" href="{{asset('favicon.ico')}}" />
 
 </head>
 

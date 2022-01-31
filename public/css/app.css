@@ -767,10 +767,6 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
-.bg-yellow-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
 .bg-\[\#212121\]{
   --tw-bg-opacity: 1;
   background-color: rgb(33 33 33 / var(--tw-bg-opacity));
@@ -1006,6 +1002,10 @@ select{
 
 body {
  background-color: #ebebeb;
+}
+
+.card:hover > .card-p {
+ display: flex;
 }
 
 .hover\:border-b-2:hover{
